@@ -1,0 +1,203 @@
+\documentclass[twoside]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\raggedbottom
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Choose either kpfonts or fourier
+% \usepackage[nott]{kpfonts}
+\usepackage{fourier}
+
+
+% Delete any of the following that are not needed
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb} % Just for the degree symbol
+\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{lettrine} % Drop caps
+\usepackage{wrapfig} % Let's wrap some images
+\usepackage{hanging} % For hanging indents in a script
+\usepackage{fancyvrb} % Use line numbers with code samples
+\usepackage{fvextra} % Break lines inside Verbatim environment:
+\usepackage{enumitem} % Control spacing in lists
+\usepackage{setspace} % Better control over line-spacing
+\usepackage{nicefrac} % Use nice fractions
+\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
+\usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
+\usepackage{microtype} % Make things neater. 
+\usepackage{tabularray} % Easy tables
+\usepackage[]{footmisc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}} % Where are our images?
+\usepackage{multicol} % Include two- or three-column sections
+\counterwithout{footnote}{chapter} % Stop resetting the footnote count after each chapter
+\NumTabs{18} % Define 18 tab stops (at 1/4" intervals) [tabto package]
+\raggedbottom  % Don't force text to fill page
+\setlength{\belowcaptionskip}{4pt} % Adjust space between caption and figure
+\renewcommand*\contentsname{In This Issue…} % Change the name of the TOC
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Setup%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{
+	paperheight=8.5in, 
+	paperwidth=5.5in, 
+	margin=12mm,
+%	a5paper % Comment out for half-letter paper
+}
+
+\addtolength{\topmargin}{10mm} % Adjust and bottom margin
+\addtolength{\textheight}{-20mm} % Adjust the bottom margin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page Headers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE as necessary
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+ \fancyhf{}
+ \fancyhead[LE,RO]{\textit{Ægypt's Library}}
+ \fancyhead[RE,LO]{Issue \#01}
+ \cfoot{Page \thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter Title Spacing %%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}
+    {\chaptertitlename\ \thechapter}
+    {20pt}
+    {\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make a nice border and box for the tops of our examples
+\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
+
+% Add an \hrule with space above and below
+\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
+
+% Make hrefs easier (must load package hyperref}
+\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
+
+% Rotate text in tables easier
+% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
+\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
+
+% Make diversions easier (and uniform!)
+\newcommand\kdivb[2]{
+	\medskip
+	\hrule
+	\medskip
+	\noindent{}\textbf{#1}
+	\vspace{#2mm}
+	\begin{multicols}{2}
+}
+
+\newcommand\kdive[1]{
+	\end{multicols} 
+	\vspace{#1mm}
+	\hrule
+	\medskip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Just for Issue #006 %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Be sure to load this package last
+% [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+\usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Information %%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE and SUBTITLE as necessary
+\author{Brian Murphy}
+\title{
+ {\Huge Ægypt's Library} \\
+ {\footnotesize A bibliography of the Aegypt Tetralogy \\
+ \bigskip
+ Typeset in \LaTeX{} \\
+% Issue \#001
+ }
+}
+\date{\begin{small}\today{}\end{small}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Let's get it started %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\section*{Introuduction}
+\paragraph*{The goal is to list all of the books and authors mentioned throughout Ægypt, or The Solitudes,
+by chapter. A complete list of those authors are listed at the end in alphabetical order by
+their first name. If a chapter is missing below, then it did not have any books or authors
+mentioned within it. Books listed in bold are fictional works created by Crowley. The
+Authors Mentioned subsections list authors that were mentioned within a chapter but did
+not mention a particular book.}
+
+\paragraph*{In most cases I tried to cite a work that would have been appropriate for the timeframe of
+the story in which it is mentioned. In some cases, I have not been able to find a suitable
+edition and so cite a modern edition instead. Those will eventually be cleaned up to reflect
+either a copy of the work from the 16th century, one up to 1978, or one available to Crowley
+while he was writing.}
+
+\paragraph*{Future updates will likely provide citations for when a particular author is mentioned within
+the text. I’m not likely to do this any time soon, however. Eventually, I will add in subsequent
+books in the series, but I’m in no real hurry to do so. This was purely a fun side-project that
+got my head away from “Real Life” for a time.}
+
+\paragraph*{I’m open to any ideas as to how this can be updated and expanded. For any corrections or
+comments the reader can email me directly at murfman@pm.me.}
+
+\paragraph*{Special thanks goes to the guys within the \#Books channel on The Miskatonic Univer-
+sity Podcast Discord Server. You guys know who you are.}
+
+\paragraph*{(This is still, and likely will remain, a work in progress.)}
+
+\section*{Impressum}
+All contents  \copyright2025 Brian Murphy
+
+
+
+
+\tableofcontents
+
+
+
+\end{document}
+Powered by Gitea
+Version: 1.22.1 Page:
+49ms
+Template:
+12ms
+Licenses
+API

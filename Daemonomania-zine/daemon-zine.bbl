@@ -1,0 +1,2941 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{1590}{book}{}{}
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {printed for E. Venge}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{note}{OCLC: 80830151}
+      \field{title}{A true discourse, declaring {The} damnable life and death of one {Stubbe} {Peeter}, a most wicked sorcerer}
+      \field{year}{1590}
+      \verb{urlraw}
+      \verb https://en.wikisource.org/wiki/The_Damnable_Life_and_Death_of_One_Stubbe_Peeter,_a_Most_Wicked_Sorcerer
+      \endverb
+      \verb{url}
+      \verb https://en.wikisource.org/wiki/The_Damnable_Life_and_Death_of_One_Stubbe_Peeter,_a_Most_Wicked_Sorcerer
+      \endverb
+      \keyw{Peeter,Stubbe,daemon,real}
+    \endentry
+    \entry{autoamat}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7079c72c21415131774625ba1d64f4b0}{%
+           family={Anonymous},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhashraw}{7079c72c21415131774625ba1d64f4b0}
+      \strng{bibnamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorbibnamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authornamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhashraw}{7079c72c21415131774625ba1d64f4b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Ars Auto-Amatoria (Every Man his Own Wife)}
+      \keyw{daemon,Fictional}
+    \endentry
+    \entry{Apuleius1998}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d59a8a21508a41009f7b1b8e2168d39}{%
+           family={Apuleius},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Penguin UK}%
+      }
+      \strng{namehash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{fullhash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{fullhashraw}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{bibnamehash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{authorbibnamehash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{authornamehash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{authorfullhash}{7d59a8a21508a41009f7b1b8e2168d39}
+      \strng{authorfullhashraw}{7d59a8a21508a41009f7b1b8e2168d39}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Golden Ass}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Ashmole1652}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7bd19ac6bdb32f2826c39b6032684948}{%
+           family={Ashmole},
+           familyi={A\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{fullhash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{fullhashraw}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{bibnamehash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{authorbibnamehash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{authornamehash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{authorfullhash}{7bd19ac6bdb32f2826c39b6032684948}
+      \strng{authorfullhashraw}{7bd19ac6bdb32f2826c39b6032684948}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theatrum Chemicum Britannicum}
+      \field{year}{1652}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Bloom2010}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=33b1979a1db4deb2fa21836c6fffd45e}{%
+           family={Bloom},
+           familyi={B\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Bloom's Literary Criticism}%
+      }
+      \strng{namehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{fullhash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{fullhashraw}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{bibnamehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editorbibnamehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editornamehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editorfullhash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editorfullhashraw}{33b1979a1db4deb2fa21836c6fffd45e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{New ed.}
+      \field{isbn}{9781604138849}
+      \field{note}{Includes bibliographical references and index}
+      \field{pagetotal}{194}
+      \field{series}{Bloom's modern critical interpretations}
+      \field{title}{William Shakespeare's Macbeth}
+      \field{year}{2010}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Bodin1979}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ea85a20b35afd2cdb644b387622a7df}{%
+           family={Bodin},
+           familyi={B\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Paris]}%
+      }
+      \list{publisher}{1}{%
+        {Gutenberg Repr.}%
+      }
+      \strng{namehash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{fullhash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{fullhashraw}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{bibnamehash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{authorbibnamehash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{authornamehash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{authorfullhash}{9ea85a20b35afd2cdb644b387622a7df}
+      \strng{authorfullhashraw}{9ea85a20b35afd2cdb644b387622a7df}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{[Nachdr. d. Ausg. Paris, 1587], revue, corrigé et augm. d'une grande partie}
+      \field{pagetotal}{276}
+      \field{title}{De la démonomanie des sorciers}
+      \field{year}{1979}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{BrowningRowlandT}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=616072b2a62f848de9f2c16948e6f5c6}{%
+           family={Browning},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{fullhash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{fullhashraw}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{bibnamehash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{authorbibnamehash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{authornamehash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{authorfullhash}{616072b2a62f848de9f2c16948e6f5c6}
+      \strng{authorfullhashraw}{616072b2a62f848de9f2c16948e6f5c6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{If at his counsel I should turn aside Into that ominous tract which, all agree, Hides the Dark Tower. Thus, I had so long suffered in this quest, Heard failure prophesied so oft, been writ So many times among "The Band"—to wit, The knights who to the Dark Tower's search addressed Their steps—that…}
+      \field{journaltitle}{The Poetry Foundation}
+      \field{title}{Childe Roland to the Dark Tower Came}
+      \field{urlday}{5}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1855}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.poetryfoundation.org/poems/1597010/childe-roland-to-the-dark-tower-came
+      \endverb
+      \verb{url}
+      \verb https://www.poetryfoundation.org/poems/1597010/childe-roland-to-the-dark-tower-came
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Bruno1588a}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=396d804d82221ae2e3bee10d4bf1875c}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Giordano},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{bibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorbibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authornamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Articuli centum et sexaginta adversus hujus tempestatis mathematicos atque philosophos . Centum item et octoginta praxes, ad totidem problemata, caeteris quaedam ardua, quaedam vero impossibilia, possibili et faciliore negotio persequenda... -- 1588 -- livre}
+      \field{title}{Articuli centum et sexaginta adversus huius tempestatis mathematicos atque philosophos . {Centum} item et octoginta praxes, ad totidem problemata, caeteris quaedam ardua, quaedam vero impossibilia, possibili et faciliore negotio persequenda...}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1588}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://gallica.bnf.fr/ark:/12148/bpt6k1502915j
+      \endverb
+      \verb{url}
+      \verb https://gallica.bnf.fr/ark:/12148/bpt6k1502915j
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Bruno2002}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=396d804d82221ae2e3bee10d4bf1875c}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Giordano},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{bibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorbibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authornamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Giordano Bruno’s Cabala del cavallo pegaseo (The Cabala of Pegasus) grew out of the great Italian philosopher’s experiences lecturing and debating at Oxford in early 1584. Having received a cold reception there because of his viewpoints, Bruno went on in the Cabala to attack the narrow-mindedness of the university--and by extension, all universities that resisted his advocacy of intellectual freethinking.The Cabala of Pegasus consists of vernacular dialogues that turn on the identification of the noble Pegasus (the spirit of poetry) and the humble ass (the vehicle of divine revelation). In the interplay of these ideas, Bruno explores the nature of poetry, divine authority, secular learning, and Pythagorean metempsychosis, which had great influence on James Joyce and many other writers and artists from the Renaissance to the modern period.This book, the first English translation of The Cabala of Pegasus, contains both the English and Italian versions as well as helpful annotations. It will have particular appeal to all Renaissance scholars and those interested in the Renaissance cabalistic underpinnings of modern literature.}
+      \field{isbn}{9780300127911}
+      \field{month}{1}
+      \field{title}{Cabala of {Pegasus}}
+      \field{year}{2002}
+      \keyw{Psychology / Cognitive Psychology \& Cognition,Nature / Animals / Mammals,Philosophy / History \& Surveys / Modern,Philosophy / History \& Surveys / General,daemon,real}
+    \endentry
+    \entry{GiordanoBruno1587}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=396d804d82221ae2e3bee10d4bf1875c}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Giordano},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{bibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorbibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authornamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \field{extraname}{3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{De progressu et lampade venatoria logicorum {Ad} promptè atque copiosè de quocumque proposito problemate {disputandumIordanus} {Brunus} {Nolanus}}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1587}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/bub_gb_DFJWXtUhKe4C
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/bub_gb_DFJWXtUhKe4C
+      \endverb
+      \keyw{bub\_upload,daemon,real}
+    \endentry
+    \entry{Bruno1588}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=396d804d82221ae2e3bee10d4bf1875c}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Giordano},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Pragæ}%
+      }
+      \list{publisher}{1}{%
+        {Excudebat Georgius Nigrinus}%
+      }
+      \strng{namehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{fullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{bibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorbibnamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authornamehash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhash}{396d804d82221ae2e3bee10d4bf1875c}
+      \strng{authorfullhashraw}{396d804d82221ae2e3bee10d4bf1875c}
+      \field{extraname}{4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{note}{Open Library ID: OL15218627M}
+      \field{shorttitle}{Iordanus {Brunus} {Nolanus} {De} speciervm scrvtinio et lampade combinatoria {Raymvndi} {Lvllii} {Doctoris} {Heremitæ} omniscii}
+      \field{title}{Iordanus {Brunus} {Nolanus} {De} speciervm scrvtinio et lampade combinatoria {Raymvndi} {Lvllii} {Doctoris} {Heremitæ} omniscii: propè modumque diuini}
+      \field{year}{1588}
+      \keyw{Llull,Ramon,-- 1232?-1316,Philosophy,Renaissance,daemon,real}
+    \endentry
+    \entry{Bulfinch1970}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1f957c95c883cd6de2932d6baf84306}{%
+           family={Bulfinch},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Crowell}%
+      }
+      \strng{namehash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{fullhash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{fullhashraw}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{bibnamehash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{authorbibnamehash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{authornamehash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{authorfullhash}{f1f957c95c883cd6de2932d6baf84306}
+      \strng{authorfullhashraw}{f1f957c95c883cd6de2932d6baf84306}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{[New ed.]}
+      \field{isbn}{0690572603}
+      \field{pagetotal}{980}
+      \field{subtitle}{The age of fable, the age of chivalry, legends of Charlemagne}
+      \field{title}{Bulfinch's mythology}
+      \field{year}{1970}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Burton1863}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e141cc7a2cb1583fa1c05cce088e7a35}{%
+           family={Burton},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Tegg}%
+      }
+      \strng{namehash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{fullhash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{fullhashraw}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{bibnamehash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{authorbibnamehash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{authornamehash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{authorfullhash}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \strng{authorfullhashraw}{e141cc7a2cb1583fa1c05cce088e7a35}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{A new ed.}
+      \field{pagetotal}{747}
+      \field{subtitle}{What it is ; with all the kinds, causes, symptoms, prognostics, and several cures of it ; in three partitions ...}
+      \field{title}{The Anatomy of Melancholy}
+      \field{year}{1863}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Carroll1866}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=158abe6a41d884d94cb4683cee47d48b}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Lewis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {MacMillan}%
+        {Co.}%
+      }
+      \strng{namehash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{fullhash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{fullhashraw}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{bibnamehash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{authorbibnamehash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{authornamehash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{authorfullhash}{158abe6a41d884d94cb4683cee47d48b}
+      \strng{authorfullhashraw}{158abe6a41d884d94cb4683cee47d48b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Alice's Adventures in Wonderland}
+      \field{year}{1866}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{catullus}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9fed38b3f2d3d5c6b37846ff4a89158}{%
+           family={Catullus},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{fullhash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{fullhashraw}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{bibnamehash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{authorbibnamehash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{authornamehash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{authorfullhash}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \strng{authorfullhashraw}{f9fed38b3f2d3d5c6b37846ff4a89158}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Catullus 5 is a passionate ode to Lesbia and one of the most famous poems by Catullus. The poem encourages lovers to scorn the snide comments of others, and to ...}
+      \field{howpublished}{WikiWand}
+      \field{note}{ZSCC: NoCitationData[s0]}
+      \field{title}{Catullus 5}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.wikiwand.com/en/articles/Catullus%205
+      \endverb
+      \verb{url}
+      \verb https://www.wikiwand.com/en/articles/Catullus%205
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{cives}{misc}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Naught that country needeth of these aisles of stone; / Where the Godhead dwelleth, temple there is none / All saints that in these courts have stood / Are but babes and feeding on}
+      \field{title}{Charles {Ives} – {Naught} {That} {Country} {Needeth}}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://genius.com/Charles-ives-naught-that-country-needeth-lyrics
+      \endverb
+      \verb{url}
+      \verb https://genius.com/Charles-ives-naught-that-country-needeth-lyrics
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{1600}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4a3ea7073f3a1951a9f3bd1e1a432d04}{%
+           family={Colonna},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{fullhash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{fullhashraw}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{bibnamehash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{authorbibnamehash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{authornamehash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{authorfullhash}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \strng{authorfullhashraw}{4a3ea7073f3a1951a9f3bd1e1a432d04}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{C.G. Jung. Le tableau des riches inventions couvertes du voile des feintes amoureuses, qui sont représentées dans le Songe de Poliphile. Paris : chez Matthieu Guillemot, 1600}
+      \field{title}{Le tableau des riches inventions couvertes du voile des feintes amoureuses, qui sont représentées dans le {Songe} de {Poliphile} / desvoilées des ombres du songe \& subtilement exposées par {Beroalde}}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1600}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.e-rara.ch/cgj/1349691
+      \endverb
+      \verb{url}
+      \verb http://www.e-rara.ch/cgj/1349691
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Cooper1584}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=80565ae33a455b9cdb1238ed2e6fd4a3}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Henry Byneman}%
+      }
+      \strng{namehash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{fullhash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{fullhashraw}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{bibnamehash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{authorbibnamehash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{authornamehash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{authorfullhash}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \strng{authorfullhashraw}{80565ae33a455b9cdb1238ed2e6fd4a3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thesaurus linguae Romanae \& Britannicae}
+      \field{year}{1584}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Copernicus1543}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=3405dc6698ae7e4e8f0b323a4ee3ead9}{%
+           family={Copernicus},
+           familyi={C\bibinitperiod},
+           given={Nicolaus},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nuremberg}%
+      }
+      \strng{namehash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{fullhash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{fullhashraw}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{bibnamehash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{authorbibnamehash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{authornamehash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{authorfullhash}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \strng{authorfullhashraw}{3405dc6698ae7e4e8f0b323a4ee3ead9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{De Revolutionibus}
+      \field{year}{1543}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Croll1670}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6fb55945bbe07c243c99ae5336b957c5}{%
+           family={Croll},
+           familyi={C\bibinitperiod},
+           given={Oswald},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{fullhash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{fullhashraw}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{bibnamehash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{authorbibnamehash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{authornamehash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{authorfullhash}{6fb55945bbe07c243c99ae5336b957c5}
+      \strng{authorfullhashraw}{6fb55945bbe07c243c99ae5336b957c5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Bazilica chymica, \& {Praxis} chymiatricæ, or, {Royal} and practical chymistry in three treatises}
+      \field{title}{Bazilica chymica, \& {Praxis} chymiatricæ, or, {Royal} and practical chymistry in three treatises : wherein all those excellent medicines and chymical preparations are fully discovered, from whence all our modern chymists have drawn their choicest remedies : being a translation of {Oswald} {Crollius}, his {Royal} chymistry, augmented and inlarged by {John} {Hartman} : to which is added his {Treatise} of signatures of internal things, or, {A} true and lively anatomy of the greater and lesser world : as also, {The} practice of chymistry of {John} {Hartman}, {M}.{D}., augmented and inlarged by his son / all faithfully {Englished} by a lover of chymistry.}
+      \field{year}{1670}
+      \verb{urlraw}
+      \verb http://name.umdl.umich.edu/A35064.0001.001
+      \endverb
+      \verb{url}
+      \verb http://name.umdl.umich.edu/A35064.0001.001
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{crowleycrow2015}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ac34db0f723a9ce40ec8c3ef67320cc2}{%
+           family={Crowley},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{fullhash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{fullhashraw}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{bibnamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorbibnamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authornamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorfullhash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorfullhashraw}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{https://crowleycrow.livejournal.com/254416.html}
+      \field{title}{Dismaying, a little}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://crowleycrow.livejournal.com/254416.html
+      \endverb
+      \verb{url}
+      \verb https://crowleycrow.livejournal.com/254416.html
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Crowley2009}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=ac34db0f723a9ce40ec8c3ef67320cc2}{%
+           family={Crowley},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LiveJournal}%
+      }
+      \strng{namehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{fullhash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{fullhashraw}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{bibnamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorbibnamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authornamehash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorfullhash}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \strng{authorfullhashraw}{ac34db0f723a9ce40ec8c3ef67320cc2}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{John Crowley Little and Big}
+      \field{chapter}{October 20, 2009}
+      \field{title}{Noveltoons}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://crowleycrow.livejournal.com/127541.html
+      \endverb
+      \verb{url}
+      \verb https://crowleycrow.livejournal.com/127541.html
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Culianu1992}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1766c9e00758333b7745934464ab0348}{%
+           family={Culianu},
+           familyi={C\bibinitperiod},
+           given={Ioan\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=1766c9e00758333b7745934464ab0348}{%
+           family={Culianu},
+           familyi={C\bibinitperiod},
+           given={Ioan\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, Calif.}%
+      }
+      \list{publisher}{1}{%
+        {Harper San Francisco}%
+      }
+      \strng{namehash}{1766c9e00758333b7745934464ab0348}
+      \strng{fullhash}{1766c9e00758333b7745934464ab0348}
+      \strng{fullhashraw}{1766c9e00758333b7745934464ab0348}
+      \strng{bibnamehash}{1766c9e00758333b7745934464ab0348}
+      \strng{authorbibnamehash}{1766c9e00758333b7745934464ab0348}
+      \strng{authornamehash}{1766c9e00758333b7745934464ab0348}
+      \strng{authorfullhash}{1766c9e00758333b7745934464ab0348}
+      \strng{authorfullhashraw}{1766c9e00758333b7745934464ab0348}
+      \strng{editorbibnamehash}{1766c9e00758333b7745934464ab0348}
+      \strng{editornamehash}{1766c9e00758333b7745934464ab0348}
+      \strng{editorfullhash}{1766c9e00758333b7745934464ab0348}
+      \strng{editorfullhashraw}{1766c9e00758333b7745934464ab0348}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0060616156}
+      \field{note}{Includes bibliographical references (p. 270-280) and index}
+      \field{pagetotal}{296}
+      \field{subtitle}{Gnostic mythology from early Christianity to modern nihilism}
+      \field{title}{The Tree of Gnosis}
+      \field{year}{1992}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Dante1950}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf5b1c62720485edd12a9d574989aa49}{%
+           family={Dante},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{fullhash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{fullhashraw}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{bibnamehash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{authorbibnamehash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{authornamehash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{authorfullhash}{bf5b1c62720485edd12a9d574989aa49}
+      \strng{authorfullhashraw}{bf5b1c62720485edd12a9d574989aa49}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Modern Library}
+      \field{title}{Divine Comedy}
+      \field{year}{1950}
+      \field{dateera}{ce}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Dee1978}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9421c9828889299ba1e3ab22ef82fb2c}{%
+           family={Dee},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Berkeley : University of California Press}%
+      }
+      \strng{namehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{bibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorbibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authornamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ix, 264 p. : 23 cm; Includes index; Bibliography: p. [243]-254}
+      \field{isbn}{9780520033764}
+      \field{title}{John {Dee} on astronomy = {Propaedeumata} aphoristica (1558 and 1568)}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1978}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/johndeeonastrono0000deej
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/johndeeonastrono0000deej
+      \endverb
+      \keyw{Astronomy -- Early works to 1800,daemon,real}
+    \endentry
+    \entry{Dee1564}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9421c9828889299ba1e3ab22ef82fb2c}{%
+           family={Dee},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=24d794dfc756320ffadb905d526299bc}{%
+           family={null},
+           familyi={n\bibinitperiod},
+           prefix={null},
+           prefixi={n\bibinitperiod}}}%
+        {{hash=703bf13bf788fc92d3526623c895c600}{%
+           family={Silvius},
+           familyi={S\bibinitperiod},
+           given={Willem},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Antverpiae}%
+      }
+      \list{publisher}{1}{%
+        {Silvius}%
+      }
+      \strng{namehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{bibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorbibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authornamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{editorbibnamehash}{732ca9e9fe15df03f70a8c4fb97cad47}
+      \strng{editornamehash}{732ca9e9fe15df03f70a8c4fb97cad47}
+      \strng{editorfullhash}{732ca9e9fe15df03f70a8c4fb97cad47}
+      \strng{editorfullhashraw}{732ca9e9fe15df03f70a8c4fb97cad47}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Schlüsselseiten aus dem Exemplar der FB Gotha: Math 4° 00281/09 (01)}
+      \field{pagetotal}{28}
+      \field{title}{Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm}
+      \field{year}{1564}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Dee1842}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9421c9828889299ba1e3ab22ef82fb2c}{%
+           family={Dee},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=b04da5065f379832c8c38c53ba5db724}{%
+           family={Halliwell},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima Orchard},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {John Bowyer Nichols}%
+        {Son}%
+      }
+      \strng{namehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{fullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{bibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorbibnamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authornamehash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhash}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{authorfullhashraw}{9421c9828889299ba1e3ab22ef82fb2c}
+      \strng{editorbibnamehash}{b04da5065f379832c8c38c53ba5db724}
+      \strng{editornamehash}{b04da5065f379832c8c38c53ba5db724}
+      \strng{editorfullhash}{b04da5065f379832c8c38c53ba5db724}
+      \strng{editorfullhashraw}{b04da5065f379832c8c38c53ba5db724}
+      \field{extraname}{3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Private Diary of Dr. John Dee}
+      \field{year}{1842}
+      \verb{urlraw}
+      \verb https://www.gutenberg.org/files/19553/19553-h/19553-h.htm
+      \endverb
+      \verb{url}
+      \verb https://www.gutenberg.org/files/19553/19553-h/19553-h.htm
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Dee1659}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=9421c9828889299ba1e3ab22ef82fb2c}{%
+           family={Dee},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=534f203e44ae88e5d832b28a6dda6cde}{%
+           family={Casaubon},
+           familyi={C\bibinitperiod},
+           given={Meric},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c4f527e86ada06b8e3cbd48a95f1ebe9}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {London : Printed by D. Maxwell for T. Garthwait ...}%
+      }
+      \strng{namehash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{fullhash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{fullhashraw}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{bibnamehash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{authorbibnamehash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{authornamehash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{authorfullhash}{aeb9f5452edcf36e418a04bbf50b831a}
+      \strng{authorfullhashraw}{aeb9f5452edcf36e418a04bbf50b831a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The initials E. K., which appear throughout the text, stand for Edward Kelly, Dee's associate; Errata, p. [78]; Binding: calf over pasteboard. Rebacked; spine title: Spts. / J.Dee. Top and bottom boards with 2 double fillets, fleurons at the corners; Hogart, R.C. Alchemy; Wing}
+      \field{shorttitle}{A true \& faithful relation of what passed for many yeers between {Dr}. {John} {Dee} ... and some spirits}
+      \field{title}{A true \& faithful relation of what passed for many yeers between {Dr}. {John} {Dee} ... and some spirits : tending (had it succeeded) to a general alteration of most states and kingdomes in the world : his private conferences with {Rodolphe} {Emperor} of {Germany}, {Stephen} {K}. of {Poland}, and divers other princes about it : the particulars of his cause, as it was agitated in the {Emperors} court, by the {Pope}'s intervention : his banishment and restoration in part : as also the letters of sundry great men and princes (some whereof were present at some of these conferences and apparitions of spirits) to the said {D}. {Dee} : out of the original copy, written with {Dr}. {Dees} own hand, kept in the library of {Sir} {Tho}. {Cotton} ... : with a preface confirming the reality (as to the point of spirits) of this relation, and shewing the several good uses that a sober {Christian} may make of all}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1659}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/truefaithfulrela00deej
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/truefaithfulrela00deej
+      \endverb
+      \keyw{Rudolf II,Holy Roman Emperor,1552-1612,daemon,real}
+    \endentry
+    \entry{Ficino1471}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=50e19206a34b4baae2ef6785419c93b2}{%
+           family={Ficino},
+           familyi={F\bibinitperiod},
+           given={Marsilio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Gerardus de Lisa}%
+      }
+      \strng{namehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{bibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{editorbibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{editornamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{editorfullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{editorfullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Corpus Hermeticum}
+      \field{year}{1471}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Ficino1560}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=50e19206a34b4baae2ef6785419c93b2}{%
+           family={Ficino},
+           familyi={F\bibinitperiod},
+           given={Marsilio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {apud Gulielmum Rouillium sub scuto Veneto}%
+      }
+      \strng{namehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{bibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorbibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authornamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorfullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorfullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{De} vita libri tres, recèns iam à mendis situque vindicati, ac summa castigati diligentia, 1. {De} studiosorum sanitate tuenda. 2. {De} vita producenda. 3. {De} vita coelitus comparanda}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1560}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/bub_gb_buTQ-hAMvw0C
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/bub_gb_buTQ-hAMvw0C
+      \endverb
+      \keyw{bub\_upload,daemon,real}
+    \endentry
+    \entry{Ficino1559}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=50e19206a34b4baae2ef6785419c93b2}{%
+           family={Ficino},
+           familyi={F\bibinitperiod},
+           given={Marsilio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {apud Aegidium Gorbinum}%
+      }
+      \strng{namehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{fullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{bibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorbibnamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authornamehash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorfullhash}{50e19206a34b4baae2ef6785419c93b2}
+      \strng{authorfullhashraw}{50e19206a34b4baae2ef6785419c93b2}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{note}{Google-Books-ID: jUiwRmjQIEYC}
+      \field{shorttitle}{Theologia {Platonica} {De} immortalitate animorum}
+      \field{title}{Theologia {Platonica} {De} immortalitate animorum: duo de viginti libris}
+      \field{year}{1559}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{avvisi}{inbook}{}{}
+      \name{editor}{1}{}{%
+        {{hash=3bf83b227c5b0d550d896a5e68090481}{%
+           family={Firpo},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Il processo}%
+      }
+      \strng{namehash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{fullhash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{fullhashraw}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{bibnamehash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{editorbibnamehash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{editornamehash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{editorfullhash}{3bf83b227c5b0d550d896a5e68090481}
+      \strng{editorfullhashraw}{3bf83b227c5b0d550d896a5e68090481}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{chapter}{110r--v}
+      \field{title}{Avvisi di Roma}
+      \field{pages}{356}
+      \range{pages}{1}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Gibbs1933}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=be655eb04e3d6a0682c53ac2e4180e85}{%
+           family={Gibbs},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi Hirschfeld\bibnamedelimb \&\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim \\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{fullhash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{fullhashraw}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{bibnamehash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{authorbibnamehash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{authornamehash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{authorfullhash}{be655eb04e3d6a0682c53ac2e4180e85}
+      \strng{authorfullhashraw}{be655eb04e3d6a0682c53ac2e4180e85}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Semantic Scholar extracted view of "Sexual pathology : being a study of the abnormalities of the sexual functions : an exhaustive treatise on sexual symbolism, hypereoticism, impotence, etc., based upon research, observations and recent clinical data gathered at the institute for sexual science in Berlin" by M. Hirschfeld et al.}
+      \field{booktitle}{{JAMA}: {The} {Journal} of the {American} {Medical} {Association}}
+      \field{issn}{0098-7484}
+      \field{month}{2}
+      \field{number}{7}
+      \field{title}{Sexual {Pathology}, {Being} a {Study} of the {Abnormalities} of the {Sexual} {Functions}. {An} {Exhaustive} {Treatise} on {Sexual} {Symbolism}, {Hypereroticism}, {Impotence}, etc., {Based} {Upon} {Research}, {Observations} and {Recent} {Clinical} {Data} {Gathered} at the {Institute} for {Sexual} {Science} in {Berlin}.}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{100}
+      \field{year}{1933}
+      \field{urldateera}{ce}
+      \field{pages}{523}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1001/jama.1933.02740070061037
+      \endverb
+      \verb{urlraw}
+      \verb http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.1933.02740070061037
+      \endverb
+      \verb{url}
+      \verb http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.1933.02740070061037
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Ginzburg1992}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=af6d2c33553866cea3f000785f77ecf8}{%
+           family={Ginzburg},
+           familyi={G\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London [u.a.]}%
+      }
+      \list{publisher}{1}{%
+        {Penguin Books}%
+      }
+      \strng{namehash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{fullhash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{fullhashraw}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{bibnamehash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{authorbibnamehash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{authornamehash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{authorfullhash}{af6d2c33553866cea3f000785f77ecf8}
+      \strng{authorfullhashraw}{af6d2c33553866cea3f000785f77ecf8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0140173137}
+      \field{note}{Originally published: London: Hutchinson, 1991}
+      \field{pagetotal}{33916}
+      \field{series}{A @Penguin Book}
+      \field{subtitle}{Deciphering the witches' Sabbath}
+      \field{title}{Ecstasies}
+      \field{year}{1992}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Guarini1602}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c8f160799f723692ead7b887eb1dad02}{%
+           family={Guarini},
+           familyi={G\bibinitperiod},
+           given={Battista},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d9eab9f5f48361e4c335afc2e5d7760e}{%
+           family={Dymock},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=270ff7d6009257e16481ab8b72224c1f}{%
+           family={Dymock},
+           familyi={D\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Printed [by Thomas Creede] for Simon VVaterson}%
+      }
+      \strng{namehash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{fullhash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{fullhashraw}{c8f160799f723692ead7b887eb1dad02}
+      \strng{bibnamehash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{authorbibnamehash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{authornamehash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{authorfullhash}{c8f160799f723692ead7b887eb1dad02}
+      \strng{authorfullhashraw}{c8f160799f723692ead7b887eb1dad02}
+      \strng{editorbibnamehash}{ebe143314d17297e7a55aab8d6b5fc55}
+      \strng{editornamehash}{ebe143314d17297e7a55aab8d6b5fc55}
+      \strng{editorfullhash}{ebe143314d17297e7a55aab8d6b5fc55}
+      \strng{editorfullhashraw}{ebe143314d17297e7a55aab8d6b5fc55}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Reproduction of the original in the Henry E. Huntington Library and Art Gallery}
+      \field{pagetotal}{1124}
+      \field{series}{Early English Books Online / EEBO}
+      \field{title}{Il pastor fido: or The faithfull shepheard. Translated out of Italian into English}
+      \field{year}{1602}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Hakim}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=cec3e50d4388a39b3795e86ee354f020}{%
+           family={Hakīm},
+           familyi={H\bibinitperiod},
+           given={Ghāyat},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{fullhash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{fullhashraw}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{bibnamehash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{authorbibnamehash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{authornamehash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{authorfullhash}{cec3e50d4388a39b3795e86ee354f020}
+      \strng{authorfullhashraw}{cec3e50d4388a39b3795e86ee354f020}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Picatrix}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{HCAN1565}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6eced389f7cfeb359174fb3b99a83d97}{%
+           family={{Heinrich Cornelius Agrippa von Nettesheim}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=24d794dfc756320ffadb905d526299bc}{%
+           family={null},
+           familyi={n\bibinitperiod},
+           prefix={null},
+           prefixi={n\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Köln}%
+      }
+      \list{publisher}{1}{%
+        {Birckmann, Johann}%
+      }
+      \strng{namehash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{fullhash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{fullhashraw}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{bibnamehash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{authorbibnamehash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{authornamehash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{authorfullhash}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{authorfullhashraw}{6eced389f7cfeb359174fb3b99a83d97}
+      \strng{editorbibnamehash}{24d794dfc756320ffadb905d526299bc}
+      \strng{editornamehash}{24d794dfc756320ffadb905d526299bc}
+      \strng{editorfullhash}{24d794dfc756320ffadb905d526299bc}
+      \strng{editorfullhashraw}{24d794dfc756320ffadb905d526299bc}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{173172}
+      \field{title}{HENRICI CORNELII AGRIPPAE LIBER QVARTVS DE OCCVLTA PHIlosophia, seu de Cerimonijs Magicis. Cui accesserunt, Elementa Magica Petri de Abano, Philosophi.}
+      \field{year}{1565}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Helvetius1667}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=89a3fab3105214c7a8ac81031a83a8fd}{%
+           family={Helvetius},
+           familyi={H\bibinitperiod},
+           given={Johann\bibnamedelima Friedrich},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amstelodami}%
+      }
+      \list{publisher}{1}{%
+        {Janssonius \& Weyerstraet}%
+      }
+      \strng{namehash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{fullhash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{fullhashraw}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{bibnamehash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{authorbibnamehash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{authornamehash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{authorfullhash}{89a3fab3105214c7a8ac81031a83a8fd}
+      \strng{authorfullhashraw}{89a3fab3105214c7a8ac81031a83a8fd}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fingerprint nach Ex. der SUB Hamburg}
+      \field{pagetotal}{1721}
+      \field{title}{Johannis Friderici Helvetii Vitulus Aureus, Quem Mundus adorat \& orat, In quo tractatur De Rarissimo Naturæ Miraculo transmutandi Metalla, Nempe Quomodo Tota Plumbi Substantia vel intra momentum ex quavis minima Lapidis veri Philosophici particula in Aurum obryzum commutata fuerit Hagæ Comitis}
+      \field{year}{1667}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Helvetius1663}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=11866d168523b6eb588889ce31945760}{%
+           family={Helvetius},
+           familyi={H\bibinitperiod},
+           given={Johann\bibnamedelimb Friedrich\bibnamedelima Schweitzer},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{11866d168523b6eb588889ce31945760}
+      \strng{fullhash}{11866d168523b6eb588889ce31945760}
+      \strng{fullhashraw}{11866d168523b6eb588889ce31945760}
+      \strng{bibnamehash}{11866d168523b6eb588889ce31945760}
+      \strng{authorbibnamehash}{11866d168523b6eb588889ce31945760}
+      \strng{authornamehash}{11866d168523b6eb588889ce31945760}
+      \strng{authorfullhash}{11866d168523b6eb588889ce31945760}
+      \strng{authorfullhashraw}{11866d168523b6eb588889ce31945760}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theatridium Herculis Triumphantis...}
+      \field{year}{1663}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Holinshed1965}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=fbd7cf9e430ad732013e36be2f3769ff}{%
+           family={Holinshed},
+           familyi={H\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {AMS}%
+      }
+      \strng{namehash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{fullhash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{fullhashraw}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{bibnamehash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{authorbibnamehash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{authornamehash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{authorfullhash}{fbd7cf9e430ad732013e36be2f3769ff}
+      \strng{authorfullhashraw}{fbd7cf9e430ad732013e36be2f3769ff}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Holinshed's Chronicles England and Scotland and Ireland}
+      \field{year}{1965}
+      \field{dateera}{ce}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Iambilichus}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d2798f3b761c0866c8760f76ee41776a}{%
+           family={Iambilichus},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{fullhash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{fullhashraw}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{bibnamehash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{authorbibnamehash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{authornamehash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{authorfullhash}{d2798f3b761c0866c8760f76ee41776a}
+      \strng{authorfullhashraw}{d2798f3b761c0866c8760f76ee41776a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the Mysteries of the Egyptians}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Institoris1495}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=32e467dc8ca6d09fe658eb741fb4a0e3}{%
+           family={Institoris},
+           familyi={I\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=aa939fcb52262dd0c9168e22f59f4cba}{%
+           family={Sprenger},
+           familyi={S\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bac1a236dc8b3f007510877137791ead}{%
+           family={Drach},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Speyer]}%
+      }
+      \list{publisher}{1}{%
+        {[Peter Drach d. M.]}%
+      }
+      \strng{namehash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{fullhash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{fullhashraw}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{bibnamehash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{authorbibnamehash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{authornamehash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{authorfullhash}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{authorfullhashraw}{32e467dc8ca6d09fe658eb741fb4a0e3}
+      \strng{editorbibnamehash}{a2c131b3b3a7012b83355ea6e36b7823}
+      \strng{editornamehash}{a2c131b3b3a7012b83355ea6e36b7823}
+      \strng{editorfullhash}{a2c131b3b3a7012b83355ea6e36b7823}
+      \strng{editorfullhashraw}{a2c131b3b3a7012b83355ea6e36b7823}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Mit der Hexenbulle "Summis desiderantes affectibus", Rom 5.12.1484, von Papst Innocentius VIII. und der Approbation durch Professoren der Kölner theologischen Fakultät vom 19.5.1487.}
+      \field{pagetotal}{190}
+      \field{title}{Malleus maleficarum}
+      \field{year}{1495}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{bib429}{misc}{}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Behold, the former things have happened, and now I declare new things. Before they spring forth I proclaim them to you.}
+      \field{journaltitle}{Bible Hub}
+      \field{shorttitle}{Isaiah 42}
+      \field{title}{Isaiah 42:9}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://biblehub.com/isaiah/42-9.htm
+      \endverb
+      \verb{url}
+      \verb https://biblehub.com/isaiah/42-9.htm
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Kelly1893}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c4f527e86ada06b8e3cbd48a95f1ebe9}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4ca19a2592df338590315fb34de102bd}{%
+           family={Waite},
+           familyi={W\bibinitperiod},
+           given={Arthur\bibnamedelima Edward},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {London : J. Elliot}%
+        {co.}%
+      }
+      \strng{namehash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{fullhash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{fullhashraw}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{bibnamehash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{authorbibnamehash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{authornamehash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{authorfullhash}{9f54ff0c1e7323808dd7b97abe264571}
+      \strng{authorfullhashraw}{9f54ff0c1e7323808dd7b97abe264571}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Edited by A. E. Waite; Publisher's advertisements: 2 p. (at end); Biographic preface.--The stone of the philosophers.--Certain fragments selected from the letters of Edward Kelly.--The humid way, or, A discourse upon the vegetable menstruum of Saturn.--The theatre of terrestial astronomy}
+      \field{title}{The Alchemical Writings of {Edward} {Kelly}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1893}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/b24857300
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/b24857300
+      \endverb
+      \keyw{Alchemy,daemon,real}
+    \endentry
+    \entry{Kindi1501}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b98c11cee780d54a7d642d98a48ff720}{%
+           family={Kindī},
+           familyi={K\bibinitperiod},
+           given={Ya`qūb\bibnamedelima Ibn-Isḥāq},
+           giveni={Y\bibinitperiod\bibinitdelim I\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Süddeutschland]}%
+      }
+      \strng{namehash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{fullhash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{fullhashraw}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{bibnamehash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{authorbibnamehash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{authornamehash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{authorfullhash}{b98c11cee780d54a7d642d98a48ff720}
+      \strng{authorfullhashraw}{b98c11cee780d54a7d642d98a48ff720}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{De planetis sub radiis}
+      \field{year}{1501}
+      \field{pages}{38rv\bibrangessep 39rv\bibrangessep 40rv\bibrangessep 41r\bibrangedash 42r}
+      \range{pages}{-1}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Craft1960}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=76252ddc6dc26d3911a64874e6e526dd}{%
+           family={Kraft},
+           familyi={K\bibinitperiod},
+           given={Fellowes},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{fullhash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{fullhashraw}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{bibnamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorbibnamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authornamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorfullhash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorfullhashraw}{76252ddc6dc26d3911a64874e6e526dd}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Sit Down, Sorrow}
+      \field{year}{1960}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{KraftUnknown}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=76252ddc6dc26d3911a64874e6e526dd}{%
+           family={Kraft},
+           familyi={K\bibinitperiod},
+           given={Fellowes},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{fullhash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{fullhashraw}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{bibnamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorbibnamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authornamehash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorfullhash}{76252ddc6dc26d3911a64874e6e526dd}
+      \strng{authorfullhashraw}{76252ddc6dc26d3911a64874e6e526dd}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{The Company}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Lascaris1518}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f0b780412df38a75d746ca8c525b999}{%
+           family={Lascaris},
+           familyi={L\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Rome}%
+      }
+      \strng{namehash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{fullhash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{fullhashraw}{8f0b780412df38a75d746ca8c525b999}
+      \strng{bibnamehash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{authorbibnamehash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{authornamehash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{authorfullhash}{8f0b780412df38a75d746ca8c525b999}
+      \strng{authorfullhashraw}{8f0b780412df38a75d746ca8c525b999}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Porphyrii Philosophi Homericarum quaestionum liber. Eiusdem de Nympharum antro in Odyssea, opusculum}
+      \field{year}{1518}
+      \field{dateera}{ce}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Lear2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4d49d9f3aead67e497aacab2e282b12}{%
+           family={Lear},
+           familyi={L\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{fullhash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{fullhashraw}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{bibnamehash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{authorbibnamehash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{authornamehash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{authorfullhash}{d4d49d9f3aead67e497aacab2e282b12}
+      \strng{authorfullhashraw}{d4d49d9f3aead67e497aacab2e282b12}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Book of Nonsense. Nonsense Songs, Stories Botany and Alphabets. More Nonsense Pictures, Rhymes Botany etc.Laughable Lyrics. Nonsense Songs and Stories}
+      \field{volume}{51}
+      \field{year}{2005}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Levack2013}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ff59c86a7f054620a4065221998ad655}{%
+           family={Levack},
+           familyi={L\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{ff59c86a7f054620a4065221998ad655}
+      \strng{fullhash}{ff59c86a7f054620a4065221998ad655}
+      \strng{fullhashraw}{ff59c86a7f054620a4065221998ad655}
+      \strng{bibnamehash}{ff59c86a7f054620a4065221998ad655}
+      \strng{authorbibnamehash}{ff59c86a7f054620a4065221998ad655}
+      \strng{authornamehash}{ff59c86a7f054620a4065221998ad655}
+      \strng{authorfullhash}{ff59c86a7f054620a4065221998ad655}
+      \strng{authorfullhashraw}{ff59c86a7f054620a4065221998ad655}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd ed}
+      \field{isbn}{9780582419018}
+      \field{note}{Description based upon print version of record}
+      \field{pagetotal}{361}
+      \field{title}{The Witch-Hunt in Early Modern Europe}
+      \field{year}{2013}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Liddell1958}{book}{}{}
+      \name{editor}{3}{}{%
+        {{hash=a8105efb3ab8c27c2b958c01b4477996}{%
+           family={Liddell},
+           familyi={L\bibinitperiod},
+           given={Henry\bibnamedelima George},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=03950826d69fe6afcf2bf1bb1d6d94c0}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e31a655ef8b2ed553c9fd9595cd7f7cd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Henry\bibnamedelima Stuart},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{fullhash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{fullhashraw}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{bibnamehash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{editorbibnamehash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{editornamehash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{editorfullhash}{ea433498b6b79246acde5ac8cdae1954}
+      \strng{editorfullhashraw}{ea433498b6b79246acde5ac8cdae1954}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{Repr. of new (9). ed. compl. 1940}
+      \field{pagetotal}{2111}
+      \field{title}{A Greek-English lexicon}
+      \field{year}{1958}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Longfellow}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=66395651221f99b839677ae1ba9bbbfe}{%
+           family={Longfellow},
+           familyi={L\bibinitperiod},
+           given={Henry\bibnamedelima Wadsworth},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{fullhash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{fullhashraw}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{bibnamehash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{authorbibnamehash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{authornamehash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{authorfullhash}{66395651221f99b839677ae1ba9bbbfe}
+      \strng{authorfullhashraw}{66395651221f99b839677ae1ba9bbbfe}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Golden Legend}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{MacFarlane1845}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=53933ca18f77f2e7d643673b965f4b91}{%
+           family={MacFarlane},
+           familyi={M\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {London : C. Knight \& co.}%
+      }
+      \strng{namehash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{fullhash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{fullhashraw}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{bibnamehash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{authorbibnamehash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{authornamehash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{authorfullhash}{53933ca18f77f2e7d643673b965f4b91}
+      \strng{authorfullhashraw}{53933ca18f77f2e7d643673b965f4b91}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{viii, [9]-245 p. 15 cm}
+      \field{title}{The life of {Sir} {Thomas} {Gresham}, founder of the {Royal} exchange}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1845}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/lifeofsirthomasg00macf
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/lifeofsirthomasg00macf
+      \endverb
+      \keyw{Gresham,Thomas,Sir,1519?-1579,daemon,real}
+    \endentry
+    \entry{Bloom1988}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=00b43b6f375ad42d07eb8543fc158198}{%
+           family={Marlowe},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=33b1979a1db4deb2fa21836c6fffd45e}{%
+           family={Bloom},
+           familyi={B\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York [u.a.]}%
+      }
+      \list{publisher}{1}{%
+        {Chelsea House Publishers}%
+      }
+      \strng{namehash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{fullhash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{fullhashraw}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{bibnamehash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{authorbibnamehash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{authornamehash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{authorfullhash}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{authorfullhashraw}{00b43b6f375ad42d07eb8543fc158198}
+      \strng{editorbibnamehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editornamehash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editorfullhash}{33b1979a1db4deb2fa21836c6fffd45e}
+      \strng{editorfullhashraw}{33b1979a1db4deb2fa21836c6fffd45e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{087754915X}
+      \field{note}{A collection of seven critical essays on Marlowe's drama, arranged in chronological order of their original publication. - Five-act structure in Doctor Faustus / G.K. Hunter--Doctor Faustus's sin / Wilbur Sanders--Marlowe's Doctor Faustus and the ends of desire / Edward A. Snow--Doctor Faustus, master of self-delusion / Barbara Howard Traister--Faustus's rhetoric of aspiration / Johannes H. Birringer--Doctor Faustus (ca. 1589-92), subversion through transgression / Jonathon Dollimore / Doctor Faustus and hell on earth / Christopher Ricks}
+      \field{pagetotal}{149}
+      \field{series}{Modern critical interpretations}
+      \field{title}{Christopher Marlowe's Doctor Faustus}
+      \field{year}{1988}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Mathers1889}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4514c717170041e97e3ec88aa42134dc}{%
+           family={Mathers},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi Lidell\bibnamedelima MacGregor},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {George Redway}%
+      }
+      \strng{namehash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{fullhash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{fullhashraw}{4514c717170041e97e3ec88aa42134dc}
+      \strng{bibnamehash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{authorbibnamehash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{authornamehash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{authorfullhash}{4514c717170041e97e3ec88aa42134dc}
+      \strng{authorfullhashraw}{4514c717170041e97e3ec88aa42134dc}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Key of Solomon the King (Clavicula Solomonis)}
+      \field{year}{1889}
+      \verb{urlraw}
+      \verb https://ia801300.us.archive.org/9/items/b24884431/b24884431.pdf
+      \endverb
+      \verb{url}
+      \verb https://ia801300.us.archive.org/9/items/b24884431/b24884431.pdf
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Muchon}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=eaa59432f8532edeb4c8282a58230cc3}{%
+           family={Mucho},
+           familyi={M\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{fullhash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{fullhashraw}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{bibnamehash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{authorbibnamehash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{authornamehash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{authorfullhash}{eaa59432f8532edeb4c8282a58230cc3}
+      \strng{authorfullhashraw}{eaa59432f8532edeb4c8282a58230cc3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Climacterics: Your New Ancient Guide to Life’s Cycles}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{NYWorld}{periodical}{}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeltitlesource}{title}
+      \field{title}{New York World}
+      \field{year}{1931}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Nigro1979}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=efbfecf196750f7de36208ff28daaeab}{%
+           family={Nigro},
+           familyi={N\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Samuel French, Ltd.}%
+      }
+      \strng{namehash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{fullhash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{fullhashraw}{efbfecf196750f7de36208ff28daaeab}
+      \strng{bibnamehash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{authorbibnamehash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{authornamehash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{authorfullhash}{efbfecf196750f7de36208ff28daaeab}
+      \strng{authorfullhashraw}{efbfecf196750f7de36208ff28daaeab}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Doctor Faustus}
+      \field{year}{1979}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Ordine1996}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=93088750cdf81ab37431265564750b17}{%
+           family={Ordine},
+           familyi={O\bibinitperiod},
+           given={Nuccio},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Haven}%
+      }
+      \list{publisher}{1}{%
+        {Yale University Press}%
+      }
+      \strng{namehash}{93088750cdf81ab37431265564750b17}
+      \strng{fullhash}{93088750cdf81ab37431265564750b17}
+      \strng{fullhashraw}{93088750cdf81ab37431265564750b17}
+      \strng{bibnamehash}{93088750cdf81ab37431265564750b17}
+      \strng{authorbibnamehash}{93088750cdf81ab37431265564750b17}
+      \strng{authornamehash}{93088750cdf81ab37431265564750b17}
+      \strng{authorfullhash}{93088750cdf81ab37431265564750b17}
+      \strng{authorfullhashraw}{93088750cdf81ab37431265564750b17}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780300242232}
+      \field{note}{Includes bibliographical references (pages 207-268) and index}
+      \field{pagetotal}{1271}
+      \field{title}{Giordano Bruno and the Philosophy of the Ass}
+      \field{year}{1996}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Paracelsus1582}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b8fdb73bd15e5d06cf4ea7df6beda184}{%
+           family={Paracelsus},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Basel}%
+      }
+      \list{publisher}{1}{%
+        {Perna, Peter}%
+      }
+      \strng{namehash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{fullhash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{fullhashraw}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{bibnamehash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{authorbibnamehash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{authornamehash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{authorfullhash}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \strng{authorfullhashraw}{b8fdb73bd15e5d06cf4ea7df6beda184}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Beiträger: Perna, Peter}
+      \field{pagetotal}{12415}
+      \field{title}{AVREOLI THEOPHRA Seu de Secretis Naturae mysteriis...}
+      \field{year}{1582}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{PieyredeMandiargues1978}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=b177f3e4721ee460ba5b1bf0c1ff7cbb}{%
+           family={Pieyre\bibnamedelimb de\bibnamedelima Mandiargues},
+           familyi={P\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+        {{hash=78168465c6f7dd665afc22b342bc04ba}{%
+           family={Arcimboldo},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Abrams}%
+      }
+      \strng{namehash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{fullhash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{fullhashraw}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{bibnamehash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{authorbibnamehash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{authornamehash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{authorfullhash}{1054c34a7c32ac35dc2979bd94de54aa}
+      \strng{authorfullhashraw}{1054c34a7c32ac35dc2979bd94de54aa}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0810906899}
+      \field{title}{Arcimboldo the Marvelous}
+      \field{type}{BibliographicResource, Book}
+      \field{year}{1978}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://lobid.org/resources/990118541210206441
+      \endverb
+      \verb{url}
+      \verb http://lobid.org/resources/990118541210206441
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Plotinus1966}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=25ca449c75a5ce950346bcf6c0198484}{%
+           family={Plotinus},
+           familyi={P\bibinitperiod},
+           given={Porphyry},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=2eb881a04c70c854295f320a4e13b625}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{fullhash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{fullhashraw}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{bibnamehash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{authorbibnamehash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{authornamehash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{authorfullhash}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{authorfullhashraw}{25ca449c75a5ce950346bcf6c0198484}
+      \strng{editorbibnamehash}{2eb881a04c70c854295f320a4e13b625}
+      \strng{editornamehash}{2eb881a04c70c854295f320a4e13b625}
+      \strng{editorfullhash}{2eb881a04c70c854295f320a4e13b625}
+      \strng{editorfullhashraw}{2eb881a04c70c854295f320a4e13b625}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Plotinus, Ennead, Volume I: Porphyry on the Life of Plotinus. Ennead I}
+      \field{year}{1966}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Porphyry1994}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=32fe4f456547a24233c8e7618a114d30}{%
+           family={{Porphyry}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{fullhash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{fullhashraw}{32fe4f456547a24233c8e7618a114d30}
+      \strng{bibnamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorbibnamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authornamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorfullhash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorfullhashraw}{32fe4f456547a24233c8e7618a114d30}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Against the Christians (Porphyry)}
+      \field{title}{Against the {Christians}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1994}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/against-the-christians-porphyry
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/against-the-christians-porphyry
+      \endverb
+      \keyw{Against the Christians (Porphyry),daemon,real}
+    \endentry
+    \entry{Porphyry1607}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=32fe4f456547a24233c8e7618a114d30}{%
+           family={{Porphyry}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Tournes, Jean de}%
+      }
+      \strng{namehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{fullhash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{fullhashraw}{32fe4f456547a24233c8e7618a114d30}
+      \strng{bibnamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorbibnamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authornamehash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorfullhash}{32fe4f456547a24233c8e7618a114d30}
+      \strng{authorfullhashraw}{32fe4f456547a24233c8e7618a114d30}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{(16mo). 543 p.}
+      \field{title}{De mysteriis {Aegyptiorum}, {Chaldaeorum}, {Asyriorum}. {Proclus} in {Platonicum} {Alcibiadem} de anima atque daemone. {Idem} de sacrificio et magia. {Porphyrius} de divinis atque daemonibus. {Psellus} de daemonibus. {Mercurii} {Trismegisti} {Pimander}. {Ejusdem} {Asclepius} / [{Iamblichus}]}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1607}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/hin-wel-all-00001267-001
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/hin-wel-all-00001267-001
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Reisner1988}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=382f00a330fad3cd826523989c0432a8}{%
+           family={Reisner},
+           familyi={R\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Kensington, MD : Woodbine House}%
+      }
+      \strng{namehash}{382f00a330fad3cd826523989c0432a8}
+      \strng{fullhash}{382f00a330fad3cd826523989c0432a8}
+      \strng{fullhashraw}{382f00a330fad3cd826523989c0432a8}
+      \strng{bibnamehash}{382f00a330fad3cd826523989c0432a8}
+      \strng{authorbibnamehash}{382f00a330fad3cd826523989c0432a8}
+      \strng{authornamehash}{382f00a330fad3cd826523989c0432a8}
+      \strng{authorfullhash}{382f00a330fad3cd826523989c0432a8}
+      \strng{authorfullhashraw}{382f00a330fad3cd826523989c0432a8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{"Cassettes list": p. 258-259; Bibliography: p. 239-258; Includes index}
+      \field{isbn}{9780933149199}
+      \field{shorttitle}{Children with epilepsy}
+      \field{title}{Children with Epilepsy : A Parents Guide}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1988}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/childrenwithepil00reis
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/childrenwithepil00reis
+      \endverb
+      \keyw{Epilepsy in children,daemon,real}
+    \endentry
+    \entry{RetlawO.Walter}{booklet}{}{}
+      \name{author}{1}{}{%
+        {{hash=a7ee558f47df15e0262820353cc2bf11}{%
+           family={Retlaw\bibnamedelimb O.\bibnamedelimi Walter},
+           familyi={R\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={L.L.D.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{fullhash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{fullhashraw}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{bibnamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorbibnamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authornamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorfullhash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorfullhashraw}{a7ee558f47df15e0262820353cc2bf11}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Is Jesus God?}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{RetlawO.Waltera}{booklet}{}{}
+      \name{author}{1}{}{%
+        {{hash=a7ee558f47df15e0262820353cc2bf11}{%
+           family={Retlaw\bibnamedelimb O.\bibnamedelimi Walter},
+           familyi={R\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={L.L.D.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{fullhash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{fullhashraw}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{bibnamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorbibnamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authornamehash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorfullhash}{a7ee558f47df15e0262820353cc2bf11}
+      \strng{authorfullhashraw}{a7ee558f47df15e0262820353cc2bf11}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Why Die Forever?}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Rilke1967}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=19145cef08f62829c756f82036d4ffaf}{%
+           family={Rilke},
+           familyi={R\bibinitperiod},
+           given={Rainer\bibnamedelima Maria},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2077f4817c2255bf222f34bc0d290038}{%
+           family={Leishman},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Penguin Books}%
+      }
+      \strng{namehash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{fullhash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{fullhashraw}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{bibnamehash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{authorbibnamehash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{authornamehash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{authorfullhash}{c1ac97f922d78260e9006cb38cd61145}
+      \strng{authorfullhashraw}{c1ac97f922d78260e9006cb38cd61145}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Open Library ID: OL58816401M}
+      \field{title}{Rilke {Selected} {Poems}}
+      \field{year}{1967}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Ripellino1994}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=69df9d44198d02ba969a166927185d75}{%
+           family={Ripellino},
+           familyi={R\bibinitperiod},
+           given={Angelo\bibnamedelima Maria},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=a0e272f504bf97c6bd1e912758efd2c8}{%
+           family={Heim},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima Henry},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Imprint: Palgrave Macmillan}%
+      }
+      \strng{namehash}{69df9d44198d02ba969a166927185d75}
+      \strng{fullhash}{69df9d44198d02ba969a166927185d75}
+      \strng{fullhashraw}{69df9d44198d02ba969a166927185d75}
+      \strng{bibnamehash}{69df9d44198d02ba969a166927185d75}
+      \strng{authorbibnamehash}{69df9d44198d02ba969a166927185d75}
+      \strng{authornamehash}{69df9d44198d02ba969a166927185d75}
+      \strng{authorfullhash}{69df9d44198d02ba969a166927185d75}
+      \strng{authorfullhashraw}{69df9d44198d02ba969a166927185d75}
+      \strng{editorbibnamehash}{a0e272f504bf97c6bd1e912758efd2c8}
+      \strng{editornamehash}{a0e272f504bf97c6bd1e912758efd2c8}
+      \strng{editorfullhash}{a0e272f504bf97c6bd1e912758efd2c8}
+      \strng{editorfullhashraw}{a0e272f504bf97c6bd1e912758efd2c8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781349127979}
+      \field{pagetotal}{1333}
+      \field{title}{Magic Prague}
+      \field{year}{1994}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Rossini2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e77b500979a9af9bea04a8b93eab31aa}{%
+           family={Rossini},
+           familyi={R\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{fullhash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{fullhashraw}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{bibnamehash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{authorbibnamehash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{authornamehash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{authorfullhash}{e77b500979a9af9bea04a8b93eab31aa}
+      \strng{authorfullhashraw}{e77b500979a9af9bea04a8b93eab31aa}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{abstract}{The aim of this article is to shed light on an understudied aspect of Giordano Bruno's intellectual biography, namely, his career as a mathematical practitioner. Early interpreters, especially, have criticized Bruno's mathematics for being “outdated” or too “concrete”. However, thanks to developments in the study of early modern mathematics and the rediscovery of Bruno's first mathematical writings (four dialogues on Fabrizio's Mordente proportional compass), we are in a position to better understand Bruno's mathematics. In particular, this article aims to reopen the question of whether Bruno anticipated the concept of infinitesimal quantity. It does so by providing an analysis of the dialogues on Mordente's compass and of the historical circumstances under which those dialogues were written.}
+      \field{issn}{0039-3681}
+      \field{journaltitle}{Studies in History and Philosophy of Science Part A}
+      \field{month}{8}
+      \field{shorttitle}{New theories for new instruments}
+      \field{title}{New theories for new instruments: {Fabrizio} {Mordente}'s proportional compass and the genesis of {Giordano} {Bruno}'s atomist geometry}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{76}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{60\bibrangedash 68}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.shpsa.2018.10.004
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:https\://www.sciencedirect.com/science/article/abs/pii/S0039368118301912/pdfft?download=true:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0039368118301912
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0039368118301912
+      \endverb
+      \keyw{Giordano Bruno,Fabrizio Mordente,History of mathematics,Mathematical practitioners,Proportional compass,Infinitesimals,daemon,real}
+    \endentry
+    \entry{Saavedra1910}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=61b78ba5aeb1cfc74c887e12ba219743}{%
+           family={Saavedra},
+           familyi={S\bibinitperiod},
+           given={Miguel\bibnamedelima Cervantes},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7343853e924ddb8b0a30b6e3ef9e013f}{%
+           family={Mähl},
+           familyi={M\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=210737580dfb26930433a33a42396bfb}{%
+           family={Wischer},
+           familyi={W\bibinitperiod},
+           given={Fritz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Garding}%
+      }
+      \list{publisher}{1}{%
+        {Lühr \& Dircks}%
+      }
+      \strng{namehash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{fullhash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{fullhashraw}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{bibnamehash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{authorbibnamehash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{authornamehash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{authorfullhash}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{authorfullhashraw}{61b78ba5aeb1cfc74c887e12ba219743}
+      \strng{editorbibnamehash}{3bd0d6ea64bbb9c85130fb0449e95265}
+      \strng{editornamehash}{3bd0d6ea64bbb9c85130fb0449e95265}
+      \strng{editorfullhash}{3bd0d6ea64bbb9c85130fb0449e95265}
+      \strng{editorfullhashraw}{3bd0d6ea64bbb9c85130fb0449e95265}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{301}
+      \field{subtitle}{En plattdütsch Volksbook}
+      \field{title}{Don Quixote}
+      \field{year}{1910}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Schmidt1978}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2300a249b8b30aa872a81cd619e5cd33}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Brill Archive}%
+      }
+      \strng{namehash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{fullhash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{fullhashraw}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{bibnamehash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{authorbibnamehash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{authornamehash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{authorfullhash}{2300a249b8b30aa872a81cd619e5cd33}
+      \strng{authorfullhashraw}{2300a249b8b30aa872a81cd619e5cd33}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Preliminary Material /Carl Schmidt --(Book I) /Carl Schmidt --(Book II) /Carl Schmidt --(Book III) /Carl Schmidt --(Book IV) /Carl Schmidt --Bibliography /Carl Schmidt --Key to Words of Greek Origin /Carl Schmidt --Greek Words /Carl Schmidt --Selected Words of Coptic Origin /Carl Schmidt --Proper Names /Carl Schmidt --References /Carl Schmidt.}
+      \field{isbn}{9789004056350}
+      \field{month}{1}
+      \field{note}{Google-Books-ID: srs3AAAAIAAJ}
+      \field{title}{Pistis {Sophia}}
+      \field{year}{1978}
+      \keyw{Religion / General,daemon,real}
+    \endentry
+    \entry{Schweiger1996}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9e3f2f3fb8372e0fe167e2e8acc13e50}{%
+           family={Schweiger},
+           familyi={S\bibinitperiod},
+           given={Beth\bibnamedelima Barton},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=bef22e272df6e01270bb7da650440257}{%
+           family={Mccauley},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{fullhash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{fullhashraw}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{bibnamehash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{authorbibnamehash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{authornamehash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{authorfullhash}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \strng{authorfullhashraw}{7ed2d2bf1fe1ed157e95917554720ea7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{title}{Appalachian Mountain Religion: A History.}
+      \field{year}{1996}
+      \verb{doi}
+      \verb 10.2307/2170317
+      \endverb
+      \verb{urlraw}
+      \verb https://www.semanticscholar.org/paper/ece66bdf7ced5343f78eab1676fcf47349ae7ae5
+      \endverb
+      \verb{url}
+      \verb https://www.semanticscholar.org/paper/ece66bdf7ced5343f78eab1676fcf47349ae7ae5
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Shakespeare2009}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=878e036d3885377ad13d3702d171ce1f}{%
+           family={Shakespeare},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=4a0129f7fa1b7f04ca4964457e615239}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=f0e73c7dbb1e9017bad15a09f93523da}{%
+           family={Lake},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Hackett Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{fullhash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{fullhashraw}{878e036d3885377ad13d3702d171ce1f}
+      \strng{bibnamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorbibnamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authornamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorfullhash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorfullhashraw}{878e036d3885377ad13d3702d171ce1f}
+      \strng{editorbibnamehash}{62cb1b414de9b968215c3612c93cda51}
+      \strng{editornamehash}{62cb1b414de9b968215c3612c93cda51}
+      \strng{editorfullhash}{62cb1b414de9b968215c3612c93cda51}
+      \strng{editorfullhashraw}{62cb1b414de9b968215c3612c93cda51}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed.}
+      \field{isbn}{9781585106585}
+      \field{note}{Description based on publisher supplied metadata and other sources.}
+      \field{pagetotal}{1128}
+      \field{series}{New Kittredge Shakespeare Series}
+      \field{title}{A Midsummer Night's Dream}
+      \field{year}{2009}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Shelley2016}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8625b1179af48f3c8ab7ebedc6f87d45}{%
+           family={Shelley},
+           familyi={S\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7a821816a23d5ed6f186a22dd57bd4ab}{%
+           family={Broseta},
+           familyi={B\bibinitperiod},
+           given={Teresa},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ef1a8093b3561ec4abdea50323ee30a}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Eva\bibnamedelima Sánchez},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Alzira}%
+      }
+      \list{publisher}{1}{%
+        {Edicions Bromera}%
+      }
+      \strng{namehash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{fullhash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{fullhashraw}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{bibnamehash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{authorbibnamehash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{authornamehash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{authorfullhash}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{authorfullhashraw}{8625b1179af48f3c8ab7ebedc6f87d45}
+      \strng{editorbibnamehash}{7297f4353a91433b389054d52851fb3b}
+      \strng{editornamehash}{7297f4353a91433b389054d52851fb3b}
+      \strng{editorfullhash}{7297f4353a91433b389054d52851fb3b}
+      \strng{editorfullhashraw}{7297f4353a91433b389054d52851fb3b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1a edició}
+      \field{isbn}{9788490266229}
+      \field{note}{Überwiegend Illustrationen (farbig)}
+      \field{number}{7}
+      \field{pagetotal}{12}
+      \field{series}{Mini clàssics}
+      \field{title}{Frankenstein}
+      \field{year}{2016}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{St.Phalle}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=68e0a1f44974c283d2412fb5ff0979fe}{%
+           family={St.\bibnamedelimi Phalle},
+           familyi={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Alexis\bibnamedelima Payne},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{fullhash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{fullhashraw}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{bibnamehash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{authorbibnamehash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{authornamehash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{authorfullhash}{68e0a1f44974c283d2412fb5ff0979fe}
+      \strng{authorfullhashraw}{68e0a1f44974c283d2412fb5ff0979fe}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{A Dictionary of Deities, Devils and Dæmons of Mankind}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Stow1580}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1da84b2b9a8be1afce0bbca2f8bf26a4}{%
+           family={Stow},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Printed at London :: By [Henry Bynneman for] Ralphe Newberie, at the assignement of Henrie Bynneman. Cum priuilegio Regiæ Maiestatis}%
+      }
+      \strng{namehash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{fullhash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{fullhashraw}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{bibnamehash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{authorbibnamehash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{authornamehash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{authorfullhash}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \strng{authorfullhashraw}{1da84b2b9a8be1afce0bbca2f8bf26a4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The chronicles of England from Brute vnto this present yeare of Christ. 1580. Collected by Iohn Stow citizen of London.}
+      \field{year}{1580}
+      \verb{urlraw}
+      \verb https://quod.lib.umich.edu/e/eebo/A13043.0001.001?view=toc
+      \endverb
+      \verb{url}
+      \verb https://quod.lib.umich.edu/e/eebo/A13043.0001.001?view=toc
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Thorndike1923}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b3a351e1d50ba9c285d6819e55841cde}{%
+           family={Thorndike},
+           familyi={T\bibinitperiod},
+           given={Lynn},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{fullhash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{fullhashraw}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{bibnamehash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{authorbibnamehash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{authornamehash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{authorfullhash}{b3a351e1d50ba9c285d6819e55841cde}
+      \strng{authorfullhashraw}{b3a351e1d50ba9c285d6819e55841cde}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{History of Magic and Experimental Science}
+      \field{volume}{1-8}
+      \field{year}{1923-1958}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Pre1978}{book}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Those Strange Cults}
+      \field{year}{Pre-1978}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Trithemius1608}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=eb8a958a06c2e0898f3c0e1de824f6dd}{%
+           family={Trithemius},
+           familyi={T\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{fullhash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{fullhashraw}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{bibnamehash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{authorbibnamehash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{authornamehash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{authorfullhash}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \strng{authorfullhashraw}{eb8a958a06c2e0898f3c0e1de824f6dd}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scans from die Bayerische Staatsbibliothek via Google. This is Trithemius's most famous work, written c. 1499; published Frankfurt, 1606. It was placed on the Index Librorum Prohibitorum in 1609 and removed in 1900. This book is in three volumes, and appears to be about magic; specifically, about using spirits to communicate over long distances. Since the publication of the decryption key to the first two volumes in 1606, they have been known to be actually concerned with cryptography and steganography. Until recently, the third volume was widely still believed to be solely about magic, but the "magical" formulae have now been shown to be covertexts for yet more cryptography content. However, mentions of the magical work within the third book by such figures as Agrippa and John Dee still lend credence to the idea of a mystic-magical foundation concerning the third volume. Additionally, while Trithemius's steganographic methods can be established to be free of the need for angelic astrological mediation, still left intact is an underlying theological motive for their contrivance. The preface to the Polygraphia equally establishes, the everyday practicability of cryptography was conceived by Trithemius as a "secular consequent of the ability of a soul specially empowered by God to reach, by magical means, from earth to Heaven". The work has lent its name to the modern field of steganography. (from http://en.wikipedia.org/wiki/Johannes\_Trithemius\#Steganographia)}
+      \field{title}{Steganographia}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1608}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/SteganographiaBSB1608
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/SteganographiaBSB1608
+      \endverb
+      \keyw{occult,demonology,steganography,cryptography,daemon,real}
+    \endentry
+    \entry{Barleycorn1641}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[London}%
+      }
+      \list{publisher}{1}{%
+        {s.n}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{extraname}{1}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Item exists in two states, illustration and setting differ}
+      \field{pagetotal}{111}
+      \field{series}{Early English Books Online / EEBO}
+      \field{subtitle}{The tune is, Shall I lye beyond thee}
+      \field{title}{A pleasant new ballad to sing evening and morn, of the bloody murder of Sir John Barleycorn}
+      \field{year}{1641}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Unknown1965}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{extraname}{2}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Atlas of American Churches and Religious Organizations}
+      \field{year}{1965}
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{epiyou}{booklet}{}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{extraname}{3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Epilepsy and You}
+      \field{year}{1978}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{enosh}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{extraname}{4}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Little Enosh: Lost Among the Worlds}
+      \field{year}{1952}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Unknownpre1978}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhashraw}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{extraname}{5}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Fictional}
+      \field{title}{Nancy Drew Mysteries: The Secret of Castle Island}
+      \field{year}{1978}
+      \keyw{Fictional,daemon,Fictional}
+    \endentry
+    \entry{Valeriano1556}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0ebd1bce37852ab3cf92bb9bda655b7e}{%
+           family={Valeriano},
+           familyi={V\bibinitperiod},
+           given={Pierio},
+           giveni={P\bibinitperiod}}}%
+        {{hash=06672349c7a5fae016302be7117e9a06}{%
+           family={Holbein},
+           familyi={H\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Basileae : [Michael Isengrin]}%
+      }
+      \strng{namehash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{fullhash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{fullhashraw}{2597f5269fd31295e30091e96536c0d1}
+      \strng{bibnamehash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{authorbibnamehash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{authornamehash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{authorfullhash}{2597f5269fd31295e30091e96536c0d1}
+      \strng{authorfullhashraw}{2597f5269fd31295e30091e96536c0d1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Printer's name from device on t.p. with "Palma Ising,", repeated on last p. (Basler Büchermarken, 148); Large port. of the author on t.p. verso. Numerous woodcut ill., most of them taken over from Lorenzo Torrentino's partial ed. of the same year; see Mortimer, R., Italian 16th-cent., 511. Decorated and historiated initials in various sizes, some of them after Hans Holbein; see Hollstein; Signatures: * a-z A-M N O-Ddd Eee; Includes indexes; Hollstein German; Binding: limp vellum. Author and title written at head of spine. Two pairs of holes for ties at foredge}
+      \field{title}{Hieroglyphica, sive, {De} sacris {Aegyptiorvm} literis commentarii}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1556}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/desacrisaegyptio00vale
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/desacrisaegyptio00vale
+      \endverb
+      \keyw{Egyptian language,daemon,real}
+    \endentry
+    \entry{longtime}{misc}{}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Archives of the Vaughan Williams Memorial Library, the free folk arts resource from the English Folk Dance and Song Society}
+      \field{journaltitle}{VWML archives: English Folk Dance and Song Society}
+      \field{shorttitle}{{VWML} archives}
+      \field{title}{{VWML} archives: {English} {Folk} {Dance} and {Song} {Society}}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://archives.vwml.org/songs/VWMLSongIndex/SNX12201
+      \endverb
+      \verb{url}
+      \verb https://archives.vwml.org/songs/VWMLSongIndex/SNX12201
+      \endverb
+      \keyw{real,daemon,real}
+    \endentry
+    \entry{Waite1887}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4ca19a2592df338590315fb34de102bd}{%
+           family={Waite},
+           familyi={W\bibinitperiod},
+           given={Arthur\bibnamedelima Edward},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {London, G. Redway}%
+      }
+      \strng{namehash}{4ca19a2592df338590315fb34de102bd}
+      \strng{fullhash}{4ca19a2592df338590315fb34de102bd}
+      \strng{fullhashraw}{4ca19a2592df338590315fb34de102bd}
+      \strng{bibnamehash}{4ca19a2592df338590315fb34de102bd}
+      \strng{authorbibnamehash}{4ca19a2592df338590315fb34de102bd}
+      \strng{authornamehash}{4ca19a2592df338590315fb34de102bd}
+      \strng{authorfullhash}{4ca19a2592df338590315fb34de102bd}
+      \strng{authorfullhashraw}{4ca19a2592df338590315fb34de102bd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{26}
+      \field{title}{The Real History of the Rosicrucians}
+      \field{urlday}{6}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{1887}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/realhistoryofros00waituoft
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/realhistoryofros00waituoft
+      \endverb
+      \keyw{Rosicrucians,daemon,real}
+    \endentry
+    \entry{Wier1568}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d998b2c11fbf53bda8d6ee1c4ad21d52}{%
+           family={Wier},
+           familyi={W\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Basileae : Oporinus}%
+      }
+      \strng{namehash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{fullhash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{fullhashraw}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{bibnamehash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{authorbibnamehash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{authornamehash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{authorfullhash}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \strng{authorfullhashraw}{d998b2c11fbf53bda8d6ee1c4ad21d52}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{697 Seiten, [28] Blätter}
+      \field{shorttitle}{Johannis {Wieri} {De} {Praestigiis} {Daemonum}, {Et} {Incantationibus} ac veneficiis}
+      \field{title}{Johannis {Wieri} {De} {Praestigiis} {Daemonum}, {Et} {Incantationibus} ac veneficiis : {Libri} sex, aucti \& recogniti}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1568}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/bub_gb_TgQ6AAAAcAAJ
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/bub_gb_TgQ6AAAAcAAJ
+      \endverb
+      \keyw{bub\_upload,daemon,real}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

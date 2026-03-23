@@ -1,0 +1,396 @@
+---
+title: "Love & Sleep Bibliography"
+author: "Brian Murphy"
+date: "May 23, 2025"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+    keep_tex: true
+  html_document:
+    df_print: paged
+bibliography: love-and-sleep.bib
+citation_package: c("biblatex")
+csl: chicago-author-date.csl
+link-citations: true
+notes-after-punctuation: true
+---
+
+# Introduction
+
+This is an attempt at listing out the various authors and books mentioned within the second volume of the Ægypt Tetralogy, *Love & Sleep* by John Crowley. Fictitious authors and books have been placed in **bold** typeface for easy identification.
+
+## To the Reader
+
+### Authors Mentioned
+
+Piero Camporesi, Caroline Walker Bynum, Caroline Oates, Earnon McMullen.
+
+### Books Metioned
+
+-   Night Comes to the Cumberlands: A Biography of a Depressed Area [@Caudill1963]
+-   Giordano Bruno and the Embassy Affair [@Bossy1991]
+-   The Defeat of the Spanish Armada [@Mattingly1969]
+-   The Night Battles: Witchcraft and Agrarian Cults in the Sixteenth and Seventeenth Centuries [@Ginzburg1985]
+-   Rudolf II and His World: A Study in Intellectual History, 1576 - 1612 [@Evans1973]
+-   Eros and Magic in the Renaissance [@Culianu1987]
+
+## Prologue
+
+### Epigraph
+
+> Thou wouldst not think how ill all's here about my heart.
+>
+> — Hamlet
+
+\newpage
+# Part One - Genitor
+
+## Chapter One
+
+### Books Mentioned
+
+-   @1952b
+-   @1952
+-   @1952a
+
+## Chapter Two
+
+### Authors Mentioned
+
+Alexander Hamilton, Thomas E. Dewey.
+
+## Chapter Three
+
+## Authors Mentioned
+
+John Dee.
+
+### Books Mentioned
+
+-   @1952b
+-   Nancy Drew. Vol. unknown [@NancyDrew]
+-   Black Beauty [@Sewell1887]
+-   A Dictionary of Deities, Devils and Dæmons of Mankind [@St.Phalle]
+-   Cherry Ames [@WellsPre1952]
+
+## Chapter Four
+
+### Books Mentioned
+
+-   @UnknownRH[^1]
+
+[^1]: While I could not find a school reader prior to 1952 with this name, I did find one from 1941 called *Streets and Roads*, [@Gray1941].
+
+## Chapter Five
+
+### Authors Mentioned
+
+-   Augustine of Hippo.
+
+### Books Mentioned
+
+-   @gunsnammo[^2]
+
+[^2]: While Crowley mentions *Guns and Ammo* as the magazine that his cousin Boyd was reading in 1952, the actual magazine wasn't founded until 1958. Therefore, I've marked it as fictitious.
+
+## Chapter Six
+
+### Books Mentioned
+
+-   @esquire
+
+## Chapter Thirteen
+
+### Authors Mentioned
+
+**Fellowes Craft**.
+
+### Books Mentioned
+
+-   **@enosh[^eno]**
+-   **The Werewolf of Prague [@CraftW1]**
+
+[^eno]: It has been posited by others that this could have been inspired on Winsor McCay's _Little Nemo in Slumberland_ which ran from 1905 until 1927. The only problem with that being that Pierce recalls getting "the new Little Enosh" while he was a child. This could just be another instance of transplanting one work in time by Crowley, however.
+
+## Chapter Fourteen
+
+### Authors Mentioned
+
+Giordano Bruno, **Fellowes Craft**.
+
+### Books Mentioned
+
+-   **Bitten Apples. [@Craft]**
+-   **A Passage at Arms [@Crafta]**
+-   **The Werewolf of Prague [@CraftW1]**
+-   The Expulsion of the Triumphant Beast [@Bruno1964]
+-   **Bruno’s Journey [@Craft1931]**
+-   **The Winter King [@Craft1941]**
+-   **Elizabethan People [@Craft1953]**
+-   **Astray [@Craft1959]**
+-   **Scream Bloody Murder [@Craft1939]**
+-   **Skin Deep [@Craftb]**
+-   **Sit down, Sorrow [@Craft1960]**
+-   **@faraway**
+
+## Chapter Fifteen
+
+### Authors Mentioned
+
+John Milton, Virgil, Dante.
+
+### Books Mentioned
+
+> "All night upon mine heart I felt her warm heart beat. Nightlong within mine arms in love and sleep she lay."
+>
+> — Ernest Christopher Dowson, *"Cynara"*
+
+-   **Time’s Body [@Barr]**
+
+\newpage
+# Part Two - Nati
+
+## Chapter One
+
+### Books Mentioned
+
+-   The Triumphal Chariot of Antimony by Basilius Valentinus [@Valentinus.1893]
+-   Amphitheatrum Sapientiae Aeternae, Solius Verae, Christiano-Kabalisticum, Divino-Magicum... [@Khunrath1609]
+-   Utriusque Cosmi... Metaphysica, Physica Atque Technica... [@Fludd1617]
+-   Recens Et Completa Ars Reminiscendi Et in Phantastico... [@Bruno1583]
+
+## Chapter Three
+
+### Authors Mentioned
+
+Nicolaus Copernicus, Marsilio Ficino, Pythagoras, Marcellus Palingenius Stellatus, Socrates.
+
+### Books Mentioned
+
+-   Monas Hieroglyphica... [@Dee1564]
+
+## Chapter Four
+
+### Authors Mentioned
+
+Aristotle, Nicolaus Copernicus, Marsilio Ficino, Samuel Daniel, Matthew Gwynne (Gwinne), Plato, Pythagoras.
+
+## Chapter Five
+
+### Authors Mentioned
+
+John Dee, Giordano Bruno, Méric Casaubon, Paracelsus.
+
+### Books Mentioned
+
+-   **Bruno’s Journey [@Craft1931]**
+-   A True & Faithful Relation of What Passed for Many Yeers Between Dr. John Dee ... And Some Spirits... [@Dee1659]
+-   John Dee 1527-1608 [@Smith1909]
+-   Hypnerotomachia [@Colonna1592][^3]
+
+[^3]: Crowley mentions that it is published in 1594, but it seems to actually have been 1592.
+
+## Chapter Six
+
+### Authors Mentioned
+
+Hildegard of Bingen OSB, Oswald Croll, Cornelius Drebbel, Johannes Kepler, Jöst Burgi.
+
+### Books Mentioned
+
+-   Unknown Guidebook to Prague [@UnknownPre1967]
+-   Osvaldi Crollii Veterani Hassi Basilica Chymica: Continens. Philosophicam Propria Laborum Experientia Confirmatam Descriptionem Et Usum Remediorum Chymicorum Selectissimorum e Lumine Gratiae Et Naturae Desumptorum [@Croll1611]
+
+## Chapter Seven
+
+### Authors Mentioned
+
+Diotima of Mantinea[^4].
+
+[^4]: See Plato's Symposium [@Plato1925].
+
+### Books Mentioned
+
+-   A Dictionary of Deities, Devils and Dæmons of Mankind [@St.Phalle][^5]
+
+[^5]: While not stated by name, the book that Val begins reading to Rosie is undoubtedly the same which Pierce had as a boy.
+
+## Chapter Eight
+
+### Authors Mentioned
+
+Johannes Virdung, Robert Burton.
+
+### Books Mentioned
+
+-   Hypnerotomachia [@Colonna1592]
+-   De Cognoscendis, Et Medendis Morbis Ex Corporum Coelestium Positione Libri Quattuor [@Virdung1584][^6]
+-   The Anatomy of Melancholy: What It Is ; with All the Kinds, Causes, Symptoms, Prognostics, and Several Cures of It ; in Three Partitions [@Burton1863][^7][^8]
+
+[^6]: Only alluded to in Nati-8, by mention of the author Johannes Virdung but this is his only real work.
+
+[^7]: Crowley mentions the Third Partition, Section II, Member I, Subsection I which contains a retelling of the tale of Venus' birth as reported to Socrates by Diotima and read by Val to Rosie in Nati-7.
+
+[^8]: In this same section he has Pierce recognizing Giordano Bruno within the Third Partition, Section II, Member II, Subsection II. This section mentions the "winds of love" that Rosie Rasmussen refers to later in Nati-15.
+
+## Chapter Eight
+
+### Authors Mentioned
+
+G.R.S. Mead.
+
+### Books Mentioned
+
+-   Thrice-Greatest Hermes: Studies in Hellenistic Theosophy and Gnosis... [@Mead1906]
+
+## Chapter Nine
+
+### Authors Mentioned
+
+Plato.
+
+### Books Mentioned
+
+-   **A Dictionary of Deities, Devils and Dæmons of Mankind [@St.Phalle]**
+-   **@enosh[^eno]**
+-   Dialogues of Plato: Translated into English, with Analyses and Introduction : Volume 1 [@Jowett1871]
+
+## Chapter Ten
+
+### Authors Mentioned
+
+Dante Alighieri.
+
+## Chapter Eleven
+
+### Authors Mentioned
+
+Annibale Roselli[^9], Joachim of Fiore[^10], Heinrich Agrippa,
+
+[^9]: Named by Crowley using the variant "Dr. Hannibal."
+
+[^10]: Named by Crowley as "Abbot Joachim of Flora."
+
+### Books Mentioned
+
+-   Pymander Mercurii Trismegisti Cum Commento Hannibalis Rosseli [@Rosselli1585]
+-   De Occulta Philosophia [@Nettesheim1565]
+-   Monas Hieroglyphica Ioannis Dee [@Dee1564]
+
+## Chapter Twelve
+
+### Authors Mentioned
+
+Giordano Bruno.
+
+### Books Mentioned
+
+-   Iordanvs Brvnvs Nolanvs de Vmbris Idearvm... [@Bruno1582]
+
+## Chapter Thirteen
+
+### Books Mentioned
+
+-   Dictionary of American Biography [@LearnedSocieties1943]
+-   **Climacterics: Your New Ancient Guide to Life’s Cycles [@Muchon.d]**[^11]
+
+[^11]: A book title made up by Pierce to Rose Ryder.
+
+## Chapter Fourteen
+
+### Authors Mentioned
+
+**Fellowes Kraft**.
+
+### Books Mentioned
+
+-   **Sit down, Sorrow [@Craft1960]**
+
+\newpage
+# Part Three - Valetudo
+
+## Chapter One
+
+### Authors Mentioned
+
+**Fellowes Kraft**.
+
+### Books Mentioned
+
+-   **Ill Met by Moonlight [@KraftIll]**[^12]
+-   Unknown Bible[^13]
+
+[^12]: Noted as being a book of ghost stories by Fellowes Kraft.
+
+[^13]: The bible is used by the pastor at Boney's funeral where Job 1:21 is quoted. As an aside this led to a look into the possible origins of the particular denomination that Boney belonged to, here named "The Danish Brethren." The best I can determine now is that it was a splinter group formed after the first or second schism of the Bible Student Movement in the late 1920s, prior to gaining the name Jehovah's Witnesses.
+
+## Chapter Two
+
+### Authors Mentioned
+
+Plato, Shakespeare, Giordano Bruno.
+
+## Chapter Three
+
+### Authors Mentioned
+
+Alexander Dicson, Albertus, Aquinas, Triptolemus, Euclid, Copernicus, John Dee, Paracelsus.
+
+### Books Mentioned
+
+-   **Faraway Crier [@faraway]**
+-   **A Dictionary of Deities, Devils and Dæmons of Mankind [@St.Phalle]**
+-   De umbra rationis & judicii [@Dicson1584]
+-   AVREOLI THEOPHRA Seu de Secretis Naturae mysteriis... [@Paracelsus1582]
+
+## Chapter Four
+
+### Authors Mentioned
+
+John Dee, Euclid.
+
+### Books Mentioned
+
+-   Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm [@Dee1564]
+-   Steganographia [@Trithemius1608]
+
+## Chapter Six
+
+### Book Mentioned
+
+-   **Faraway Crier [@faraway]**
+
+## Chapter Seven
+
+### Authors Mentioned
+
+Nostradamus, Regiomontanus, Cornelius Drebbel, John Dee.
+
+### Book Mentioned
+
+-   Sphaera mundi [@JSB1490]
+
+## Chapter Eight
+
+### Books Mentioned
+
+-   National Geographic [@natgeo]
+
+## Chapter Nine
+
+### Authors Mentioned
+
+Marsilio Ficino, Dante, Petrarch, Robert Burton.
+
+### Books Mentioned
+
+-   De vita coelitus comparanda [@Ficino1560]
+-   The Anatomy of Melancholy [@Burton1863][^14]
+
+[^14]: Pierce never mentions the book by name here but instead by Burton's name and references *"Amor hereos"* which Barr says *"...was a part of melancholy."*
+
+\newpage
+# References
+
+::: {#refs}
+:::

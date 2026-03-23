@@ -1,0 +1,37 @@
+\contentsline {chapter}{Introduction}{3}{chapter*.2}%
+\contentsline {chapter}{Preface Info}{4}{chapter*.3}%
+\contentsline {section}{To the Reader}{4}{section*.4}%
+\contentsline {section}{Prologue}{4}{section*.5}%
+\contentsline {chapter}{Part One -- Genitor}{5}{chapter*.6}%
+\contentsline {section}{Chapter One}{5}{section*.7}%
+\contentsline {section}{Chapter Two}{5}{section*.8}%
+\contentsline {section}{Chapter Three}{5}{section*.9}%
+\contentsline {section}{Chapter Four}{6}{section*.10}%
+\contentsline {section}{Chapter Five}{6}{section*.11}%
+\contentsline {section}{Chapter Six}{6}{section*.12}%
+\contentsline {section}{Chapter Thirteen}{6}{section*.13}%
+\contentsline {section}{Chapter Fourteen}{7}{section*.14}%
+\contentsline {section}{Chapter Fifteen}{8}{section*.15}%
+\contentsline {chapter}{Part Two -- Nati}{9}{chapter*.16}%
+\contentsline {section}{Chapter One}{9}{section*.17}%
+\contentsline {section}{Chapter Three}{9}{section*.18}%
+\contentsline {section}{Chapter Four}{9}{section*.19}%
+\contentsline {section}{Chapter Five}{9}{section*.20}%
+\contentsline {section}{Chapter Six}{10}{section*.21}%
+\contentsline {section}{Chapter Seven}{10}{section*.22}%
+\contentsline {section}{Chapter Eight}{10}{section*.23}%
+\contentsline {section}{Chapter Nine}{11}{section*.24}%
+\contentsline {section}{Chapter Ten}{11}{section*.25}%
+\contentsline {section}{Chapter Eleven}{11}{section*.26}%
+\contentsline {section}{Chapter Twelve}{12}{section*.27}%
+\contentsline {section}{Chapter Thirteen}{12}{section*.28}%
+\contentsline {section}{Chapter Fourteen}{12}{section*.29}%
+\contentsline {chapter}{Part Three -- Valetudo}{13}{chapter*.30}%
+\contentsline {section}{Chapter One}{13}{section*.31}%
+\contentsline {section}{Chapter Two}{13}{section*.32}%
+\contentsline {section}{Chapter Three}{13}{section*.33}%
+\contentsline {section}{Chapter Four}{14}{section*.34}%
+\contentsline {section}{Chapter Six}{14}{section*.35}%
+\contentsline {section}{Chapter Seven}{14}{section*.36}%
+\contentsline {section}{Chapter Eight}{14}{section*.37}%
+\contentsline {section}{Chapter Nine}{14}{section*.38}%

@@ -1,0 +1,5 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'las-zine.aux.blg'
+[53] biber:342> INFO - === Wed Oct 15, 2025, 15:09:33
+[103] Utils.pm:479> ERROR - Cannot find 'las-zine.aux.bcf'!
+[103] Biber.pm:137> INFO - ERRORS: 1

@@ -1,0 +1,20 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'combined.blg'
+[58] biber:342> INFO - === Mon Mar 23, 2026, 15:11:22
+[76] Biber.pm:421> INFO - Reading 'combined.bcf'
+[175] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[188] Biber.pm:4487> INFO - Processing section 0
+[194] Biber.pm:4678> INFO - Looking for bibtex file 'combined.bib' for section 0
+[197] bibtex.pm:1713> INFO - LaTeX decoding ...
+[380] bibtex.pm:1519> INFO - Found BibTeX data source 'combined.bib'
+[1381] Utils.pm:479> ERROR - BibTeX subsystem: /tmp/biber_tmp_SSye/2ae77a287014656ee0f5849dcb47efe9_254920.utf8, line 3306, syntax error: found ",", expected one of: number, name (entry type, key, field, or macro name), end of entry ("}" or ")") or quoted string ({...} or "...")
+[1381] Biber.pm:132> WARN - Possible typo (case mismatch) between datasource keys: 'UnknownPre1978' and 'Unknownpre1978' in file 'combined.bib'
+[1382] Biber.pm:132> WARN - Invalid or undefined BibTeX entry key in file '/tmp/biber_tmp_SSye/2ae77a287014656ee0f5849dcb47efe9_254920.utf8', skipping ...
+[1382] Biber.pm:132> WARN - legacy year field '1860 - 1931' in entry '18601931' is not an integer - this will probably not sort properly.
+[1382] Biber.pm:132> WARN - ISBN '66-19757' in entry 'Davidson1967' is invalid - run biber with '--validate_datamodel' for details.
+[1382] Biber.pm:132> WARN - legacy year field '1943-' in entry 'ACLS1943' is not an integer - this will probably not sort properly.
+[1382] Biber.pm:132> WARN - legacy year field 'pre-1952' in entry 'pre1952' is not an integer - this will probably not sort properly.
+[1382] Biber.pm:132> WARN - legacy year field 'pre-1953' in entry 'pre1953' is not an integer - this will probably not sort properly.
+[1382] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp_SSye/2ae77a287014656ee0f5849dcb47efe9_254920.utf8, line 2170, warning: 1 characters of junk seen at toplevel
+[1382] Biber.pm:134> INFO - WARNINGS: 8
+[1382] Biber.pm:137> INFO - ERRORS: 1

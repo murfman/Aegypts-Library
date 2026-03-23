@@ -1,0 +1,41 @@
+\xpg@aux {}{english}
+\contentsline {chapter}{Introduction}{4}{chapter*.2}%
+\contentsline {chapter}{Preface Info}{5}{chapter*.3}%
+\contentsline {section}{To the Reader}{5}{section*.4}%
+\contentsline {section}{Prologue}{5}{section*.5}%
+\contentsline {chapter}{Part Four -- Genitor}{6}{chapter*.6}%
+\contentsline {section}{Chapter One}{6}{section*.7}%
+\contentsline {section}{Chapter Two}{6}{section*.8}%
+\contentsline {section}{Chapter Three}{6}{section*.9}%
+\contentsline {section}{Chapter Four}{7}{section*.10}%
+\contentsline {section}{Chapter Five}{7}{section*.11}%
+\contentsline {section}{Chapter Six}{7}{section*.12}%
+\contentsline {section}{Chapter Thirteen}{7}{section*.13}%
+\contentsline {section}{Chapter Fourteen}{8}{section*.14}%
+\contentsline {section}{Chapter Fifteen}{8}{section*.15}%
+\contentsline {chapter}{Part Five -- Nati}{9}{chapter*.16}%
+\contentsline {section}{Chapter One}{9}{section*.17}%
+\contentsline {section}{Chapter Three}{9}{section*.18}%
+\contentsline {section}{Chapter Four}{9}{section*.19}%
+\contentsline {section}{Chapter Five}{10}{section*.20}%
+\contentsline {section}{Chapter Six}{10}{section*.21}%
+\contentsline {section}{Chapter Seven}{10}{section*.22}%
+\contentsline {section}{Chapter Eight}{10}{section*.23}%
+\contentsline {section}{Chapter Nine}{11}{section*.24}%
+\contentsline {section}{Chapter Ten}{11}{section*.25}%
+\contentsline {section}{Chapter Eleven}{11}{section*.26}%
+\contentsline {section}{Chapter Twelve}{11}{section*.27}%
+\contentsline {section}{Chapter Thirteen}{11}{section*.28}%
+\contentsline {section}{Chapter Fourteen}{12}{section*.29}%
+\contentsline {chapter}{Part Six -- Valetudo}{13}{chapter*.30}%
+\contentsline {section}{Chapter One}{13}{section*.31}%
+\contentsline {section}{Chapter Two}{13}{section*.32}%
+\contentsline {section}{Chapter Three}{13}{section*.33}%
+\contentsline {section}{Chapter Four}{13}{section*.34}%
+\contentsline {section}{Chapter Six}{14}{section*.35}%
+\contentsline {section}{Chapter Seven}{14}{section*.36}%
+\contentsline {section}{Chapter Eight}{14}{section*.37}%
+\contentsline {section}{Chapter Nine}{14}{section*.38}%
+\contentsline {chapter}{Bibliography of Fictional Books}{15}{chapter*.39}%
+\contentsline {chapter}{Bibliography of Real Books}{16}{chapter*.40}%
+\contentsline {chapter}{Index}{18}{chapter*.40}%

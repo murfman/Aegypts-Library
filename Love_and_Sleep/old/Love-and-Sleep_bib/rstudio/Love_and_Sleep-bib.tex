@@ -1,0 +1,980 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Love \& Sleep Bibliography},
+  pdfauthor={Brian Murphy},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Love \& Sleep Bibliography}
+\author{Brian Murphy}
+\date{May 23, 2025}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{introduction}
+
+This is an attempt at listing out the various authors and books
+mentioned within the second volume of the Ægypt Tetralogy, \emph{Love \&
+Sleep} by John Crowley. Fictitious authors and books have been placed in
+\textbf{bold} typeface for easy identification.
+
+\subsection{To the Reader}\label{to-the-reader}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned}
+
+Piero Camporesi, Caroline Walker Bynum, Caroline Oates, Earnon McMullen.
+
+\subsubsection{Books Metioned}\label{books-metioned}
+
+\begin{itemize}
+\tightlist
+\item
+  Night Comes to the Cumberlands: A Biography of a Depressed Area
+  (\citeproc{ref-Caudill1963}{Caudill 1963})
+\item
+  Giordano Bruno and the Embassy Affair (\citeproc{ref-Bossy1991}{Bossy
+  1991})
+\item
+  The Defeat of the Spanish Armada
+  (\citeproc{ref-Mattingly1969}{Mattingly 1969})
+\item
+  The Night Battles: Witchcraft and Agrarian Cults in the Sixteenth and
+  Seventeenth Centuries (\citeproc{ref-Ginzburg1985}{Ginzburg 1985})
+\item
+  Rudolf II and His World: A Study in Intellectual History, 1576 - 1612
+  (\citeproc{ref-Evans1973}{Evans 1973})
+\item
+  Eros and Magic in the Renaissance (\citeproc{ref-Culianu1987}{Culianu
+  1987})
+\end{itemize}
+
+\subsection{Prologue}\label{prologue}
+
+\subsubsection{Epigraph}\label{epigraph}
+
+\begin{quote}
+Thou wouldst not think how ill all's here about my heart.
+
+--- Hamlet
+\end{quote}
+
+\newpage
+
+\section{Part One - Genitor}\label{part-one---genitor}
+
+\subsection{Chapter One}\label{chapter-one}
+
+\subsubsection{Books Mentioned}\label{books-mentioned}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Collier's''} (\citeproc{ref-1952b}{1952})
+\item
+  {``Look''} (\citeproc{ref-1952}{1952})
+\item
+  {``Our Sunday Visitor''} (\citeproc{ref-1952a}{1952})
+\end{itemize}
+
+\subsection{Chapter Two}\label{chapter-two}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-1}
+
+Alexander Hamilton, Thomas E. Dewey.
+
+\subsection{Chapter Three}\label{chapter-three}
+
+\subsection{Authors Mentioned}\label{authors-mentioned-2}
+
+John Dee.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-1}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Collier's''} (\citeproc{ref-1952b}{1952})
+\item
+  Nancy Drew. Vol. unknown (\citeproc{ref-NancyDrew}{Adams et al.,
+  n.d.})
+\item
+  Black Beauty (\citeproc{ref-Sewell1887}{Sewell 1887})
+\item
+  A Dictionary of Deities, Devils and Dæmons of Mankind
+  (\citeproc{ref-St.Phalle}{St. Phalle, n.d.})
+\item
+  Cherry Ames (\citeproc{ref-WellsPre1952}{Wells and Tatham Pre-1952})
+\end{itemize}
+
+\subsection{Chapter Four}\label{chapter-four}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-2}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Roads and Highways''} (\citeproc{ref-UnknownRH}{n.d.})\footnote{While
+    I could not find a school reader prior to 1952 with this name, I did
+    find one from 1941 called \emph{Streets and Roads},
+    (\citeproc{ref-Gray1941}{Gray 1941}).}
+\end{itemize}
+
+\subsection{Chapter Five}\label{chapter-five}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Augustine of Hippo.
+\end{itemize}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-3}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Guns and Ammo''} (\citeproc{ref-gunsnammo}{pre-1953})\footnote{While
+    Crowley mentions \emph{Guns and Ammo} as the magazine that his
+    cousin Boyd was reading in 1952, the actual magazine wasn't founded
+    until 1958. Therefore, I've marked it as fictitious.}
+\end{itemize}
+
+\subsection{Chapter Six}\label{chapter-six}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-4}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Esquire''} (\citeproc{ref-esquire}{pre-1952})
+\end{itemize}
+
+\subsection{Chapter Thirteen}\label{chapter-thirteen}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-4}
+
+\textbf{Fellowes Craft}.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-5}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\emph{Little Enosh: Lost Among the Worlds}
+  (\citeproc{ref-enosh}{n.d.})\footnote{It has been posited by others
+    that this could have been inspired on Winsor McCay's \emph{Little
+    Nemo in Slumberland} which ran from 1905 until 1927. The only
+    problem with that being that Pierce recalls getting ``the new Little
+    Enosh'' while he was a child. This could just be another instance of
+    transplanting one work in time by Crowley, however.}}
+\item
+  \textbf{The Werewolf of Prague (\citeproc{ref-CraftW1}{Craft,
+  n.d.-d})}
+\end{itemize}
+
+\subsection{Chapter Fourteen}\label{chapter-fourteen}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-5}
+
+Giordano Bruno, \textbf{Fellowes Craft}.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-6}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bitten Apples. (\citeproc{ref-Craft}{Craft, n.d.-b})}
+\item
+  \textbf{A Passage at Arms (\citeproc{ref-Crafta}{Craft, n.d.-a})}
+\item
+  \textbf{The Werewolf of Prague (\citeproc{ref-CraftW1}{Craft,
+  n.d.-d})}
+\item
+  The Expulsion of the Triumphant Beast (\citeproc{ref-Bruno1964}{G.
+  Bruno 1964})
+\item
+  \textbf{Bruno's Journey (\citeproc{ref-Craft1931}{Craft 1931})}
+\item
+  \textbf{The Winter King (\citeproc{ref-Craft1941}{Craft 1941})}
+\item
+  \textbf{Elizabethan People (\citeproc{ref-Craft1953}{Craft 1953})}
+\item
+  \textbf{Astray (\citeproc{ref-Craft1959}{Craft 1959})}
+\item
+  \textbf{Scream Bloody Murder (\citeproc{ref-Craft1939}{Craft 1939})}
+\item
+  \textbf{Skin Deep (\citeproc{ref-Craftb}{Craft, n.d.-c})}
+\item
+  \textbf{Sit down, Sorrow (\citeproc{ref-Craft1960}{Craft 1960})}
+\item
+  \textbf{{``Faraway Crier''} (\citeproc{ref-faraway}{n.d.})}
+\end{itemize}
+
+\subsection{Chapter Fifteen}\label{chapter-fifteen}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-6}
+
+John Milton, Virgil, Dante.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-7}
+
+\begin{quote}
+``All night upon mine heart I felt her warm heart beat. Nightlong within
+mine arms in love and sleep she lay.''
+
+--- Ernest Christopher Dowson, \emph{``Cynara''}
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Time's Body (\citeproc{ref-Barr}{Barr, n.d.})}
+\end{itemize}
+
+\newpage
+
+\section{Part Two - Nati}\label{part-two---nati}
+
+\subsection{Chapter One}\label{chapter-one-1}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-8}
+
+\begin{itemize}
+\tightlist
+\item
+  The Triumphal Chariot of Antimony by Basilius Valentinus
+  (\citeproc{ref-Valentinus.1893}{Valentinus., Kerckring, and Waite
+  1893})
+\item
+  Amphitheatrum Sapientiae Aeternae, Solius Verae,
+  Christiano-Kabalisticum, Divino-Magicum\ldots{}
+  (\citeproc{ref-Khunrath1609}{Khunrath 1609})
+\item
+  Utriusque Cosmi\ldots{} Metaphysica, Physica Atque Technica\ldots{}
+  (\citeproc{ref-Fludd1617}{Fludd 1617})
+\item
+  Recens Et Completa Ars Reminiscendi Et in Phantastico\ldots{}
+  (\citeproc{ref-Bruno1583}{G. (. Bruno 1583})
+\end{itemize}
+
+\subsection{Chapter Three}\label{chapter-three-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-7}
+
+Nicolaus Copernicus, Marsilio Ficino, Pythagoras, Marcellus Palingenius
+Stellatus, Socrates.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-9}
+
+\begin{itemize}
+\tightlist
+\item
+  Monas Hieroglyphica\ldots{} (\citeproc{ref-Dee1564}{Dee 1564})
+\end{itemize}
+
+\subsection{Chapter Four}\label{chapter-four-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-8}
+
+Aristotle, Nicolaus Copernicus, Marsilio Ficino, Samuel Daniel, Matthew
+Gwynne (Gwinne), Plato, Pythagoras.
+
+\subsection{Chapter Five}\label{chapter-five-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-9}
+
+John Dee, Giordano Bruno, Méric Casaubon, Paracelsus.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-10}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bruno's Journey (\citeproc{ref-Craft1931}{Craft 1931})}
+\item
+  A True \& Faithful Relation of What Passed for Many Yeers Between
+  Dr.~John Dee \ldots{} And Some Spirits\ldots{}
+  (\citeproc{ref-Dee1659}{Dee 1659})
+\item
+  John Dee 1527-1608 (\citeproc{ref-Smith1909}{Smith 1909})
+\item
+  Hypnerotomachia (\citeproc{ref-Colonna1592}{Colonna 1592})\footnote{Crowley
+    mentions that it is published in 1594, but it seems to actually have
+    been 1592.}
+\end{itemize}
+
+\subsection{Chapter Six}\label{chapter-six-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-10}
+
+Hildegard of Bingen OSB, Oswald Croll, Cornelius Drebbel, Johannes
+Kepler, Jöst Burgi.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-11}
+
+\begin{itemize}
+\tightlist
+\item
+  Unknown Guidebook to Prague (\citeproc{ref-UnknownPre1967}{Unknown
+  Pre-1967})
+\item
+  Osvaldi Crollii Veterani Hassi Basilica Chymica: Continens.
+  Philosophicam Propria Laborum Experientia Confirmatam Descriptionem Et
+  Usum Remediorum Chymicorum Selectissimorum e Lumine Gratiae Et Naturae
+  Desumptorum (\citeproc{ref-Croll1611}{Croll 1611})
+\end{itemize}
+
+\subsection{Chapter Seven}\label{chapter-seven}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-11}
+
+Diotima of Mantinea\footnote{See Plato's Symposium
+  (\citeproc{ref-Plato1925}{Plato 1925}).}.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-12}
+
+\begin{itemize}
+\tightlist
+\item
+  A Dictionary of Deities, Devils and Dæmons of Mankind
+  (\citeproc{ref-St.Phalle}{St. Phalle, n.d.})\footnote{While not stated
+    by name, the book that Val begins reading to Rosie is undoubtedly
+    the same which Pierce had as a boy.}
+\end{itemize}
+
+\subsection{Chapter Eight}\label{chapter-eight}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-12}
+
+Johannes Virdung, Robert Burton.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-13}
+
+\begin{itemize}
+\tightlist
+\item
+  Hypnerotomachia (\citeproc{ref-Colonna1592}{Colonna 1592})
+\item
+  De Cognoscendis, Et Medendis Morbis Ex Corporum Coelestium Positione
+  Libri Quattuor (\citeproc{ref-Virdung1584}{Virdung 1584})\footnote{Only
+    alluded to in Nati-8, by mention of the author Johannes Virdung but
+    this is his only real work.}
+\item
+  The Anatomy of Melancholy: What It Is ; with All the Kinds, Causes,
+  Symptoms, Prognostics, and Several Cures of It ; in Three Partitions
+  (\citeproc{ref-Burton1863}{Burton 1863})\footnote{Crowley mentions the
+    Third Partition, Section II, Member I, Subsection I which contains a
+    retelling of the tale of Venus' birth as reported to Socrates by
+    Diotima and read by Val to Rosie in Nati-7.}\footnote{In this same
+    section he has Pierce recognizing Giordano Bruno within the Third
+    Partition, Section II, Member II, Subsection II. This section
+    mentions the ``winds of love'' that Rosie Rasmussen refers to later
+    in Nati-15.}
+\end{itemize}
+
+\subsection{Chapter Eight}\label{chapter-eight-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-13}
+
+G.R.S. Mead.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-14}
+
+\begin{itemize}
+\tightlist
+\item
+  Thrice-Greatest Hermes: Studies in Hellenistic Theosophy and
+  Gnosis\ldots{} (\citeproc{ref-Mead1906}{Mead 1906})
+\end{itemize}
+
+\subsection{Chapter Nine}\label{chapter-nine}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-14}
+
+Plato.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-15}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind
+  (\citeproc{ref-St.Phalle}{St. Phalle, n.d.})}
+\item
+  \textbf{\emph{Little Enosh: Lost Among the Worlds}
+  (\citeproc{ref-enosh}{n.d.})\footnote{It has been posited by others
+    that this could have been inspired on Winsor McCay's \emph{Little
+    Nemo in Slumberland} which ran from 1905 until 1927. The only
+    problem with that being that Pierce recalls getting ``the new Little
+    Enosh'' while he was a child. This could just be another instance of
+    transplanting one work in time by Crowley, however.}}
+\item
+  Dialogues of Plato: Translated into English, with Analyses and
+  Introduction : Volume 1 (\citeproc{ref-Jowett1871}{Jowett 1871})
+\end{itemize}
+
+\subsection{Chapter Ten}\label{chapter-ten}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-15}
+
+Dante Alighieri.
+
+\subsection{Chapter Eleven}\label{chapter-eleven}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-16}
+
+Annibale Roselli\footnote{Named by Crowley using the variant
+  ``Dr.~Hannibal.''}, Joachim of Fiore\footnote{Named by Crowley as
+  ``Abbot Joachim of Flora.''}, Heinrich Agrippa,
+
+\subsubsection{Books Mentioned}\label{books-mentioned-16}
+
+\begin{itemize}
+\tightlist
+\item
+  Pymander Mercurii Trismegisti Cum Commento Hannibalis Rosseli
+  (\citeproc{ref-Rosselli1585}{Rosselli 1585})
+\item
+  De Occulta Philosophia (\citeproc{ref-Nettesheim1565}{Heinrich
+  Cornelius Agrippa von Nettesheim 1565})
+\item
+  Monas Hieroglyphica Ioannis Dee (\citeproc{ref-Dee1564}{Dee 1564})
+\end{itemize}
+
+\subsection{Chapter Twelve}\label{chapter-twelve}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-17}
+
+Giordano Bruno.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-17}
+
+\begin{itemize}
+\tightlist
+\item
+  Iordanvs Brvnvs Nolanvs de Vmbris Idearvm\ldots{}
+  (\citeproc{ref-Bruno1582}{G. Bruno 1582})
+\end{itemize}
+
+\subsection{Chapter Thirteen}\label{chapter-thirteen-1}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-18}
+
+\begin{itemize}
+\tightlist
+\item
+  Dictionary of American Biography
+  (\citeproc{ref-LearnedSocieties1943}{American Council of Learned
+  Societies 1943-})
+\item
+  \textbf{Climacterics: Your New Ancient Guide to Life's Cycles
+  (\citeproc{ref-Muchon.d}{Mucho n.d.})}\footnote{A book title made up
+    by Pierce to Rose Ryder.}
+\end{itemize}
+
+\subsection{Chapter Fourteen}\label{chapter-fourteen-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-18}
+
+\textbf{Fellowes Kraft}.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-19}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Sit down, Sorrow (\citeproc{ref-Craft1960}{Craft 1960})}
+\end{itemize}
+
+\newpage
+
+\section{Part Three - Valetudo}\label{part-three---valetudo}
+
+\subsection{Chapter One}\label{chapter-one-2}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-19}
+
+\textbf{Fellowes Kraft}.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-20}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Ill Met by Moonlight (\citeproc{ref-KraftIll}{Kraft,
+  n.d.})}\footnote{Noted as being a book of ghost stories by Fellowes
+    Kraft.}
+\item
+  Unknown Bible\footnote{The bible is used by the pastor at Boney's
+    funeral where Job 1:21 is quoted. As an aside this led to a look
+    into the possible origins of the particular denomination that Boney
+    belonged to, here named ``The Danish Brethren.'' The best I can
+    determine now is that it was a splinter group formed after the first
+    or second schism of the Bible Student Movement in the late 1920s,
+    prior to gaining the name Jehovah's Witnesses.}
+\end{itemize}
+
+\subsection{Chapter Two}\label{chapter-two-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-20}
+
+Plato, Shakespeare, Giordano Bruno.
+
+\subsection{Chapter Three}\label{chapter-three-2}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-21}
+
+Alexander Dicson, Albertus, Aquinas, Triptolemus, Euclid, Copernicus,
+John Dee, Paracelsus.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-21}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Faraway Crier (\citeproc{ref-faraway}{{``Faraway Crier,''}
+  n.d.})}
+\item
+  \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind
+  (\citeproc{ref-St.Phalle}{St. Phalle, n.d.})}
+\item
+  De umbra rationis \& judicii (\citeproc{ref-Dicson1584}{Dicson 1584})
+\item
+  AVREOLI THEOPHRA Seu de Secretis Naturae mysteriis\ldots{}
+  (\citeproc{ref-Paracelsus1582}{Paracelsus 1582})
+\end{itemize}
+
+\subsection{Chapter Four}\label{chapter-four-2}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-22}
+
+John Dee, Euclid.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-22}
+
+\begin{itemize}
+\tightlist
+\item
+  Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei
+  Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm
+  (\citeproc{ref-Dee1564}{Dee 1564})
+\item
+  Steganographia (\citeproc{ref-Trithemius1608}{Trithemius 1608})
+\end{itemize}
+
+\subsection{Chapter Six}\label{chapter-six-2}
+
+\subsubsection{Book Mentioned}\label{book-mentioned}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Faraway Crier (\citeproc{ref-faraway}{{``Faraway Crier,''}
+  n.d.})}
+\end{itemize}
+
+\subsection{Chapter Seven}\label{chapter-seven-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-23}
+
+Nostradamus, Regiomontanus, Cornelius Drebbel, John Dee.
+
+\subsubsection{Book Mentioned}\label{book-mentioned-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Sphaera mundi (\citeproc{ref-JSB1490}{Johannes de Sacro Busto 1490})
+\end{itemize}
+
+\subsection{Chapter Eight}\label{chapter-eight-2}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-23}
+
+\begin{itemize}
+\tightlist
+\item
+  National Geographic (\citeproc{ref-natgeo}{{``National Geographic,''}
+  n.d.})
+\end{itemize}
+
+\subsection{Chapter Nine}\label{chapter-nine-1}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-24}
+
+Marsilio Ficino, Dante, Petrarch, Robert Burton.
+
+\subsubsection{Books Mentioned}\label{books-mentioned-24}
+
+\begin{itemize}
+\tightlist
+\item
+  De vita coelitus comparanda (\citeproc{ref-Ficino1560}{Ficino 1560})
+\item
+  The Anatomy of Melancholy (\citeproc{ref-Burton1863}{Burton
+  1863})\footnote{Pierce never mentions the book by name here but
+    instead by Burton's name and references \emph{``Amor hereos''} which
+    Barr says \emph{``\ldots was a part of melancholy.''}}
+\end{itemize}
+
+\newpage
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-NancyDrew}
+Adams, Harriet Stratemeyer, Edward Stratemeyer, Edna Stratemeyer Squier,
+and Harriet Otis Smith. n.d. \emph{Nancy Drew}. Vol. unknown. Nancy Drew
+Mystery Stories. Simon; Schuster.
+
+\bibitem[\citeproctext]{ref-LearnedSocieties1943}
+American Council of Learned Societies. 1943-. \emph{Dictionary of
+American Biography}. Dictionary of American Biography. C. Scribner's
+Sons, New York.
+
+\bibitem[\citeproctext]{ref-Barr}
+Barr, Frank Walker. n.d. \emph{Time's Body}.
+
+\bibitem[\citeproctext]{ref-Bossy1991}
+Bossy, John. 1991. \emph{Giordano Bruno and the Embassy Affair}. New
+Haven, Conn. {[}u.a.{]}: Yale Univ. Press.
+
+\bibitem[\citeproctext]{ref-Bruno1582}
+Bruno, Giordano. 1582. \emph{Iordanvs Brvnvs Nolanvs de Vmbris Idearvm:
+Implicantibus Artem, Quaetendi, Inueniendi, Iudicandi, Ordinandi, \&
+Applicandi ... Ad Henricvm III. ... Gallor. Polonorumque Regem \&c.
+Protestatio}. Parisiis: Gorbin.
+
+\bibitem[\citeproctext]{ref-Bruno1964}
+---------. 1964. \emph{The Expulsion of the Triumphant Beast}. Edited by
+Arthur D. Imerti. Rutgers University Press.
+
+\bibitem[\citeproctext]{ref-Bruno1583}
+Bruno, Giordano (. 1583. {``Philothei Jordani Bruni Nolani Recens Et
+Completa Ars Reminiscendi Et in Phantastico Campo Exarandi Ad Plurimas
+in Triginta Sigillis Inquirendi, Disponendi, Atque Retinendi Implicitas
+Novas Rationes \& Artes Introductoria.''}
+
+\bibitem[\citeproctext]{ref-Burton1863}
+Burton, Robert. 1863. \emph{The Anatomy of Melancholy: What It Is ; with
+All the Kinds, Causes, Symptoms, Prognostics, and Several Cures of It ;
+in Three Partitions ...} A new ed. London: Tegg.
+
+\bibitem[\citeproctext]{ref-Caudill1963}
+Caudill, Harry M. 1963. \emph{Night Comes to the Cumberlands: A
+Biography of a Depressed Area}. Edited by Stewart L. Udall. Boston
+{[}u.a.{]}: Little, Brown.
+
+\bibitem[\citeproctext]{ref-1952b}
+{``Collier's.''} 1952. Print, weekly.
+
+\bibitem[\citeproctext]{ref-Colonna1592}
+Colonna, Francesco. 1592. \emph{Hypnerotomachia}. Edited by null null
+and Robert Dallington. Early English Books Online / EEBO. At London:
+Printed {[}by Abell Jeffes, John Charlewood,; Eliot's Court Press{]} for
+Simon VVaterson,; are to be sold at his shop, in S. Paules Church-yard,
+at Cheape-gate.
+
+\bibitem[\citeproctext]{ref-Crafta}
+Craft, Fellowes. n.d.-a. \emph{A Passage at Arms}.
+
+\bibitem[\citeproctext]{ref-Craft}
+---------. n.d.-b. \emph{Bitten Apples}.
+
+\bibitem[\citeproctext]{ref-Craftb}
+---------. n.d.-c. \emph{Skin Deep}. Herm Press.
+
+\bibitem[\citeproctext]{ref-CraftW1}
+---------. n.d.-d. \emph{The Werewolf of Prague}.
+
+\bibitem[\citeproctext]{ref-Craft1931}
+---------. 1931. \emph{Bruno's Journey}.
+
+\bibitem[\citeproctext]{ref-Craft1939}
+---------. 1939. \emph{Scream Bloody Murder}.
+
+\bibitem[\citeproctext]{ref-Craft1941}
+---------. 1941. \emph{The Winter King}.
+
+\bibitem[\citeproctext]{ref-Craft1953}
+---------. 1953. \emph{Elizabethan People}.
+
+\bibitem[\citeproctext]{ref-Craft1959}
+---------. 1959. \emph{Astray}.
+
+\bibitem[\citeproctext]{ref-Craft1960}
+---------. 1960. \emph{Sit down, Sorrow}.
+
+\bibitem[\citeproctext]{ref-Croll1611}
+Croll, Oswald. 1611. \emph{Osvaldi Crollii Veterani Hassi Basilica
+Chymica: Continens. Philosophicam Propria Laborum Experientia
+Confirmatam Descriptionem Et Usum Remediorum Chymicorum Selectissimorum
+e Lumine Gratiae Et Naturae Desumptorum}. Edited by Johann Hartmann,
+null null, and Petrus Wok Ursinus a Rosenberg. Francofurti: Tampachius.
+
+\bibitem[\citeproctext]{ref-Culianu1987}
+Culianu, Ioan P. 1987. \emph{Eros and Magic in the Renaissance}. Edited
+by Margaret Cook and Mircea Eliade. Chicago, Ill. {[}u.a.{]}: Univ. of
+Chicago Press.
+
+\bibitem[\citeproctext]{ref-Dee1564}
+Dee, John. 1564. \emph{Monas Hieroglyphica Ioannis Dee, Londinensis, Ad
+Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem
+Sapientissimvm}. Edited by null null and Willem Silvius. Antverpiae:
+Silvius.
+
+\bibitem[\citeproctext]{ref-Dee1659}
+---------. 1659. \emph{A True \& Faithful Relation of What Passed for
+Many Yeers Between Dr. John Dee ... And Some Spirits: Tending ... To a
+General Alteration of Most States and Kingdomes in the World : His
+Private Conferences with Rodolphe, Emperor of Germany, Stephen, k. Of
+Poland, and Divers Other Princes about It ... : As Also the Letters of
+Sundry Great Men and Princes ... To the Said d. Dee}. Edited by Meric
+Casaubon and Edward Kelly. Early English Books Online / EEBO. London:
+Printed by D. Maxwell for T. Garthwait.
+
+\bibitem[\citeproctext]{ref-Dicson1584}
+Dicson, Alexander. 1584. \emph{De Umbra Rationis \& Judicii}.
+
+\bibitem[\citeproctext]{ref-esquire}
+{``Esquire.''} pre-1952. Print.
+
+\bibitem[\citeproctext]{ref-Evans1973}
+Evans, Robert John Weston. 1973. \emph{Rudolf II and His World: A Study
+in Intellectual History, 1576 - 1612}. Oxford: Clarendon Press.
+
+\bibitem[\citeproctext]{ref-faraway}
+{``Faraway Crier.''} n.d.
+
+\bibitem[\citeproctext]{ref-Ficino1560}
+Ficino, Marsilio. 1560. \emph{Marsilii {Ficini} ... {De} Vita Libri
+Tres, Recèns Iam à Mendis Situque Vindicati, Ac Summa Castigati
+Diligentia, 1. {De} Studiosorum Sanitate Tuenda. 2. {De} Vita
+Producenda. 3. {De} Vita Coelitus Comparanda}. apud Gulielmum Rouillium
+sub scuto Veneto. \url{http://archive.org/details/bub_gb_buTQ-hAMvw0C}.
+
+\bibitem[\citeproctext]{ref-Fludd1617}
+Fludd, Robert (. 1617. {``Utriusque Cosmi... Metaphysica, Physica Atque
+Technica... Authore Roberto Flud, Aliàs de Fluctibus... Tomus Is...''}
+
+\bibitem[\citeproctext]{ref-Ginzburg1985}
+Ginzburg, Carlo. 1985. \emph{The Night Battles: Witchcraft and Agrarian
+Cults in the Sixteenth and Seventeenth Centuries}. New York: Penguin.
+
+\bibitem[\citeproctext]{ref-Gray1941}
+Gray, William Scott. 1941. \emph{Streets and Roads}. Basic Readers 1.
+Scott, Foresman; Company.
+
+\bibitem[\citeproctext]{ref-gunsnammo}
+{``Guns and Ammo.''} pre-1953.
+
+\bibitem[\citeproctext]{ref-Nettesheim1565}
+Heinrich Cornelius Agrippa von Nettesheim. 1565. \emph{HENRICI
+\textbar\textbar{} CORNELII AGRIP-\textbar\textbar PAE LIBER QVARTVS
+\textbar\textbar{} DE OCCVLTA PHI-\textbar\textbar Losophia, Seu de
+Ceri-\textbar\textbar Monijs
+Ma-\textbar\textbar Gicis.\textbar\textbar{} Cui Accesserunt, Elementa
+\textbar\textbar{} Magica Petri de Abano,\textbar\textbar{}
+Philosophi.\textbar\textbar{}}. Edited by null null. Köln: Birckmann,
+Johann.
+
+\bibitem[\citeproctext]{ref-JSB1490}
+Johannes de Sacro Busto. 1490. \emph{Sphaera Mundi. {Add}: {Georgius}
+{Purbachius}: {Theoricae} Novae Planetarum. {Regiomontanus}:
+{Disputationes} Contra {Cremonensia} Deliramenta}. Locatelli, Boneto,
+fl. 1486-1523.
+\url{http://archive.org/details/ita-bnc-in1-00000496-001}.
+
+\bibitem[\citeproctext]{ref-Jowett1871}
+Jowett, Benjamin, ed. 1871. \emph{Dialogues of Plato: Translated into
+English, with Analyses and Introduction : Volume 1}. Cambridge Library
+Collection. Classics. Place of publication not identified: publisher not
+identified.
+
+\bibitem[\citeproctext]{ref-Khunrath1609}
+Khunrath, Heinrich. 1609. \emph{Amphitheatrum Sapientiae Aeternae,
+Solius Verae, Christiano-Kabalisticum, Divino-Magicum, Nec Non
+Physico-Chymicum, Tertriunum, Catholicon}. Edited by Erasmus Wolfart and
+A. Benck. Hanoviae: Antonius.
+
+\bibitem[\citeproctext]{ref-KraftIll}
+Kraft, Fellowes. n.d. \emph{Ill Met by Moonlight}.
+
+\bibitem[\citeproctext]{ref-enosh}
+\emph{Little Enosh: Lost Among the Worlds}. n.d.
+
+\bibitem[\citeproctext]{ref-1952}
+{``Look.''} 1952. print, bi-weekly.
+
+\bibitem[\citeproctext]{ref-Mattingly1969}
+Mattingly, Garrett. 1969. \emph{The Defeat of the Spanish Armada}. 7.
+impr. London: Cape.
+
+\bibitem[\citeproctext]{ref-Mead1906}
+Mead, George Robert Stow. 1906. \emph{Thrice-Greatest Hermes: Studies in
+Hellenistic Theosophy and Gnosis Being a Transl. Of the Extant Sermons
+and Fragments of the Trismegistic Literature, with Prolegomena,
+Commentaries and Notes by g{[}eorge{]} r{[}obert{]} s{[}tow{]} Mead}.
+London \& Benares: Theos. Publ. Soc.
+
+\bibitem[\citeproctext]{ref-Muchon.d}
+Mucho, Mike. n.d. \emph{Climacterics: Your New Ancient Guide to Life's
+Cycles}.
+
+\bibitem[\citeproctext]{ref-natgeo}
+{``National Geographic.''} n.d.
+
+\bibitem[\citeproctext]{ref-1952a}
+{``Our Sunday Visitor.''} 1952. Print, weekly newspaper.
+
+\bibitem[\citeproctext]{ref-Paracelsus1582}
+Paracelsus. 1582. \emph{AVREOLI THEOPHRA Seu de Secretis Naturae
+Mysteriis...} Basel: Perna, Peter.
+
+\bibitem[\citeproctext]{ref-Plato1925}
+Plato. 1925. \emph{Lysis ; Symposium ; Gorgias}. Edited by Martin
+Schanz. Translated by W. R. M. Lamb. London, New York: William Heinemann
+: G.P. Putnam's Sons.
+
+\bibitem[\citeproctext]{ref-UnknownRH}
+{``Roads and Highways.''} n.d.
+
+\bibitem[\citeproctext]{ref-Rosselli1585}
+Rosselli, Annibale, ed. 1585. \emph{Pymander Mercurii Trismegisti Cum
+Commento Hannibalis Rosseli ... Liber Primus de SS. Trinitate}.
+Cracoviae: Lazari.
+
+\bibitem[\citeproctext]{ref-Sewell1887}
+Sewell, Anna. 1887. \emph{Black Beauty}. Jarold \& Sons.
+
+\bibitem[\citeproctext]{ref-Smith1909}
+Smith, Charlotte Fell. 1909. \emph{John Dee
+\textless1527-1608\textgreater{}}. London: Constable.
+
+\bibitem[\citeproctext]{ref-St.Phalle}
+St. Phalle, Alexis Payne de. n.d. \emph{A Dictionary of Deities, Devils
+and Dæmons of Mankind}.
+
+\bibitem[\citeproctext]{ref-Trithemius1608}
+Trithemius, Johannes. 1608. \emph{Steganographia}.
+\url{http://archive.org/details/SteganographiaBSB1608}.
+
+\bibitem[\citeproctext]{ref-UnknownPre1967}
+Unknown. Pre-1967. \emph{Unknown Guidebook to Prague}.
+
+\bibitem[\citeproctext]{ref-Valentinus.1893}
+Valentinus., Basilius, Theodor Kerckring, and Arthur Edward. Waite.
+1893. {``The Triumphal Chariot of Antimony by Basilius Valentinus ; with
+the Commentary of Theodore Kerckringius ; Being the Latin Version
+Published at Amsterdam in the Year 1685, Translated into English, with a
+Biographical Preface.''} J. Elliott,.
+\url{https://doi.org/10.5962/bhl.title.26696}.
+
+\bibitem[\citeproctext]{ref-Virdung1584}
+Virdung, Johann. 1584. \emph{De Cognoscendis, Et Medendis Morbis Ex
+Corporum Coelestium Positione Libri Quattuor}. Edited by Giovanni Paolo
+Gallucci. Venetijs: Zenarius.
+
+\bibitem[\citeproctext]{ref-WellsPre1952}
+Wells, Helen, and Julie Campbell Tatham. Pre-1952. \emph{Cherry Ames}.
+Vol. Unknown. Cherry Ames. Grosset \& Dunlop.
+
+\end{CSLReferences}
+
+\end{document}

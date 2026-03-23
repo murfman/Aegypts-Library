@@ -1,0 +1,92 @@
+This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: las-zine.aux
+A level-1 auxiliary file: titlepage.aux
+The style file: plain.bst
+Database file #1: las-zine.bib
+Warning--to sort, need author or key in 1952b
+Warning--to sort, need author or key in 1952
+Warning--to sort, need author or key in 1952a
+Warning--to sort, need author or key in UnknownRH
+Warning--to sort, need author or key in gunsnammo
+Warning--to sort, need author or key in esquire
+Warning--to sort, need author, editor, or key in enosh
+Warning--to sort, need author or key in faraway
+Warning--to sort, need author or key in natgeo
+Warning--empty author and editor in enosh
+Warning--empty publisher in enosh
+Warning--empty year in enosh
+Warning--empty year in NancyDrew
+Warning--empty publisher in Barr
+Warning--empty year in Barr
+Warning--can't use both author and editor fields in Bruno1964
+Warning--can't use both author and editor fields in Colonna1592
+Warning--can't use both author and editor fields in Croll1611
+Warning--can't use both author and editor fields in Culianu1987
+Warning--empty publisher in St.Phalle
+Warning--empty year in St.Phalle
+Warning--can't use both author and editor fields in Dee1564
+Warning--can't use both author and editor fields in Dee1659
+Warning--empty publisher in Dicson1584
+Warning--can't use both author and editor fields in Khunrath1609
+Warning--empty publisher in Craft
+Warning--empty year in Craft
+Warning--empty publisher in KraftIll
+Warning--empty year in KraftIll
+Warning--empty publisher in Crafta
+Warning--empty year in Crafta
+Warning--empty year in Craftb
+Warning--empty publisher in CraftW1
+Warning--empty year in CraftW1
+Warning--empty publisher in Craft1931
+Warning--empty publisher in Craft1939
+Warning--empty publisher in Craft1941
+Warning--empty publisher in Craft1953
+Warning--empty publisher in Craft1959
+Warning--empty publisher in Craft1960
+Warning--empty publisher in Muchon.d
+Warning--can't use both author and editor fields in Plato1925
+Warning--empty publisher in Trithemius1608
+Warning--empty publisher in UnknownPre1967
+You've used 57 entries,
+            2118 wiz_defined-function locations,
+            814 strings with 10912 characters,
+and the built_in function-call counts, 12236 in all, are:
+= -- 1085
+> -- 380
+< -- 3
++ -- 175
+- -- 108
+* -- 594
+:= -- 2036
+add.period$ -- 164
+call.type$ -- 57
+change.case$ -- 181
+chr.to.int$ -- 0
+cite$ -- 101
+duplicate$ -- 636
+empty$ -- 1255
+format.name$ -- 108
+if$ -- 2617
+int.to.chr$ -- 0
+int.to.str$ -- 57
+missing$ -- 89
+newline$ -- 276
+num.names$ -- 98
+pop$ -- 440
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 349
+stack$ -- 0
+substring$ -- 295
+swap$ -- 70
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 136
+warning$ -- 44
+while$ -- 96
+width$ -- 59
+write$ -- 555
+(There were 44 warnings)

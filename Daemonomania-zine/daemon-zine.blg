@@ -1,0 +1,18 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'daemon-zine.blg'
+[55] biber:342> INFO - === Fri Mar 20, 2026, 16:30:03
+[69] Biber.pm:421> INFO - Reading 'daemon-zine.bcf'
+[175] Biber.pm:1002> INFO - Found 89 citekeys in bib section 0
+[187] Biber.pm:4487> INFO - Processing section 0
+[193] Biber.pm:4678> INFO - Looking for bibtex file 'daemon-zine.bib' for section 0
+[200] bibtex.pm:1713> INFO - LaTeX decoding ...
+[282] bibtex.pm:1519> INFO - Found BibTeX data source 'daemon-zine.bib'
+[692] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[692] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[692] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[692] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[750] bbl.pm:676> INFO - Writing 'daemon-zine.bbl' with encoding 'UTF-8'
+[771] bbl.pm:779> INFO - Output to daemon-zine.bbl
+[772] Biber.pm:132> WARN - legacy year field 'Pre-1978' in entry 'Pre1978' is not an integer - this will probably not sort properly.
+[772] Biber.pm:132> WARN - legacy year field '1923-1958' in entry 'Thorndike1923' is not an integer - this will probably not sort properly.
+[772] Biber.pm:134> INFO - WARNINGS: 2

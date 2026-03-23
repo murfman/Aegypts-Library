@@ -1,0 +1,242 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in.]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Love \& Sleep Bibliography},
+  pdfauthor={Brian Murphy},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Love \& Sleep Bibliography}
+\author{Brian Murphy}
+\date{September 24, 2024}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This document aims to list the various authors and books mentioned
+within \emph{Love \& Sleep} by John Crowley.
+\end{abstract}
+
+\section{The Bibliogrpahy}\label{the-bibliogrpahy}
+
+\subsection{To the Reader}\label{to-the-reader}
+
+\subsection{Prologue}\label{prologue}
+
+\subsubsection{Epigraph}\label{epigraph}
+
+\begin{quote}
+Thou wouldst not think how ill all's here about my heart.
+
+\begin{itemize}
+\tightlist
+\item
+  Hamlet
+\end{itemize}
+\end{quote}
+
+\section{Genitor}\label{genitor}
+
+\subsection{Chapter One}\label{chapter-one}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned}
+
+\subsubsection{Books Mentioned}\label{books-mentioned}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Collier's''} (\citeproc{ref-1952b}{1952})
+\item
+  {``Look''} (\citeproc{ref-1952}{1952})
+\item
+  {``Our Sunday Visitor''} (\citeproc{ref-1952a}{1952})
+\end{itemize}
+
+\subsection{Chapter Two}\label{chapter-two}
+
+\subsubsection{Authors Mentioned}\label{authors-mentioned-1}
+
+Hamilton (\citeproc{ref-Hamilton}{n.d.}), Dewey
+(\citeproc{ref-Dewey}{n.d.}).
+
+\subsection{Chapter Three}\label{chapter-three}
+
+\subsection{Authors Mentioned}\label{authors-mentioned-2}
+
+Dee (\citeproc{ref-Dee}{n.d.})\texttt{.}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-1}
+
+\begin{itemize}
+\tightlist
+\item
+  {``Collier's''} (\citeproc{ref-1952b}{1952})
+\item
+  Adams et al. (\citeproc{ref-NancyDrew}{n.d.})
+\item
+  Sewell (\citeproc{ref-Sewell1887}{1887})
+\item
+  \textbf{St. Phalle (\citeproc{ref-St.Phalle}{n.d.})}
+\item
+  Wells and Tatham (\citeproc{ref-WellsPre1952}{Pre-1952})
+\end{itemize}
+
+\subsection{Chapter Four}\label{chapter-four}
+
+\subsubsection{Books Mentioned}\label{books-mentioned-2}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{{``Roads and Highways''}
+  (\citeproc{ref-UnknownRH}{n.d.})}\footnote{While I could not find a
+    school reader prior to 1952 with this name, I did find one from 1941
+    called \emph{Streets and Roads}, Gray
+    (\citeproc{ref-Gray1941}{1941}).}
+\end{itemize}
+
+\subsection{Chapter Five}\label{chapter-five}
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-NancyDrew}
+Adams, Harriet Stratemeyer, Edward Stratemeyer, Edna Stratemeyer Squier,
+and Harriet Otis Smith. n.d. \emph{Nancy Drew}. Vol. unknown. Nancy Drew
+Mystery Stories. Simon; Schuster.
+
+\bibitem[\citeproctext]{ref-1952b}
+{``Collier's.''} 1952. Print, weekly.
+
+\bibitem[\citeproctext]{ref-Dee}
+Dee, John. n.d.
+
+\bibitem[\citeproctext]{ref-Dewey}
+Dewey, Thomas E. n.d.
+
+\bibitem[\citeproctext]{ref-Gray1941}
+Gray, William Scott. 1941. \emph{Streets and Roads}. Basic Readers 1.
+Scott, Foresman; Company.
+
+\bibitem[\citeproctext]{ref-Hamilton}
+Hamilton, Alexander. n.d.
+
+\bibitem[\citeproctext]{ref-1952}
+{``Look.''} 1952. print, bi-weekly.
+
+\bibitem[\citeproctext]{ref-1952a}
+{``Our Sunday Visitor.''} 1952. Print, weekly newspaper.
+
+\bibitem[\citeproctext]{ref-UnknownRH}
+{``Roads and Highways.''} n.d.
+
+\bibitem[\citeproctext]{ref-Sewell1887}
+Sewell, Anna. 1887. \emph{Black Beauty}. Jarold \& Sons.
+
+\bibitem[\citeproctext]{ref-St.Phalle}
+St. Phalle, Alexis Payne de. n.d. \emph{A Dictionary of Deities, Devils
+and Dæmons of Mankind}.
+
+\bibitem[\citeproctext]{ref-WellsPre1952}
+Wells, Helen, and Julie Campbell Tatham. Pre-1952. \emph{Cherry Ames}.
+Vol. Unknown. Cherry Ames. Grosset \& Dunlop.
+
+\end{CSLReferences}
+
+\end{document}

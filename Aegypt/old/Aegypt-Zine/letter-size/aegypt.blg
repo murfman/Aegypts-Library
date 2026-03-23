@@ -1,0 +1,139 @@
+This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: aegypt.aux
+A level-1 auxiliary file: titlepage.aux
+The style file: plain.bst
+Database file #1: aegypt.bib
+Warning--entry type for "Orphic" isn't style-file defined
+--line 429 of file aegypt.bib
+Warning--to sort, need author, editor, or key in Brit1939
+Warning--to sort, need author or key in faraway
+Warning--to sort, need author or key in 1961
+Warning--empty author and editor in Brit1939
+Warning--empty publisher in Brit1939
+Warning--empty author in 1961
+Warning--empty title in 1961
+Warning--empty title in Agrippa
+Warning--empty publisher in Agrippa
+Warning--empty publisher in Barra
+Warning--empty year in Barra
+Warning--empty publisher in Barr
+Warning--empty year in Barr
+Warning--empty publisher in Barrb
+Warning--empty year in Barrb
+Warning--empty chapter and pages in Bates1872
+Warning--empty publisher in Bates1872
+Warning--empty publisher in Briggs1940
+Warning--empty publisher in Brunoa
+Warning--empty publisher in Bruno1854
+Warning--empty publisher in Bruno1961
+Warning--empty publisher in Bruno1962
+Warning--empty publisher in Cecco1250
+Warning--empty publisher in Dante1950
+Warning--empty publisher in De
+Warning--empty publisher in Dee
+Warning--empty year in Dee
+Warning--empty publisher in Dee1568
+Warning--empty publisher in Ficcino1543
+Warning--empty publisher in Ficcino
+Warning--empty year in Ficcino
+Warning--empty publisher in Herbermann1908
+Warning--empty publisher in Holinshed1923
+Warning--empty publisher in Horapollo
+Warning--empty year in Horapollo
+Warning--empty publisher in Hunnis1600
+Warning--empty publisher in Hyginus
+Warning--empty year in Hyginus
+Warning--empty publisher in Iambilichus
+Warning--empty year in Iambilichus
+Warning--empty publisher in Kraftb
+Warning--empty year in Kraftb
+Warning--empty publisher in Kraftf
+Warning--empty year in Kraftf
+Warning--empty publisher in Kraftc
+Warning--empty year in Kraftc
+Warning--empty publisher in Kraft
+Warning--empty year in Kraft
+Warning--empty publisher in Kraftd
+Warning--empty year in Kraftd
+Warning--empty publisher in Krafte
+Warning--empty year in Krafte
+Warning--empty publisher in Krafta
+Warning--empty year in Krafta
+Warning--empty publisher in Kraft1931
+Warning--empty publisher in Lewis1966
+Warning--empty chapter and pages in Longfellow
+Warning--empty publisher in Longfellow
+Warning--empty year in Longfellow
+Warning--empty publisher in Magus
+Warning--empty year in Magus
+Warning--empty publisher in MechonMamre
+Warning--empty year in MechonMamre
+Warning--empty publisher in Niblick
+Warning--empty year in Niblick
+Warning--empty publisher in Norton
+Warning--empty year in Norton
+Warning--empty publisher in Sidney1598
+Warning--empty publisher in Rose
+Warning--empty year in Rose
+Warning--empty publisher in Sacrobosco
+Warning--empty year in Sacrobosco
+Warning--empty publisher in Scott1924
+Warning--empty publisher in Seneschal1905
+Warning--empty publisher in Shakespeare1912
+Warning--empty title in Spenser1920
+Warning--empty chapter and pages in Spenser1920
+Warning--empty publisher in Spenser1920
+Warning--empty chapter and pages in Thomas1917
+Warning--empty publisher in Thomas1917
+Warning--empty chapter and pages in Trithemius
+Warning--empty publisher in Trithemius
+Warning--empty publisher in druids
+Warning--empty year in druids
+Warning--empty publisher in phaeton
+Warning--empty year in phaeton
+Warning--empty publisher in worldsin
+Warning--empty year in worldsin
+Warning--can't use both author and editor fields in Unknown1969
+You've used 77 entries,
+            2118 wiz_defined-function locations,
+            860 strings with 9842 characters,
+and the built_in function-call counts, 17091 in all, are:
+= -- 1405
+> -- 569
+< -- 4
++ -- 262
+- -- 164
+* -- 895
+:= -- 2851
+add.period$ -- 196
+call.type$ -- 77
+change.case$ -- 242
+chr.to.int$ -- 0
+cite$ -- 166
+duplicate$ -- 923
+empty$ -- 1742
+format.name$ -- 164
+if$ -- 3572
+int.to.chr$ -- 0
+int.to.str$ -- 77
+missing$ -- 141
+newline$ -- 353
+num.names$ -- 149
+pop$ -- 726
+preamble$ -- 1
+purify$ -- 236
+quote$ -- 0
+skip$ -- 466
+stack$ -- 0
+substring$ -- 469
+swap$ -- 90
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 168
+warning$ -- 89
+while$ -- 153
+width$ -- 79
+write$ -- 658
+(There were 90 warnings)

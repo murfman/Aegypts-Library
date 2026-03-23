@@ -1,0 +1,26 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'las-zine.blg'
+[55] biber:342> INFO - === Mon Oct  6, 2025, 10:21:31
+[73] Biber.pm:421> INFO - Reading 'las-zine.bcf'
+[147] Biber.pm:1002> INFO - Found 57 citekeys in bib section 0
+[164] Biber.pm:4487> INFO - Processing section 0
+[175] Biber.pm:4678> INFO - Looking for bibtex file 'las-zine.bib' for section 0
+[176] bibtex.pm:1713> INFO - LaTeX decoding ...
+[218] bibtex.pm:1519> INFO - Found BibTeX data source 'las-zine.bib'
+[501] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[502] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[502] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[576] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[576] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[617] bbl.pm:676> INFO - Writing 'las-zine.bbl' with encoding 'UTF-8'
+[648] bbl.pm:779> INFO - Output to las-zine.bbl
+[648] Biber.pm:132> WARN - legacy year field 'Pre-1952' in entry 'WellsPre1952' is not an integer - this will probably not sort properly.
+[648] Biber.pm:132> WARN - legacy year field 'pre-1953' in entry 'gunsnammo' is not an integer - this will probably not sort properly.
+[648] Biber.pm:132> WARN - legacy year field 'pre-1952' in entry 'esquire' is not an integer - this will probably not sort properly.
+[648] Biber.pm:132> WARN - legacy year field 'Pre-1967' in entry 'UnknownPre1967' is not an integer - this will probably not sort properly.
+[648] Biber.pm:132> WARN - legacy year field '1943-' in entry 'LearnedSocieties1943' is not an integer - this will probably not sort properly.
+[648] Biber.pm:132> WARN - legacy year field 'n.d.' in entry 'Muchon.d' is not an integer - this will probably not sort properly.
+[648] Biber.pm:134> INFO - WARNINGS: 6

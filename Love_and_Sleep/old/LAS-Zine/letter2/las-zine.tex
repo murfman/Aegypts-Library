@@ -1,0 +1,709 @@
+\documentclass[12pt,makeidx]{extreport}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\raggedbottom
+
+\setlength{\headheight}{15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{savesym}
+\usepackage{shadowtext}
+\usepackage{anyfontsize}
+\usepackage{egothic}
+\usepackage{marvosym}
+\usepackage[T1]{fontenc}
+\usepackage{accanthis}
+\usepackage[titles]{tocloft}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\restoresymbol{}{}
+
+
+
+% Delete any of the following that are not needed
+\usepackage{makeidx}
+\usepackage{boisik}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb} % Just for the degree symbol
+\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{lettrine} % Drop caps
+\usepackage{wrapfig} % Let's wrap some images
+\usepackage{hanging} % For hanging indents in a script
+\usepackage{fancyvrb} % Use line numbers with code samples
+\usepackage{fvextra} % Break lines inside Verbatim environment:
+\usepackage{enumitem} % Control spacing in lists
+\usepackage{setspace} % Better control over line-spacing
+\usepackage{nicefrac} % Use nice fractions
+%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
+\usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
+\usepackage{microtype} % Make things neater. 
+\usepackage{tabularray} % Easy tables
+\usepackage[bottomfloats,belowfloats,multiple]{footmisc}
+\usepackage{quotchap}
+\usepackage{fancybox,lipsum}
+\usepackage{verse}
+\usepackage{relsize}
+%\usepackage[style=numeric,sorting=nty]{biblatex}
+\usepackage[backend=biber,style=chicago-authordate]{biblatex}
+
+
+\addbibresource{las-zine.bib}
+\interfootnotelinepenalty=10000
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}} % Where are our images?
+\usepackage{multicol} % Include two- or three-column sections
+\counterwithout{footnote}{chapter} % Stop resetting the footnote count after each chapter
+\NumTabs{18} % Define 18 tab stops (at 1/4" intervals) [tabto package]
+\raggedbottom  % Don't force text to fill page
+\setlength{\belowcaptionskip}{4pt} % Adjust space between caption and figure
+\renewcommand*\contentsname{Contents\ldots} % Change the name of the TOC
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,x11names}{xcolor}
+%% This is how to have the \chapter pages respect  fancy header
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{shadows}
+\newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
+\AtBeginEnvironment{quote}{\par\singlespacing\small}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Setup%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{
+	paperheight=11in, 
+	paperwidth=8.5in, 
+	margin=24mm,
+%	a5paper % Comment out for half-letter paper
+}
+
+\addtolength{\topmargin}{5mm} % Adjust and bottom margin
+\addtolength{\textheight}{-10mm} % Adjust the bottom margin
+\setlength{\parskip}{.5em}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page Headers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the  as necessary
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+ \fancyhf{}
+ \fancyhead[LE,RO]{\textit{Ægypt's Library}}
+ \fancyhead[RE,LO]{Love \& Sleep}
+ \fancyfoot[RO,LE]{\thepage}
+ \fancyfoot[LE,RO]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter Title Spacing %%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\rm\Large\bfseries}
+    {\chaptertitlename\ \thechapter}
+    {25pt}
+    {\LARGE}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.5ex}
+\pagestyle{fancy}
+% remove subsection numbering
+\setcounter{secnumdepth}{-\maxdimen} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make a nice border and box for the tops of our examples
+\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
+
+% Add an \hrule with space above and below
+\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
+
+% Make hrefs easier (must load package hyperref}
+\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
+
+% Rotate text in tables easier
+% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
+\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
+
+% Make diversions easier (and uniform!)
+\newcommand\kdivb[2]{
+	\medskip
+	\hrule
+	\medskip
+	\noindent{}\textbf{#1}
+	\vspace{#2mm}
+	\begin{multicols}{2}
+}
+
+\newcommand\kdive[1]{
+	\end{multicols} 
+	\vspace{#1mm}
+	\hrule
+	\medskip
+}
+
+% dropcaps because why the fuck not...
+\input GoudyIn.fd
+\newcommand*\initfamily{\usefont{U}{GoudyIn}{xl}{n}}
+\usepackage{Typocaps,lettrine}
+%\renewcommand\LettrineFontHook{\Typocapsfamily}
+\renewcommand\LettrineFontHook{\initfamily}
+\newcommand\dropcap{\lettrine[lines=4, findent=3pt]}
+
+% latex logos
+\usepackage{hologo}
+
+
+
+% fleurons
+\usepackage{staves}
+\usepackage{pifont}
+\usepackage{rotating}
+\newcommand\fleuron{\begin{turn}{45}\Large \ding{166}\end{turn}}
+	% use this inline \center \reflectbox{\fleuron}\fleuron
+\usepackage{xhfill}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+\usepackage{linearA}
+\newcommand\doublefleuron{%
+	\reflectbox{\fleuron}\AC\staveXLIX\reflectbox{\AC}\fleuron}
+\newcommand\fleuronbar{%
+	{\huge\LinearACCCXIII}\xrfill[1.3ex]{1pt}\doublefleuron\xrfill[1.3ex]{1pt}\reflectbox{\huge\LinearACCCXIII}}
+
+
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage%
+    \pagestyle{fancy}}
+
+\renewcommand*{\footnotelayout}{\small\sffamily}
+\setlist[1]{labelindent=\parindent}
+\setlist[itemize]{itemsep=1ex minus .75ex} % Set item spacing 
+%\setlist[itemize,1]{label=$\triangleright$} %change the top item level icon to a triangle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Just for Issue #006 %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Be sure to load this package last
+% [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+\usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Information %%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE and SUBTITLE as necessary
+\author{Brian Murphy}
+\title{
+ {\Huge Ægypt's Library} \\
+ {\footnotesize A bibliography of the Aegypt Tetralogy \\
+ \bigskip
+ {\Large The Solitudes} \\
+ \bigskip
+ Typeset in \LaTeX{} \\
+% Issue \#001
+ }
+}
+\date{\begin{small}\today{}\end{small}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Cover and title page %%%%%%%%%%%%%%%%%
+\usepackage{titlepic}
+\usepackage{pdfpages}
+
+% command to provide stretchy vertical space in proportion
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip1.4em} 
+
+
+%\addbibresource{aegypt.bib}
+\makeindex
+
+% this is an attempt to auto bold face bib entries with keyword 'Fictional'
+%\AtEveryBibitem{%
+%  \ifkeyword{Fictional}{\bfseries}{}%
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Let's get it started %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%\includepdf[pages=1]{cover.pdf}
+
+%\afterpage{\blankpage}
+\include{titlepage.tex}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{50}{54}\Saturn}}\\
+\nbvspace[1]
+\end{center}
+
+\pagestyle{fancy}
+
+%\rmfamily
+\accanthis
+\pagestyle{fancy}
+\chapter{Introduction}
+\lettrine[lines=4,findent=3pt]{T}{his} is a continuation of my attempt at listing out the various authors and books mentioned within the second volume of the Ægypt Tetralogy, Love \& Sleep, by John Crowley. Fictitious authors and books have been placed in bold typeface for easy identification. 
+
+For those that care, this project was originally done in RStudio to make use of their excellent Rmarkdown code and integration abilities, especially those concerned with BibTeX files. Once I finished it there a friend mentioned it would be cool to have as a zine instead of a flat PDF, so I went way down that rabbit-hole before coming back to sanity. Well sort of\dots I'm using \LaTeX{} because I'm familiar enough with it and it is free and ridiculously powerful. So, after much trial and tribulation what started out as a text file then migrated into Markdown then Rmarkdown is now in \LaTeX{}, and from letter size to half-letter zine, and now back to letter, which I'm sure highlights my own inability to commit more than anything else.
+
+\vspace*{1cm}
+
+\begin{center}
+	\textit{Any errors within are entirely my own.}
+\end{center}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Mercury}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Preface Info}
+\section{To the Reader}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item Night Comes to the Cumberlands: A Biography of a Depressed Area \parencite{Caudill1963}
+\item Giordano Bruno and the Embassy Affair \parencite{Bossy1991}
+\item The Defeat of the Spanish Armada \parencite{Mattingly1969}
+\item The Night Battles: Witchcraft and Agrarian Cults in the Sixteenth and Seventeenth Centuries \parencite{Ginzburg1985}
+\item Rudolf II and His World: A Study in Intellectual History, 1576 - 1612 \parencite{Evans1973}
+\item Eros and Magic in the Renaissance \parencite{Culianu1987}
+\end{itemize}
+
+
+
+\hspace{-1.5em}\textbf{Authors Mentioned}\\
+Piero Camporesi, Caroline Walker Bynum, Caroline Oates, Earnon McMullen.
+\\
+
+
+\section{Prologue}
+\textbf{Epigraph}
+
+\begin{quote}
+\textit{Thou wouldst not think how ill all's here about my heart.}\\
+---Hamlet
+\end{quote}
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{50}{54}\Jupiter}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Part One -- Genitor}
+\section{Chapter One}
+\textbf{Books Mentioned}\\
+\begin{itemize}
+\item ``Collier’s'' \parencite{1952b}
+\item ``Look'' \parencite{1952}
+\item ``Our Sunday Visitor'' \parencite{1952a}
+\end{itemize}
+
+\section{Chapter Two}
+\textbf{Authors Mentioned}\\
+Alexander Hamilton, Thomas E. Dewey.
+
+\section{Chapter Three}
+\textbf{Authors Mentioned}\\
+John Dee.
+\\
+
+%\begin{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% This is the inset box test theme %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\shadowbox{\color{darkgray} 
+%\begin{Sbox}
+%\begin{minipage}{4in}
+%\textit{‘“Heck no,” Pierce said. “I’m with Sir Thomas Browne. ‘Methinks there be not impossibilities enough in Religion for an active faith.’”}\\
+%—John Crowley, “Daemonomania”
+%\end{minipage}
+%\end{Sbox}
+%\fbox{\TheSbox}
+%}
+%\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\end{center}
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item ``Collier’s'' \parencite{1952b}
+\item Nancy Drew. Unknown volume.\parencite{NancyDrew}
+\item Black Beauty \parencite{Sewell1887}
+\item \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind} \parencite{St.Phalle}
+\item Cherry Ames \parencite{WellsPre1952}
+\end{itemize}
+
+\section{Chapter Four}
+\textbf{Books Mentioned}\\
+\begin{itemize}
+\item ``Roads and Highways''\footnote{While I could not find a school reader prior to 1952 with this name, I did find one from 1941 called Streets and Roads \parencite{Gray1941}.} \parencite{UnknownRH}
+\end{itemize}
+
+
+\section{Chapter Five}
+\textbf{Authors Mentioned}\\
+Augustine of Hippo.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{“Guns and Ammo”}\footnote{While Crowley mentions Guns and Ammo as the magazine that his cousin Boyd was reading in 1952, the actual magazine wasn’t founded until 1958. Therefore, I’ve marked it as fictitious.} \parencite{gunsnammo}
+\end{itemize}
+
+\section{Chapter Six}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item “Esquire” \parencite{esquire}
+\end{itemize}
+
+\section{Chapter Thirteen}
+\textbf{Authors Mentioned}\\
+\textbf{Fellowes Kraft}.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Little Enosh: Lost Among the Worlds}\footnote{It has been posited by others that this could have been inspired on Winsor McCay’s Little Nemo in Slumberland which ran from 1905 until 1927. The only problem with that being that Pierce recalls getting “the new Little Enosh” while he was a child. This could just be another instance of transplanting one work in time by Crowley, however. After digging through Crowley's long dead LiveJournal I found the following post from October 20th, 2009 titled ``Novel Toons.'' \textit{``Many responses to the made-up-comics-in-books question, with many people noting the presence of imagined comics within comics, either created by comic-artist heroes or read by characters ("Fearless Fosdick", thanks for that one).  But far fewer comic strips appearing in regular books made of just words.  One not noted is in my own Aegypt series -- the Gnostic comic "Little Enosh -- Lost among the Worlds," whose content is drawn directly from Mandean gnostic writings, with some Sophia matter thrown in.  Sometime not long ago there was discussion in the news about the few last remaining Mandean Gnostic communities still in existence.''} The publication date of 1952 was set later in \textit{Daemonomania}.\label{enosh}} \parencite{enosh}
+\item \textbf{The Werewolf of Prague} \parencite{CraftW1}
+\end{itemize}
+
+
+\section{Chapter Fourteen}
+\textbf{Authors Mentioned}\\
+Giordano Bruno, \textbf{Fellowes Kraft}.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Bitten Apples} \parencite{Craft}
+\item \textbf{A Passage at Arms} \parencite{Crafta}
+\item \textbf{The Werewolf of Prague} \parencite{CraftW1}
+\item The Expulsion of the Triumphant Beast \parencite{Bruno1964}
+\item \textbf{Bruno’s Journey} \parencite{Craft1931}
+\item \textbf{The Winter King} \parencite{Craft1941}
+\item \textbf{Elizabethan People} \parencite{Craft1953}
+\item \textbf{Astray} \parencite{Craft1959}
+\item \textbf{Scream Bloody Murder} \parencite{Craft1939}
+\item \textbf{Skin Deep} \parencite{Craftb}
+\item \textbf{Sit down, Sorrow} \parencite{Craft1960}
+\item \textbf{``Faraway Crier''} \parencite{faraway}
+\end{itemize}
+
+
+\section{Chapter Fifteen}
+\textbf{Authors Mentioned}\\
+John Milton, Virgil, Dante Aligheri.
+\\
+\begin{quote}
+\textit{``All night upon mine heart I felt her warm heart beat. Nightlong within mine arms in love and sleep she lay.''}\\
+--- Ernest Christopher Dowson, ``\textit{Cynara}''
+\end{quote}
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Time's Body} \parencite{Barr}
+\end{itemize}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{50}{54}\Zodiac{4}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Part Two -- Nati}
+\section{Chapter One}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item The Triumphal Chariot of Antimony by Basilius Valentinus \parencite{Valentinus.1893}
+\item Amphitheatrum Sapientiae Aeternae, Solius Verae, Christiano-Kabalisticum, Divino-Magicum\ldots \parencite{Khunrath1609}
+\item Utriusque Cosmi\ldots Metaphysica, Physica Atque Technica\ldots \parencite{Fludd1617}
+\item Recens Et Completa Ars Reminiscendi Et in Phantastico\ldots \parencite{Bruno1583a}
+\end{itemize}
+
+\section{Chapter Three}
+\textbf{Authors Mentioned}\\
+Nicolaus Copernicus, Marsilio Ficino, Pythagoras, Marcellus Palingenius Stellatus, Socrates.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Monas Hieroglyphica\ldots \parencite{Dee1564}
+\end{itemize}
+
+\section{Chapter Four}
+\textbf{Authors Mentioned}\\
+Aristotle, Nicolaus Copernicus, Marsilio Ficino, Samuel Daniel, Matthew Gwynne (Gwinne), Plato, Pythagoras.
+
+\section{Chapter Five}
+\textbf{Authors Mentioned}\\
+John Dee, Giordano Bruno, Méric Casaubon, Paracelsus.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Bruno’s Journey} \parencite{Craft1931}
+\item A True \& Faithful Relation of What Passed for Many Yeers Between Dr. John Dee\ldots And Some
+Spirits\ldots \parencite{Dee1659}
+\item John Dee 1527-1608 \parencite{Smith1909}
+\item Hypnerotomachia\footnote{Crowley mentions that it is published in 1594, which is only two years off from the first English version printed in 1592. Because of this reason alone I did not choose the original version from a decade previously, but of course I could be wrong.} \parencite{Colonna1592}
+\end{itemize}
+
+\section{Chapter Six}
+\textbf{Authors Mentioned}\\
+Hildegard of Bingen OSB, Oswald Croll, Cornelius Drebbel, Johannes Kepler, Jöst Burgi.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Unknown Guidebook to Prague \parencite{UnknownPre1967}
+\item Osvaldi Crollii Veterani Hassi Basilica Chymica: Continens. Philosophicam Propria Laborum Expe-
+rientia Confirmatam Descriptionem Et Usum Remediorum Chymicorum Selectissimorum e Lumine
+Gratiae Et Naturae Desumptorum \parencite{Croll1611}
+\end{itemize}
+
+\section{Chapter Seven}
+\textbf{Authors Mentioned}\\
+Diotima of Mantinea\footnote{See Plato’s Symposium \parencite{Plato1925}.}.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind}\footnote{While not stated by name, the book that Val begins reading to Rosie is undoubtedly the same which Pierce had as a boy.} \parencite{St.Phalle}
+\end{itemize}
+
+\section{Chapter Eight}
+\textbf{Authors Mentioned}\\
+G.R.S. Mead.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Thrice-Greatest Hermes: Studies in Hellenistic Theosophy and Gnosis\ldots \parencite{Mead1906}
+\end{itemize}
+
+\section{Chapter Nine}
+\textbf{Authors Mentioned}\\
+Plato.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind} \parencite{St.Phalle}
+\item \textbf{Little Enosh: Lost Among the Worlds}\footref{enosh} \parencite{enosh}
+\item Dialogues of Plato: Translated into English, with Analyses and Introduction : Volume 1 \parencite{Jowett1871}
+\end{itemize}
+
+\section{Chapter Ten}
+\textbf{Authors Mentioned}\\
+Dante Aligheri.
+
+\section{Chapter Eleven}
+\textbf{Authors Mentioned}\\
+Annibale Roselli\footnote{Named by Crowley using the variant ``Dr. Hannibal.''} , Joachim of Fiore\footnote{Named by Crowley as ``Abbot Joachim of Flora.''} , Heinrich Agrippa.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Pymander Mercurii Trismegisti Cum Commento Hannibalis Rosseli \parencite{Rosselli1585}
+\item De Occulta Philosophia \parencite{Nettesheim1565}
+\item Monas Hieroglyphica Ioannis Dee \parencite{Dee1564}
+\end{itemize}
+
+\section{Chapter Twelve}
+\textbf{Authors Mentioned}\\
+Giordano Bruno.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Iordanvs Brvnvs Nolanvs de Vmbris Idearvm\ldots \parencite{Bruno1582}
+\end{itemize}
+
+\section{Chapter Thirteen}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item Dictionary of American Biography \parencite{LearnedSocieties1943}
+\item \textbf{Climacterics: Your New Ancient Guide to Life’s Cycles}\footnote{A book title made up by Pierce to Rose Ryder.} \parencite{Muchon.d}
+\end{itemize}
+
+\section{Chapter Fourteen}
+\textbf{Authors Mentioned}\\
+\textbf{Fellowes Kraft.}
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Sit down, Sorrow} \parencite{Craft1960}
+\end{itemize}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{5}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Part Three -- Valetudo}
+\section{Chapter One}
+\textbf{Authors Mentioned}\\
+\textbf{Fellowes Kraft.}
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Ill Met by Moonlight}\footnote{Noted as being a book of ghost stories by Fellowes Kraft.} \parencite{KraftIll}
+\item Unknown Bible\footnote{The bible is used by the pastor at Boney’s funeral where Job 1:21 is quoted. As an aside this led to a look into the possible origins of the particular denomination that Boney belonged to, here named ``The Danish Brethren.'' The best I can determine now is that it was a splinter group formed after the first or second schism of the Bible Student Movement in the late 1920s, prior to gaining the name Jehovah’s Witnesses.}
+\end{itemize}
+
+\section{Chapter Two}
+\textbf{Authors Mentioned}\\
+Plato, Shakespeare, Giordano Bruno.
+
+\section{Chapter Three}
+\textbf{Authors Mentioned}\\
+Alexander Dicson, Albertus, Aquinas, Triptolemus, Euclid, Copernicus, John Dee, Paracelsus.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{Faraway Crier} \parencite{faraway}
+\item \textbf{A Dictionary of Deities, Devils and Dæmons of Mankind} \parencite{St.Phalle}
+\item De umbra rationis \& judicii \parencite{Dicson1584}
+\item AVREOLI THEOPHRA Seu de Secretis Naturae mysteriis... \parencite{Paracelsus1582}
+\end{itemize}
+
+\section{Chapter Four}
+\textbf{Authors Mentioned}\\
+John Dee, Euclid.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm \parencite{Dee1564}
+\item Steganographia \parencite{Trithemius1608}
+\end{itemize}
+
+\section{Chapter Six}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item \textbf{``Faraway Crier''} \parencite{faraway}
+\end{itemize}
+
+\section{Chapter Seven}
+\textbf{Authors Mentioned}\\
+Nostradamus, Regiomontanus, Cornelius Drebbel, John Dee.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item Sphaera mundi \parencite{JSB1490}
+\end{itemize}
+
+\section{Chapter Eight}
+\textbf{Books Mentioned}
+\begin{itemize}
+\item ``National Geographic'' \parencite{natgeo}
+\end{itemize}
+
+\section{Chapter Nine}
+\textbf{Authors Mentioned}\\
+Marsilio Ficino, Dante Aligheri, Petrarch, Robert Burton.
+\\
+
+\hspace{-1.5em}\textbf{Books Mentioned}
+\begin{itemize}
+\item De vita coelitus comparanda \parencite{Ficino1560}
+\item The Anatomy of Melancholy\footnote{Pierce never mentions the book by name here but instead by Burton’s name and references ``Amor hereos'' which Barr says ``...was a part of melancholy.''} \parencite{Burton1863}
+\end{itemize}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{6}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+%
+%\bibliographystyle{plain}
+%\bibliography{las-zine}
+
+{\microtypesetup{expansion=false}%
+ \rmfamily
+ \printbibliography[keyword=Fictional, title=Bibliography of Fictional Books, heading=bibintoc]
+ \printbibliography[keyword=real, title=Bibliography of Real Books, heading=bibintoc]
+}
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{40}{44}\staveLXIV}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+%\chapter{Colophon}
+%All contents  \textcopyleft 2025 Brian Murphy\\
+%\bigskip
+
+%Cover art is all in the public domain.
+%
+%\begin{itemize}
+%\item The monad symbol is my own.
+%\item \href{https://www.rawpixel.com/image/420927/free-illustration-image-thoth-egypt-egyptian}{Thoth}\\
+%https://www.rawpixel.com/image/420927/free-illustration-image-thoth-\\egypt-egyptian
+%\item \href{https://www.rawpixel.com/image/420831/free-illustration-image-egypt-egyptian-goddess}{Scarab}\\
+%https://www.rawpixel.com/image/420831/free-illustration-image-egypt-\\egyptian-goddess
+%\end{itemize}
+
+%\afterpage{\blankpage}
+
+%\includepdf[pages=2]{cover.pdf}
+
+
+\end{document}

@@ -1,0 +1,1557 @@
+\documentclass[10pt,makeidx]{extreport}
+
+
+% == Unicode fonts ==
+\usepackage{fontspec} % (no inputenc/fontenc with fontspec)
+\setsansfont{Libertinus Sans}
+\setmonofont{FiraCode Nerd Font Mono}[Scale=0.8]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[utf8]{inputenc}
+\usepackage{float}
+\raggedbottom
+
+\setlength{\headheight}{15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{savesym}
+\usepackage{savesym}
+\setmainfont{Cormorant Garamond}[
+Ligatures={TeX,Discretionary},
+Scale=MatchLowercase,
+]
+\usepackage{shadowtext}
+\usepackage{anyfontsize}
+%\usepackage{egothic}
+\usepackage{marvosym}
+%\usepackage[T1]{fontenc}
+%\usepackage{accanthis}
+\usepackage[titles]{tocloft}
+%\usepackage{titlesec}
+%%\usepackage{lmodern}
+%\restoresymbol{}{}
+
+\newfontfamily\accanthis{EB Garamond}[
+  Ligatures=TeX,
+  Scale=MatchLowercase
+  % Letters=SmallCaps,      % <- uncomment if you want small caps
+  % LetterSpace=2           % <- gentle tracking for display
+]
+
+\newfontfamily\egothfamily{Cardo}[
+  Ligatures=TeX,
+  Scale=MatchLowercase
+]
+
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{spanish}
+\newcommand{\esgloss}[1]{\hfill{\footnotesize\itshape\foreignlanguage{spanish}{#1}}}
+
+\newcommand{\DotLeader}{\leaders\hbox to .6em{\hss.\hss}\hfill}
+
+\newcommand{\lineLRdot}[2]{%
+  \noindent\makebox[\linewidth][l]{#1\DotLeader #2}%
+}
+
+
+\newcommand{\lineLR}[2]{%
+  \noindent\makebox[\linewidth][s]{#1\hfill#2}%
+}
+
+
+% Delete any of the following that are not needed
+\usepackage{makeidx,tabularx}
+\usepackage{amsmath}
+%\usepackage{boisik}
+\usepackage{graphics}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb} % Just for the degree symbol
+\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{lettrine} % Drop caps
+\usepackage{wrapfig} % Let's wrap some images
+\usepackage{hanging} % For hanging indents in a script
+\usepackage{fancyvrb} % Use line numbers with code samples
+\usepackage{fvextra} % Break lines inside Verbatim environment:
+\usepackage{enumitem} % Control spacing in lists
+\usepackage{setspace} % Better control over line-spacing
+\usepackage{nicefrac} % Use nice fractions
+%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
+\usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
+\usepackage[tracking=true]{microtype} % Make things neater. 
+\usepackage{tabularray} % Easy tables
+\usepackage[bottomfloats,belowfloats,multiple]{footmisc}
+\usepackage{quotchap}
+\usepackage{fancybox,lipsum}
+\usepackage{verse}
+\usepackage{relsize}
+%\usepackage[style=numeric,sorting=nty]{biblatex}
+\usepackage[backend=biber,style=chicago-authordate,autolang=none]{biblatex}
+\DeclareLanguageMapping{american}{american-chicago}
+%\addbibresource{aegypt.bib}
+%\addbibresource{las-zine.bib}
+\addbibresource{daemon-zine.bib}
+%\addbibresource{combined.bib}
+\interfootnotelinepenalty=10000
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}} % Where are our images?
+\usepackage{multicol} % Include two- or three-column sections
+\counterwithout{footnote}{chapter} % Stop resetting the footnote count after each chapter
+\NumTabs{18} % Define 18 tab stops (at 1/4" intervals) [tabto package]
+\raggedbottom  % Don't force text to fill page
+\setlength{\belowcaptionskip}{4pt} % Adjust space between caption and figure
+\renewcommand*\contentsname{Contents\ldots} % Change the name of the TOC
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,x11names}{xcolor}
+%% This is how to have the \chapter pages respect  fancy header
+\usepackage{etoolbox}
+\AtBeginEnvironment{multicols}{\setlength{\parindent}{0pt}}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{shadows}
+\newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
+\AtBeginEnvironment{quote}{\par\singlespacing\small}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Setup%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{
+	paperheight=11in, 
+	paperwidth=8.5in, 
+	margin=24mm,
+%	a5paper % Comment out for half-letter paper
+}
+
+\addtolength{\topmargin}{5mm} % Adjust and bottom margin
+\addtolength{\textheight}{-10mm} % Adjust the bottom margin
+\setlength{\parskip}{.5em}
+
+% Automatic version string based on compilation date
+\newcommand{\docversion}{v-\the\year-\the\month-\the\day}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page Headers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the  as necessary
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}% clear all
+\fancyhead[LE,RO]{\textit{Ægypt's Library}}
+\fancyhead[RE,LO]{\textit{Daemonomania}}
+\fancyfoot[LO,LE]{\small \docversion}% bottom left, all pages
+\fancyfoot[RO,RE]{\thepage}% bottom right, page number
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter Title Spacing %%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\rm\Large\bfseries}
+    {\chaptertitlename\ \thechapter}
+    {25pt}
+    {\LARGE}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{1ex}
+\pagestyle{fancy}
+% remove subsection numbering
+\setcounter{secnumdepth}{-\maxdimen} 
+
+\usepackage{needspace,xparse}
+
+% in preamble
+\usepackage{needspace,xparse}
+\let\latexsection\section
+\RenewDocumentCommand{\section}{s o m}{%
+  % Reserve enough vertical room for heading + a couple of lines of content,
+  % plus typical list/top spacing if the section starts with an itemize.
+  \Needspace{\dimexpr 7\baselineskip + \parskip + \topsep\relax}%
+  \IfBooleanTF{#1}
+    {\latexsection*{#3}}% starred form
+    {\IfNoValueTF{#2}{\latexsection{#3}}{\latexsection[#2]{#3}}}% optional short title
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make a nice border and box for the tops of our examples
+\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
+
+% Add an \hrule with space above and below
+\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
+
+% Make hrefs easier (must load package hyperref}
+\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
+
+% Rotate text in tables easier
+% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
+\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
+
+% Make diversions easier (and uniform!)
+\newcommand\kdivb[2]{
+	\medskip
+	\hrule
+	\medskip
+	\noindent{}\textbf{#1}
+	\vspace{#2mm}
+	\begin{multicols}{2}
+}
+
+\newcommand\kdive[1]{
+	\end{multicols} 
+	\vspace{#1mm}
+	\hrule
+	\medskip
+}
+
+% dropcaps because why the fuck not...
+\input GoudyIn.fd
+\newcommand*\initfamily{\usefont{U}{GoudyIn}{xl}{n}}
+\usepackage{Typocaps,lettrine}
+%\renewcommand\LettrineFontHook{\Typocapsfamily}
+\renewcommand\LettrineFontHook{\initfamily}
+\newcommand\dropcap{\lettrine[lines=4, findent=3pt]}
+
+% latex logos
+\usepackage{hologo}
+
+
+
+% fleurons
+\usepackage{staves}
+\usepackage{pifont}
+\usepackage{rotating}
+\newcommand\fleuron{\begin{turn}{45}\Large \ding{166}\end{turn}}
+	% use this inline \center \reflectbox{\fleuron}\fleuron
+\usepackage{xhfill}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+\usepackage{linearA}
+\newcommand\doublefleuron{%
+	\reflectbox{\fleuron}\AC\staveXLIX\reflectbox{\AC}\fleuron}
+\newcommand\fleuronbar{%
+	{\huge\LinearACCCXIII}\xrfill[1.3ex]{1pt}\doublefleuron\xrfill[1.3ex]{1pt}\reflectbox{\huge\LinearACCCXIII}}
+
+
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage%
+    \pagestyle{fancy}}
+
+
+\setlength{\skip\footins}{20pt}
+\setlength{\footnotesep}{0.9em}
+\renewcommand{\footnotemargin}{1em}
+
+%\setlist[itemize,1]{label=$\triangleright$} %change the top item level icon to a triangle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+
+\newcommand{\tikzlogo}{%
+  \textsc{Ti\kern-.1em\lower.4ex\hbox{K}\kern-.2emZ}\xspace
+}
+
+
+% in preamble
+\tikzset{
+  monad/.pic={
+    % your exact path content goes here (no surrounding tikzpicture)
+      \path[fill=cfefefe] (0.0, 19.05).. controls (3.4488, 19.05) and (6.8977, 19.05) .. (10.451, 19.05).. controls (10.451, 12.7635) and (10.451, 6.477) .. (10.451, 0.0).. controls (7.0022, 0.0) and (3.5534, 0.0) .. (0.0, 0.0).. controls (0.0, 6.2865) and (0.0, 12.573) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(1.3494, -0.7938)}] (0.0, 19.05).. controls (0.1746, 19.05) and (0.3493, 19.05) .. (0.5292, 19.05).. controls (0.5117, 18.9976) and (0.4942, 18.9452) .. (0.4763, 18.8912).. controls (0.4937, 18.8825) and (0.5112, 18.8738) .. (0.5292, 18.8648).. controls (0.5177, 18.8206) and (0.5177, 18.8206) .. (0.506, 18.7755).. controls (0.3576, 18.1779) and (0.4316, 17.6917) .. (0.7144, 17.145).. controls (0.7269, 17.1198) and (0.7394, 17.0945) .. (0.7523, 17.0685).. controls (0.8438, 16.891) and (0.9545, 16.7403) .. (1.0848, 16.5894).. controls (1.1046, 16.5664) and (1.1244, 16.5433) .. (1.1447, 16.5196).. controls (1.2576, 16.3912) and (1.3684, 16.2654) .. (1.5081, 16.166).. controls (1.6145, 16.1733) and (1.6813, 16.2138) .. (1.7677, 16.2735).. controls (2.384, 16.6761) and (3.0995, 16.8915) .. (3.8348, 16.887).. controls (3.8683, 16.8872) and (3.9019, 16.8874) .. (3.9365, 16.8877).. controls (4.155, 16.8872) and (4.3624, 16.8663) .. (4.5773, 16.8275).. controls (4.6268, 16.82) and (4.6268, 16.82) .. (4.6772, 16.8124).. controls (5.1697, 16.726) and (5.7055, 16.5339) .. (6.1029, 16.2234).. controls (6.1835, 16.16) and (6.1835, 16.16) .. (6.2612, 16.1647).. controls (6.7128, 16.3661) and (7.0219, 16.9705) .. (7.2082, 17.4046).. controls (7.217, 17.4248) and (7.2257, 17.445) .. (7.2347, 17.4659).. controls (7.2881, 17.5957) and (7.321, 17.722) .. (7.3446, 17.8604).. controls (7.3554, 17.9123) and (7.3554, 17.9123) .. (7.3819, 17.9387).. controls (7.4016, 18.216) and (7.3633, 18.4631) .. (7.3025, 18.7325).. controls (7.2806, 18.8444) and (7.276, 18.9332) .. (7.276, 19.05).. controls (7.4507, 19.05) and (7.6253, 19.05) .. (7.8052, 19.05).. controls (7.8432, 18.84) and (7.8432, 18.84) .. (7.8551, 18.7737).. controls (7.8654, 18.6791) and (7.8654, 18.6791) .. (7.911, 18.6002).. controls (7.9141, 18.5362) and (7.9154, 18.473) .. (7.9155, 18.409).. controls (7.9156, 18.3894) and (7.9157, 18.3699) .. (7.9158, 18.3497).. controls (7.9159, 18.3079) and (7.9159, 18.2661) .. (7.9159, 18.2244).. controls (7.916, 18.1619) and (7.9165, 18.0994) .. (7.917, 18.0369).. controls (7.918, 17.7789) and (7.9005, 17.5324) .. (7.8581, 17.2773).. controls (7.8548, 17.2567) and (7.8515, 17.2361) .. (7.8481, 17.2149).. controls (7.7449, 16.6247) and (7.4753, 16.0374) .. (7.1058, 15.5681).. controls (7.06, 15.4978) and (7.0392, 15.4565) .. (7.0379, 15.3723).. controls (7.078, 15.3031) and (7.078, 15.3031) .. (7.1388, 15.235).. controls (7.5266, 14.7495) and (7.7504, 14.154) .. (7.8581, 13.5467).. controls (7.8641, 13.5161) and (7.87, 13.4855) .. (7.8761, 13.454).. controls (7.9129, 13.2325) and (7.9172, 13.0118) .. (7.9193, 12.7876).. controls (7.9198, 12.7578) and (7.9202, 12.7279) .. (7.9207, 12.6972).. controls (7.9206, 12.4925) and (7.8878, 12.3141) .. (7.8317, 12.1179).. controls (7.823, 12.0817) and (7.8145, 12.0455) .. (7.8063, 12.0092).. controls (7.5652, 10.9828) and (6.9647, 10.0766) .. (6.0673, 9.5092).. controls (5.6752, 9.2718) and (5.2738, 9.0863) .. (4.8286, 8.976).. controls (4.8064, 8.9704) and (4.7841, 8.9648) .. (4.7611, 8.9591).. controls (4.5723, 8.9149) and (4.4061, 8.9053) .. (4.2069, 8.89).. controls (4.2069, 8.305) and (4.2069, 7.72) .. (4.2069, 7.1173).. controls (4.6935, 7.1205) and (4.6935, 7.1205) .. (5.1802, 7.1241).. controls (5.3788, 7.1257) and (5.5775, 7.1272) .. (5.7761, 7.1285).. controls (5.9363, 7.1294) and (6.0966, 7.1307) .. (6.2568, 7.1321).. controls (6.3178, 7.1325) and (6.3788, 7.1329) .. (6.4397, 7.1333).. controls (6.5255, 7.1337) and (6.6112, 7.1345) .. (6.6969, 7.1353).. controls (6.7219, 7.1354) and (6.7468, 7.1354) .. (6.7725, 7.1355).. controls (6.9896, 7.1382) and (7.209, 7.1576) .. (7.4083, 7.2496).. controls (7.4632, 7.3302) and (7.4862, 7.4268) .. (7.5158, 7.5191).. controls (7.5642, 7.67) and (7.5642, 7.67) .. (7.5935, 7.6994).. controls (7.742, 7.6994) and (7.8904, 7.6994) .. (8.0433, 7.6994).. controls (8.0433, 7.0882) and (8.0433, 6.477) .. (8.0433, 5.8473).. controls (7.8862, 5.8473) and (7.729, 5.8473) .. (7.5671, 5.8473).. controls (7.5438, 5.9334) and (7.5206, 6.0195) .. (7.4973, 6.1057).. controls (7.4493, 6.2197) and (7.3853, 6.2679) .. (7.2772, 6.3239).. controls (7.261, 6.3298) and (7.2448, 6.3357) .. (7.2281, 6.3417).. controls (7.2121, 6.3478) and (7.1961, 6.3539) .. (7.1796, 6.3602).. controls (6.9999, 6.407) and (6.8159, 6.4072) .. (6.6314, 6.4083).. controls (6.6044, 6.4086) and (6.5774, 6.4089) .. (6.5495, 6.4092).. controls (6.4626, 6.41) and (6.3757, 6.4106) .. (6.2888, 6.4113).. controls (6.2349, 6.4118) and (6.181, 6.4123) .. (6.1271, 6.4128).. controls (5.928, 6.4146) and (5.7289, 6.4162) .. (5.5298, 6.4178).. controls (5.0845, 6.4216) and (4.6392, 6.4254) .. (4.1804, 6.4294).. controls (4.1891, 5.2419) and (4.1979, 4.0545) .. (4.2069, 2.831).. controls (4.3204, 2.9445) and (4.4339, 3.0581) .. (4.5508, 3.175).. controls (4.618, 3.2288) and (4.6776, 3.2756) .. (4.7493, 3.3205).. controls (4.7656, 3.3311) and (4.782, 3.3417) .. (4.7988, 3.3526).. controls (4.9543, 3.4499) and (5.118, 3.514) .. (5.2917, 3.5719).. controls (5.3287, 3.5866) and (5.3656, 3.6015) .. (5.4025, 3.6165).. controls (5.607, 3.6917) and (5.8158, 3.7139) .. (6.0325, 3.7124).. controls (6.0564, 3.7123) and (6.0804, 3.7122) .. (6.1051, 3.712).. controls (6.8341, 3.6996) and (7.4273, 3.4269) .. (7.9375, 2.9104).. controls (7.9663, 2.8821) and (7.9663, 2.8821) .. (7.9956, 2.8532).. controls (8.4173, 2.4116) and (8.6117, 1.8178) .. (8.599, 1.2171).. controls (8.4069, 1.2171) and (8.2148, 1.2171) .. (8.0169, 1.2171).. controls (8.012, 1.2635) and (8.0071, 1.3099) .. (8.002, 1.3576).. controls (7.9323, 1.8001) and (7.7388, 2.3118) .. (7.3868, 2.6061).. controls (7.3418, 2.638) and (7.296, 2.6688) .. (7.2496, 2.6988).. controls (7.2232, 2.7169) and (7.1967, 2.735) .. (7.1695, 2.7536).. controls (6.7706, 3.0152) and (6.3014, 3.1621) .. (5.8241, 3.0774).. controls (5.7876, 3.0663) and (5.7513, 3.0546) .. (5.715, 3.0427).. controls (5.6862, 3.0346) and (5.6575, 3.0265) .. (5.6279, 3.0181).. controls (5.3662, 2.9395) and (5.1479, 2.8241) .. (4.9213, 2.6723).. controls (4.8932, 2.6541) and (4.8932, 2.6541) .. (4.8645, 2.6356).. controls (4.5972, 2.4372) and (4.4409, 2.0766) .. (4.3392, 1.7727).. controls (4.3244, 1.7374) and (4.3095, 1.7021) .. (4.2945, 1.6669).. controls (4.24, 1.5232) and (4.2271, 1.3685) .. (4.2069, 1.2171).. controls (4.0972, 1.2163) and (3.9875, 1.2158) .. (3.8778, 1.2154).. controls (3.8465, 1.2152) and (3.8151, 1.215) .. (3.7829, 1.2148).. controls (3.7531, 1.2147) and (3.7234, 1.2146) .. (3.6927, 1.2145).. controls (3.6651, 1.2144) and (3.6375, 1.2142) .. (3.6091, 1.2141).. controls (3.5454, 1.2171) and (3.5454, 1.2171) .. (3.519, 1.2435).. controls (3.5175, 1.2865) and (3.5165, 1.3295) .. (3.5157, 1.3725).. controls (3.4824, 1.7898) and (3.2704, 2.2516) .. (2.979, 2.5529).. controls (2.9145, 2.6069) and (2.8487, 2.6531) .. (2.7781, 2.6988).. controls (2.7529, 2.7166) and (2.7277, 2.7344) .. (2.7017, 2.7527).. controls (2.3111, 3.0144) and (1.822, 3.1607) .. (1.3527, 3.0774).. controls (1.3162, 3.0663) and (1.2798, 3.0546) .. (1.2435, 3.0427).. controls (1.2148, 3.0346) and (1.186, 3.0265) .. (1.1564, 3.0181).. controls (0.8947, 2.9395) and (0.6765, 2.8241) .. (0.4498, 2.6723).. controls (0.4217, 2.6541) and (0.4217, 2.6541) .. (0.3931, 2.6356).. controls (0.1257, 2.4372) and (-0.0306, 2.0766) .. (-0.1323, 1.7727).. controls (-0.1471, 1.7374) and (-0.1619, 1.7021) .. (-0.1769, 1.6669).. controls (-0.2315, 1.5232) and (-0.2441, 1.3684) .. (-0.2646, 1.2171).. controls (-0.4567, 1.2171) and (-0.6488, 1.2171) .. (-0.8467, 1.2171).. controls (-0.8544, 1.4551) and (-0.8368, 1.6514) .. (-0.7673, 1.8785).. controls (-0.7586, 1.9096) and (-0.7499, 1.9407) .. (-0.7409, 1.9727).. controls (-0.6184, 2.3802) and (-0.4026, 2.6894) .. (-0.1058, 2.9898).. controls (-0.0832, 3.0153) and (-0.0832, 3.0153) .. (-0.0602, 3.0413).. controls (0.174, 3.2994) and (0.4946, 3.4633) .. (0.8202, 3.5719).. controls (0.8572, 3.5866) and (0.8941, 3.6015) .. (0.931, 3.6165).. controls (1.1512, 3.6972) and (1.3729, 3.7137) .. (1.6057, 3.7124).. controls (1.6336, 3.7123) and (1.6614, 3.7122) .. (1.6902, 3.712).. controls (1.912, 3.7087) and (2.1142, 3.6858) .. (2.3283, 3.6248).. controls (2.3582, 3.6167) and (2.3881, 3.6086) .. (2.4189, 3.6003).. controls (2.8017, 3.4812) and (3.1224, 3.243) .. (3.4072, 2.9664).. controls (3.4611, 2.9097) and (3.4611, 2.9097) .. (3.519, 2.884).. controls (3.519, 4.0539) and (3.519, 5.2239) .. (3.519, 6.4294).. controls (3.0671, 6.4266) and (2.6153, 6.4239) .. (2.1497, 6.4211).. controls (1.9365, 6.4201) and (1.9365, 6.4201) .. (1.719, 6.4191).. controls (1.5905, 6.4181) and (1.5905, 6.4181) .. (1.4619, 6.4171).. controls (1.4051, 6.4166) and (1.3483, 6.4164) .. (1.2915, 6.4162).. controls (0.7631, 6.4419) and (0.7631, 6.4419) .. (0.2958, 6.2408).. controls (0.2211, 6.1224) and (0.1939, 5.9811) .. (0.1588, 5.8473).. controls (0.0016, 5.8473) and (-0.1556, 5.8473) .. (-0.3175, 5.8473).. controls (-0.3175, 6.4585) and (-0.3175, 7.0697) .. (-0.3175, 7.6994).. controls (-0.1691, 7.6994) and (-0.0206, 7.6994) .. (0.1323, 7.6994).. controls (0.1585, 7.6383) and (0.1847, 7.5771) .. (0.2117, 7.5142).. controls (0.2236, 7.4865) and (0.2236, 7.4865) .. (0.2359, 7.4584).. controls (0.2658, 7.3893) and (0.2937, 7.321) .. (0.3175, 7.2496).. controls (0.5348, 7.1412) and (0.7908, 7.1359) .. (1.0289, 7.1353).. controls (1.056, 7.135) and (1.0832, 7.1348) .. (1.1111, 7.1345).. controls (1.1997, 7.1337) and (1.2884, 7.1332) .. (1.377, 7.1328).. controls (1.4388, 7.1323) and (1.5007, 7.1318) .. (1.5626, 7.1312).. controls (1.7246, 7.1299) and (1.8866, 7.1288) .. (2.0487, 7.1279).. controls (2.2435, 7.1266) and (2.4383, 7.125) .. (2.6332, 7.1234).. controls (2.9284, 7.1211) and (3.2237, 7.1192) .. (3.519, 7.1173).. controls (3.519, 7.7023) and (3.519, 8.2873) .. (3.519, 8.89).. controls (3.4229, 8.8987) and (3.3269, 8.9075) .. (3.2279, 8.9165).. controls (2.4065, 9.0611) and (1.6816, 9.4524) .. (1.0848, 10.0277).. controls (1.0681, 10.0431) and (1.0514, 10.0584) .. (1.0341, 10.0742).. controls (0.3152, 10.7523) and (-0.0772, 11.7862) .. (-0.1132, 12.7592).. controls (-0.1205, 13.0911) and (-0.0996, 13.408) .. (-0.0265, 13.7319).. controls (-0.0194, 13.7645) and (-0.0123, 13.7971) .. (-0.0051, 13.8307).. controls (0.1057, 14.2894) and (0.2931, 14.7496) .. (0.5767, 15.1287).. controls (0.5891, 15.1454) and (0.6015, 15.1621) .. (0.6143, 15.1792).. controls (0.6386, 15.2113) and (0.6633, 15.243) .. (0.6886, 15.2743).. controls (0.727, 15.3221) and (0.727, 15.3221) .. (0.7673, 15.3987).. controls (0.7472, 15.5017) and (0.6881, 15.5694) .. (0.6234, 15.6501).. controls (0.1092, 16.3475) and (-0.1167, 17.2206) .. (-0.1142, 18.078).. controls (-0.1141, 18.1372) and (-0.1147, 18.1963) .. (-0.1154, 18.2555).. controls (-0.1165, 18.5123) and (-0.1172, 18.8155) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfefefe,shift={(2.4871, -4.8154)}] (0.0, 19.05).. controls (0.1046, 19.0055) and (0.1859, 18.9345) .. (0.2729, 18.8631).. controls (0.6605, 18.5532) and (1.1024, 18.3218) .. (1.5743, 18.1686).. controls (1.602, 18.1595) and (1.602, 18.1595) .. (1.6302, 18.1501).. controls (1.9963, 18.0377) and (2.3673, 18.0018) .. (2.7484, 18.0032).. controls (2.78, 18.0033) and (2.78, 18.0033) .. (2.8122, 18.0033).. controls (3.4007, 18.0057) and (3.9419, 18.1287) .. (4.4715, 18.3885).. controls (4.4906, 18.3976) and (4.5097, 18.4067) .. (4.5295, 18.4161).. controls (4.8551, 18.5721) and (5.146, 18.7705) .. (5.4178, 19.0081).. controls (5.4373, 19.022) and (5.4568, 19.0358) .. (5.4769, 19.05).. controls (5.5665, 19.0201) and (5.574, 19.0077) .. (5.6212, 18.9307).. controls (5.6391, 18.9017) and (5.6391, 18.9017) .. (5.6573, 18.8721).. controls (5.676, 18.8406) and (5.676, 18.8406) .. (5.6952, 18.8086).. controls (5.7081, 18.787) and (5.7211, 18.7654) .. (5.7344, 18.7432).. controls (6.1366, 18.063) and (6.4071, 17.2492) .. (6.2442, 16.4571).. controls (6.2364, 16.4108) and (6.2364, 16.4108) .. (6.2285, 16.3635).. controls (6.0745, 15.4921) and (5.5897, 14.6091) .. (4.8589, 14.0954).. controls (4.5531, 13.8867) and (4.2362, 13.7276) .. (3.8894, 13.5996).. controls (3.8644, 13.5896) and (3.8395, 13.5795) .. (3.8138, 13.5692).. controls (3.1045, 13.2905) and (2.2911, 13.3271) .. (1.5875, 13.5996).. controls (1.5628, 13.6087) and (1.5381, 13.6179) .. (1.5127, 13.6273).. controls (1.1374, 13.7738) and (0.7932, 13.9877) .. (0.4763, 14.2346).. controls (0.4513, 14.254) and (0.4263, 14.2734) .. (0.4006, 14.2934).. controls (-0.2074, 14.8056) and (-0.5498, 15.6188) .. (-0.7144, 16.3777).. controls (-0.7203, 16.4005) and (-0.7262, 16.4233) .. (-0.7324, 16.4467).. controls (-0.9286, 17.2477) and (-0.5725, 18.1697) .. (-0.1621, 18.8466).. controls (-0.1135, 18.9194) and (-0.0576, 18.9841) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfafafa,shift={(6.059, -3.5454)}] (0.0, 19.05).. controls (0.0315, 19.0421) and (0.0631, 19.0341) .. (0.0956, 19.0259).. controls (0.427, 18.9325) and (0.7337, 18.7695) .. (1.0319, 18.6002).. controls (0.9361, 18.4921) and (0.8099, 18.4563) .. (0.678, 18.4051).. controls (0.651, 18.3946) and (0.6239, 18.384) .. (0.596, 18.3732).. controls (0.3318, 18.2733) and (0.0651, 18.2051) .. (-0.2117, 18.1504).. controls (-0.2428, 18.1439) and (-0.2739, 18.1375) .. (-0.306, 18.1308).. controls (-1.0106, 18.002) and (-1.7454, 18.1701) .. (-2.3994, 18.4332).. controls (-2.4183, 18.4407) and (-2.4372, 18.4483) .. (-2.4566, 18.4561).. controls (-2.5485, 18.4949) and (-2.5891, 18.5152) .. (-2.6458, 18.6002).. controls (-1.8635, 19.1271) and (-0.9074, 19.2801) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cf9f9f9,shift={(2.9369, -4.3127)}] (0.0, 19.05).. controls (0.1345, 19.0385) and (0.2484, 18.9702) .. (0.3671, 18.9111).. controls (0.5851, 18.8061) and (0.7977, 18.7164) .. (1.0319, 18.6531).. controls (1.0526, 18.6471) and (1.0733, 18.6411) .. (1.0946, 18.6349).. controls (1.8072, 18.4347) and (2.7276, 18.4163) .. (3.4396, 18.6267).. controls (3.4824, 18.6392) and (3.4824, 18.6392) .. (3.5262, 18.6521).. controls (3.8489, 18.7491) and (4.1651, 18.852) .. (4.4581, 19.0204).. controls (4.5244, 19.05) and (4.5244, 19.05) .. (4.5815, 19.0448).. controls (4.6302, 19.0235) and (4.6302, 19.0235) .. (4.7096, 18.9706).. controls (4.593, 18.6708) and (4.0525, 18.4346) .. (3.7727, 18.31).. controls (3.6885, 18.2735) and (3.6038, 18.2383) .. (3.519, 18.2033).. controls (3.4903, 18.19) and (3.4616, 18.1766) .. (3.432, 18.1628).. controls (3.3052, 18.1127) and (3.1774, 18.0836) .. (3.0444, 18.0545).. controls (3.0192, 18.0488) and (2.9941, 18.043) .. (2.9681, 18.0371).. controls (2.3493, 17.899) and (1.7295, 17.9477) .. (1.1377, 18.1769).. controls (1.113, 18.186) and (1.0883, 18.1952) .. (1.0629, 18.2046).. controls (0.6602, 18.3618) and (0.2198, 18.6004) .. (-0.0794, 18.9177).. controls (-0.0298, 19.0202) and (-0.0298, 19.0202) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(5.5827, -6.5881)}] (0.0, 19.05).. controls (0.1555, 18.9108) and (0.2361, 18.7754) .. (0.248, 18.5655).. controls (0.2431, 18.4029) and (0.1925, 18.2706) .. (0.0837, 18.1491).. controls (-0.0677, 18.009) and (-0.2069, 17.9509) .. (-0.4137, 17.9571).. controls (-0.6097, 17.9824) and (-0.7421, 18.0774) .. (-0.8632, 18.2297).. controls (-0.9584, 18.3684) and (-0.9736, 18.5158) .. (-0.9525, 18.6796).. controls (-0.902, 18.8703) and (-0.796, 18.9924) .. (-0.635, 19.1029).. controls (-0.4243, 19.206) and (-0.1934, 19.1761) .. (0.0, 19.05) -- cycle;
+    % ... rest of your paths ...
+  }
+}
+
+% convenient wrapper to call it inline with scale/color
+\newcommand{\monad}[2][1]{%
+  \tikz[baseline=-0.5ex, scale=#1]{\pic{monad};}%
+}
+
+% usage:
+% \monad
+% \monad[0.7]
+% or with color override on the pic call:
+% \tikz[baseline=-0.5ex, scale=.9]{\pic[fill=mahogany]{myicon};}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Be sure to load this package last
+% [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+\usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Information %%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE and SUBTITLE as necessary
+\author{Brian Murphy}
+\title{
+ {\Huge Ægypt's Library} \\
+ {\footnotesize A bibliography of the Aegypt Tetralogy \\
+ \bigskip
+ {\Large The Solitudes} \\
+ \bigskip
+ Typeset in \LaTeX{} \\
+% Issue \#001
+ }
+}
+\date{\begin{small}\today{}\end{small}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Cover and title page %%%%%%%%%%%%%%%%%
+\usepackage{titlepic}
+\usepackage{pdfpages}
+
+% command to provide stretchy vertical space in proportion
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip1.4em} 
+
+\newcommand{\BibLaTeX}{Bib\LaTeX{}}
+
+\newfontfamily\urlfont{FiraCode Nerd Font Mono}[Scale=MatchLowercase,Ligatures=TeX]
+\renewcommand{\UrlFont}{\urlfont}
+
+%\addbibresource{aegypt.bib}
+\makeindex
+
+% this is an attempt to auto bold face bib entries with keyword 'Fictional'
+%\AtEveryBibitem{%
+%  \ifkeyword{Fictional}{\bfseries}{}%
+%}
+
+\usepackage[most]{tcolorbox}
+\usepackage{csquotes} % nicer quotation marks
+
+\tcbset{
+  pullquote/.style={
+    enhanced,
+    breakable,
+    width=0.8\linewidth,        % center automatically
+    center,                     % center the box
+    colback=gray!5,             % light background
+    colframe=gray!50!black,     % frame color
+    boxrule=0.4pt,
+    colbacktitle=gray!40!black, % darker top bar
+    coltitle=white,             % title text color
+    title={#1},                 % optional title text
+    fonttitle=\small\scshape,
+    fontupper=\itshape,
+    arc=6pt,                    % rounded corners
+    before skip=12pt, after skip=12pt,
+    top=10pt, bottom=10pt, left=10pt, right=10pt,
+    drop shadow                 % optional subtle shadow
+  }
+}
+
+% tcolorbox for chapter cards
+\usepackage[most]{tcolorbox}
+\tcbset{
+  chaptercard/.style={
+    colframe=Mahogany,
+    colback=Mahogany!3,
+    coltitle=Mahogany,
+    enhanced,
+    sharp corners,
+    boxrule=0.6pt,
+    left=10pt,right=10pt,top=8pt,bottom=10pt,
+    titlerule=0.6pt,
+    title style={font=\bfseries\large\sffamily\color{Mahogany}},
+  }
+}
+
+% inline helpers that ALSO add index entries
+% \Author[Sort Key]{Printed Name}
+% \Author[SortKey]{Printed Name}
+\newcommand{\Author}[2][]{%
+	\item #2\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+\newcommand{\AuthorBold}[2][]{%
+	% printed text (bold if you like)
+	\item \textbf{#2}%
+	% index entry: always unformatted
+	\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+% \Book[Sort Key]{Printed Title}{\parencite{key}}
+\newcommand{\Book}[4][]{%
+	%\item \textit{#2} — #3~#4%
+	\item \textit{#2} — #3\mbox{#4}%
+	\index{%
+		\if\relax\detokenize{#1}\relax\textit{#2}\else #1@\textit{#2}\fi
+	}%
+}
+
+\newcommand{\BookBold}[4][]{%
+	\item {\normalfont\bfseries\itshape #2} — {\normalfont\bfseries #3}\mbox{#4}%
+	\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+
+
+
+
+% compact bullet lists without vertical gaps
+\setlist[itemize,1]{nosep,leftmargin=1.2em}
+
+% Better breakout box
+\tcbset{
+  breakout/.style={
+    breakable, enhanced jigsaw, sharp corners,
+    colframe=Mahogany, colback=Mahogany!3,
+    boxrule=0.6pt, left=10pt, right=10pt, top=10pt, bottom=10pt,
+    before skip=8pt, after skip=12pt,
+    overlay={
+      \begin{tcbclipinterior}
+        \fill[Mahogany!6] (frame.south west) rectangle ([xshift=3mm]frame.north west);
+      \end{tcbclipinterior}
+    },
+    title style={font=\bfseries\large\color{Mahogany}},
+    fonttitle=\sffamily\bfseries,
+  }
+}
+
+\footnoteplacement{m}
+
+\pdfstringdefDisableCommands{\def\Zodiac#1{}}
+
+% chapter formatter: big title, sign at right, matching color
+\newcommand{\chapterzodiac}[2]{%
+  % #1 = sign number, #2 = title
+  \chapter[\texorpdfstring{#2}{#2}]{%
+    \color{Mahogany}\bfseries
+    #2%
+    \hfill
+    {\shadowtext{{\color{Mahogany}\Huge\Zodiac{#1}}}}%
+  }%
+}
+
+% optional: display style tweaks for chapters
+\titleformat{\chapter}[display]
+  {\huge\bfseries\color{Mahogany}}
+  {\filright\Large\MakeUppercase{\chaptername}\ \thechapter}
+  {1ex}
+  {\titlerule[0pt]\vspace{0ex}} % thin rule above title
+  [\vspace{1ex}\titlerule]      % and below
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Let's get it started %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\includepdf[pages=1]{cover.pdf}
+
+%\afterpage{\blankpage}
+\include{titlepage.tex}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+%\begin{center}
+%\vfill
+%\shadowoffset{1pt}
+%\shadowtext{%	
+%{\color{Mahogany}\fontsize{60}{64}\staveL}}\\
+%\nbvspace[1]
+%%\fleuronbar
+%\end{center}
+
+\pagestyle{fancy}
+
+\accanthis
+\pagestyle{fancy}
+\chapterzodiac{12}{Introduction}
+\lettrine[lines=4,findent=3pt]{T}{his} is a continuation of my attempt to list out the various authors and books mentioned within the Ægypt Tetralogy, specifically \textit{Daemonomania}, by John Crowley. Fictitious authors and books have been placed in bold typeface for easy identification. 
+
+For those that care, this project was originally done in RStudio to make use of their excellent Rmarkdown code and integration abilities, especially those concerned with \hologo{BibTeX} files. Once I finished it there a friend mentioned it would be cool to have as a zine instead of a flat PDF, so I went way down that rabbit-hole before coming back to sanity. Well sort of\dots I'm using \hologo{LuaLaTeX} because \LaTeX{} wasn't quite robust enough and I'm familiar enough with it. So, after much trial and tribulation what started out as a text file migrated into Markdown, then Rmarkdown and on to \LaTeX{} before finally settling on \hologo{LuaLaTeX}, and from letter size to half-letter zine, and now back to letter, which I'm sure highlights my own inability to commit more than anything else.
+
+\vspace*{1cm}
+
+\begin{center}
+	\textit{Any errors within are entirely my own.}
+\end{center}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Mercury}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+
+
+\chapterzodiac{12}{Preface Works}
+\section{To the Reader}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+	\Author[Apuleius]{Apuleius}
+	\Author[Bruno, Giordano]{Giordano Bruno}
+	\Author[Dee, John]{John Dee}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+	\Book[Culianu, Ioan P.!The Tree of Gnosis]{The Tree of Gnosis}{Ioan P. Culianu}{\parencite{Culianu1992}}
+	\Book[Ginzburg, Carlo!Ecstasies]{Ecstasies}{Carlo Ginzburg}{\parencite{Ginzburg1992}}
+	\Book[Levack, Brian P.!The Witch-Hunt in Early Modern Europe]{The Witch-Hunt in Early Modern Europe}{Brian P. Levack}{\parencite{Levack2013}}
+	\Book[Ordine, Nuccio!Giordano Bruno and the Philosophy of the Ass]{Giordano Bruno and the Philosophy of the Ass}{Nuccio Ordine}{\parencite{Ordine1996}}
+	\Book[Mandiargues, André Pieyre de!Arcimboldo the Marvelous]{Arcimboldo the Marvelous}{André Pieyre de Mandiargues}{\parencite{PieyredeMandiargues1978}}
+	\Book[Reisner, Helen!Children with Epilepsy : A Parents Guide]{Children with Epilepsy : A Parents Guide}{Helen Reisner}{\parencite{Reisner1988}}
+	\Book[Ripellino, Angelo Maria!Magic Prague]{Magic Prague}{Angelo Maria Ripellino}{\parencite{Ripellino1994}}		
+	\Book[Schweiger, Beth Barton!Appalachian Mountain Religion: A History]{Appalachian Mountain Religion: A History}{Beth Barton Schweiger}{D. McCauley}{\parencite{Schweiger1996}}	\index{McCauley, D.!Appalachian Mountain Religion: A History}
+\end{itemize}
+\end{paracol}
+
+
+\section{Prologue -- To the Autumn Quarternary}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+	\Author[Kierkegaard, Søren]{Søren Kierkegaard}\footnote{Pierce actually mentions ``\ldots picking up your book (Kierkegaard)\ldots'' but since it would be impossible to know which, I've left it as a simple Author Mention.}.
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\end{paracol}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{1}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+%\chapter{Uxor -- \color{Mahogany}The Marriage of Agent and Patient}
+\chapterzodiac{7}{Part Seven -- Uxor}
+\section{Chapter 1}
+
+% ==== NEW: authors/books in your two-column format ====
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Unknown Tudor-era play}{Unknown}{}\footnote{This is mentioned is a musing from Rosie as they arrive at Butterman's Island and she remembers ``that a play had nearly been put on, not Shakespeare but old, the one about devils and magic, what was it.'' I can't help but think about Marlowe's Doctor Faustus here.}
+  \BookBold[Nancy Drew Myseries!The Secret of Castle Island]{Nancy Drew Mysteries: The Secret of Castle Island}{Unknown}{\parencite{Unknownpre1978}}
+\end{itemize}
+\end{paracol}
+% =========================================
+
+\section{Chapter 3}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+\switchcolumn
+% ==== NEW: books list only ====
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Kraft, Fellowes!The Company]{The Company}{Fellowes Kraft}{\parencite{KraftUnknown}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 4}
+% ==== NEW: authors + books ====
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Schweitzer, Johann Friedrich]{Johann Friedrich Schweitzer}
+  \Author[Helvetius, Johann Friedrich]{Helvetius}\footnote{The entirety of Helvetius' story is a retelling from his own work, The Golden Calf, Chapter 3. \parencite{Helvetius1667}}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Mucho, Mike!Climacterics]{Climacterics: Your New Ancient Guide to Life's Cycles}{Mike Mucho}{\parencite{Muchon}}
+  \Book[Helvetius, Johann Friedrich!Theatridium Herculis Triumpantis]{Theatridium Herculis Triumpantis\ldots}{Johann Friedrich Schweitzer Helvetius}{\parencite{Helvetius1663}}\footnote{This is the treatise that the stranger read where Helvetius had stated some skepticism regarding transmutation.}
+  \Book{Holy Bible (Unknown New Testament Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 5}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+\switchcolumn
+% ==== NEW: books only ====
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Epilepsy and You}{Unknown}{\parencite{epiyou}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 6}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Cæsar, Julius]{Julius Cæsar}
+  \Author[Lear, Edward]{Edward Lear}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Lear, Edward!Nonsense Songs]{Nonsense Songs}{Edward Lear}{\parencite{Lear2005}}\footnote{This might be a stretch to mention as a book mentioned as a whole, but Rosie Mucho is remembering ``The Jumblies'' when talking to the neurologist about Sam's epilepsy.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 7}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Bulfinch!Mythology]{Bulfinch's Mythology}{Thomas Bulfinch}{\parencite{Bulfinch1970}}\footnote{There are dozens of versions of this book and there is no real way to determine which was mentioned here, however give that it is 1978 and Rose had it in her room, I went with the 1970 edition.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 8}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania''},width=0.8\linewidth,center upper]
+\enquote{Heck no,'' Pierce said. ``I’m with Sir Thomas Browne. Methinks there be not impossibilities enough in Religion for an active faith.}
+\end{tcolorbox}
+\nbvspace[1]
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Machiavelli]{Machiavelli} 
+  \Author[Browne, Sir Thomas]{Sir Thomas Browne}
+\end{itemize}
+\switchcolumn
+
+% ==== NEW: books only (authors above left intact per your note) ====
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Hirschfeld, Magnus!Sexual Pathology]{Sexual {Pathology}, {Being} a {Study} of the {Abnormalities} of the {Sexual} {Functions}}{Magnus Hirschfelder}{\parencite{Gibbs1933}}\footnote{I believe this to be the ``uncle Sam's book\ldots on sexual pathology'' as it was compiled prior to the 1930s in Berlin. Conversely, it could easily be a later writing or book by M. Hirshfeld.}
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 9}
+\begin{paracol}{2}
+% ==== NEW: authors only ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Freud, Sigmund]{Sigmund Freud}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 10}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Hagecius, Thaddæus]{Thaddæus Hagecius}\footnote{Referenced also as Dr. Hájek.}
+  \Author[Dee, John]{John Dee}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{A pleasant new ballad to sing evening and morn, of the bloody murder of Sir John Barley-corn}{Anonymous}{\parencite{Barleycorn1641}}
+  \Book[Dee, John!Monas Hieroglyphica]{Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm}{John Dee}{\parencite{Dee1564}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 11}
+
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+  \Author[Paracelsus]{Paracelsus}
+  \Author[Agrippa, Cornelius]{Cornelius Agrippa}
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Dee, John]{John Dee}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Nigro, Don!Doctor Faustus]{Doctor Faustus}{Christopher Marlowe}{\parencite{Nigro1979}}\footnote{Mentioned as being a yellow jacketed Samuel French script edition. This sent me down a rabbit-hole and I was able to find a version of the play by Don Nigro from 1979 from French that could have been what Pierce is referring to in this chapter. However, it is impossible to really know. If it is this version, one substantial change that should be mentioned is that Mephistopheles manifests as a beautiful woman with whom Faust is immediately obsessed with. This draws some interesting parallels between this version of the play and Pierce and Rosie's own relationship.}
+  \Book[MacFarlane, Charles!Life of Sir Thomas Gresham]{The life of {Sir} {Thomas} {Gresham}, founder of the {Royal} exchange}{MacFarlane}{\parencite{MacFarlane1845}}
+  \Book[Paracelsus!AVREOLI THEOPHRA]{AVREOLI THEOPHRA Seu de Secretis Naturae mysteriis\ldots}{Paracelsus}{\parencite{Paracelsus1582}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 12}
+% ==== NEW: authors + books ====
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Al-Kindi]{Al-Kindi}
+  \Author[Bruno, Giordano]{Giordano Bruno}\footnote{For more information about the conflict between Bruno and Mordente, and to get a grasp on Bruno's own mathematics please see Paolo Rossini's article ``New theories for new instruments'' \parencite{Rossini2019}}
+  \Author[Aristotle]{Aristotle}
+  \Author[Mordente, Fabricio]{Fabricio Mordente}
+  \Author[Copernicus, Nicolaus]{Copernicus}
+  \Author[Pythagoras]{Pythagoras}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Al-Kindi!De planetis sub radiis]{De planetis sub radiis by Al-Kindi}{Al-Kindi}{\parencite{Kindi1501}}
+  \Book[Picatrix]{Picatrix}{Anonymous}{\parencite{Hakim}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 13}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Cæsar, Julius]{Julius Cæsar}
+  \Author[Lear, Edward]{Edward Lear}
+  \AuthorBold[Barr, Frank Walker]{Frank Walker Barr}
+  \Author[Johnson, Samuel]{Samuel Johnson}
+  \Author[Bodin, Jean]{Jean Bodin}
+  \Author[Pratensis, Jason]{Jason Pratensis}
+  \Author[Sade, Donatien Alphonse François]{Donatien Alphonse François (Marquis de Sade)}
+  \Author[Pratensis, Jason]{Jason Pratensis}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Colonna, Francesco!Le tableau des riches inventions]{Le tableau des riches inventions couvertes du voile des feintes amoureuses, qui sont représentées dans le Songe de Poliphile}{Francesco Colonna}{\parencite{1600}}\footnote{There isn't an actual 1586 French version of Hypnerotomachia Poliphili. There is, however, a very nice polyglot version from 1600 with appropriate woodcuts as described by Pierce.}
+  \Book[Bodin, Jean!De la démonomanie des sorciers]{De la démonomanie des sorciers}{Jean Bodin}{\parencite{Bodin1979}}\footnote{The version I chose is from 1979, which is a year too late for Pierce to have, but I couldn't find one published prior although I'm sure one exists.}
+  \BookBold[Ars Auto-Amatoria]{Ars Auto-Amatoria (Every Man his Own Wife)}{Anonymous}{\parencite{autoamat}}\footnote{I found the following article on Crowley's old LiveJournal account referring to this very thing titled ``Dismaying, a little''. \textit{``I learn in the new New York Review of Books that Ezra Pound was influential in getting sections of Joyce's Ulysses published in the American literary journal the Little Review.  One of the pieces (for which the issue was suppressed) included one ``proposed title'' -- which I was amazed to see -- and research showed me was not far in the finished book, which i read with care long ago -- including this passage no doubt -- which i thereupon forgot that I had read, except i perhaps had NOT forgot: EVERYMAN HIS OWN WIFE\ldots}'' \parencite{crowleycrow2015}}
+  \Book[Every Woman Her Own Husband]{Every Woman Her Own Husband}{Anonymous}{}
+  \Book[Burton, Robert!Anatomy of Melancholy]{The Anatomy of Melancholy}{Richard Burton}{\parencite{Burton1863}}
+\end{itemize}
+\end{paracol}
+
+
+\section{Chapter 14}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\Author[Dee, John]{John Dee}
+	\Author[Brahe, Tycho]{Tycho de Brahe}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 15}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Hitler, Adolf]{Adolf Hitler}\footnote{I didn't really want to add him, but to be impartial, and since he meets the, admittedly lax, criteria of being named and had something published, I've included him.}
+  \AuthorBold[Barr, Frank Walker]{Frank Walker Barr}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Rilke, Rainer Maria!Selected Poems]{Rilke {Selected} {Poems}}{Unknown}{\parencite{Rilke1967}}\footnote{This edition seemed an obvious choice for a volume of Rilke to have in your car in 1978.}
+  \Book{Holy Bible (King James Version, unspecified)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 16}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Blake, William]{William Blake}\footnote{Blake is not mentioned by name, but instead Pierce quotes the poem, ``\textit{How Sweet I roam'd from field to field}.''}
+  \Author[Aristotle]{Aristotle}
+\end{itemize}
+
+% (poem block left untouched)
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Unspecified Medical Text from 1950s}{Unknown}{}
+  \Book[Liddell, Henry George!A Greek-English Lexicon]{A Greek-English Lexicon (Liddell \& Scott)}{Liddell \& Scott}{\parencite{Liddell1958}}
+  \Book[MacFarlane, Charles!Life of Sir Thomas Gresham]{The life of {Sir} {Thomas} {Gresham}, founder of the {Royal} exchange}{MacFarlane}{\parencite{MacFarlane1845}}
+  \Book[Schmidt, Carl!Pistis Sophia]{Pistis Sophia}{Carl Schmidt}{\parencite{Schmidt1978}}\footnote{This work isn't mentioned especially, but Beau Brachman names a maze ``Heimarmene'' a Greek deity of personal fate. She is especially prominent in the Pristis Sophia which sets up a complex Gnostic cosmology. This could also have been some of the inspiration for the cosmological discussion that happened at the end of Uxor-15.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 17}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Aristotle]{Aristotle}
+  \Author[Ficino, Marsilio]{Marsilio Ficcio}\footnote{Referred to as ``Marsilius''}
+  \Author[Pico della Mirandola, Giovanni]{Giovanni Pico della Mirandola}\footnote{Referred to as Don John Picus}
+  \Author[Bruno, Giordano]{Giordano Bruno}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Ars Auto-Amatoria]{Ars Auto-Amatoria (Every Man his Own Wife)}{Anonymous}{\parencite{autoamat}}
+\end{itemize}
+\end{paracol}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{7}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+
+%\chapter{Mors -- \color{Mahogany}Ember Days}
+\chapterzodiac{8}{Part Eight -- Ember Days}
+\section{Chapter 1}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Ashmole, Elias]{Elias Ashmole}
+  \Author[Dyer, Edward]{Edward Dyer}
+  \Author[Browne, Sir Thomas]{Sir Thomas Browne}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 2}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Spina, Alfonso de]{Alfonso de Spina}
+  \Author[Bodin, Jean]{Jean Bodin}
+  \Author[Al-Kindi]{Al-Kindi}\footnote{Referred to here as ``Alcindus of Araby.''}
+  \Author[Cæsar, Julius]{Julius Cæsar}
+  \Author[Hesiod]{Hesiod}
+  \Author{Unknown French Doctor}\footnote{I'm unable to find out who this might be, I think it might be either Ambroise Paré or his protege, Jacques Guillemeau. The former wrote a famous codex the strange called ``Of Monsters and Marvels'' while the later produced an influential early childbirth, ``Childbirth, Or the Happy Delivery of Women''.}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Bodin, Jean!De la démonomanie des sorciers]{De la démonomanie des sorciers}{Jean Bodin}{\parencite{Bodin1979}}
+  \Book[Sprenger, Jakob!Malleus maleficarum]{Malleus maleficarum}{Jakob Sprenger and Peter Drach}{\parencite{Institoris1495}}
+  \Book{A true discourse, declaring The damnable life and death of one Stubbe Peeter, a most wicked sorcerer}{Anonymous}{\parencite{1590}}\footnote{Referred to in the book as simply a ``vivdly illustrated English Broadsheet.''}
+  \Book[Wier, Johannes!De Praestigiis Daemonum]{{De} {Praestigiis} {Daemonum}, {Et} {Incantationibus} ac veneficiis : {Libri} sex, aucti \& recogniti}{Johannes Wier (Wierus)}{\parencite{Wier1568}}
+  \Book[Dee, John!Propaedeumata aphoristica]{John {Dee} on astronomy = {Propaedeumata} aphoristica (1558 and 1568)}{John Dee}{\parencite{Dee1978}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 4}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania'', Mors, Chapter 4},width=0.8\linewidth,center upper]
+\enquote{After he had slipped out of Paris, a penniless wandering scholar again, he'd come to Wittenberg, Luther's city; for two years he lectured there, in safety and peace, and gratitude would induce in him a rare humility. I was a man of no name or authority among you, he wrote, dedicating a book to the university faculty.}
+\end{tcolorbox}
+
+\vspace{0.5em}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+ \Author[Bruno, Giordano]{Giordano Bruno}
+ \Author[Strada, Jocopo]{Jacopo Strada}
+ \Author[Virgil]{Virgil}
+ \Author[Archimboldo, Guiseppe]{Giuseppe Archimboldo}\footnote{OK, I know he isn't an author, but his art is so singular for the 16th century, and he is tied so closely with Rudolf II that it feels wrong not to mention him.}
+ \Author[Synesius of Cyrene]{Synesius of Cyrene}
+\end{itemize}
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+ \Book[Bruno, Giordano!De lampade combinatoria lulliana]{De lampade combinatoria lulliana}{Giordano Bruno}{\parencite{Bruno1588}}
+ \Book[Bruno, Giordano!De progressu et lampade venatoria logicorum]{De progressu et lampade venatoria logicorum}{Giordano Bruno}{\parencite{GiordanoBruno1587}}\footnote{This volume was dedicated to the chancellor of the university in Wittenberg.}
+ \Book[Bruno, Giordano!Articuli centum et sexaginta adversus huius tempestatis mathematicos atque philosophos]{Articuli centum et sexaginta adversus huius tempestatis mathematicos atque philosophos}{Giordano Bruno}{\parencite{Bruno1588a}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 5}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania'', Mors, Chapter 5},width=0.8\linewidth,center upper]
+\enquote{---More than one Adam, more than one fall, more than one history of the world. More (if it please Your Majesty) than one world.}
+\end{tcolorbox}
+
+\vspace{0.5em}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Mordente, Fabricio]{Fabricio Mordente}
+  \Author[Brahe, Tycho]{Tycho de Brahe}
+  \Author[Bürgi, Jost]{Jost Bürgi}
+  \Author[Galilei, Galileo]{Galileo Galilei}
+  \Author[Kepler, Johannes]{Johannes Kepler}
+  \Author[Drebbel, Cornelius]{Cornelius Drebbel}
+  \Author[Della Porta, Giambattista]{Giambattista della Porta}
+  \Author[Croll, Oswald]{``Doctors Kroll and Guarnieri''}\footnote{Guarnieri not yet confirmed.}
+  \Author[De Boodt, Anselmus]{Anselmus de Boodt}
+  \Author[Dee, John]{John Dee}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Bruno, Giordano!Articuli centum et sexaginta]{Articuli centum et sexaginta adversus huius tempestatis mathematicos atque philosophos}{Giordano Bruno}{\parencite{Bruno1588a}}
+  \Book[Dee, John!Monas Hieroglyphica]{Monas Hieroglyphica Ioannis Dee, Londinensis, Ad Maximilianvm, Dei Gratia Romanorvm, Bohemiæ Et Hvngariæ Regem Sapientissimvm}{John Dee}{\parencite{Dee1564}}
+  \Book[Croll, Oswald!Bazilica chymica]{Bazilica chymica}{Oswald Croll}{\parencite{Croll1670}}\footnote{Mentioned as Kroll in the book.}
+\end{itemize}
+\end{paracol}
+
+
+\section{Chapter 6}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 7}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Bodin, Jean]{Jean Bodin}
+  \Author[Calvin, John]{John Calvin}
+  \Author[Marsenne, Marin]{Marin Marsenne}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Shelley, Mary!Frankenstein]{Frankenstein}{Mary Shelley}{\parencite{Shelley2016}}\footnote{Not mentioned in terms of the book itself, but instead of the portmanteau nature of the Monster.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 8}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Atlas of American Churches and Religious Organizations]{Atlas of American Churches and Religious Organizations}{Unknown}{\parencite{Unknown1965}}
+  \Book[Those Strange Cults]{Those Strange Cults}{Unknown}{\parencite{Pre1978}}
+  \Book{Holy Bible (Unknown New Testament Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 9}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Aquinas, Thomas]{St. Thomas Aquinas}
+  \Author[Dickens, Charles]{Charles Dickens}
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}\footnote{An unknown version spoken of in general terms.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 11}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+  \Author[Blake, William]{William Blake}
+  \Author[Joyce, James]{James Joyce}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (Douay-Rheims Version)}{Unknown}{}\footnote{Axel quotes Job 1:21 to Pierce. Originally, I had assumed this to be from a KJV of the Bible. But after thinking about it and comparing the texts of various versions, alongside the fact that Axel is Catholic, I'm fairly confident that this likely came from a Douay–Rheims version.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 12}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (King James Version)}{Unknown}{}\footnote{This is the version that Rosie specifically asks Pierce to bring to the Bible study she has invited him to.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 13}
+\begin{paracol}{2}
+% ==== NEW: authors + books ====
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 14}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Dickens, Charles]{Charles Dickens}\footnote{``Past the pretend Dickensian bar (Sixpenny's)'' I have no idea what this is actually referring to. It could be the Six Jolly Fellowship Porters from \textit{Our Mutual Friend}. Basically, because I couldn't nail it down, it is down to an author mention.}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Browning, Robert!Childe Roland to the Dark Tower Came]{Childe Roland to the Dark Tower Came}{Robert Browning}{\parencite{BrowningRowlandT}}\footnote{Pierce just mentions how ``he felt like Childe Roland in the wasteland.'' \url{https://www.poetryfoundation.org/poems/1597010/childe-roland-to-the-dark-tower-came}}
+  \Book[Alighieri, Dante!Divine Comedy]{Divine Comedy}{Dante Alighieri}{\parencite{Dante1950}}\footnote{Pierce simply mentions the ``Dis the mighty,'' the city in Dante that comprises the lower levels of Hell.}
+  \BookBold[Retlaw, O. Walter!Is Jesus God?]{Is Jesus God?}{Retlaw O. Walter L.L.S.}{\parencite{RetlawO.Walter}}
+  \BookBold[Retlaw, O. Walter!Why Die Forever?]{Why Die Forever?}{Retlaw O. Walter L.L.S.}{\parencite{RetlawO.Waltera}}
+  \Book{Holy Bible (King James Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania'', Mors, Chapter 14},width=0.8\linewidth,center upper]
+\enquote{The unsleeping pedant within Pierce recognized the Carpocratian heresy: there is no sin for those who are saved. He saw himself too in her scheme, fornicating, not excluded, if he could put up with it, which he couldn’t.\footnote{The Carpocrates were so interesting that I included this quote just to point them out. This is from the Wikipedia article, ``Carpocratians believed they themselves could transcend the material realm, and therefore were no longer bound by Mosaic law, which was based on the material powers, or by any other morality, which they held was mere human opinion. Irenaeus offers this belief as an explanation of their licentious behaviour.'' They also pop up in Borges' \textit{The Theologians.}}}
+\end{tcolorbox}
+
+
+\bigskip
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{8}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+%\chapter{Pietas -- \color{Mahogany}The Christmas Ass}
+\chapterzodiac{9}{Part Nine -- Pietas}
+\section{Chapter 1}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Haintzel, Hans Heinrich]{Hans Heinrich Haintzel}\footnote{referred to as ``Hainzell or Haincelius.''}
+  \Author[Arcimboldo, Giuseppe]{Giuseppe Arcimboldo}
+  \Author[Strada, Jacopo]{Jacopo Strada}
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Dee, John]{John Dee}
+  \Author[Drake, Francis]{Sir Francis Drake}\footnote{This might be a stretch to include him as an author, if you think so, I'm sorry.}
+  \Author[Dyer, Edward]{Edward Dyer}
+  \Author[Croll, Oswald]{Oswald Croll}
+  \Author[Cæsar, Julius]{Julius Cæsar}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Ashmole, Elias!Theatrum Chemicum Britannicum]{Theatrum Chemicum Britannicum}{Elias Ashmole}{\parencite{Ashmole1652}}
+\end{itemize}
+\end{paracol}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania'', Pietas, Chapter 1},width=0.8\linewidth,center upper]
+\enquote{I think the ending of the world comes to every man alone, soul by soul; when it is ended for you and for me it will not be ended for all\ldots}
+\end{tcolorbox}
+
+\section{Chapter 2}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Author[Plato]{Plato}
+  \Author[Siddhartha Gautama]{Siddhartha Gautama}
+  \Author[Pythagoras]{Pythagoras}
+  \Author[Tertullian]{Tertullian}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+	\item None
+\end{itemize} 
+\end{paracol}
+  
+
+\section{Chapter 3}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Sprenger, Jakob!Malleus maleficarum]{Malleus maleficarum}{Jakob Sprenger and Peter Drach}{\parencite{Institoris1495}}
+  \Book[Thorndike, Lynn!History of Magic and Experimental Science]{History of Magic and Experimental Science}{Lynn Thorndike}{\parencite{Thorndike1923}}\footnote{Crowley mentions in this chapter that Pierce has twelve volumes of Thorndike's series, while back in \textit{The Solitudes} we learn that Pierce only had four, unnamed, volumes of Thorndike.}
+  \Book[Waite, A. E.!The Real History of the Rosicrucians]{The Real History of the Rosicrucians}{A. E. Waite}{\parencite{Waite1887}}\footnote{mentioned as ``the Rosicrucian anthologies of A. E. Waite'' I'm fairly certain this is the book that is being referred to.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 4}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Little Enosh]{Little Enosh: Lost Among the Worlds}{Unknown}{\parencite{enosh}}\footnote{After digging through Crowley's long-dead LiveJournal I found the following post from October 20th, 2009 titled ``Noveltoons.'' \textit{``Many responses to the made-up-comics-in-books question… One not noted is in my own Ægypt series—the Gnostic comic `Little Enosh—Lost among the Worlds,’ whose content is drawn directly from Mandean Gnostic writings…''} \parencite{Crowley2009}}
+  \Book{New York World}{Unknown}{\parencite{NYWorld}}\footnote{While this is an actual newspaper that ran from 1860–1931, it wasn't around when Pierce would have been a child for Axel to read it to him.}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 5}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, ``Daemonomania'', Pietas, Chapter 5},width=0.8\linewidth,center upper]
+\enquote{A play written by a mad university wit about a German magician’s awful fall held the stage in London, showing how he signed a compact with the Devil, was granted invisibility, teased the Pope and the Emperor\ldots}
+\end{tcolorbox}
+
+\needspace{3\baselineskip}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Croll, Oswald]{Oswald Croll}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Marlowe, Christopher!Doctor Faustus]{Christopher Marlowe's Doctor Faustus}{Christopher Marlowe}{\parencite{Bloom1988}}\footnote{Mentioned only by inference as Dee returns to England \textit{(see block quote)}.}
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+  \Book[Dee, John!Private Diary]{The Private Diary of Dr. John Dee}{John Dee}{\parencite{Dee1842}}\footnote{A mostly accurate quote regarding the death of Dee's nurse, Ann Frank on Sept. 21 1590.}
+  \Book[Kelly, Edward!Alchemical Writings]{The Alchemical Writings of Edward Kelly}{Edward Kelly}{\parencite{Kelly1893}}
+  \Book[Al-Kindi!De planetis sub radiis]{De planetis sub radiis}{Al-Kindi}{\parencite{Kindi1501}}
+  \Book[Trithemius, Johannes!Steganographia]{Steganographia}{Johannes Trithemius}{\parencite{Trithemius1608}}
+  \Book[Agrippa, Heinrich!Liber Quartus]{HENRICI CORNELII AGRIPPAE LIBER QVARTVS DE OCCVLTA PHILOSOPHIA, seu de Cerimonijs Magicis. Cui accesserunt, Elementa Magica Petri de Abano, Philosophi.}{Heinrich Agrippa}{\parencite{HCAN1565}}
+  \Book[Ficino, Marsilio!De vita libri tres]{De vita libri tres}{Marsilio Ficino}{\parencite{Ficino1560}}
+  \Book[Ficino, Marsilio!Theologia Platonica]{Theologia Platonica De immortalitate animorum}{Marsilio Ficino}{\parencite{Ficino1559}}
+  \Book[Ficino, Marsilio!Corpus Hermeticum]{Corpus Hermeticum}{Marsilio Ficino}{\parencite{Ficino1471}}
+  \Book[Valeriano, Pierio!Hieroglyphica]{Hieroglyphica, sive, De sacris Aegyptiorum literis commentarii}{Pierio Valeriano}{\parencite{Valeriano1556}}
+  \Book[Iamblichus!De Mysteriis]{On the Mysteries of the Egyptians}{Iamblichus}{\parencite{Iambilichus}}
+  \Book[Porphyry!De Mysteriis]{De mysteriis Aegyptiorum, Chaldaeorum, Asyriorum}{Porphyry}{\parencite{Porphyry1607}}
+  \Book[Porphyry!Homericarum quaestionum]{Porphyrii Philosophi Homericarum quaestionum liber}{Porphyry of Tyre}{\parencite{Lascaris1518}}
+  \Book[Plotinus!Ennead I]{Plotinus, Ennead I: Porphyry on the Life of Plotinus}{Plotinus}{\parencite{Plotinus1966}}\footnote{I wasn't able to find an original copy of Porphyry's text, so I'm falling back to this one.}
+  \Book[Porphyry!Against the Christians]{Against the Christians}{Porphyry of Tyre}{\parencite{Porphyry1994}}
+  \Book[Picatrix]{Picatrix}{Anonymous}{\parencite{Hakim}}
+  \Book[Mathers, S.L. MacGregor!Key of Solomon]{Key of Solomon the King (Clavicula Solomonis)}{S. L. MacGregor Mathers}{\parencite{Mathers1889}}
+  \Book[Holinshed, Raphael!Chronicles]{Holinshed's Chronicles of England, Scotland and Ireland}{Raphael Holinshed}{\parencite{Holinshed1965}}
+  \Book[Cooper, Thomas!Thesaurus linguae Romanae et Britannicae]{Thesaurus linguae Romanae \& Britannicae}{Thomas Cooper}{\parencite{Cooper1584}}
+  \Book[Stow, John!Chronicles of England]{The Chronicles of England from Brute unto this present yeare of Christ 1580}{John Stow}{\parencite{Stow1580}}
+  \Book[Copernicus, Nicolaus!De Revolutionibus]{De Revolutionibus}{Nicolaus Copernicus}{\parencite{Copernicus1543}}
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+  \Book[Dee, John!True \& Faithful Relation]{A true \& faithful relation of what passed for many yeers between Dr. John Dee\ldots}{John Dee}{\parencite{Dee1659}}
+\end{itemize}
+\end{paracol}
+
+
+\renewcommand{\poemtoc}{subsection}
+\poemtitle{Sir Edward Kelle’s Work}
+\settowidth{\versewidth}{And night and day in Geber’s kitchen broyle}
+\begin{verse}[\versewidth]
+\textit{All you that faine philosophers would be,\\
+\vin And night and day in Geber’s kitchen broyle.\\
+Wasting the chipps of ancient Hermes’ Tree,\\
+\vin Weening to turn them to a precious oyle.\\
+\vin The more you worke the more you loose and spoile;\\
+To you, I say, how learned soever you be.\\
+Go burne your Bookes and come and learne of me.}
+
+--- Edward Kelley \parencite{Kelly1893}\index{Kelley, Edward!Sir Edward Kelle's Work}
+\end{verse}
+
+\section{Chapter 6}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+    \BookBold[Phalle, Alexis Payne de St.!Dictionary of Deities]{A Dictionary of Deities, Devils and Dæmons of Mankind}{Alexis Payne de St. Phalle}{\parencite{St.Phalle}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 7}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \AuthorBold[Barr, Frank Walker]{Frank Walker Barr}
+  \Author[Plato]{Plato}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Phalle, Alexis Payne de St.!Dictionary of Deities]{A Dictionary of Deities, Devils and Dæmons of Mankind}{Alexis Payne de St. Phalle}{\parencite{St.Phalle}}
+  \Book{Ars Auto-Amatoria (Every Man his Own Wife)}{Anonymous}{\parencite{autoamat}}\footnote{Mentioned only in reference by Rosie.}
+  \Book[Burton, Robert!Anatomy of Melancholy]{The Anatomy of Melancholy}{Robert Burton}{\parencite{Burton1863}}\footnote{Once again we are given the term \textit{amor hereos} and this time Pierce gives some of the remedies as listed in \textit{Anatomy} in Part 3, Sect 7, Memb. 5, Subs. 2. \parencite{Burton1863}}
+  \Book[Cervantes, Miguel de!Don Quixote]{Don Quixote}{Miguel de Cervantes Saavedra}{\parencite{Saavedra1910}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 8}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Ives, Charles!Naught That Country Needeth]{Naught That Country Needeth}{Charles Ives}{\parencite{cives}}
+  \Book[Dumas, Edmund!I'm a Long Time Travelling Here Below]{I'm a Long Time Travelling Here Below}{Edmund Dumas}{\parencite{longtime}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 9}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Aristotle]{Aristotle}
+  \Author[Apuleius]{Apuleius}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Carroll, Lewis!Alice's Adventures in Wonderland]{Alice's Adventures in Wonderland}{Lewis Carroll}{\parencite{Carroll1866}}
+  \Book{Unknown Encyclopedia Volume}{Unknown}{}
+  \Book[Apuleius!The Golden Ass]{The Golden Ass}{Apuleius}{\parencite{Apuleius1998}}
+  \Book[Valeriano, Pierio!Hieroglyphica]{Hieroglyphica, sive, De sacris Aegyptiorum literis commentarii}{Pierio Valeriano}{\parencite{Valeriano1556}}
+  \Book[Longfellow, Henry Wadsworth!Golden Legend]{The Golden Legend}{Henry Wadsworth Longfellow}{\parencite{Longfellow}}
+  \Book[Bruno, Giordano!Cabala of Pegasus]{Cabala of Pegasus}{Giordano Bruno}{\parencite{Bruno2002}}
+  \BookBold[Phalle, Alexis Payne de St.!Dictionary of Deities]{A Dictionary of Deities, Devils and Dæmons of Mankind}{Alexis Payne de St. Phalle}{\parencite{St.Phalle}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 10}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Marlowe, Christopher]{Christopher Marlowe}
+  \Author[Dee, John]{John Dee}
+  \Author[Catullus]{Catullus}
+  \AuthorBold[Walter, Retlaw O.]{Dr. Retlaw O. Walter}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Phalle, Alexis Payne de St.!Dictionary of Deities]{A Dictionary of Deities, Devils and Dæmons of Mankind}{Alexis Payne de St. Phalle}{\parencite{St.Phalle}}
+  \Book[Marlowe, Christopher!Doctor Faustus]{Christopher Marlowe's Doctor Faustus}{Christopher Marlowe}{\parencite{Bloom1988}}
+  \Book[Shakespeare, William!A Midsummer Night's Dream]{A Midsummer Night's Dream}{William Shakespeare}{\parencite{Shakespeare2009}}
+  \Book[Shakespeare, William!Macbeth]{William Shakespeare's Macbeth}{William Shakespeare}{\parencite{Bloom2010}}
+  \Book[Apuleius!The Golden Ass]{The Golden Ass}{Apuleius}{\parencite{Apuleius1998}}
+  \Book[Catullus!Poem 5]{Catullus 5}{Catullus}{\parencite{catullus}}\footnote{This is the longed for conclusion of the mystery of Una Knox.}
+  \Book{Holy Bible (Unknown Version), 1 Corinthians 15:55}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\pagebreak
+
+\begin{tcolorbox}[breakout, title={Ball: Costumes \& Sightings}]
+\noindent Because of the importance of the ball in this chapter, and for my own furtherance to try and understand it, I'm going to list all of the characters people dressed as below. Fellowes Kraft compares the ball as being, “hardly the \textit{Walpurgisnacht} that was promised.”
+
+\medskip
+\begin{quote}\itshape
+“The all-purged-night; the all-perjurers’-night. The transmuting revels, the night machinery out of which we all come different. Wasn’t that the idea? ‘Where nothing is but what is not.’ What is not yet, or is not any longer.”\\
+\raggedleft —John Crowley, \textit{Daemonomania}, Pietas, Chapter 10
+\end{quote}
+
+\textbf{\color{Mahogany}Ball Attendees}
+\begin{multicols}{2}
+\raggedright
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Judge (Allan Butterman)
+  \item Backwards Boney Rasmussen (Rosie Rasmussen)
+  \item a queen
+  \item a movie star
+  \item Marie Antoinette
+  \item clowns
+  \item bums
+  \item big babies with suckers
+  \item Night (Rose Ryder)
+  \item The Ass (Pierce Moffett)
+  \item Sybil (Val)
+  \item Jove or Jehovah
+  \item Cardinal or Inquisitor (Rhea Rasmussen)
+  \item Apollo
+  \item Pandora, an overinterpreted Sorceress by Pierce
+  \item Santa
+  \item Wolf-Man
+  \item Mummy
+  \item Angels, more than one
+  \item the Four Beasts of the Gospels
+    \begin{itemize}[leftmargin=1.2em, itemsep=1pt]
+      \item Bull
+      \item Eagle
+      \item Lion
+      \item Man, who was a woman
+    \end{itemize}
+  \item Crone or Witch, who was a man
+  \item Devil, who knew Rose
+  \item The Orphics (band)\footnote{Hits include “Don't Turn Back” \& “All the Birds and Beasts”.}
+  \item Sleeping Sam in nightgown (actually another girl dressed as an Angel)
+  \item Beau Brachmann, as himself (isn’t himself; Rose doesn’t recognize him)
+  \item Masked Fellowes Kraft (Fellowes Kraft)
+  \item Mal Cichy, orgiast (Pierce through Rose as Night’s eyes)
+  \item Old Gent, that came as he was
+  \item Una Knox, personification of Death (Spofford)
+  \item Spindly Wraith (Cliff)
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+
+\pagebreak
+\section{Chapter 11}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \AuthorBold[Barr, Frank Walker]{Frank Walker Barr}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Little Enosh]{Little Enosh: Lost Among the Worlds}{Unknown}{\parencite{enosh}}
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 12}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book{Holy Bible (Unknown Version)}{Unknown}{}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 13}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Little Enosh]{Little Enosh: Lost Among the Worlds}{Unknown}{\parencite{enosh}}
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 14}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 15}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \item None
+\end{itemize}
+\end{paracol}
+
+\section{Chapter 16}
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+   \AuthorBold[Kraft, Fellowes]{Fellowes Kraft}
+  \Author[Dee, John]{John Dee}
+  \Author[Drebbel, Cornelius]{Cornelius Drebbel}
+  \Author[Croll, Oswald]{Oswald Croll}
+  \Author[Boodt, Anselmus de]{Anselmus de Boodt}
+  \Author[Schoppe, Caspar]{Caspar Schoppe}\footnote{Referred to as “Gaspar Schopp or Scioppius.”}
+\end{itemize}
+\switchcolumn
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Moffett, Pierce!Reading Notes]{Pierce's Record or reading notes}{Pierce Moffett}{}
+  \Book{Isaiah 42:9}{Biblical}{\parencite{bib429}}\footnote{“Behold, the former things are come to pass, and new things do I declare: before they spring forth I tell you of them.”}
+  \BookBold[Little Enosh]{Little Enosh: Lost Among the Worlds}{Unknown}{\parencite{enosh}}
+  \Book[Guarini, Battista!Il pastor fido]{Il pastor fido}{Battista Guarini}{\parencite{Guarini1602}}\footnote{Pierce calls Spofford “Il Pastor fido,” paralleling the play’s Arcadian plot.}
+  \Book[Croll, Oswald!Bazilica chymica]{Bazilica chymica}{Oswald Croll}{\parencite{Croll1670}}
+  \BookBold[Kraft, Fellowes!Sit Down, Sorrow]{Sit Down, Sorrow}{Fellowes Kraft}{\parencite{Craft1960}}
+  \Book{Avvisi di Roma}{Firpo}{\parencite{avvisi}}
+  \Book[Apuleius!The Golden Ass]{The Golden Ass}{Apuleius}{\parencite{Apuleius1998}}
+\end{itemize}
+\end{paracol}
+
+
+%\bibliographystyle{ieeetr} %plain
+%\bibliography{daemon-zine}
+%\addcontentsline{toc}{chapter}{Bibliography}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Zodiac{9}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+{\microtypesetup{expansion=false}%
+ \rmfamily
+ \printbibliography[keyword=Fictional, title=Bibliography of Fictional Books, heading=bibintoc]
+ \printbibliography[keyword=real, title=Bibliography of Real Books, heading=bibintoc]
+
+% \printbibliography[title={Bibliography}]
+
+}
+
+\clearpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+%\chapter{Colophon}
+%All contents  \textcopyleft 2025 Brian Murphy\\
+%\bigskip
+
+%Cover art is all in the public domain.
+%
+%\begin{itemize}
+%\item The monad symbol is my own.
+%\item \href{https://www.rawpixel.com/image/420927/free-illustration-image-thoth-\\egypt-egyptian}{Thoth}\\
+%https://www.rawpixel.com/image/420927/free-illustration-image-thoth-\\egypt-egyptian
+%\item \href{https://www.rawpixel.com/image/420831/free-illustration-image-egypt-\\egyptian-goddess}{Scarab}\\
+%https://www.rawpixel.com/image/420831/free-illustration-image-egypt-\\egyptian-goddess
+%\end{itemize}
+
+%\afterpage{\blankpage}
+%
+%\includepdf[pages=2]{cover.pdf}
+
+
+\end{document}

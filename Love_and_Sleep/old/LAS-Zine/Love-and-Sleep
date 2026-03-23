@@ -1,0 +1,27 @@
+\begin{document}
+
+\maketitle
+
+ \documentclass[10pt,letterpaper,openright]{article}
+ \usepackage{fontspec}
+ \defaultfontfeatures{Mapping=tex-text}
+ \usepackage{xunicode}
+ \usepackage{xltxtra}
+ %\setmainfont{???}
+ \usepackage{amsmath}
+ \usepackage{amsfonts}
+ \usepackage{amssymb}
+ \usepackage{graphicx}
+ \author{Brian Murphy}
+ \title{Aegypt's Library}
+ \begin{document}
+
+
+\bibliographystyle{plain}
+\bibliography{aegypt}
+
+\section*{Impressum}
+All contents  \copyright2025 Brian Murphy
+
+
+\end{document}

@@ -1,0 +1,616 @@
+\documentclass[twoside,10pt]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\raggedbottom
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Choose either kpfonts or fourier
+\usepackage[nott]{kpfonts}
+%\usepackage{fourier}
+\usepackage{shadowtext}
+\usepackage{anyfontsize}
+\usepackage{egothic}
+\usepackage[T1]{fontenc}
+\usepackage[titles]{tocloft}
+\usepackage{titlesec}
+
+% dropcaps because why the fuck not...
+\usepackage{Royal,lettrine}
+\renewcommand\LettrineFontHook{\Royal}
+% latex logos
+\usepackage{hologo}
+
+
+% Delete any of the following that are not needed
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb} % Just for the degree symbol
+\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{lettrine} % Drop caps
+\usepackage{wrapfig} % Let's wrap some images
+\usepackage{hanging} % For hanging indents in a script
+\usepackage{fancyvrb} % Use line numbers with code samples
+\usepackage{fvextra} % Break lines inside Verbatim environment:
+\usepackage{enumitem} % Control spacing in lists
+\usepackage{setspace} % Better control over line-spacing
+\usepackage{nicefrac} % Use nice fractions
+%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
+\usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
+\usepackage{microtype} % Make things neater. 
+\usepackage{tabularray} % Easy tables
+\usepackage[bottomfloats,belowfloats]{footmisc}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}} % Where are our images?
+\usepackage{multicol} % Include two- or three-column sections
+\counterwithout{footnote}{chapter} % Stop resetting the footnote count after each chapter
+\NumTabs{18} % Define 18 tab stops (at 1/4" intervals) [tabto package]
+\raggedbottom  % Don't force text to fill page
+\setlength{\belowcaptionskip}{4pt} % Adjust space between caption and figure
+\renewcommand*\contentsname{Contents\ldots} % Change the name of the TOC
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,x11names}{xcolor}
+%% This is how to have the \chapter pages respect  fancy header
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Setup%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{
+	paperheight=8.5in, 
+	paperwidth=5.5in, 
+	margin=12mm,
+%	a5paper % Comment out for half-letter paper
+}
+
+\addtolength{\topmargin}{5mm} % Adjust and bottom margin
+\addtolength{\textheight}{-15mm} % Adjust the bottom margin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page Headers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE as necessary
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+ \fancyhf{}
+ \fancyhead[LE,RO]{\textit{Ægypt's Library}}
+ \fancyhead[RE,LO]{The Solitudes}
+ \fancyfoot[RO,LE]{\thepage}
+ \fancyfoot[LE,RO]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter Title Spacing %%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\rm\Large\bfseries}
+    {\chaptertitlename\ \thechapter}
+    {25pt}
+    {\LARGE}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\pagestyle{fancy}
+% remove subsection numbering
+\setcounter{secnumdepth}{-\maxdimen} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make a nice border and box for the tops of our examples
+\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
+
+% Add an \hrule with space above and below
+\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
+
+% Make hrefs easier (must load package hyperref}
+\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
+
+% Rotate text in tables easier
+% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
+\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
+
+% Make diversions easier (and uniform!)
+\newcommand\kdivb[2]{
+	\medskip
+	\hrule
+	\medskip
+	\noindent{}\textbf{#1}
+	\vspace{#2mm}
+	\begin{multicols}{2}
+}
+
+\newcommand\kdive[1]{
+	\end{multicols} 
+	\vspace{#1mm}
+	\hrule
+	\medskip
+}
+
+% fleurons
+\usepackage{staves}
+\usepackage{pifont}
+\usepackage{rotating}
+\newcommand\fleuron{\begin{turn}{45}\Large \ding{166}\end{turn}}
+	% use this inline \center \reflectbox{\fleuron}\fleuron
+\usepackage{xhfill}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage{linearA}
+\newcommand\doublefleuron{%
+	\reflectbox{\fleuron}\AC\staveXLIX\reflectbox{\AC}\fleuron}
+\newcommand\fleuronbar{%
+	{\huge\LinearACCCXIII}\xrfill[1.3ex]{1pt}\doublefleuron\xrfill[1.3ex]{1pt}\reflectbox{\huge\LinearACCCXIII}}
+
+
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage%
+    \pagestyle{fancy}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Just for Issue #006 %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Be sure to load this package last
+% [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+\usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Information %%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE and SUBTITLE as necessary
+\author{Brian Murphy}
+\title{
+ {\Huge Ægypt's Library} \\
+ {\footnotesize A bibliography of the Aegypt Tetralogy \\
+ \bigskip
+ {\Large The Solitudes} \\
+ \bigskip
+ Typeset in \LaTeX{} \\
+% Issue \#001
+ }
+}
+\date{\begin{small}\today{}\end{small}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Cover and title page %%%%%%%%%%%%%%%%%
+\usepackage{titlepic}
+\usepackage{pdfpages}
+
+% command to provide stretchy vertical space in proportion
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip1.4em} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Let's get it started %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\includepdf[pages=1]{cover.pdf}
+
+\afterpage{\blankpage}
+\include{titlepage.tex}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\pagestyle{fancy}
+
+%\rmfamily
+\pagestyle{fancy}
+\chapter{Introduction}
+The goal is to list all of the books and authors mentioned throughout Ægypt, or The Solitudes, by chapter. A complete list of those authors are listed at the end in alphabetical order by their first name. If a chapter is missing below, then it did not have any books or authors mentioned within it. Books listed in bold are fictional works created by Crowley. The Authors Mentioned subsections list authors that were mentioned within a chapter but did not mention a particular book.
+
+In most cases I tried to cite a work that would have been appropriate for the timeframe of the story in which it is mentioned. In some cases, I have not been able to find a suitable edition and so cite a modern edition instead. Those will eventually be cleaned up to reflect either a copy of the work from the 16th century, one up to 1978, or one available to Crowley while he was writing.
+
+Future updates Future updates will make use of an actual \textsc{BibTex} file to properly record the books I came across. With this first one, I didn't realize plan things out so much as just jumped in and started making a list. Eventually, I will add in subsequent books in the series, but I’m in no real hurry to do so. This was purely a fun side-project that got my head away from “Real Life” for a time.
+
+I’m open to any ideas as to how this can be updated and expanded. For any corrections or comments the reader can email me directly at murfman@pm.me.
+
+Special thanks goes to the guys within the \#Books channel on \href{https://www.mu-podcast.com}{The Miskatonic University Podcast} \href{https://discord.gg/5nH7UqtpdM}{Discord Server}. You guys know who you are.
+\bigskip
+\begin{center}
+\textit{(This is still, and likely will remain, a work in progress.)}
+\end{center}
+
+
+\chapter{Author's Note}
+
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Hermetica\cite{Scott1924}
+\item \textit{The Solitudes of Luis De Góngora} \cite{DeGongoraYArgote1968}
+\end{itemize}
+
+\textit{Authors Mentioned:}\\
+Joseph Campbell, Elizabeth L. Eisenstein, Mircea Eliade, Peter French, Hans Jonas, Frank
+E. \& Fritz P. Manuel, Giorgio di Santillana, Stephen Schoenbaum, Wayne Shumaker, Keith
+Thomas, Lynn Thorndike, D. P. Walker, Dame Francis Yates, John Mitchell, Katerine
+Maltwood, Robert Graves, Lois Rose, Richard Deacon, Walter Scott, and Luis de Góngora.
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveL}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+\chapter{The Prologue on Earth}
+\pagestyle{fancy}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Bruno, Giordano. De monade, numero et figura. 1961.\cite{Bruno1961}
+\end{itemize}
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveLIX}}\\
+\nbvspace[1]
+\end{center}
+
+
+\chapter{Vita}
+\section{One}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textit{The Solitudes of Luis De Góngora} \cite{DeGongoraYArgote1968}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Peter Ramus
+
+\section{Two}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textbf{Darkling Plain}
+\item Burnett, Frances Hodgson, and Sue Ullstein. \textit{The Secret Garden}\cite{Burnett1975}
+\item \textbf{Norton, Mary. The Borrowers Abroad}\footnote{There is no novel by Norton titled \textit{The Borrowers Abroad}. This may have been deliberate by Crowley, or an accident, since all of the books are named in a similar pattern (i.e., \textit{The Borrowers Afield}, \textit{The Borrowers Afloat}, \textit{The Borrowers Afield}, \textit{The Borrowers Avenged}). More research could be done to see if this was a proposed title of another book in the series, or if this was a subtle way to shift the book away from the reality, or history in this case, that we experience as the reader.}
+\item \textbf{Kraft, Fellowes. \textit{Under Saturn, A  Novel of Wallenstein}.\footnote{Seems to be based on the biography of Wallenstein: Watson, Francis. Wallenstein, Soldier Under Saturn. 1969.}}
+\item \textbf{Kraft, Fellowes. \textit{Bitten Apples}}
+\end{itemize}
+
+\section{Three}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textit{The Solitudes of Luis De Góngora} \cite{DeGongoraYArgote1968}\footnote{Crowley quotes Cunningham’s translation of the First Solitude lines 94-96, 108-111, then 112-116. He switches to the original Spanish for pieces of lines 113-114, and 119-121.}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Lady Mary Wortley Montagu, Luis de Góngora, and Percy Bysshe Shelley.
+
+\section{Four}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textbf{Barr, Frank Walker. \textit{Time’s Body}.}
+\item \textbf{Barr, Frank Walker. \textit{Mythos and Tyrannos}.}
+\item \textit{Seven Sobs of a Sorrowful Soule for Sinne}. 1597.\cite{SevenSobs}
+\item Shakespeare, William. \textit{Measure for Measure}. Cambridge UP, 2006.\cite{Shakespeare2006}
+\item Unknown Volumes of \textit{Encyclopedia Britannica}. 1939.\cite{Brit1939}\footnote{I am assuming the 1939 edition since Pierce mentions bringing several volumes of this fictitious version with him to Blackberry Jams.}
+\item Malory, Thomas, and Sidney Lanier. \textit{The Boy’s King Arthur: Being Sir Thomas Malory’s History of King Arthur and His Knights of the Round Table.} 1921.\cite{Lanier1937}
+\item \textbf{Kraft, Fellowes. \textit{Bruno’s Journey}. 1931.}
+\end{itemize}
+
+\section{Five}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Virgil. \textit{Virgil’s Eclogues}. University of Pennsylvania Press. 2011.\cite{Virgil2011}\footnote{Line 6, "Iam redit et Virgo, redeunt Saturnia regna," translated as "The virgin reappears and Saturn reigns".}
+\item Dante. \textit{Divine Comedy}. Modern Library. 1950.\cite{Dante1950}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Homer, Sophocles, Dante, Shakespeare, and Cervantes.
+
+\section{Six}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textbf{Rose, Lois. \textit{Steganography}.}
+\item Bates, Lizzie. \textit{Stories of the Flowers}. 1872.\cite{Bates1872}
+\item Perlesvaus. \textit{The High History of the Holy Graal}. 1898.\cite{Perlesvaus1898}
+\item Sprat, Thomas. \textit{The History of the Royal Society of London, for the Improving of
+Natural Knowledge}. 1667.\cite{Sprat1667}
+\item Frazer, James George. \textit{The Golden Bough: A Study in Magic and Religion}. 1932.\cite{Frazer1932}
+\item Longfellow, Henry Wadsworth. \textit{The Golden Legend}. 1878.\cite{Longfellow}
+\item Apuleius. \textit{The Golden Ass}. Penguin UK, 1998.\cite{Apuleius1998}
+\item Hyginus. \textit{Poeticon Astronomicon}. 1502.\cite{Hyginus}
+\item Huizinga, J. \textit{The Waning of the Middle Ages: A Study of the Forms of Life, Thought and Art in France and The Netherlands in the XIVth and XVth Centuries}. Pickle Partners Publishing, 2016.\cite{Huizinga2016}
+\item Burgess, Thornton W. \textit{Old Mother West Wind}. Courier Corporation, 2012.\cite{Burgess2012}\footnote{Mentioned by Crowley as “Old Mother Westwind”}
+\item “Miss Martha’s History Book”\footnote{I’m assuming that this is a real unnamed history book belonging to Miss Martha, Pierce’s uncle Sam’s housekeeper.}
+\end{itemize}
+\textit{Author's Mentioned:}\\
+Giambattista Vico, Grimm, Frobenius, George Santayana, Giorgio di Santillana, and Anthony Trollope.
+
+\section{Seven}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Shakespeare, William. \textit{Shakespeare’s King Henry VIII}. 1912.\cite{Shakespeare1912}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Æneas.
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveXXIX}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Lucrum}
+\section{One}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Sidney, Phillip, Sir. \textit{The Lady of May}. 1598.\cite{Sidney1598}
+\item Holinshed, Raphael. \textit{Holinshed’s Chronicals: Richard II, 1398-1400, Henry IV and Henry V.} 1923.\cite{Holinshed1923}
+\item Monardes, Nicolás. \textit{Joyfull Newes Out of the Newe Founde Worlde}. Walter J. Johnson Incorporated, 1970.\cite{Monardes1970}
+\item Plutarch and North, Thomas, Sir. \textit{Lives}. Englished. London Dent. 1894.\cite{Plutarch1894}
+\end{itemize}
+\textit{Authors Mentioned}\\
+Aeschylus, Euripides, Leland, Polydore Virgil, Charles Dickens, and Sir Walter Scott.
+
+\section{Three}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Trithemius, Johann. \textit{Johannis Trithemii\ldots Steganographia\ldots Illustrata a Wolfgango Ernesto Heidel}. 1676.\cite{Trithemius}
+\item Dee, John. \textit{Propædeumata Aphoristica Ioannis Dee, Londinensis, De Præstantioribus Quibusdam Naturæ Virtutibus}. 1568.\cite{Dee1568}
+\item \textit{Talbot’s Unnamed Enochian Manuscript.}\footnote{Crowley describes “Talbot’s” aka Edward Kelley’s manuscript as “\ldots a manuscript on thick parchment, narrow and sewn up with heavy greased black thread. There was no cover or binding. The characters it was written in started immediately at the top of the first page without any heading, as though this were perhaps not the first page at all. Doctor Dee picked up the lamp and bent close over the page. Mr. Talbot turned the heavy worm-holed leaf. The second page was the same: a solid block of characters from top to bottom. It is in a cipher, the doctor said. I can read a cipher, if it hides a language that I know.”}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Gerardus Mercator, and Tycho Brahe.
+
+\section{Four}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Mead, G.R.S. \textit{Thrice-greatest Hermes}. London and Benares. 1906.\cite{Mead1906}
+\item Beeson, Charles H. “A History of Magic and Experimental Science During the First Thirteen Centuries of Our Era. Lynn Thorndyke.” Classical Philology, vol. 20, no. 2, Apr. 1925, pp. 163–67. https://doi.org/10.1086/360664.\cite{Beeson1925}
+\item Bruno, Giordano. \textit{Opera Omnia}. 1854.\cite{Bruno1854}
+\item —. Jordani Bruni \textit{Opera Latine Conscripta}. 1962.\cite{Bruno1962}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Giordano Bruno, Copernicus, Galileo Galilei, Thomas Aquinas, Dante, Aristotle, Hermes Trismegistus, Cicero, Lactantius, Plato, Virgil, Pythagoras, Plotinus, Jean-François Champollion, E. A. Wallis Budge. Margaret Mead, Aleister Crowley, Martin del Rio “Delrio,” Johannes Kepler, René Descartes, Francis Bacon, Isaac Newton, Proclus, Iamblichus, and Paracelsus.
+
+\section{Five}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textbf{Kraft, Fellowes. \textit{The Court of Silk and Blood.}}
+\item \textbf{—. \textit{A Passage at Arms.}}
+\item Unnamed Nancy Drew Mystery Stories novel.
+\item Unnamed Mr. Moto novel by John P. Marquand.
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Giordano Bruno, Agrippa \textit{(unsure which one)}, Gerolamo Cardano, and John Galsworthy.
+
+\section{Six}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item TV Guide.
+\item \textbf{Faraway Crier}.
+\item \textbf{Kraft, Fellowes. Sit Down, Sorrow}.\footnote{A memoir of Fellowes Craft.}
+\end{itemize}
+
+\section{Seven}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Seneschal, Jean Le, and Gaston Raynaud. \textit{Les Cent Ballades : Poème Du XIV[E] Siècle}. 1905, p221.\cite{Seneschal1905}
+\item Kerr, Charles H. \textit{The Eighteenth Brumaire of Louis Bonaparte}. Charles H. Kerr, Chicago, 1907.\cite{Kerr1907}\footnote{“Hegel says somewhere that all great historic facts and personages recur twice. He forgot to add: “Once as tragedy, and again as farce.” Caussidiere for Danton, Louis Blanc for Robespierre, the “Mountain” of 1848-51 for the “Mountain” of 1793-95, the Nephew for the Uncle. The identical caricature marks also the conditions under which the second edition of the eighteenth Brumaire is issued.”}
+\item \textbf{Phaeton’s Car}.\footnote{Fictitious book whose name is apparently a play on a line from Francis Bacon’s Of Vicissitude of Things, “Phaeton’s car went but a day: and the three years drought in the time of Elias, was but particular, and left people alive.” Para. 60. Phaeton’s Car is apparently a fictional renaming of The Chariot of the Gods (Von Däniken, Erich. Chariots of the Gods?: Unsolved Mysteries of the Past. 1973.)}
+\item \textbf{Worlds in Division}.
+\item \textbf{Dawn of the Druids}.
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Karl Marx.
+
+\section{Eight}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Lanier, Sidney and Wyeth, N. C., Illustrator. \textit{The Boy’s King Arthur}. Scribner’s Illustrated Classics. Sir Thomas Malory’s History of King Arthur and His Knights of the Round Table. Charles Scribner’s Sons. 1937.\cite{Lanier1937}
+\item Briggs, Austin. \textit{Flash Gordon}. 1940-1948.\cite{Briggs1940}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Rabelais.
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveLXIII}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Fratres}
+\section{Two}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item New York Times.
+\item \textbf{Phaeton’s Car}.\footnote{Fictitious book apparently a play on Francis Bacon’s Of Vicissitude of Things, “Phaeton’s car went but a day: and the three years drought in the time of Elias, was but particular, and left people alive.” Para. 60. Phaeton’s Car is apparently a fictional renaming of The Chariot of the Gods (Von Däniken, Erich. Chariots of the Gods?: Unsolved Mysteries of the Past. 1973.)}
+\item \textbf{Niblick, Helen. \textit{The Way’s Far Turning}}.
+\item \textbf{Kraft, Fellowes. \textit{The Book of a Hundred Chapters}}.
+\item Dictionary of National Biography. 1961.\cite{1961}
+\item Benians, Ernest Alfred. \textit{The Cambridge Modern History}. Cambridge : UP, 1907.\cite{Benians1907}
+\item Herbermann, Charles George. \textit{The Catholic Encyclopedia: An International Work of Reference on the Constitution, Doctrine, Discipline, and History of the Catholic Church}. 1908.\cite{Herbermann1908}
+\item \textbf{Barr, Frank Walker. Unnamed collected works of histories.}
+\item Unnamed Bible.
+\item Stedman, Joseph F. \textit{My Sunday Missal: Using New Translation From New Testament and a Simplified Method of Following Mass With an Explanation Before Each Mass of Its Theme}. Confraternity of the Precious Blood, 1961.\footnote{Title given in Ægypt is Our Sunday Missal which could have been a misremembering of Crowley’s part, or another slight alteration of the book’s world from our own. Either way, this is the closest thing I can see Pierce having on his shelf.}
+\item Shakespeare, William. Unknown volumes of the Yale Shakespeare.
+\item Dee, John. \textit{Monas hieroglyphica}. Antwerp, 1564.\cite{Dee}
+\item Thorndike, Lynn. \textit{Four Unnamed Volumes}.\footnote{While the four volumes are not mentioned by name, we can make some guesses as to which they are since they are a part of the “secondary sources” mentioned for Pierce’s novel. (i.e., The Place of Magic in the Intellectual History of Europe, The History of Medieval Europe, up to any four of the eight volumes of the History of Magic and Experimental Science, Check-list of Rotographs in the History of Natural and Occult Sciences, The Sphere of Sacrobosco and its Commentators, etc.).}
+\item \textbf{Sacrobosco, Earl. \textit{Unnamed Astronomy Textbook}.}
+\item Lewis, Charlton T. \textit{Lewis and Short Latin Dictionary}. 1966.\cite{Lewis1966}
+\item Davidson, Gustav. \textit{\textsc{A Dictionary of Angels: Incl. The Fallen Angels}}. 1971.\cite{Davidson1971}\footnote{While this is not named outright and is simply referred to as “a dictionary of angels” it is by far the
+most famous published prior to the 1980s and is likely the one Crowley was referring to.}
+\item \textit{Unnamed Big Dictionary}.
+\item \textit{Unnamed Big Picture Book of Clocks}.\footnote{There are a few possibilities here as to what this books could have been. I’m simply going to list the most likely candidates here: Thompson, David. “The Book of Clocks.” 1971, Bruton, Eric. “Clocks and Watches.”
+1973, Tardy. “The Art of the Clockmaker.” Early 1970s, Baillie, G. H. “The Lore of the Clock.” 1973.}
+\item \textit{Unknown Volumes of Encyclopedia Britannica}. 1939.\footnote{The Encyclopedia Britannica became the first encyclopedia to undergo continual revisions in 1933.
+Crowley mentions “Several volumes of the 1939 edition” in this chapter, but there was not a specific edition published that year and as such it is impossible to easily tell what volumes of the 1933 14th revised edition were reprinted during 1939 specifically. Again this could be either intentional by Crowley subtly showing the differences between our world and the book’s, or he simply could have chosen a date. Personally, I think it is likely the former.}
+\item \textit{Unknown Big Shakespeare}.
+\item \textit{Unknown Big Bible}.
+\item Murphy, John and et. al. \textit{The Holy Bible : translated from the Latin Vulgate\ldots}. University of Toronto, 1914.\footnote{The Douay-Rheims Bible, sometimes known simply as the Douai Bible was a translation from the Latin Vulgate completed by the English College, Douai in 1582 and 1609.}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Norton, Norris, Nofzinger, Mackenzie, Macauley, Macdonald, Ross Lockbridge, Joseph Lincoln, Shellabarger, Costain, and Milton.
+
+\section{Three}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textbf{Kraft, Fellowes. \textit{Bruno’s Journey}}\footnote{This was Kraft’s first book.}
+\item \textbf{---. \textit{Under Saturn}}.
+\item \textbf{---. \textit{Darkling Plain}}.
+\item Fludd, Robert. Unnamed book.\footnote{This can only mean Fludd’s Utriusque Cosmi, however, there were no publications in English prior to the late 20th century. I believe it is instead referring to Paracelsus’ The Hermetic and Alchemical Writings of Aureolus Philippus Theophrastus Bombast, but there will never be a way to tell for certain.)}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Marsilio Ficino, and Robert Fludd.
+
+\section{Four}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item "Death’s dream kingdom”. Unknown Poem.\footnote{This must refer to T. S. Eliot’s “The Hollow Men” from Poems, 1909–1925 (Faber \& Faber Limited,1925).}
+\item Picatrix: Das Ziel des Weisen von Pseudo-Magriti, aus dem Arabischen ins Deutsche übersetzt von Hellmut Ritter und Martin Plessner [Picatrix: The Goal of the Wise Man by Pseudo-Magriti, translated from Arabic into German by Ritter and Plessner]. London: Warburg Institute, 1962.\cite{Picatrix1962}
+\item \textbf{Kraft, Fellowes. \textit{Unfinished Final Novel.}}
+\end{itemize}
+
+\section{Five}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Aquinas, Saint Thomas. \textit{The “Summa Theologica” of St. Thomas Aquinas}. 1917.\cite{Thomas1917}
+\item Magus, Saint Albertus. \textit{Commentaries on The “Summa Theologica”}.\cite{Magus}
+\item ---. \textit{On Sleeping and Being Awake}.
+\item ---. \textit{Book of Secrets}.
+\item de Sacrobosco, Johannes. \textit{Tractatus de Sphæra}.\cite{De}
+\item Cecco of Ascoli. \textit{Commentary on the Sphere}. 1250.\cite{Cecco1250}
+\item Solomon. \textit{Shadows of Ideas}.\footnote{I have no idea what this is referring to.}
+\item Ficcino, Marsilo. \textit{De vita coelitis comparanda}.\cite{Ficcino}
+\item Horapollo. \textit{Hieroglyphica}. ~1419.\cite{Horapollo}
+\item Iambilichus. \textit{On the Mysteries of the Egyptians}.\cite{Iambilichus}
+\item Apuleius. \textit{The Golden Ass}. 158-180.\cite{Apuleius1998}
+\item al-Hakim, Ghāyat. \textit{Picatrix}.\cite{Picatrix1962}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Cicero, Quintilian, St. Albertus Magus, St. Thomas Aquinas, Aristotle, St. Jerome, St. Ambrose, Augustine of Hippo, Lactantias, and Horapollo.
+
+\section{Six}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textit{Unnamed Children’s Book}.\footnote{I spent way too much time trying to track this book down. As best I can tell, there is no surviving children’s “book about the family of mice who go traveling in a balloon” that was published in 1978 or before.}
+\end{itemize}
+
+\section{Seven}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textit{Psalms 87 / Hebrew - English Bible}. Mechon-Mamre. \cite{MechonMamre}
+\item Ficcino, Marsilio. \textit{Pimander}. 1543.\cite{Ficcino1543}\footnote{Klutstein, Ilana. \"Ficino’s Hermetic Translations: English Translation of His Latin Pimander.\" Huji, Feb. 2017.}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Cecco of Ascoli, Plato, Aristotle, Pythagoras, Plato, Epicurus, and Marsilio Ficino.
+
+\section{Eight}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item de Sacrobosco, Johannes. \textit{Tractatus de Sphæra}.\cite{De}
+\item Bruno, Giordano. \textit{Ars Memoriae}. 1582.\cite{Brunoa}
+\item Iambilichus. \textit{On the Mysteries of the Egyptians}.\cite{Iambilichus}
+\item Agrippa, Heinrich Cornelius. \textit{De Occulta Philosophia}. 1533\cite{Agrippa}
+\item \textit{ORPHIC HYMNS 1-40 - Theoi Classical Texts Library}.\cite{Orphic}
+\item Lull, Ramón. \textit{Ars Magna}. 1501.\cite{Lull1501}
+\item Copernicus, Nicolaus. \textit{De Revolutionibus Orbium Coelestium}. 1543.\cite{Copernicus1543}
+\item Das Nibelungenlied: \textit{Song of the Nibelungs}. Yale UP, 2006.\cite{Das2006}
+\item Malory, Thomas. \textit{Le Morte Darthur: The Winchester Manuscript}. Oxford UP, USA, 1998.\cite{Malory1998}
+\item Spenser, Edmund. The Faerie Queene. CUP Archive, 1920.\cite{Spenser1920}
+\end{itemize}
+\textit{Authors Mentioned:}\\
+Pythagoras, Zoroaster.
+
+\section{Nine}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item Bruno, Giordano. \textit{Ars Memoriae}. 1582.\cite{Brunoa}
+\end{itemize}
+\textit{Authors Mentioned}\\
+Copernicus, Aristotle, Lucretius, Cusanus, and Antoine de la Faye.
+
+\section{Ten}
+\textit{Books Mentioned:}
+\begin{itemize}
+\item \textit{Unknown volume of The Catholic Encyclopedia}.\cite{Herbermann1908}
+\item De Góngora Y Argote, Luis. \textit{The Solitudes of Luis De Góngora}. 1968.\cite{DeGongoraYArgote1968}
+\item \textbf{Kraft, Fellowes. \textit{Bitten Apples}}
+\end{itemize}
+\textit{Authors Mentioned}\\
+John Dee, Giordano Bruno, Origen, Descartes, Peter Ramus, and Francis Bacon.
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveL}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\bibliographystyle{plain}
+\bibliography{aegypt}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveLVI}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\chapter{Colophon}
+All contents  \textcopyleft 2025 Brian Murphy\\
+\bigskip
+
+Cover art is all in the public domain.
+
+\begin{itemize}
+\item The monad symbol is my own.
+\item \href{https://www.rawpixel.com/image/420927/free-illustration-image-thoth-egypt-egyptian}{Thoth}\\
+https://www.rawpixel.com/image/420927/free-illustration-image-thoth-\\egypt-egyptian
+\item \href{https://www.rawpixel.com/image/420831/free-illustration-image-egypt-egyptian-goddess}{Scarab}\\
+https://www.rawpixel.com/image/420831/free-illustration-image-egypt-\\egyptian-goddess
+\end{itemize}
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\staveLVIII}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\afterpage{\blankpage}
+
+\includepdf[pages=2]{cover.pdf}
+
+\end{document}

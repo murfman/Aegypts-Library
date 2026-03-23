@@ -1,0 +1,1522 @@
+\documentclass[10pt,makeidx]{extreport}
+
+
+% == Unicode fonts ==
+\usepackage{fontspec} % (no inputenc/fontenc with fontspec)
+\setsansfont{Libertinus Sans}
+\setmonofont{FiraCode Nerd Font Mono}[Scale=0.6]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[utf8]{inputenc}
+\usepackage{float}
+\raggedbottom
+
+\setlength{\headheight}{15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{savesym}
+\setmainfont{Cormorant Garamond}[
+Ligatures={TeX,Discretionary},
+Scale=MatchLowercase,
+]
+
+\usepackage{shadowtext}
+\usepackage{anyfontsize}
+%\usepackage{egothic}
+\usepackage{marvosym}
+%\usepackage[T1]{fontenc}
+%\usepackage{accanthis}
+\usepackage[titles]{tocloft}
+\usepackage{titlesec}
+%\usepackage{lmodern}
+\restoresymbol{}{}
+
+\newfontfamily\accanthis{EB Garamond}[
+  Ligatures=TeX,
+  Scale=MatchLowercase
+  % Letters=SmallCaps,      % <- uncomment if you want small caps
+  % LetterSpace=2           % <- gentle tracking for display
+]
+
+\newfontfamily\egothfamily{Cardo}[
+  Ligatures=TeX,
+  Scale=MatchLowercase
+]
+
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{spanish}
+\newcommand{\esgloss}[1]{\hfill{\footnotesize\itshape\foreignlanguage{spanish}{#1}}}
+
+\newcommand{\DotLeader}{\leaders\hbox to .6em{\hss.\hss}\hfill}
+
+\newcommand{\lineLRdot}[2]{%
+  \noindent\makebox[\linewidth][l]{#1\DotLeader #2}%
+}
+
+
+\newcommand{\lineLR}[2]{%
+  \noindent\makebox[\linewidth][s]{#1\hfill#2}%
+}
+
+
+% Delete any of the following that are not needed
+\usepackage{makeidx,tabularx}
+\usepackage{amsmath}
+%\usepackage{boisik}
+\usepackage{graphics}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb} % Just for the degree symbol
+\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{lettrine} % Drop caps
+\usepackage{wrapfig} % Let's wrap some images
+\usepackage{hanging} % For hanging indents in a script
+\usepackage{fancyvrb} % Use line numbers with code samples
+\usepackage{fvextra} % Break lines inside Verbatim environment:
+\usepackage{enumitem} % Control spacing in lists
+\usepackage{setspace} % Better control over line-spacing
+\usepackage{nicefrac} % Use nice fractions
+%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
+\usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
+\usepackage[tracking=true]{microtype} % Make things neater. 
+\usepackage{tabularray} % Easy tables
+\usepackage[bottomfloats,belowfloats,multiple]{footmisc}
+\usepackage{quotchap}
+\usepackage{fancybox,lipsum}
+\usepackage{verse}
+\usepackage{relsize}
+%\usepackage[style=numeric,sorting=nty]{biblatex}
+\usepackage[backend=biber,style=chicago-authordate,autolang=none]{biblatex}
+\DeclareLanguageMapping{american}{american-chicago}
+\addbibresource{aegypt.bib}
+%\addbibresource{las-zine.bib}
+%\addbibresource{daemon-zine.bib}
+%\addbibresource{combined.bib}
+\interfootnotelinepenalty=10000
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{images/}} % Where are our images?
+\usepackage{multicol} % Include two- or three-column sections
+\counterwithout{footnote}{chapter} % Stop resetting the footnote count after each chapter
+\NumTabs{18} % Define 18 tab stops (at 1/4" intervals) [tabto package]
+\raggedbottom  % Don't force text to fill page
+\setlength{\belowcaptionskip}{4pt} % Adjust space between caption and figure
+\renewcommand*\contentsname{Contents\ldots} % Change the name of the TOC
+\PassOptionsToPackage{usenames,dvipsnames,svgnames,x11names}{xcolor}
+%% This is how to have the \chapter pages respect  fancy header
+\usepackage{etoolbox}
+\AtBeginEnvironment{multicols}{\setlength{\parindent}{0pt}}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{shadows}
+\newmdenv[shadow=true,shadowcolor=black,font=\sffamily,rightmargin=8pt]{shadedbox}
+\AtBeginEnvironment{quote}{\par\singlespacing\small}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Setup%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\geometry{
+	paperheight=11in, 
+	paperwidth=8.5in, 
+	margin=24mm,
+%	a5paper % Comment out for half-letter paper
+}
+
+\addtolength{\topmargin}{5mm} % Adjust and bottom margin
+\addtolength{\textheight}{-10mm} % Adjust the bottom margin
+\setlength{\parskip}{.5em}
+
+% Automatic version string based on compilation date
+\newcommand{\docversion}{v-\the\year-\the\month-\the\day}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page Headers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Adjust the  as necessary
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}% clear all
+\fancyhead[LE,RO]{\textit{Ægypt's Library}}
+\fancyhead[RE,LO]{\textit{The Solitudes}}
+\fancyfoot[LO,LE]{\small \docversion}% bottom left, all pages
+\fancyfoot[RO,RE]{\thepage}% bottom right, page number
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Chapter Title Spacing %%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\rm\Large\bfseries}
+    {\chaptertitlename\ \thechapter}
+    {25pt}
+    {\LARGE}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{1ex}
+\pagestyle{fancy}
+% remove subsection numbering
+\setcounter{secnumdepth}{-\maxdimen} 
+
+\usepackage{needspace,xparse}
+
+% in preamble
+\usepackage{needspace,xparse}
+\let\latexsection\section
+\RenewDocumentCommand{\section}{s o m}{%
+  % Reserve enough vertical room for heading + a couple of lines of content,
+  % plus typical list/top spacing if the section starts with an itemize.
+  \Needspace{\dimexpr 7\baselineskip + \parskip + \topsep\relax}%
+  \IfBooleanTF{#1}
+    {\latexsection*{#3}}% starred form
+    {\IfNoValueTF{#2}{\latexsection{#3}}{\latexsection[#2]{#3}}}% optional short title
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make a nice border and box for the tops of our examples
+\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
+
+% Add an \hrule with space above and below
+\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
+
+% Make hrefs easier (must load package hyperref}
+\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
+
+% Rotate text in tables easier
+% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
+\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
+
+% Make diversions easier (and uniform!)
+\newcommand\kdivb[2]{
+	\medskip
+	\hrule
+	\medskip
+	\noindent{}\textbf{#1}
+	\vspace{#2mm}
+	\begin{multicols}{2}
+}
+
+\newcommand\kdive[1]{
+	\end{multicols} 
+	\vspace{#1mm}
+	\hrule
+	\medskip
+}
+
+% dropcaps because why the fuck not...
+\input GoudyIn.fd
+\newcommand*\initfamily{\usefont{U}{GoudyIn}{xl}{n}}
+\usepackage{Typocaps,lettrine}
+%\renewcommand\LettrineFontHook{\Typocapsfamily}
+\renewcommand\LettrineFontHook{\initfamily}
+\newcommand\dropcap{\lettrine[lines=4, findent=3pt]}
+
+% latex logos
+\usepackage{hologo}
+
+
+
+% fleurons
+\usepackage{staves}
+\usepackage{pifont}
+\usepackage{rotating}
+\newcommand\fleuron{\begin{turn}{45}\Large \ding{166}\end{turn}}
+	% use this inline \center \reflectbox{\fleuron}\fleuron
+\usepackage{xhfill}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+\usepackage{linearA}
+\newcommand\doublefleuron{%
+	\reflectbox{\fleuron}\AC\staveXLIX\reflectbox{\AC}\fleuron}
+\newcommand\fleuronbar{%
+	{\huge\LinearACCCXIII}\xrfill[1.3ex]{1pt}\doublefleuron\xrfill[1.3ex]{1pt}\reflectbox{\huge\LinearACCCXIII}}
+
+
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage%
+    \pagestyle{fancy}}
+
+
+\setlength{\skip\footins}{20pt}
+\setlength{\footnotesep}{0.9em}
+\renewcommand{\footnotemargin}{1em}
+
+%\setlist[itemize,1]{label=$\triangleright$} %change the top item level icon to a triangle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+
+\newcommand{\tikzlogo}{%
+  \textsc{Ti\kern-.1em\lower.4ex\hbox{K}\kern-.2emZ}\xspace
+}
+
+
+% in preamble
+\tikzset{
+  monad/.pic={
+    % your exact path content goes here (no surrounding tikzpicture)
+      \path[fill=cfefefe] (0.0, 19.05).. controls (3.4488, 19.05) and (6.8977, 19.05) .. (10.451, 19.05).. controls (10.451, 12.7635) and (10.451, 6.477) .. (10.451, 0.0).. controls (7.0022, 0.0) and (3.5534, 0.0) .. (0.0, 0.0).. controls (0.0, 6.2865) and (0.0, 12.573) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(1.3494, -0.7938)}] (0.0, 19.05).. controls (0.1746, 19.05) and (0.3493, 19.05) .. (0.5292, 19.05).. controls (0.5117, 18.9976) and (0.4942, 18.9452) .. (0.4763, 18.8912).. controls (0.4937, 18.8825) and (0.5112, 18.8738) .. (0.5292, 18.8648).. controls (0.5177, 18.8206) and (0.5177, 18.8206) .. (0.506, 18.7755).. controls (0.3576, 18.1779) and (0.4316, 17.6917) .. (0.7144, 17.145).. controls (0.7269, 17.1198) and (0.7394, 17.0945) .. (0.7523, 17.0685).. controls (0.8438, 16.891) and (0.9545, 16.7403) .. (1.0848, 16.5894).. controls (1.1046, 16.5664) and (1.1244, 16.5433) .. (1.1447, 16.5196).. controls (1.2576, 16.3912) and (1.3684, 16.2654) .. (1.5081, 16.166).. controls (1.6145, 16.1733) and (1.6813, 16.2138) .. (1.7677, 16.2735).. controls (2.384, 16.6761) and (3.0995, 16.8915) .. (3.8348, 16.887).. controls (3.8683, 16.8872) and (3.9019, 16.8874) .. (3.9365, 16.8877).. controls (4.155, 16.8872) and (4.3624, 16.8663) .. (4.5773, 16.8275).. controls (4.6268, 16.82) and (4.6268, 16.82) .. (4.6772, 16.8124).. controls (5.1697, 16.726) and (5.7055, 16.5339) .. (6.1029, 16.2234).. controls (6.1835, 16.16) and (6.1835, 16.16) .. (6.2612, 16.1647).. controls (6.7128, 16.3661) and (7.0219, 16.9705) .. (7.2082, 17.4046).. controls (7.217, 17.4248) and (7.2257, 17.445) .. (7.2347, 17.4659).. controls (7.2881, 17.5957) and (7.321, 17.722) .. (7.3446, 17.8604).. controls (7.3554, 17.9123) and (7.3554, 17.9123) .. (7.3819, 17.9387).. controls (7.4016, 18.216) and (7.3633, 18.4631) .. (7.3025, 18.7325).. controls (7.2806, 18.8444) and (7.276, 18.9332) .. (7.276, 19.05).. controls (7.4507, 19.05) and (7.6253, 19.05) .. (7.8052, 19.05).. controls (7.8432, 18.84) and (7.8432, 18.84) .. (7.8551, 18.7737).. controls (7.8654, 18.6791) and (7.8654, 18.6791) .. (7.911, 18.6002).. controls (7.9141, 18.5362) and (7.9154, 18.473) .. (7.9155, 18.409).. controls (7.9156, 18.3894) and (7.9157, 18.3699) .. (7.9158, 18.3497).. controls (7.9159, 18.3079) and (7.9159, 18.2661) .. (7.9159, 18.2244).. controls (7.916, 18.1619) and (7.9165, 18.0994) .. (7.917, 18.0369).. controls (7.918, 17.7789) and (7.9005, 17.5324) .. (7.8581, 17.2773).. controls (7.8548, 17.2567) and (7.8515, 17.2361) .. (7.8481, 17.2149).. controls (7.7449, 16.6247) and (7.4753, 16.0374) .. (7.1058, 15.5681).. controls (7.06, 15.4978) and (7.0392, 15.4565) .. (7.0379, 15.3723).. controls (7.078, 15.3031) and (7.078, 15.3031) .. (7.1388, 15.235).. controls (7.5266, 14.7495) and (7.7504, 14.154) .. (7.8581, 13.5467).. controls (7.8641, 13.5161) and (7.87, 13.4855) .. (7.8761, 13.454).. controls (7.9129, 13.2325) and (7.9172, 13.0118) .. (7.9193, 12.7876).. controls (7.9198, 12.7578) and (7.9202, 12.7279) .. (7.9207, 12.6972).. controls (7.9206, 12.4925) and (7.8878, 12.3141) .. (7.8317, 12.1179).. controls (7.823, 12.0817) and (7.8145, 12.0455) .. (7.8063, 12.0092).. controls (7.5652, 10.9828) and (6.9647, 10.0766) .. (6.0673, 9.5092).. controls (5.6752, 9.2718) and (5.2738, 9.0863) .. (4.8286, 8.976).. controls (4.8064, 8.9704) and (4.7841, 8.9648) .. (4.7611, 8.9591).. controls (4.5723, 8.9149) and (4.4061, 8.9053) .. (4.2069, 8.89).. controls (4.2069, 8.305) and (4.2069, 7.72) .. (4.2069, 7.1173).. controls (4.6935, 7.1205) and (4.6935, 7.1205) .. (5.1802, 7.1241).. controls (5.3788, 7.1257) and (5.5775, 7.1272) .. (5.7761, 7.1285).. controls (5.9363, 7.1294) and (6.0966, 7.1307) .. (6.2568, 7.1321).. controls (6.3178, 7.1325) and (6.3788, 7.1329) .. (6.4397, 7.1333).. controls (6.5255, 7.1337) and (6.6112, 7.1345) .. (6.6969, 7.1353).. controls (6.7219, 7.1354) and (6.7468, 7.1354) .. (6.7725, 7.1355).. controls (6.9896, 7.1382) and (7.209, 7.1576) .. (7.4083, 7.2496).. controls (7.4632, 7.3302) and (7.4862, 7.4268) .. (7.5158, 7.5191).. controls (7.5642, 7.67) and (7.5642, 7.67) .. (7.5935, 7.6994).. controls (7.742, 7.6994) and (7.8904, 7.6994) .. (8.0433, 7.6994).. controls (8.0433, 7.0882) and (8.0433, 6.477) .. (8.0433, 5.8473).. controls (7.8862, 5.8473) and (7.729, 5.8473) .. (7.5671, 5.8473).. controls (7.5438, 5.9334) and (7.5206, 6.0195) .. (7.4973, 6.1057).. controls (7.4493, 6.2197) and (7.3853, 6.2679) .. (7.2772, 6.3239).. controls (7.261, 6.3298) and (7.2448, 6.3357) .. (7.2281, 6.3417).. controls (7.2121, 6.3478) and (7.1961, 6.3539) .. (7.1796, 6.3602).. controls (6.9999, 6.407) and (6.8159, 6.4072) .. (6.6314, 6.4083).. controls (6.6044, 6.4086) and (6.5774, 6.4089) .. (6.5495, 6.4092).. controls (6.4626, 6.41) and (6.3757, 6.4106) .. (6.2888, 6.4113).. controls (6.2349, 6.4118) and (6.181, 6.4123) .. (6.1271, 6.4128).. controls (5.928, 6.4146) and (5.7289, 6.4162) .. (5.5298, 6.4178).. controls (5.0845, 6.4216) and (4.6392, 6.4254) .. (4.1804, 6.4294).. controls (4.1891, 5.2419) and (4.1979, 4.0545) .. (4.2069, 2.831).. controls (4.3204, 2.9445) and (4.4339, 3.0581) .. (4.5508, 3.175).. controls (4.618, 3.2288) and (4.6776, 3.2756) .. (4.7493, 3.3205).. controls (4.7656, 3.3311) and (4.782, 3.3417) .. (4.7988, 3.3526).. controls (4.9543, 3.4499) and (5.118, 3.514) .. (5.2917, 3.5719).. controls (5.3287, 3.5866) and (5.3656, 3.6015) .. (5.4025, 3.6165).. controls (5.607, 3.6917) and (5.8158, 3.7139) .. (6.0325, 3.7124).. controls (6.0564, 3.7123) and (6.0804, 3.7122) .. (6.1051, 3.712).. controls (6.8341, 3.6996) and (7.4273, 3.4269) .. (7.9375, 2.9104).. controls (7.9663, 2.8821) and (7.9663, 2.8821) .. (7.9956, 2.8532).. controls (8.4173, 2.4116) and (8.6117, 1.8178) .. (8.599, 1.2171).. controls (8.4069, 1.2171) and (8.2148, 1.2171) .. (8.0169, 1.2171).. controls (8.012, 1.2635) and (8.0071, 1.3099) .. (8.002, 1.3576).. controls (7.9323, 1.8001) and (7.7388, 2.3118) .. (7.3868, 2.6061).. controls (7.3418, 2.638) and (7.296, 2.6688) .. (7.2496, 2.6988).. controls (7.2232, 2.7169) and (7.1967, 2.735) .. (7.1695, 2.7536).. controls (6.7706, 3.0152) and (6.3014, 3.1621) .. (5.8241, 3.0774).. controls (5.7876, 3.0663) and (5.7513, 3.0546) .. (5.715, 3.0427).. controls (5.6862, 3.0346) and (5.6575, 3.0265) .. (5.6279, 3.0181).. controls (5.3662, 2.9395) and (5.1479, 2.8241) .. (4.9213, 2.6723).. controls (4.8932, 2.6541) and (4.8932, 2.6541) .. (4.8645, 2.6356).. controls (4.5972, 2.4372) and (4.4409, 2.0766) .. (4.3392, 1.7727).. controls (4.3244, 1.7374) and (4.3095, 1.7021) .. (4.2945, 1.6669).. controls (4.24, 1.5232) and (4.2271, 1.3685) .. (4.2069, 1.2171).. controls (4.0972, 1.2163) and (3.9875, 1.2158) .. (3.8778, 1.2154).. controls (3.8465, 1.2152) and (3.8151, 1.215) .. (3.7829, 1.2148).. controls (3.7531, 1.2147) and (3.7234, 1.2146) .. (3.6927, 1.2145).. controls (3.6651, 1.2144) and (3.6375, 1.2142) .. (3.6091, 1.2141).. controls (3.5454, 1.2171) and (3.5454, 1.2171) .. (3.519, 1.2435).. controls (3.5175, 1.2865) and (3.5165, 1.3295) .. (3.5157, 1.3725).. controls (3.4824, 1.7898) and (3.2704, 2.2516) .. (2.979, 2.5529).. controls (2.9145, 2.6069) and (2.8487, 2.6531) .. (2.7781, 2.6988).. controls (2.7529, 2.7166) and (2.7277, 2.7344) .. (2.7017, 2.7527).. controls (2.3111, 3.0144) and (1.822, 3.1607) .. (1.3527, 3.0774).. controls (1.3162, 3.0663) and (1.2798, 3.0546) .. (1.2435, 3.0427).. controls (1.2148, 3.0346) and (1.186, 3.0265) .. (1.1564, 3.0181).. controls (0.8947, 2.9395) and (0.6765, 2.8241) .. (0.4498, 2.6723).. controls (0.4217, 2.6541) and (0.4217, 2.6541) .. (0.3931, 2.6356).. controls (0.1257, 2.4372) and (-0.0306, 2.0766) .. (-0.1323, 1.7727).. controls (-0.1471, 1.7374) and (-0.1619, 1.7021) .. (-0.1769, 1.6669).. controls (-0.2315, 1.5232) and (-0.2441, 1.3684) .. (-0.2646, 1.2171).. controls (-0.4567, 1.2171) and (-0.6488, 1.2171) .. (-0.8467, 1.2171).. controls (-0.8544, 1.4551) and (-0.8368, 1.6514) .. (-0.7673, 1.8785).. controls (-0.7586, 1.9096) and (-0.7499, 1.9407) .. (-0.7409, 1.9727).. controls (-0.6184, 2.3802) and (-0.4026, 2.6894) .. (-0.1058, 2.9898).. controls (-0.0832, 3.0153) and (-0.0832, 3.0153) .. (-0.0602, 3.0413).. controls (0.174, 3.2994) and (0.4946, 3.4633) .. (0.8202, 3.5719).. controls (0.8572, 3.5866) and (0.8941, 3.6015) .. (0.931, 3.6165).. controls (1.1512, 3.6972) and (1.3729, 3.7137) .. (1.6057, 3.7124).. controls (1.6336, 3.7123) and (1.6614, 3.7122) .. (1.6902, 3.712).. controls (1.912, 3.7087) and (2.1142, 3.6858) .. (2.3283, 3.6248).. controls (2.3582, 3.6167) and (2.3881, 3.6086) .. (2.4189, 3.6003).. controls (2.8017, 3.4812) and (3.1224, 3.243) .. (3.4072, 2.9664).. controls (3.4611, 2.9097) and (3.4611, 2.9097) .. (3.519, 2.884).. controls (3.519, 4.0539) and (3.519, 5.2239) .. (3.519, 6.4294).. controls (3.0671, 6.4266) and (2.6153, 6.4239) .. (2.1497, 6.4211).. controls (1.9365, 6.4201) and (1.9365, 6.4201) .. (1.719, 6.4191).. controls (1.5905, 6.4181) and (1.5905, 6.4181) .. (1.4619, 6.4171).. controls (1.4051, 6.4166) and (1.3483, 6.4164) .. (1.2915, 6.4162).. controls (0.7631, 6.4419) and (0.7631, 6.4419) .. (0.2958, 6.2408).. controls (0.2211, 6.1224) and (0.1939, 5.9811) .. (0.1588, 5.8473).. controls (0.0016, 5.8473) and (-0.1556, 5.8473) .. (-0.3175, 5.8473).. controls (-0.3175, 6.4585) and (-0.3175, 7.0697) .. (-0.3175, 7.6994).. controls (-0.1691, 7.6994) and (-0.0206, 7.6994) .. (0.1323, 7.6994).. controls (0.1585, 7.6383) and (0.1847, 7.5771) .. (0.2117, 7.5142).. controls (0.2236, 7.4865) and (0.2236, 7.4865) .. (0.2359, 7.4584).. controls (0.2658, 7.3893) and (0.2937, 7.321) .. (0.3175, 7.2496).. controls (0.5348, 7.1412) and (0.7908, 7.1359) .. (1.0289, 7.1353).. controls (1.056, 7.135) and (1.0832, 7.1348) .. (1.1111, 7.1345).. controls (1.1997, 7.1337) and (1.2884, 7.1332) .. (1.377, 7.1328).. controls (1.4388, 7.1323) and (1.5007, 7.1318) .. (1.5626, 7.1312).. controls (1.7246, 7.1299) and (1.8866, 7.1288) .. (2.0487, 7.1279).. controls (2.2435, 7.1266) and (2.4383, 7.125) .. (2.6332, 7.1234).. controls (2.9284, 7.1211) and (3.2237, 7.1192) .. (3.519, 7.1173).. controls (3.519, 7.7023) and (3.519, 8.2873) .. (3.519, 8.89).. controls (3.4229, 8.8987) and (3.3269, 8.9075) .. (3.2279, 8.9165).. controls (2.4065, 9.0611) and (1.6816, 9.4524) .. (1.0848, 10.0277).. controls (1.0681, 10.0431) and (1.0514, 10.0584) .. (1.0341, 10.0742).. controls (0.3152, 10.7523) and (-0.0772, 11.7862) .. (-0.1132, 12.7592).. controls (-0.1205, 13.0911) and (-0.0996, 13.408) .. (-0.0265, 13.7319).. controls (-0.0194, 13.7645) and (-0.0123, 13.7971) .. (-0.0051, 13.8307).. controls (0.1057, 14.2894) and (0.2931, 14.7496) .. (0.5767, 15.1287).. controls (0.5891, 15.1454) and (0.6015, 15.1621) .. (0.6143, 15.1792).. controls (0.6386, 15.2113) and (0.6633, 15.243) .. (0.6886, 15.2743).. controls (0.727, 15.3221) and (0.727, 15.3221) .. (0.7673, 15.3987).. controls (0.7472, 15.5017) and (0.6881, 15.5694) .. (0.6234, 15.6501).. controls (0.1092, 16.3475) and (-0.1167, 17.2206) .. (-0.1142, 18.078).. controls (-0.1141, 18.1372) and (-0.1147, 18.1963) .. (-0.1154, 18.2555).. controls (-0.1165, 18.5123) and (-0.1172, 18.8155) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfefefe,shift={(2.4871, -4.8154)}] (0.0, 19.05).. controls (0.1046, 19.0055) and (0.1859, 18.9345) .. (0.2729, 18.8631).. controls (0.6605, 18.5532) and (1.1024, 18.3218) .. (1.5743, 18.1686).. controls (1.602, 18.1595) and (1.602, 18.1595) .. (1.6302, 18.1501).. controls (1.9963, 18.0377) and (2.3673, 18.0018) .. (2.7484, 18.0032).. controls (2.78, 18.0033) and (2.78, 18.0033) .. (2.8122, 18.0033).. controls (3.4007, 18.0057) and (3.9419, 18.1287) .. (4.4715, 18.3885).. controls (4.4906, 18.3976) and (4.5097, 18.4067) .. (4.5295, 18.4161).. controls (4.8551, 18.5721) and (5.146, 18.7705) .. (5.4178, 19.0081).. controls (5.4373, 19.022) and (5.4568, 19.0358) .. (5.4769, 19.05).. controls (5.5665, 19.0201) and (5.574, 19.0077) .. (5.6212, 18.9307).. controls (5.6391, 18.9017) and (5.6391, 18.9017) .. (5.6573, 18.8721).. controls (5.676, 18.8406) and (5.676, 18.8406) .. (5.6952, 18.8086).. controls (5.7081, 18.787) and (5.7211, 18.7654) .. (5.7344, 18.7432).. controls (6.1366, 18.063) and (6.4071, 17.2492) .. (6.2442, 16.4571).. controls (6.2364, 16.4108) and (6.2364, 16.4108) .. (6.2285, 16.3635).. controls (6.0745, 15.4921) and (5.5897, 14.6091) .. (4.8589, 14.0954).. controls (4.5531, 13.8867) and (4.2362, 13.7276) .. (3.8894, 13.5996).. controls (3.8644, 13.5896) and (3.8395, 13.5795) .. (3.8138, 13.5692).. controls (3.1045, 13.2905) and (2.2911, 13.3271) .. (1.5875, 13.5996).. controls (1.5628, 13.6087) and (1.5381, 13.6179) .. (1.5127, 13.6273).. controls (1.1374, 13.7738) and (0.7932, 13.9877) .. (0.4763, 14.2346).. controls (0.4513, 14.254) and (0.4263, 14.2734) .. (0.4006, 14.2934).. controls (-0.2074, 14.8056) and (-0.5498, 15.6188) .. (-0.7144, 16.3777).. controls (-0.7203, 16.4005) and (-0.7262, 16.4233) .. (-0.7324, 16.4467).. controls (-0.9286, 17.2477) and (-0.5725, 18.1697) .. (-0.1621, 18.8466).. controls (-0.1135, 18.9194) and (-0.0576, 18.9841) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfafafa,shift={(6.059, -3.5454)}] (0.0, 19.05).. controls (0.0315, 19.0421) and (0.0631, 19.0341) .. (0.0956, 19.0259).. controls (0.427, 18.9325) and (0.7337, 18.7695) .. (1.0319, 18.6002).. controls (0.9361, 18.4921) and (0.8099, 18.4563) .. (0.678, 18.4051).. controls (0.651, 18.3946) and (0.6239, 18.384) .. (0.596, 18.3732).. controls (0.3318, 18.2733) and (0.0651, 18.2051) .. (-0.2117, 18.1504).. controls (-0.2428, 18.1439) and (-0.2739, 18.1375) .. (-0.306, 18.1308).. controls (-1.0106, 18.002) and (-1.7454, 18.1701) .. (-2.3994, 18.4332).. controls (-2.4183, 18.4407) and (-2.4372, 18.4483) .. (-2.4566, 18.4561).. controls (-2.5485, 18.4949) and (-2.5891, 18.5152) .. (-2.6458, 18.6002).. controls (-1.8635, 19.1271) and (-0.9074, 19.2801) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cf9f9f9,shift={(2.9369, -4.3127)}] (0.0, 19.05).. controls (0.1345, 19.0385) and (0.2484, 18.9702) .. (0.3671, 18.9111).. controls (0.5851, 18.8061) and (0.7977, 18.7164) .. (1.0319, 18.6531).. controls (1.0526, 18.6471) and (1.0733, 18.6411) .. (1.0946, 18.6349).. controls (1.8072, 18.4347) and (2.7276, 18.4163) .. (3.4396, 18.6267).. controls (3.4824, 18.6392) and (3.4824, 18.6392) .. (3.5262, 18.6521).. controls (3.8489, 18.7491) and (4.1651, 18.852) .. (4.4581, 19.0204).. controls (4.5244, 19.05) and (4.5244, 19.05) .. (4.5815, 19.0448).. controls (4.6302, 19.0235) and (4.6302, 19.0235) .. (4.7096, 18.9706).. controls (4.593, 18.6708) and (4.0525, 18.4346) .. (3.7727, 18.31).. controls (3.6885, 18.2735) and (3.6038, 18.2383) .. (3.519, 18.2033).. controls (3.4903, 18.19) and (3.4616, 18.1766) .. (3.432, 18.1628).. controls (3.3052, 18.1127) and (3.1774, 18.0836) .. (3.0444, 18.0545).. controls (3.0192, 18.0488) and (2.9941, 18.043) .. (2.9681, 18.0371).. controls (2.3493, 17.899) and (1.7295, 17.9477) .. (1.1377, 18.1769).. controls (1.113, 18.186) and (1.0883, 18.1952) .. (1.0629, 18.2046).. controls (0.6602, 18.3618) and (0.2198, 18.6004) .. (-0.0794, 18.9177).. controls (-0.0298, 19.0202) and (-0.0298, 19.0202) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(5.5827, -6.5881)}] (0.0, 19.05).. controls (0.1555, 18.9108) and (0.2361, 18.7754) .. (0.248, 18.5655).. controls (0.2431, 18.4029) and (0.1925, 18.2706) .. (0.0837, 18.1491).. controls (-0.0677, 18.009) and (-0.2069, 17.9509) .. (-0.4137, 17.9571).. controls (-0.6097, 17.9824) and (-0.7421, 18.0774) .. (-0.8632, 18.2297).. controls (-0.9584, 18.3684) and (-0.9736, 18.5158) .. (-0.9525, 18.6796).. controls (-0.902, 18.8703) and (-0.796, 18.9924) .. (-0.635, 19.1029).. controls (-0.4243, 19.206) and (-0.1934, 19.1761) .. (0.0, 19.05) -- cycle;
+    % ... rest of your paths ...
+  }
+}
+
+% convenient wrapper to call it inline with scale/color
+\newcommand{\monad}[2][1]{%
+  \tikz[baseline=-0.5ex, scale=#1]{\pic{monad};}%
+}
+
+% usage:
+% \monad
+% \monad[0.7]
+% or with color override on the pic call:
+% \tikz[baseline=-0.5ex, scale=.9]{\pic[fill=mahogany]{myicon};}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Be sure to load this package last
+% [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+\usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+%\usepackage[normalem]{ulem}
+%\usepackage[colorlinks=false]{hyperref} 
+\hypersetup{
+	frenchlinks=true,
+	pdftitle={Ægypt's Library - Vol. 1},
+	pdfstartview={FitH},
+	pdfpagemode=UseOutlines
+	%pdfborderstyle={/S/U/W 1}
+}
+
+% Make all links automatically underlined
+%\renewcommand\UrlFont{\ttfamily\uline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Information %%%%%%%%%%%%%%%%%%%%%
+%% Adjust the TITLE and SUBTITLE as necessary
+\author{Brian Murphy}
+\title{
+ {\Huge Ægypt's Library} \\
+ {\footnotesize A Bibliography of the Aegypt Tetralogy \\
+ \bigskip
+ {\Large The Solitudes} \\
+ \bigskip
+ Typeset in \LaTeX{} \\
+% Issue \#001
+ }
+}
+\date{\begin{small}\today{}\end{small}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Cover and title page %%%%%%%%%%%%%%%%%
+\usepackage{titlepic}
+\usepackage{pdfpages}
+
+% command to provide stretchy vertical space in proportion
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip1.4em} 
+
+\newcommand{\BibLaTeX}{Bib\LaTeX{}}
+
+\newfontfamily\urlfont{FiraCode Nerd Font Mono}[Scale=MatchLowercase,Ligatures=TeX]
+\renewcommand{\UrlFont}{\urlfont}
+
+%\addbibresource{aegypt.bib}
+\makeindex
+
+% this is an attempt to auto bold face bib entries with keyword 'Fictional'
+%\AtEveryBibitem{%
+%  \ifkeyword{Fictional}{\bfseries}{}%
+%}
+
+\usepackage[most]{tcolorbox}
+\usepackage{csquotes} % nicer quotation marks
+
+\tcbset{
+  pullquote/.style={
+    enhanced,
+    breakable,
+    width=0.8\linewidth,        % center automatically
+    center,                     % center the box
+    colback=gray!5,             % light background
+    colframe=gray!50!black,     % frame color
+    boxrule=0.4pt,
+    colbacktitle=gray!40!black, % darker top bar
+    coltitle=white,             % title text color
+    title={#1},                 % optional title text
+    fonttitle=\small\scshape,
+%    fontupper=\itshape,
+    arc=6pt,                    % rounded corners
+    before skip=12pt, after skip=12pt,
+    top=10pt, bottom=10pt, left=10pt, right=10pt,
+    drop shadow                 % optional subtle shadow
+  }
+}
+
+% tcolorbox for chapter cards
+\usepackage[most]{tcolorbox}
+\tcbset{
+  chaptercard/.style={
+    colframe=Mahogany,
+    colback=Mahogany!3,
+    coltitle=Mahogany,
+    enhanced,
+    sharp corners,
+    boxrule=0.6pt,
+    left=10pt,right=10pt,top=8pt,bottom=10pt,
+    titlerule=0.6pt,
+    title style={font=\bfseries\large\sffamily\color{Mahogany}},
+  }
+}
+
+% inline helpers that ALSO add index entries
+% \Author[Sort Key]{Printed Name}
+% \Author[SortKey]{Printed Name}
+\newcommand{\Author}[2][]{%
+	\item #2\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+\newcommand{\AuthorBold}[2][]{%
+	% printed text (bold if you like)
+	\item \textbf{#2}%
+	% index entry: always unformatted
+	\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+% \Book[Sort Key]{Printed Title}{\parencite{key}}
+\newcommand{\Book}[4][]{%
+	%\item \textit{#2} — #3~#4%
+	\item \textit{#2} — #3\mbox{#4}%
+	\index{%
+		\if\relax\detokenize{#1}\relax\textit{#2}\else #1@\textit{#2}\fi
+	}%
+}
+
+\newcommand{\BookBold}[4][]{%
+	\item {\normalfont\bfseries\itshape #2} — {\normalfont\bfseries #3}\mbox{#4}%
+	\index{%
+		\if\relax\detokenize{#1}\relax #2\else #1\fi
+	}%
+}
+
+
+
+
+% compact bullet lists without vertical gaps
+\setlist[itemize,1]{nosep,leftmargin=1.2em}
+
+% Better breakout box
+\tcbset{
+  breakout/.style={
+    breakable, enhanced jigsaw, sharp corners,
+    colframe=Mahogany, colback=Mahogany!3,
+    boxrule=0.6pt, left=10pt, right=10pt, top=10pt, bottom=10pt,
+    before skip=8pt, after skip=12pt,
+    overlay={
+      \begin{tcbclipinterior}
+        \fill[Mahogany!6] (frame.south west) rectangle ([xshift=3mm]frame.north west);
+      \end{tcbclipinterior}
+    },
+    title style={font=\bfseries\large\color{Mahogany}},
+    fonttitle=\sffamily\bfseries,
+  }
+}
+
+\footnoteplacement{m}
+
+
+\pdfstringdefDisableCommands{\def\Zodiac#1{}}
+
+% chapter formatter: big title, sign at right, matching color
+\newcommand{\chapterzodiac}[2]{%
+  % #1 = sign number, #2 = title
+  \chapter[\texorpdfstring{#2}{#2}]{%
+    \color{Mahogany}\bfseries
+    #2%
+    \hfill
+    {\shadowtext{{\color{Mahogany}\Huge\Zodiac{#1}}}}%
+  }%
+}
+
+% optional: display style tweaks for chapters
+\titleformat{\chapter}[display]
+  {\huge\bfseries\color{Mahogany}}
+  {\filright\Large\MakeUppercase{\chaptername}\ \thechapter}
+  {1ex}
+  {\titlerule[0pt]\vspace{0ex}} % thin rule above title
+  [\vspace{1ex}\titlerule]      % and below
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Let's get it started %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\includepdf[pages=1]{cover.pdf}
+
+
+
+
+%\afterpage{\blankpage}
+\include{titlepage.tex}
+%\setmainfont{Caslon}[Ligatures=TeX,Scale=MatchLowercase]
+\setcounter{tocdepth}{2}
+\tableofcontents
+\pagestyle{fancy}
+
+%\rmfamily
+%\accanthis
+
+\pagestyle{fancy}
+%\chapter{\color{Mahogany}Introduction}
+\chapterzodiac{12}{Introduction}
+\dropcap{T}{he} goal I set for this project is to list all of the books and authors mentioned throughout \textit{Ægypt}, or \textit{The Solitudes}, by chapter. Full bibliographies for both real and fictional works are at the end of the document. If a chapter is missing below, then it did not have any books or authors mentioned within it. Books or authors listed in bold are fictional works created by Crowley. The Authors Mentioned subsections list authors that were mentioned within a chapter but did not mention a particular book, well I tried to keep it that way, but I wasn't always sucessful.
+
+In most cases I tried to cite a work that would have been appropriate for the time frame of the story in which it is mentioned. In some cases, I have not been able to find a suitable edition and so cite a modern edition instead. Those will eventually be cleaned up to reflect either a copy of the work from the 16th century, one up to 1978, or one available to Crowley while he was writing.\footnote{This little rule I decided on early on has caused me no end of grief and will be the death of me I'm sure.}
+
+This is probably the fourth or fifth version\footnote{I've lost count of how many versions of this I have created at this stage, it has been dozens upon dozens.} of this that I've done. The previous versions were for my the enjoyment of myself and a few others. This version I've labored long and hard at to get it as good as possible, which it turns out is another trap that I set for myself. I also made use of {BiBTeX} using the excellent  \href{https://www.jabref.org/}{Jabref} application which I originally used in conjunction with \href{https://www.xm1math.net/texmaker/}{TexMaker} and now with \href{https://texstudio.org/}{TeXstudio}. \textit{(Earlier versions of this were entirely text or Markdown.)} 
+
+I'm open to any ideas as to how this can be updated and expanded. For any corrections or comments the reader can email me directly at murfman@pm.me.
+
+Special thanks goes to the guys within the \#Books channel on \href{https://www.mu-podcast.com}{The Miskatonic University Podcast} \href{https://discord.gg/5nH7UqtpdM}{Discord Server}. You guys know who you are, but I need to mention James (last name withheld) specifically for being a constant font of encouragement.
+
+\href{https://aegyptbibliography.substack.com}{Ægypt Bibliography} is an occasional blog regarding this project is available on \href{www.substack.com}{Substack}.
+\bigskip
+\begin{center}
+\textit{(This is now, and likely will remain, a work in progress.)}
+
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Venus}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+%\chapter{\color{Mahogany}Preface Works}
+\chapterzodiac{12}{Preface Works}
+\section{Author's Note}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Campbell, Joseph]{Joseph Campbell}
+  \Author[Eisenstein, Elizabeth L.]{Elizabeth L. Eisenstein}
+  \Author[Eliade, Mircea]{Mircea Eliade}
+  \Author[French, Peter]{Peter French}
+  \Author[Jonas, Hans]{Hans Jonas}
+  \Author[Manuel, Frank E.!Manuel, Fritz P.]{Frank E. \& Fritz P. Manuel}
+  \Author[Santillana, Giorgio di]{Giorgio di Santillana}
+  \Author[Schoenbaum, Stephen]{Stephen Schoenbaum}
+  \Author[Shumaker, Wayne]{Wayne Shumaker}
+  \Author[Thomas, Keith]{Keith Thomas}
+  \Author[Thorndike, Lynn]{Lynn Thorndike}
+  \Author[Walker, D. P.]{D. P. Walker}
+  \Author[Yates, Frances]{Dame Frances Yates}
+  \Author[Mitchell, John]{John Mitchell}
+  \Author[Maltwood, Katerine]{Katerine Maltwood}
+  \Author[Graves, Robert]{Robert Graves}
+  \Author[Rose, Lois]{Lois Rose}
+  \Author[Deacon, Richard]{Richard Deacon}
+  \Author[Scott, Walter]{Walter Scott}
+  \Author[De Góngora, Luis]{Luis de Góngora}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Hermetica]{Hermetica}{Walter Scott}{\parencite{Scott1924}}
+  \Book[De Góngora, Luis!The Solitudes of Luis De Góngora]{\textit{The Solitudes of Luis De Góngora}}{Luis de Góngora y Argote}{\parencite{DeGongoraYArgote1968}}
+\end{itemize}
+\end{paracol}
+
+\pagebreak
+
+\section{The Prologue on Earth}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, The Solitudes, The Prologue on Earth},width=0.8\linewidth,center upper]
+\enquote{\textnormal{I'm not from here; I'm from someplace different from this.} The road seemed longer than it ever did by day; at the bottom of the hill, the world was still dark, and dawn was far away.}
+\end{tcolorbox}
+
+\begin{paracol}{2}
+\noindent\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Bruno, Giordano!De monade, numero et figura]{\textit{De monade, numero et figura}}{Giordano Bruno}{\parencite{Bruno1961}}
+\end{itemize}
+\end{paracol}
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Saturn}}\\
+\nbvspace[1]
+\end{center}
+
+
+
+\chapterzodiac{1}{Vita}
+
+
+%\chapter{\color{Mahogany}Vita}
+
+%
+%\begin{center}
+%\vfill
+%\shadowoffset{1pt}
+%\shadowtext{%	
+%{\color{Mahogany}\fontsize{64}{64}\Zodiac{1}}}\\
+%\nbvspace[1]
+%%\fleuronbar
+%\end{center}
+
+\section{Chapter 1}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Ramus, Peter]{Peter Ramus}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[De Góngora, Luis!The Solitudes of Luis De Góngora]{The Solitudes of Luis De Góngora}{Luis De Góngora}{\parencite{DeGongoraYArgote1968}}\footnote{The title is listed here as “\textit{Soledades} of Luis Góngora” which is the Spanish name of the poem, but isn’t the name of the version he is reading. Pierce also mentions that this is a “new translation that he was to review for a small quarterly” but I believe this is Crowley adjusting reality to fit the narrative, something that he does throughout.}
+\end{itemize}
+\end{paracol}
+
+\begin{tcolorbox}[pullquote,title={John Crowley, \textit{The Solitudes}, Vita-1},width=0.8\linewidth,center upper]
+\enquote{\ldots his first two practical wishes for health and wealth having been asked and granted, to use his third wish simply to wish that he might forget the whole thing had ever happened; his safety and ease magically assured, to forget he had ever known wishes could be granted, to be returned to his (present) state of ignorance that such irruptions of power into the world, power placed at his unwise disposal, were really truly possible at all.}
+\end{tcolorbox}
+
+
+
+\section{Chapter 2}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None % none explicitly listed
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Kraft, Fellowes!Darkling Plain]{Darkling Plain}{Fellowes Kraft}{\parencite{Kraft}}
+  \Book[Burnett, Frances Hodgson!The Secret Garden]{The Secret Garden}{Frances Hodgson Burnett; Sue Ullstein}{\parencite{Burnett1975}}
+  \BookBold[Norton, Mary!The Borrowers Abroad]{The Borrowers Abroad}{Mary Norton}{\parencite{Norton}}\footnote{There is no novel by Norton titled \textit{The Borrowers Abroad}. This may have been deliberate by Crowley, or an accident, since all of the books are named in a similar pattern (i.e., \textit{The Borrowers Afield}, \textit{The Borrowers Afloat}, \textit{The Borrowers Aloft}, \textit{The Borrowers Avenged}). More research could be done to see if this was a proposed title of another book in the series, or if this was a subtle way to shift the book away from the reality, or history in this case, that we experience as the reader.}
+  \BookBold[Kraft, Fellowes!Under Saturn]{Under Saturn, A Novel of Wallenstein}{Fellowes Kraft}{\parencite{Krafta}}\footnote{Seems to be based on the biography of Wallenstein: Watson, Francis. \textit{Wallenstein, Soldier Under Saturn}. 1969.}
+  \BookBold[Kraft, Fellowes!Bitten Apples]{Bitten Apples}{Fellowes Kraft}{\parencite{Kraftb}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 3}
+
+\addcontentsline{toc}{subsection}{The Solitudes of Luis Góngora}
+\begin{tcolorbox}[breakout, title={The Solitudes of Luis Góngora}]
+\begin{minipage}[l]{0.25\textwidth}
+  \includegraphics[width=\linewidth]{gongora}
+\end{minipage}%
+\hfill
+\begin{minipage}[r]{0.7\textwidth}
+
+\dropcap{T}{he} Solitudes of Luis Góngora\index{The Solitudes of Luis Góngora}\index{De Góngora, Luis}, is mentioned in the Author's Note of Crowley's The Solitudes, or Ægypt as it was originally titled, and is the book that Pierce Moffett\index{Moffett, Pierce} is reading when his bus breaks down in the Blackberry Jambs. There are some obvious parallels between the first part of The Solitudes and that of Pierce leaving New York City. Góngora's poem centers on a young former knight that has been exiled from the bustling court and all of its intrigue and finds that the pastoral life of the countryside far more enjoyable. And Pierce explains it as such himself\ldots
+\end{minipage}
+%
+%\begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
+%    \centering
+%    \includegraphics[width=0.25\textwidth]{gongora}
+%\end{wrapfigure}
+
+\begin{quote}
+``You want a beer?'' Spofford said, rising.
+
+``Um, sure,'' Pierce said.
+
+``They're not so cold,'' Spofford said, bringing him a dusty bottle. ``But you're a sophisticate, right? You can drink beer English style.''
+
+``Sure,'' Pierce said. ``A sophisticate, definitely.''
+
+``What's the book?''
+
+Pierce showed him. ``Pastorals,'' he said. ``Poems about sophisticates who leave the city for the country.''
+
+``Oh yeah? Interesting.''
+
+``About how much nicer it is here than there.''
+
+Spofford sipped beer, leaning on the doorjamb. ``It is nice,'' he said. ``You should come and stay.''
+
+—John Crowley, Ægypt, Vita - Chapter Three
+\end{quote}
+
+Honestly, the plot of the 2,000 line poem isn't much more complicated than that. Understanding it, however, with its constant allegories and metaphors and Latinizations of words makes the original Spanish\ldots tricky.
+
+Góngora\index{De Góngora, Luis} was born in Cordoba, Spain in 1561 and was one of the leading figures of the Spanish Baroque\footnote{The Spanish Baroque period of literature was characterized by a progressive complexity and themes centered on the loss of confidence in the Neoplatonic ideals of the Renaissance. It featured disappointment in the failure of those ideals, an overarching pessimism with the world because of those failures, and a preoccupation with the passage of time. The most famous Spanish Baroque prose writer is Miguel de Cervantes, author of Don Quixote.}. Góngora\index{De Góngora, Luis} left a mark on not just the literature of his time, but literature (especially poetry) ever since that few others can compare to. His style was formalized with a name, \textit{gongorism}\index{Gongorism}, and he has been an inspiration to a varied bunch of artistic movements ever since; from ``Generation `27'', an attempt to revive the Spanish Baroque style on the 300th anniversary of Góngora's death, to 20th century French Symbolists. 
+
+He wrote The Solitudes in 1613 circulating it anonymously before it was published under his name post-mortem.
+
+\begin{quote}
+The first modern edition of \textit{The Solitudes}\index{The Solitudes of Luis Góngora} was brought out in 1927, the tercentenary of Góngora's\index{De Góngora, Luis} death. In \textit{The Solitudes}, a poem of about two thousand lines written in the silva meter (seven- and eleven-syllable lines in free pattern), Góngora defies convention and takes as his subject matter the exact opposite of what was expected in Spanish letters in his time. Instead of using the highest level of poetic diction to praise the most heroic and noble of subjects, Góngora employs it to praise the beauties of nature and the virtues of the country and of natural life, while deprecating the artificiality and the vices of the court. The characters who speak with wisdom and live with integrity and nobility are the peasants, not the nobility.
+
+It is a paradox of Góngora's\index{De Góngora, Luis} art that, while his focus is on the rural and the natural as the authentic and the desirable, he expresses this vision in poetry of the most complex syntax and of allusively and metaphorically dense qualities accessible only to the intellectually trained reader of poetry, and certainly not accessible to the peasants whom he extols. The Solitudes describes rustic life in the most ornate diction.\footnote{Berliner, Donna. ``The Solitudes by Luis de Góngora y Argote.'' 2022. https://www.ebsco.com/research-starters/literature-and-writing/solitudes-luis-de-gongora-y-argote}
+\end{quote}
+
+In hindsight, it is easy to see Pierce reading a poem known for its complexity that lauds the peasant life and requires some education to understand. It also seems to stand as a direct representation of people trying to understand the Ægypt Tetralogy, a seemingly quiant story about a failed professor moving to the country that happens to hide complex Hermetic hermeneutics and cosmology based around a little known, at least in the United States, heretical Italian monk that thought all magick was performed within the infinity of the mind.
+
+The edition of \textit{The Solitudes}\index{The Solitudes of Luis Góngora} that Pierce is likely reading, and the one that Crowley himself definitely was, is The Solitudes of Luis de Góngora translated by Gilbert F. Cunningham from The Johns Hopkins Press in 1968. Crowley quotes both the translated English (lines 94-96, 108-111, then 112-116) and original Spanish (113-114 and 119-121) in Vita - Chapter Three. 
+
+\renewcommand{\poemtoc}{subsection}
+\verselinenumbersright
+\settowidth{\versewidth}{Nor she who, sphinx-like, wears a human face,}
+\setlength{\vrightskip}{-6pt}
+\begin{verse}
+\setverselinenums{108}{110} % ← start at 108
+\poemlines{5}             % show a number every 5th line
+Here is no lust for power,\\
+\vin No thirst for windy fame;\\
+\vin No envy, to inflame\\
+\vin Like Egypt's aspic race;\\
+Nor she who, sphinx-like, wears a human face\\
+\vin\lineLR{above her bestial loins,}{\esgloss{acaba en mortal fiera}}\\
+\vin\lineLR{Whose wily voice enjoins}{\esgloss{esfinge bachillera}}\\
+\vin Narcissus' modern seed \\
+To follow Echo, and despite the well; \\
+Nor she whose insolent salvos now dispel \\
+The powder treasured be a thriftier breed. \\
+\vin\lineLR{Propped on his shepherd's crook}{\esgloss{ceremonia profana}} \\
+\lineLR{Rustic simplicity amused may look}{\esgloss{que la sinceridad burla}} \\
+\vin\lineLR{Upon the courtly cheat.}{\esgloss{sobre el corvo cayado.}} \\
+\end{verse}
+\setlength{\vrightskip}{0pt}
+
+Those last three English lines that Crowley quotes make me wonder if this is where Pierce gets the idea that Spofford has a crook. Later, in D\ae{}monomania, Pierce is recalling his arrival in the Jambs to Spofford, mentioning that he saw Spofford come over the hill, crook in hand. Spofford resolutely denounces the idea, however, saying he's never owned a crook. This is perhaps another subtle reference to an overarching theme of Pierce's throughout the series, he inability to distinguish what he has read from what is reality.
+
+I'm by no means an authority on Góngora or the Spanish Baroque period of literature, so if I've screwed this up, please let me know and I'll correct it. I found my own copy of Cunnigham's The Solitudes of Luis Góngora\index{The Solitudes of Luis Góngora} for my home library, because one can never have too many books, and I must say that it would be a perfect book for a pastoral bus ride.
+
+\end{tcolorbox}
+
+\begin{paracol}{2}
+\noindent\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Montagu, Lady Mary Wortley]{Lady Mary Wortley Montagu}
+  \Author[De Góngora, Luis]{Luis de Góngora}
+  \Author[Shelley, Percy Bysshe]{Percy Bysshe Shelley}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[De Góngora, Luis!The Solitudes of Luis De Góngora]{\textit{The Solitudes of Luis De Góngora}}{Luis De Góngora}{\parencite{DeGongoraYArgote1968}}\footnote{Crowley quotes Cunningham's translation of the First Solitude lines 94–96, 108–111, then 112–116. He switches to the original Spanish for pieces of lines 113–114, and 119–121.}
+  \Book[Pastorals!Unknown]{\textit{Pastorals}}{Unknown}{}\footnote{This is the answer that Pierce gives when asked “What's the book?” I'm almost 100\% certain that Pierce is referring to \textit{The Solitudes of Luis Góngora} here, but his answer leaves the possibility that he is reading a different pastoral book of poems. If I had to name something other than Góngora, then it would be \textit{Pastorals} by Ambrose Pierce, 1748, but that is outside the time period for much of the works mentioned. To further solidify the choice of \textit{Pastorals} being Góngora's \textit{Solitudes} I would refer to the last sentence of Chapter three: “The owl, Athena's wisdom bird or obscene bird of night (these Gongorisms are catching, he thought), asked again its single question.” I would think referencing the actual style later named for Góngora's writing would settle the debate\ldots The debate I'm having with myself, that is.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 4}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None % none listed
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Barr, Frank Walker!Time's Body]{Time's Body}{Frank Walker Barr}{\parencite{Barr}}
+  \BookBold[Barr, Frank Walker!Mythos and Tyrannos]{Mythos and Tyrannos}{Frank Walker Barr}{\parencite{Barra}}
+  \Book[Hunnis, William!Seven Sobs of a Sorrowful Soule for Sinne]{\textit{Seven Sobs of a Sorrowful Soule for Sinne}}{William Hunnis}{\parencite{Hunnis1600}}
+  \Book[Shakespeare, William!Measure for Measure]{\textit{Measure for Measure}}{William Shakespeare}{\parencite{Shakespeare2006}}
+  \Book[Encyclopaedia Britannica!1939 Edition]{Unknown Volumes of \textit{Encyclopaedia Britannica}}{Unknown}{\parencite{Brit1939}}\footnote{I am assuming the 1939 edition since Pierce mentions bringing several volumes of this fictitious version with him to Blackberry Jams.}
+  \Book[Malory, Thomas!The Boy's King Arthur]{\textit{The Boy's King Arthur: Being Sir Thomas Malory's History of King Arthur and His Knights of the Round Table}}{Thomas Malory; Sidney Lanier}{\parencite{Lanier1937}}
+  \BookBold[Kraft, Fellowes!Bruno's Journey]{Bruno's Journey}{Fellowes Kraft}{\parencite{Kraft1931}}
+\end{itemize}
+\end{paracol}
+
+\nbvspace[1]
+
+
+\begin{tcolorbox}[pullquote,title={John Crowley, \textit{The Solitudes}, Vita-4},width=0.8\linewidth,center upper]
+\enquote{So let us learn, by all means, why the voices wailed that Pan was dead. Let us learn – the answers are simple enough – why Moses had horns, and why the Israelites worshipped a golden calf; why Jesus was a fish, and why a man with a water-jug on his shoulder directed the Apostles – the Twelve – to an upper room. But let us not think that in such explorations we have disposed of or robbed of significance the story these figures tell. The story remains; if it changes, and it does, it is because our human nature is not fixed; \textbf{there is more than one history of the world}. But when we believe that we have proved there is no story, that history is nothing but one damned thing after another, that can only be because we have ceased to recognize ourselves.}
+\end{tcolorbox}
+
+\section{Chapter 5}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Homer]{Homer}
+  \Author[Sophocles]{Sophocles}
+  \Author[Alighieri, Dante]{Dante Alighieri}
+  \Author[Shakespeare, William]{William Shakespeare}
+  \Author[Cervantes, Miguel de]{Miguel de Cervantes}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Virgil!Eclogues]{\textit{Virgil's Eclogues}}{Virgil}{\parencite{Virgil2011}}\footnote{Line 6, ``iam redit et Virgo, redeunt Saturnia regna,'' translated as ``The virgin and the reign of Saturn come again.'' The following line is, ``iam nova progenies caelo demittitur alto,'' translated as ``now a new child is sent from heaven above.'' These lines predicted the coming of Christ, at least to medieval European readers who had just rediscovered Virgil. This is also why Virgil was lauded as such a godly pagan and was the figure that escorted Dante\index{Alighieri, Dante} through Hell and Purgatory in \textit{The Divine Comedy}.}
+  \Book[Dante Alighieri!Divine Comedy]{\textit{Divine Comedy}}{Dante Alighieri}{\parencite{Dante1950}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 6}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Vico, Giambattista]{Giambattista Vico}
+  \Author[Grimm, Jacob and Wilhelm]{Grimm}
+  \Author[Frobenius, Leo]{Frobenius}
+  \Author[Santayana, George]{George Santayana}
+  \Author[Santillana, Giorgio di]{Giorgio di Santillana}
+  \Author[Trollope, Anthony]{Anthony Trollope}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Rose, Lois!Steganography]{Steganography}{Lois Rose}{\parencite{Rose}}\footnote{This book by Lois Rose, and honestly the author Lois Rose more generally, is a bit mysterious to me. I \textit{think} that this is a fictitious book, but this must be the same Lois Rose in the Author's Note. The problem is that the only Lois Rose that had anything of note, much less ``speculations'' as mentioned by Crowley, published prior to 1987. The only thing I could find was a book called \textit{The Shattered Ring: Science Fiction and the Quest for Meaning}\parencite{Rose1970}, but how this relates to steganography, I can't begin to fathom, thus I must be missing something.}\index{Rose, Lois!The Shattered Ring: Science Fiction and the Quest for Meaning}
+  \Book[Bates, Lizzie!Stories of the Flowers]{\textit{Stories of the Flowers}}{Lizzie Bates}{\parencite{Bates1872}}
+  \Book[Perlesvaus!The High History of the Holy Graal]{\textit{The High History of the Holy Graal}}{Perlesvaus}{\parencite{Perlesvaus1898}}
+  \Book[Sprat, Thomas!The History of the Royal Society]{\textit{The History of the Royal Society of London, for the Improving of Natural Knowledge}}{Thomas Sprat}{\parencite{Sprat1667}}
+  \Book[Frazer, James George!The Golden Bough]{\textit{The Golden Bough: A Study in Magic and Religion}}{James George Frazer}{\parencite{Frazer1932}}
+  \Book[Longfellow, Henry Wadsworth!The Golden Legend]{\textit{The Golden Legend}}{Henry Wadsworth Longfellow}{\parencite{Longfellow}}
+  \Book[Apuleius!The Golden Ass]{\textit{The Golden Ass}}{Apuleius}{\parencite{Apuleius1998}}
+  \Book[Hyginus!Poeticon Astronomicon]{\textit{Poeticon Astronomicon}}{Hyginus}{\parencite{Hyginus}}
+  \Book[Huizinga, Johan!The Waning of the Middle Ages]{\textit{The Waning of the Middle Ages}}{Johan Huizinga}{\parencite{Huizinga2016}}
+  \Book[Burgess, Thornton W.!Old Mother West Wind]{\textit{Old Mother West Wind}}{Thornton W. Burgess}{\parencite{Burgess2012}}\footnote{Mentioned by Crowley as “Old Mother Westwind.”}
+  \Book[Unknown!Miss Martha's History Book]{``Miss Martha's History Book''}{Unknown}{}\footnote{I'm assuming this is a real unnamed history book belonging to Miss Martha, Pierce's uncle Sam's housekeeper.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 7}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Æneas]{Æneas}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Shakespeare, William!King Henry VIII]{\textit{Shakespeare's King Henry VIII}}{William Shakespeare}{\parencite{Shakespeare1912}}
+\end{itemize}
+\end{paracol}
+
+\nbvspace[1]
+
+
+\begin{tcolorbox}[pullquote,title={John Crowley, \textit{The Solitudes}, Vita-8},width=0.8\linewidth,center upper]
+\enquote{Why, what is it, how can flesh and blood come up with such stuff, how can flesh feel it. My lord life is strange. How is that Meaning comes to be? How? How does life cast it up, shape it, exude it; how does Meaning come to have physical, tangible effects, to be felt with a shock, to cause grief or longing, come to be sought for like food; pure Meaning having nothing to do with the clothes of persons or events in which it is dressed and yet not ever divorceable from some set of such clothes?}
+\end{tcolorbox}
+
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Zodiac{1}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+%\chapter{\color{Mahogany}Lucrum}
+\chapterzodiac{2}{Lucrum}
+
+\section{Chapter 1}
+
+%\begin{center}
+%\vfill
+%\shadowoffset{1pt}
+%\shadowtext{%	
+%{\color{Mahogany}\fontsize{64}{64}\Zodiac{2}}}\\
+%\nbvspace[1]
+%%\fleuronbar
+%\end{center}
+
+
+
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Aeschylus]{\AE{}schylus}
+  \Author[Euripides]{Euripides}
+  \Author[Leland, John]{John Leland}
+  \Author[Vergil, Polydore]{Polydore Vergil}
+  \Author[Dickens, Charles]{Charles Dickens}
+  \Author[Scott, Walter]{Sir Walter Scott}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Sidney, Philip!The Lady of May]{\textit{The Lady of May}}{Sir Philip Sidney}{\parencite{Sidney1598}}
+  \Book[Holinshed, Raphael!Holinshed's Chronicles: Richard II, 1398--1400; Henry IV and Henry V]{\textit{Holinshed's Chronicles: Richard II, 1398--1400, Henry IV and Henry V}}{Raphael Holinshed}{\parencite{Holinshed1923}}
+  \Book[Monardes, Nicolás!Joyfull Newes Out of the Newe Founde Worlde]{\textit{Joyfull Newes Out of the Newe Founde Worlde}}{Nicolás Monardes}{\parencite{Monardes1970}}
+  \Book[Plutarch!Lives (North's translation)]{\textit{Lives} (Englished)}{Plutarch; Sir Thomas North}{\parencite{Plutarch1894}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 3}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Mercator, Gerardus]{Gerardus Mercator}
+  \Author[Brahe, Tycho]{Tycho Brahe}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Trithemius, Johannes!Steganographia (1676 Heidel)]{\textit{Johannis Trithemii\ldots Steganographia\ldots Illustrata a Wolfgango Ernesto Heidel} (1676)}{Johannes Trithemius}{\parencite{Trithemius}}
+  \Book[Dee, John!Propædeumata Aphoristica (1568)]{\textit{Propædeumata Aphoristica Ioannis Dee, Londinensis, De Præstantioribus Quibusdam Naturæ Virtutibus} (1568)}{John Dee}{\parencite{Dee1568}}
+  \Book[Kelley, Edward!Unnamed Enochian Manuscript]{\textit{Talbot's Unnamed Enochian Manuscript}}{(attributed to Edward Kelley “Talbot”)}{}\footnote{Crowley describes “Talbot's” aka Edward Kelley's manuscript as “\ldots a manuscript on thick parchment, narrow and sewn up with heavy greased black thread. There was no cover or binding. The characters it was written in started immediately at the top of the first page without any heading, as though this were perhaps not the first page at all. Doctor Dee picked up the lamp and bent close over the page. Mr. Talbot turned the heavy worm-holed leaf. The second page was the same: a solid block of characters from top to bottom. \textit{It is in a cipher}, the doctor said. \textit{I can read a cipher, if it hides a language that I know.}”}\index{Kelley, Edward}
+\end{itemize}
+\end{paracol}
+
+
+\section{Chapter 4}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Copernicus, Nicolaus]{Copernicus}
+  \Author[Galilei, Galileo]{Galileo Galilei}
+  \Author[Aquinas, Thomas]{Thomas Aquinas}
+  \Author[Alighieri, Dante]{Dante Alighieri}
+  \Author[Aristotle]{Aristotle}
+  \Author[Hermes Trismegistus]{Hermes Trismegistus}
+  \Author[Cicero, Marcus Tullius]{Cicero}
+  \Author[Lactantius]{Lactantius}
+  \Author[Plato]{Plato}
+  \Author[Virgil]{Virgil}
+  \Author[Pythagoras]{Pythagoras}
+  \Author[Plotinus]{Plotinus}
+  \Author[Champollion, Jean-François]{Jean-François Champollion}
+  \Author[Budge, E. A. Wallis]{E. A. Wallis Budge}
+  \Author[Mead, Margaret]{Margaret Mead}
+  \Author[Crowley, Aleister]{Aleister Crowley}
+  \Author[del Rio, Martin]{Martin del Rio (``Delrio'')}
+  \Author[Kepler, Johannes]{Johannes Kepler}
+  \Author[Descartes, René]{René Descartes}
+  \Author[Bacon, Francis]{Francis Bacon}
+  \Author[Newton, Isaac]{Isaac Newton}
+  \Author[Proclus]{Proclus}
+  \Author[Iamblichus]{Iamblichus}
+  \Author[Paracelsus]{Paracelsus}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Mead, G. R. S.!Thrice-Greatest Hermes]{\textit{Thrice-Greatest Hermes}}{G.~R.~S. Mead}{\parencite{Mead1906}}
+  \Book[Beeson, Charles H.!Review of Thorndyke]{“A History of Magic and Experimental Science During the First Thirteen Centuries of Our Era. Lynn Thorndyke.”}{Charles H. Beeson}{\parencite{Beeson1925}}
+  \Book[Bruno, Giordano!Opera Omnia]{\textit{Opera Omnia}}{Giordano Bruno}{\parencite{Bruno1854}}
+  \Book[Bruno, Giordano!Opera Latine Conscripta]{\textit{Jordani Bruni Opera Latine Conscripta}}{Giordano Bruno}{\parencite{Bruno1962}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 5}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Agrippa, Unknown]{Agrippa \textit{(unsure which one)}}
+  \Author[Cardano, Gerolamo]{Gerolamo Cardano}
+  \Author[Galsworthy, John]{John Galsworthy}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Kraft, Fellowes!The Court of Silk and Blood]{The Court of Silk and Blood}{Fellowes Kraft}{\parencite{Kraftc}}
+  \BookBold[Kraft, Fellowes!A Passage at Arms]{A Passage at Arms}{Fellowes Kraft}{\parencite{Kraftd}}
+  \Book[Nancy Drew!Unnamed Novel]{Unnamed \textit{Nancy Drew Mystery Stories} novels}{Unknown}{}
+  \Book[Marquand, John P.!Mr. Moto (unnamed novels)]{Unnamed Mr. Moto novel}{John P. Marquand}{}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 6}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None% none listed
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[TV Guide]{\textit{TV Guide}}{TV Guide}{}
+  \BookBold[Unknown!Faraway Crier]{Faraway Crier}{Unknown}{\parencite{faraway}}
+  \BookBold[Kraft, Fellowes!Sit Down, Sorrow]{Sit Down, Sorrow}{Fellowes Kraft}{\footnote{A memoir of Fellowes Craft.}\parencite{Krafte}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 7}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Marx, Karl]{Karl Marx}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Le Seneschal, Jean!Les Cent Ballades]{\textit{Les Cent Ballades: Poème du XIV\textsuperscript{e} siècle}}{Jean Le Seneschal; Gaston Raynaud}{\parencite{Seneschal1905}}
+  \Book[Kerr, Charles H.!The Eighteenth Brumaire of Louis Bonaparte]{\textit{The Eighteenth Brumaire of Louis Bonaparte}}{Charles H. Kerr}{\parencite{Kerr1907}}\footnote{“Hegel says somewhere that all great historic facts and personages recur twice. He forgot to add: ‘Once as tragedy, and again as farce.’ Caussidière for Danton, Louis Blanc for Robespierre, the “Mountain” of 1848–51 for the “Mountain” of 1793–95, the Nephew for the Uncle. The identical caricature marks also the conditions under which the second edition of the \textit{Eighteenth Brumaire} is issued.”}
+  \BookBold[Unknown!Phaeton's Car]{Phaeton's Car}{Unknown}{\parencite{phaeton}}\footnote{Fictitious title, seemingly a play on Francis Bacon’s \textit{Of Vicissitude of Things}: “Phaeton’s car went but a day\ldots” Likely a stand-in for von Däniken’s \textit{Chariots of the Gods?} \label{phaeton}}
+  \BookBold[Worlds in Division]{Worlds in Division}{Unknown}{\parencite{worldsin}}
+  \BookBold[Dawn of the Druids]{Dawn of the Druids}{Unknown}{\parencite{druids}}
+\end{itemize}
+\end{paracol}
+
+
+\section{Chapter 8}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Rabelais, François]{Rabelais}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Lanier, Sidney!The Boy's King Arthur]{\textit{The Boy's King Arthur} (Scribner's Illustrated Classics; Malory; illus. N.~C.~Wyeth)}{Sidney Lanier}{\parencite{Lanier1937}}
+  \Book[Briggs, Austin!Flash Gordon]{\textit{Flash Gordon} (1940--1948)}{Austin Briggs}{\parencite{Briggs1940}}
+\end{itemize}
+\end{paracol}
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Zodiac{2}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+%\chapter{\color{Mahogany}Fratres}
+\chapterzodiac{3}{Fratres}
+\section{Chapter 2}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Norton]{Norton}\footnote{This could quite possibly be Mary Norton, but as it is just a last name mentioned I didn't want to assume.}
+  \Author[Norris]{Norris}
+  \Author[Nofzinger, Margaret]{Margaret Nofzinger}\footnote{Her book, while not mentioned by name, is \textit{A Cooperative Method of Natural Birth Control} \parencite{Nozfinger1976}. I'm less sure of this one as Crowley mentions them only by last name and I can only find this author who might be on a shelf near \textit{Phaeton's Car}.}
+  \Author[Mackenzie]{Mackenzie}
+  \Author[Macauley]{Macauley}
+  \Author[Macdonald]{Macdonald}
+  \Author[Lockbridge, Ross]{Ross Lockbridge}
+  \Author[Lincoln, Joseph]{Joseph Lincoln}
+  \Author[Shellabarger, Samuel]{Samuel Shellabarger}\footnote{Mentioned by Crowley simply as ``Shellabarger''}
+  \Author[Costain, Thomas B.]{Thomas B. Costain}\footnote{Mentioned by Crowley simply as ``Costain''}
+  \Author[Milton, John]{John Milton}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[New York Times]{New York Times}{The New York Times}{}
+  \BookBold[Unknown!Phaeton's Car]{Phaeton's Car}{Unknown}{\footref{phaeton}\parencite{phaeton}}
+  \BookBold[Niblick, Helen!The Way's Far Turning]{The Way's Far Turning}{Helen Niblick}{\parencite{Niblick}}
+  \BookBold[Kraft, Fellowes!The Book of a Hundred Chapters]{The Book of a Hundred Chapters}{Fellowes Kraft}{\parencite{Kraftf}}
+  \Book[Dictionary of National Biography]{\textit{Dictionary of National Biography}}{Oxford University Press}{\parencite{1961}}
+  \Book[Benians, Ernest Alfred!The Cambridge Modern History]{\textit{The Cambridge Modern History}}{Ernest Alfred Benians}{\parencite{Benians1907}}
+  \Book[Herbermann, Charles George!The Catholic Encyclopedia]{\textit{The Catholic Encyclopedia}}{Charles George Herbermann}{\parencite{Herbermann1908}}
+  \BookBold[Barr, Frank Walker!Collected Histories]{Unnamed collected works of histories}{Frank Walker Barr}{\parencite{Barrb}}
+  \Book[Unknown!Bible]{Unknown Bible}{Unknown}{}
+  \Book[Stedman, Joseph F.!My Sunday Missal]{\textit{My Sunday Missal: Using New Translation From New Testament and a Simplified Method of Following Mass With an Explanation Before Each Mass of Its Theme}}{Joseph F. Stedman}{\parencite{Stedman1956}}\footnote{Title given in \textit{Ægypt} is \textit{Our Sunday Missal} which could have been a mis-remembering on Crowley’s part, or another slight alteration. This is the closest thing I can see Pierce having on his shelf.}
+  \Book[Shakespeare, William!Yale Shakespeare (unknown volumes)]{Unknown volumes of the \textit{Yale Shakespeare}}{William Shakespeare}{}
+  \Book[Dee, John!Monas Hieroglyphica]{\textit{Monas hieroglyphica}}{John Dee}{\parencite{Dee}}
+  \Book[Thorndike, Lynn!Four Unnamed Volumes]{\textit{Four Unnamed Volumes}}{Lynn Thorndike}{}\footnote{While the four volumes are not mentioned by name, we can guess candidates among Thorndike’s works since they’re listed as “secondary sources” for Pierce’s novel (e.g., \textit{The Place of Magic in the Intellectual History of Europe}, \textit{The History of Medieval Europe}, any four of the eight \textit{History of Magic and Experimental Science}, \textit{Check-list of Rotographs in the History of Natural and Occult Sciences}, \textit{The Sphere of Sacrobosco and its Commentators}, etc.).}
+  \BookBold[Sacrobosco, Earl!Unnamed Astronomy Textbook]{Unnamed Astronomy Textbook}{Earl Sacrobosco}{\parencite{Sacrobosco}}\footnote{A tongue-in-cheek reference: \textit{De Sph\ae{}ra Mundi} is the classic astronomical treatise by Johannes de Sacrobosco.}
+  \Book[Lewis, Charlton T.!Lewis and Short Latin Dictionary]{\textit{Lewis and Short Latin Dictionary}}{Charlton T. Lewis}{\parencite{Lewis1966}}
+  \Book[Davidson, Gustav!A Dictionary of Angels]{\textsc{A Dictionary of Angels: Incl. The Fallen Angels}}{Gustav Davidson}{\footnote{Referred to only as “a dictionary of angels”; this is the best-known pre-1980s candidate and likely the one Crowley meant.}\parencite{Davidson1967}}
+  \Book[Unknown!Big Dictionary]{Unnamed Big Dictionary}{Unknown}{}
+  \Book[Unknown!Big Picture Book of Clocks]{Unnamed Big Picture Book of Clocks}{Unknown}{}\footnote{Likely candidates: Thompson, David, “The Book of Clocks” (1971); Bruton, Eric, “Clocks and Watches” (1973); Tardy, “The Art of the Clockmaker” (early 1970s); Baillie, G. H., “The Lore of the Clock” (1973).}
+  \Book[Encyclopaedia Britannica!Unknown Volumes]{Unknown Volumes of \textit{Encyclopaedia Britannica}}{Encyclopaedia Britannica}{\parencite{Brit1939}}\footnote{\textit{EB} moved to a continually revised model in 1933. Crowley mentions “several volumes of the 1939 edition,” but there was no discrete “1939 edition”; it would have been reprints of the 14th (1933) revised.}
+  \Book[Unknown!Big Shakespeare]{Unknown Big Shakespeare}{Unknown}{}
+  \Book[Unknown!Big Bible]{Unknown Big Bible}{Unknown}{}
+  \Book[Murphy, John!The Holy Bible (Douay–Rheims)]{\textit{The Holy Bible: translated from the Latin Vulgate\ldots}}{John Murphy et al.}{\parencite{Murphy1914}}\footnote{The Douay–Rheims Bible is a translation from the Latin Vulgate completed by the English College, Douai in 1582 and 1609.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 3}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Ficino, Marsilio]{Marsilio Ficino}
+  \Author[Fludd, Robert]{Robert Fludd}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \BookBold[Kraft, Fellowes!Bruno's Journey]{Bruno's Journey}{Fellowes Kraft}{\footnote{Kraft’s first book.}\parencite{Kraft1931}}
+  \BookBold[Kraft, Fellowes!Under Saturn]{Under Saturn}{Fellowes Kraft}{\parencite{Krafta}}
+  \BookBold[Kraft, Fellowes!Darkling Plain]{Darkling Plain}{Fellowes Kraft}{\parencite{Kraft}}
+  \Book[Fludd, Robert!Unnamed Work]{Unnamed book}{Robert Fludd}{}\footnote{Likely \textit{Utriusque Cosmi}, though no early English edition existed; could also allude to Paracelsian collections.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 4}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None % none listed
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Eliot, T.S.!Death's dream kingdom]{“Death’s dream kingdom” (Unknown Poem)}{T. S. Eliot}{}\footnote{Refers to \textit{The Hollow Men} in \textit{Poems}, 1909–1925 (Faber \& Faber, 1925).}
+  \Book[al-Hakim, Ghāyat!Picatrix: The Goal of the Wise Man]{\textit{Picatrix: The Goal of the Wise Man}}{(Pseudo-)al-Majrīṭī / Ghayat al-Hakim}{\parencite{Picatrix1962}}
+  \BookBold[Kraft, Fellowes!Unfinished Final Novel]{Unfinished Final Novel}{Fellowes Kraft}{}\footnote{It should be noted that at some point withint this bibliography I stop citing this book as it shows up repeatedly throughout the series.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 5}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Cicero, Marcus Tullius]{Cicero}
+  \Author[Quintilian]{Quintilian}
+  \Author[Magnus, Saint Albertus]{St. Albertus Magus}
+  \Author[Aquinas, Thomas]{St. Thomas Aquinas}
+  \Author[Aristotle]{Aristotle}
+  \Author[Jerome, Saint]{St. Jerome}
+  \Author[Ambrose, Saint]{St. Ambrose}
+  \Author[Augustine of Hippo]{Augustine of Hippo}
+  \Author[Lactantius]{Lactantias}
+  \Author[Horapollo]{Horapollo}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Aquinas, Thomas!Summa Theologica]{\textit{The “Summa Theologica” of St. Thomas Aquinas}}{Saint Thomas Aquinas}{\parencite{Thomas1917}}
+  \Book[Magnus, Saint Albertus!Commentaries on the Summa]{\textit{Commentaries on The “Summa Theologica”}}{Saint Albertus Magnus}{\parencite{Magus}}
+  \Book[Magnus, Saint Albertus!On Sleeping and Being Awake]{\textit{On Sleeping and Being Awake}}{Saint Albertus Magnus}{}
+  \Book[Magnus, Saint Albertus!Book of Secrets]{\textit{Book of Secrets}}{Saint Albertus Magnus}{}
+  \Book[de Sacrobosco, Johannes!Tractatus de Sphæra]{\textit{Tractatus de Sphæra}}{Johannes de Sacrobosco}{\parencite{De}}
+  \Book[Cecco of Ascoli!Commentary on the Sphere]{\textit{Commentary on the Sphere}}{Cecco of Ascoli}{\parencite{Cecco1250}}
+  \Book[Solomon!Shadows of Ideas]{\textit{Shadows of Ideas}}{Solomon}{}\footnote{Unclear reference.}
+  \Book[Ficino, Marsilio!De vita coelitus comparanda]{\textit{De vita coelitis comparanda}}{Marsilo Ficcino}{\parencite{Ficcino}}
+  \Book[Horapollo!Hieroglyphica]{\textit{Hieroglyphica}}{Horapollo}{\parencite{Horapollo}}
+  \Book[Iamblichus!On the Mysteries of the Egyptians]{\textit{On the Mysteries of the Egyptians}}{Iamblichus}{\parencite{Iambilichus}}
+  \Book[Apuleius!The Golden Ass]{\textit{The Golden Ass}}{Apuleius}{\parencite{Apuleius1998}}
+  \Book[al-Hakim, Ghāyat!Picatrix: The Goal of the Wise Man]{\textit{Picatrix: The Goal of the Wise Man}}{(Pseudo-)al-Majrīṭī / Ghayat al-Hakim}{\parencite{Picatrix1962}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 6}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \item None % none listed
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Unknown!Children's Balloon Book]{Unnamed Children’s Book}{Unknown}{}\footnote{No clear pre-1979 candidate fits “a family of mice who go traveling in a balloon.” Mary Norton’s \textit{The Borrowers Aloft} includes a hot-air balloon escape and may have inspired this.}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 7}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Cecco of Ascoli]{Cecco of Ascoli}
+  \Author[Plato]{Plato}
+  \Author[Aristotle]{Aristotle}
+  \Author[Pythagoras]{Pythagoras}
+  \Author[Epicurus]{Epicurus}
+  \Author[Ficino, Marsilio]{Marsilio Ficino}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Psalms 87!Hebrew--English]{\textit{Psalms 87 / Hebrew–English Bible}}{Mechon-Mamre}{\parencite{MechonMamre}}
+  \Book[Ficino, Marsilio!Pimander (1543)]{\textit{Pimander} (1543)}{Marsilio Ficcino}{\footnote{Klutstein, Ilana. “Ficino’s Hermetic Translations: English Translation of His Latin \textit{Pimander}.” HUJI, Feb. 2017.}\parencite{Ficcino1543}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 8}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Pythagoras]{Pythagoras}
+  \Author[Zoroaster]{Zoroaster}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[de Sacrobosco, Johannes!Tractatus de Sphæra]{\textit{Tractatus de Sphæra}}{Johannes de Sacrobosco}{\parencite{De}}
+  \Book[Bruno, Giordano!Ars Memoriae]{\textit{Ars Memoriae}}{Giordano Bruno}{\parencite{Brunoa}}
+  \Book[Iamblichus!On the Mysteries of the Egyptians]{\textit{On the Mysteries of the Egyptians}}{Iamblichus}{\parencite{Iambilichus}}
+  \Book[Agrippa, Heinrich Cornelius!De Occulta Philosophia]{\textit{De Occulta Philosophia}}{Heinrich Cornelius Agrippa}{\parencite{Agrippa}}
+  \Book[Orphic Hymns!Theoi Library]{\textit{ORPHIC HYMNS 1--40} — Theoi Classical Texts Library}{Unknown}{\parencite{Orphic}}
+  \Book[Llull doing is actually making it infront of the users? I'm guessing it isn't. , Ramón!Ars Magna]{\textit{Ars Magna}}{Ramón Llull}{\parencite{Lull1501}}
+  \Book[Copernicus, Nicolaus!De Revolutionibus (1543)]{\textit{De Revolutionibus Orbium Coelestium} (1543)}{Nicolaus Copernicus}{\parencite{Copernicus1543}}
+  \Book[Das Nibelungenlied!Song of the Nibelungs]{\textit{Das Nibelungenlied: Song of the Nibelungs}}{Unknown}{\parencite{Unknown1969}}
+  \Book[Malory, Thomas!Le Morte D'Arthur (Winchester MS)]{\textit{Le Morte D'Arthur: The Winchester Manuscript}}{Thomas Malory}{\parencite{Malory1998}}
+  \Book[Spenser, Edmund!The Faerie Queene]{\textit{The Faerie Queene}}{Edmund Spenser}{\parencite{Spenser1920}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 9}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Copernicus, Nicolaus]{Copernicus}
+  \Author[Aristotle]{Aristotle}
+  \Author[Lucretius]{Lucretius}
+  \Author[Cusanus, Nicholas]{Cusanus}
+  \Author[de la Faye, Antoine]{Antoine de la Faye}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Bruno, Giordano!Ars Memoriae (1582)]{\textit{Ars Memoriae} (1582)}{Giordano Bruno}{\parencite{Brunoa}}
+\end{itemize}
+\end{paracol}
+
+
+
+\section{Chapter 10}
+
+\begin{paracol}{2}
+\textbf{\color{Mahogany}Authors Mentioned}
+\raggedright
+\begin{itemize}[leftmargin=*]
+  \Author[Dee, John]{John Dee}
+  \Author[Bruno, Giordano]{Giordano Bruno}
+  \Author[Origen]{Origen}
+  \Author[Descartes, René]{René Descartes}
+  \Author[Ramus, Peter]{Peter Ramus}
+  \Author[Bacon, Francis]{Francis Bacon}
+\end{itemize}
+
+\switchcolumn
+
+\textbf{\color{Mahogany}Books Mentioned}
+\begin{itemize}[leftmargin=*]
+  \Book[Catholic Encyclopedia!Unknown Volume]{Unknown volume of \textit{The Catholic Encyclopedia}}{Herbermann et al.}{\parencite{Herbermann1908}}
+  \Book[De Góngora, Luis!The Solitudes of Luis De Góngora]{\textit{The Solitudes of Luis De Góngora}}{Luis de Góngora}{\parencite{DeGongoraYArgote1968}}
+  \BookBold[Kraft, Fellowes!Bitten Apples]{Bitten Apples}{Fellowes Kraft}{\parencite{Kraftb}}
+\end{itemize}
+\end{paracol}
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Zodiac{3}}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+{\microtypesetup{expansion=false}%
+ \rmfamily
+ \printbibliography[keyword=Fictional, title=Bibliography of Fictional Books, heading=bibintoc]
+ \printbibliography[keyword=real, title=Bibliography of Real Books, heading=bibintoc]
+}
+
+
+\begin{center}
+\vfill
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{60}{64}\Earth}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+
+\clearpage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\nbvspace[1]
+
+\begin{center}
+
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{64}{64}\Sagittarius}}\\
+\nbvspace[1]
+%\fleuronbar
+\end{center}
+
+\pagebreak
+
+% --- Colophon page ------------------------------------------------------------
+\clearpage
+\nbvspace[1]
+
+\thispagestyle{empty}
+
+\begin{center}
+\begin{minipage}{24em} % ~45–60 characters per line for comfortable reading
+\centering
+
+{\Large\textls[180]{\color{Mahogany}\scshape \shadowtext{Colophon}}}\par
+\vspace{0.75\baselineskip}
+
+\nbvspace[1]
+
+{\small
+\textit{Saint Jerome Writing} (c.\,1605–1606), Caravaggio — Galleria Borghese, Rome.\\
+\href{https://commons.wikimedia.org/wiki/File:Saint_Jerome_Writing-Caravaggio_(1605-6).jpg}
+     {\footnotesize{\scshape{Wikimedia Commons File Page}}}
+}\par
+
+\vspace{0.6\baselineskip}
+{\color{gray!40}\rule{\linewidth}{0.4pt}}
+\vspace{0.4\baselineskip}
+
+
+\definecolor{cfefefe}{RGB}{254,254,254}
+\definecolor{c030303}{RGB}{3,3,3}
+\definecolor{cfafafa}{RGB}{250,250,250}
+\definecolor{cf9f9f9}{RGB}{249,249,249}
+\definecolor{mahogany}{RGB}{169,51,31}
+{\color{Mahogany}
+\def \globalscale {1.000000}
+\begin{tikzpicture}[y=1cm, x=1cm, yscale=\globalscale,xscale=\globalscale, every node/.append style={scale=\globalscale}, inner sep=0pt, outer sep=0pt, scale=.1]
+  \path[fill=cfefefe] (0.0, 19.05).. controls (3.4488, 19.05) and (6.8977, 19.05) .. (10.451, 19.05).. controls (10.451, 12.7635) and (10.451, 6.477) .. (10.451, 0.0).. controls (7.0022, 0.0) and (3.5534, 0.0) .. (0.0, 0.0).. controls (0.0, 6.2865) and (0.0, 12.573) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(1.3494, -0.7938)}] (0.0, 19.05).. controls (0.1746, 19.05) and (0.3493, 19.05) .. (0.5292, 19.05).. controls (0.5117, 18.9976) and (0.4942, 18.9452) .. (0.4763, 18.8912).. controls (0.4937, 18.8825) and (0.5112, 18.8738) .. (0.5292, 18.8648).. controls (0.5177, 18.8206) and (0.5177, 18.8206) .. (0.506, 18.7755).. controls (0.3576, 18.1779) and (0.4316, 17.6917) .. (0.7144, 17.145).. controls (0.7269, 17.1198) and (0.7394, 17.0945) .. (0.7523, 17.0685).. controls (0.8438, 16.891) and (0.9545, 16.7403) .. (1.0848, 16.5894).. controls (1.1046, 16.5664) and (1.1244, 16.5433) .. (1.1447, 16.5196).. controls (1.2576, 16.3912) and (1.3684, 16.2654) .. (1.5081, 16.166).. controls (1.6145, 16.1733) and (1.6813, 16.2138) .. (1.7677, 16.2735).. controls (2.384, 16.6761) and (3.0995, 16.8915) .. (3.8348, 16.887).. controls (3.8683, 16.8872) and (3.9019, 16.8874) .. (3.9365, 16.8877).. controls (4.155, 16.8872) and (4.3624, 16.8663) .. (4.5773, 16.8275).. controls (4.6268, 16.82) and (4.6268, 16.82) .. (4.6772, 16.8124).. controls (5.1697, 16.726) and (5.7055, 16.5339) .. (6.1029, 16.2234).. controls (6.1835, 16.16) and (6.1835, 16.16) .. (6.2612, 16.1647).. controls (6.7128, 16.3661) and (7.0219, 16.9705) .. (7.2082, 17.4046).. controls (7.217, 17.4248) and (7.2257, 17.445) .. (7.2347, 17.4659).. controls (7.2881, 17.5957) and (7.321, 17.722) .. (7.3446, 17.8604).. controls (7.3554, 17.9123) and (7.3554, 17.9123) .. (7.3819, 17.9387).. controls (7.4016, 18.216) and (7.3633, 18.4631) .. (7.3025, 18.7325).. controls (7.2806, 18.8444) and (7.276, 18.9332) .. (7.276, 19.05).. controls (7.4507, 19.05) and (7.6253, 19.05) .. (7.8052, 19.05).. controls (7.8432, 18.84) and (7.8432, 18.84) .. (7.8551, 18.7737).. controls (7.8654, 18.6791) and (7.8654, 18.6791) .. (7.911, 18.6002).. controls (7.9141, 18.5362) and (7.9154, 18.473) .. (7.9155, 18.409).. controls (7.9156, 18.3894) and (7.9157, 18.3699) .. (7.9158, 18.3497).. controls (7.9159, 18.3079) and (7.9159, 18.2661) .. (7.9159, 18.2244).. controls (7.916, 18.1619) and (7.9165, 18.0994) .. (7.917, 18.0369).. controls (7.918, 17.7789) and (7.9005, 17.5324) .. (7.8581, 17.2773).. controls (7.8548, 17.2567) and (7.8515, 17.2361) .. (7.8481, 17.2149).. controls (7.7449, 16.6247) and (7.4753, 16.0374) .. (7.1058, 15.5681).. controls (7.06, 15.4978) and (7.0392, 15.4565) .. (7.0379, 15.3723).. controls (7.078, 15.3031) and (7.078, 15.3031) .. (7.1388, 15.235).. controls (7.5266, 14.7495) and (7.7504, 14.154) .. (7.8581, 13.5467).. controls (7.8641, 13.5161) and (7.87, 13.4855) .. (7.8761, 13.454).. controls (7.9129, 13.2325) and (7.9172, 13.0118) .. (7.9193, 12.7876).. controls (7.9198, 12.7578) and (7.9202, 12.7279) .. (7.9207, 12.6972).. controls (7.9206, 12.4925) and (7.8878, 12.3141) .. (7.8317, 12.1179).. controls (7.823, 12.0817) and (7.8145, 12.0455) .. (7.8063, 12.0092).. controls (7.5652, 10.9828) and (6.9647, 10.0766) .. (6.0673, 9.5092).. controls (5.6752, 9.2718) and (5.2738, 9.0863) .. (4.8286, 8.976).. controls (4.8064, 8.9704) and (4.7841, 8.9648) .. (4.7611, 8.9591).. controls (4.5723, 8.9149) and (4.4061, 8.9053) .. (4.2069, 8.89).. controls (4.2069, 8.305) and (4.2069, 7.72) .. (4.2069, 7.1173).. controls (4.6935, 7.1205) and (4.6935, 7.1205) .. (5.1802, 7.1241).. controls (5.3788, 7.1257) and (5.5775, 7.1272) .. (5.7761, 7.1285).. controls (5.9363, 7.1294) and (6.0966, 7.1307) .. (6.2568, 7.1321).. controls (6.3178, 7.1325) and (6.3788, 7.1329) .. (6.4397, 7.1333).. controls (6.5255, 7.1337) and (6.6112, 7.1345) .. (6.6969, 7.1353).. controls (6.7219, 7.1354) and (6.7468, 7.1354) .. (6.7725, 7.1355).. controls (6.9896, 7.1382) and (7.209, 7.1576) .. (7.4083, 7.2496).. controls (7.4632, 7.3302) and (7.4862, 7.4268) .. (7.5158, 7.5191).. controls (7.5642, 7.67) and (7.5642, 7.67) .. (7.5935, 7.6994).. controls (7.742, 7.6994) and (7.8904, 7.6994) .. (8.0433, 7.6994).. controls (8.0433, 7.0882) and (8.0433, 6.477) .. (8.0433, 5.8473).. controls (7.8862, 5.8473) and (7.729, 5.8473) .. (7.5671, 5.8473).. controls (7.5438, 5.9334) and (7.5206, 6.0195) .. (7.4973, 6.1057).. controls (7.4493, 6.2197) and (7.3853, 6.2679) .. (7.2772, 6.3239).. controls (7.261, 6.3298) and (7.2448, 6.3357) .. (7.2281, 6.3417).. controls (7.2121, 6.3478) and (7.1961, 6.3539) .. (7.1796, 6.3602).. controls (6.9999, 6.407) and (6.8159, 6.4072) .. (6.6314, 6.4083).. controls (6.6044, 6.4086) and (6.5774, 6.4089) .. (6.5495, 6.4092).. controls (6.4626, 6.41) and (6.3757, 6.4106) .. (6.2888, 6.4113).. controls (6.2349, 6.4118) and (6.181, 6.4123) .. (6.1271, 6.4128).. controls (5.928, 6.4146) and (5.7289, 6.4162) .. (5.5298, 6.4178).. controls (5.0845, 6.4216) and (4.6392, 6.4254) .. (4.1804, 6.4294).. controls (4.1891, 5.2419) and (4.1979, 4.0545) .. (4.2069, 2.831).. controls (4.3204, 2.9445) and (4.4339, 3.0581) .. (4.5508, 3.175).. controls (4.618, 3.2288) and (4.6776, 3.2756) .. (4.7493, 3.3205).. controls (4.7656, 3.3311) and (4.782, 3.3417) .. (4.7988, 3.3526).. controls (4.9543, 3.4499) and (5.118, 3.514) .. (5.2917, 3.5719).. controls (5.3287, 3.5866) and (5.3656, 3.6015) .. (5.4025, 3.6165).. controls (5.607, 3.6917) and (5.8158, 3.7139) .. (6.0325, 3.7124).. controls (6.0564, 3.7123) and (6.0804, 3.7122) .. (6.1051, 3.712).. controls (6.8341, 3.6996) and (7.4273, 3.4269) .. (7.9375, 2.9104).. controls (7.9663, 2.8821) and (7.9663, 2.8821) .. (7.9956, 2.8532).. controls (8.4173, 2.4116) and (8.6117, 1.8178) .. (8.599, 1.2171).. controls (8.4069, 1.2171) and (8.2148, 1.2171) .. (8.0169, 1.2171).. controls (8.012, 1.2635) and (8.0071, 1.3099) .. (8.002, 1.3576).. controls (7.9323, 1.8001) and (7.7388, 2.3118) .. (7.3868, 2.6061).. controls (7.3418, 2.638) and (7.296, 2.6688) .. (7.2496, 2.6988).. controls (7.2232, 2.7169) and (7.1967, 2.735) .. (7.1695, 2.7536).. controls (6.7706, 3.0152) and (6.3014, 3.1621) .. (5.8241, 3.0774).. controls (5.7876, 3.0663) and (5.7513, 3.0546) .. (5.715, 3.0427).. controls (5.6862, 3.0346) and (5.6575, 3.0265) .. (5.6279, 3.0181).. controls (5.3662, 2.9395) and (5.1479, 2.8241) .. (4.9213, 2.6723).. controls (4.8932, 2.6541) and (4.8932, 2.6541) .. (4.8645, 2.6356).. controls (4.5972, 2.4372) and (4.4409, 2.0766) .. (4.3392, 1.7727).. controls (4.3244, 1.7374) and (4.3095, 1.7021) .. (4.2945, 1.6669).. controls (4.24, 1.5232) and (4.2271, 1.3685) .. (4.2069, 1.2171).. controls (4.0972, 1.2163) and (3.9875, 1.2158) .. (3.8778, 1.2154).. controls (3.8465, 1.2152) and (3.8151, 1.215) .. (3.7829, 1.2148).. controls (3.7531, 1.2147) and (3.7234, 1.2146) .. (3.6927, 1.2145).. controls (3.6651, 1.2144) and (3.6375, 1.2142) .. (3.6091, 1.2141).. controls (3.5454, 1.2171) and (3.5454, 1.2171) .. (3.519, 1.2435).. controls (3.5175, 1.2865) and (3.5165, 1.3295) .. (3.5157, 1.3725).. controls (3.4824, 1.7898) and (3.2704, 2.2516) .. (2.979, 2.5529).. controls (2.9145, 2.6069) and (2.8487, 2.6531) .. (2.7781, 2.6988).. controls (2.7529, 2.7166) and (2.7277, 2.7344) .. (2.7017, 2.7527).. controls (2.3111, 3.0144) and (1.822, 3.1607) .. (1.3527, 3.0774).. controls (1.3162, 3.0663) and (1.2798, 3.0546) .. (1.2435, 3.0427).. controls (1.2148, 3.0346) and (1.186, 3.0265) .. (1.1564, 3.0181).. controls (0.8947, 2.9395) and (0.6765, 2.8241) .. (0.4498, 2.6723).. controls (0.4217, 2.6541) and (0.4217, 2.6541) .. (0.3931, 2.6356).. controls (0.1257, 2.4372) and (-0.0306, 2.0766) .. (-0.1323, 1.7727).. controls (-0.1471, 1.7374) and (-0.1619, 1.7021) .. (-0.1769, 1.6669).. controls (-0.2315, 1.5232) and (-0.2441, 1.3684) .. (-0.2646, 1.2171).. controls (-0.4567, 1.2171) and (-0.6488, 1.2171) .. (-0.8467, 1.2171).. controls (-0.8544, 1.4551) and (-0.8368, 1.6514) .. (-0.7673, 1.8785).. controls (-0.7586, 1.9096) and (-0.7499, 1.9407) .. (-0.7409, 1.9727).. controls (-0.6184, 2.3802) and (-0.4026, 2.6894) .. (-0.1058, 2.9898).. controls (-0.0832, 3.0153) and (-0.0832, 3.0153) .. (-0.0602, 3.0413).. controls (0.174, 3.2994) and (0.4946, 3.4633) .. (0.8202, 3.5719).. controls (0.8572, 3.5866) and (0.8941, 3.6015) .. (0.931, 3.6165).. controls (1.1512, 3.6972) and (1.3729, 3.7137) .. (1.6057, 3.7124).. controls (1.6336, 3.7123) and (1.6614, 3.7122) .. (1.6902, 3.712).. controls (1.912, 3.7087) and (2.1142, 3.6858) .. (2.3283, 3.6248).. controls (2.3582, 3.6167) and (2.3881, 3.6086) .. (2.4189, 3.6003).. controls (2.8017, 3.4812) and (3.1224, 3.243) .. (3.4072, 2.9664).. controls (3.4611, 2.9097) and (3.4611, 2.9097) .. (3.519, 2.884).. controls (3.519, 4.0539) and (3.519, 5.2239) .. (3.519, 6.4294).. controls (3.0671, 6.4266) and (2.6153, 6.4239) .. (2.1497, 6.4211).. controls (1.9365, 6.4201) and (1.9365, 6.4201) .. (1.719, 6.4191).. controls (1.5905, 6.4181) and (1.5905, 6.4181) .. (1.4619, 6.4171).. controls (1.4051, 6.4166) and (1.3483, 6.4164) .. (1.2915, 6.4162).. controls (0.7631, 6.4419) and (0.7631, 6.4419) .. (0.2958, 6.2408).. controls (0.2211, 6.1224) and (0.1939, 5.9811) .. (0.1588, 5.8473).. controls (0.0016, 5.8473) and (-0.1556, 5.8473) .. (-0.3175, 5.8473).. controls (-0.3175, 6.4585) and (-0.3175, 7.0697) .. (-0.3175, 7.6994).. controls (-0.1691, 7.6994) and (-0.0206, 7.6994) .. (0.1323, 7.6994).. controls (0.1585, 7.6383) and (0.1847, 7.5771) .. (0.2117, 7.5142).. controls (0.2236, 7.4865) and (0.2236, 7.4865) .. (0.2359, 7.4584).. controls (0.2658, 7.3893) and (0.2937, 7.321) .. (0.3175, 7.2496).. controls (0.5348, 7.1412) and (0.7908, 7.1359) .. (1.0289, 7.1353).. controls (1.056, 7.135) and (1.0832, 7.1348) .. (1.1111, 7.1345).. controls (1.1997, 7.1337) and (1.2884, 7.1332) .. (1.377, 7.1328).. controls (1.4388, 7.1323) and (1.5007, 7.1318) .. (1.5626, 7.1312).. controls (1.7246, 7.1299) and (1.8866, 7.1288) .. (2.0487, 7.1279).. controls (2.2435, 7.1266) and (2.4383, 7.125) .. (2.6332, 7.1234).. controls (2.9284, 7.1211) and (3.2237, 7.1192) .. (3.519, 7.1173).. controls (3.519, 7.7023) and (3.519, 8.2873) .. (3.519, 8.89).. controls (3.4229, 8.8987) and (3.3269, 8.9075) .. (3.2279, 8.9165).. controls (2.4065, 9.0611) and (1.6816, 9.4524) .. (1.0848, 10.0277).. controls (1.0681, 10.0431) and (1.0514, 10.0584) .. (1.0341, 10.0742).. controls (0.3152, 10.7523) and (-0.0772, 11.7862) .. (-0.1132, 12.7592).. controls (-0.1205, 13.0911) and (-0.0996, 13.408) .. (-0.0265, 13.7319).. controls (-0.0194, 13.7645) and (-0.0123, 13.7971) .. (-0.0051, 13.8307).. controls (0.1057, 14.2894) and (0.2931, 14.7496) .. (0.5767, 15.1287).. controls (0.5891, 15.1454) and (0.6015, 15.1621) .. (0.6143, 15.1792).. controls (0.6386, 15.2113) and (0.6633, 15.243) .. (0.6886, 15.2743).. controls (0.727, 15.3221) and (0.727, 15.3221) .. (0.7673, 15.3987).. controls (0.7472, 15.5017) and (0.6881, 15.5694) .. (0.6234, 15.6501).. controls (0.1092, 16.3475) and (-0.1167, 17.2206) .. (-0.1142, 18.078).. controls (-0.1141, 18.1372) and (-0.1147, 18.1963) .. (-0.1154, 18.2555).. controls (-0.1165, 18.5123) and (-0.1172, 18.8155) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfefefe,shift={(2.4871, -4.8154)}] (0.0, 19.05).. controls (0.1046, 19.0055) and (0.1859, 18.9345) .. (0.2729, 18.8631).. controls (0.6605, 18.5532) and (1.1024, 18.3218) .. (1.5743, 18.1686).. controls (1.602, 18.1595) and (1.602, 18.1595) .. (1.6302, 18.1501).. controls (1.9963, 18.0377) and (2.3673, 18.0018) .. (2.7484, 18.0032).. controls (2.78, 18.0033) and (2.78, 18.0033) .. (2.8122, 18.0033).. controls (3.4007, 18.0057) and (3.9419, 18.1287) .. (4.4715, 18.3885).. controls (4.4906, 18.3976) and (4.5097, 18.4067) .. (4.5295, 18.4161).. controls (4.8551, 18.5721) and (5.146, 18.7705) .. (5.4178, 19.0081).. controls (5.4373, 19.022) and (5.4568, 19.0358) .. (5.4769, 19.05).. controls (5.5665, 19.0201) and (5.574, 19.0077) .. (5.6212, 18.9307).. controls (5.6391, 18.9017) and (5.6391, 18.9017) .. (5.6573, 18.8721).. controls (5.676, 18.8406) and (5.676, 18.8406) .. (5.6952, 18.8086).. controls (5.7081, 18.787) and (5.7211, 18.7654) .. (5.7344, 18.7432).. controls (6.1366, 18.063) and (6.4071, 17.2492) .. (6.2442, 16.4571).. controls (6.2364, 16.4108) and (6.2364, 16.4108) .. (6.2285, 16.3635).. controls (6.0745, 15.4921) and (5.5897, 14.6091) .. (4.8589, 14.0954).. controls (4.5531, 13.8867) and (4.2362, 13.7276) .. (3.8894, 13.5996).. controls (3.8644, 13.5896) and (3.8395, 13.5795) .. (3.8138, 13.5692).. controls (3.1045, 13.2905) and (2.2911, 13.3271) .. (1.5875, 13.5996).. controls (1.5628, 13.6087) and (1.5381, 13.6179) .. (1.5127, 13.6273).. controls (1.1374, 13.7738) and (0.7932, 13.9877) .. (0.4763, 14.2346).. controls (0.4513, 14.254) and (0.4263, 14.2734) .. (0.4006, 14.2934).. controls (-0.2074, 14.8056) and (-0.5498, 15.6188) .. (-0.7144, 16.3777).. controls (-0.7203, 16.4005) and (-0.7262, 16.4233) .. (-0.7324, 16.4467).. controls (-0.9286, 17.2477) and (-0.5725, 18.1697) .. (-0.1621, 18.8466).. controls (-0.1135, 18.9194) and (-0.0576, 18.9841) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cfafafa,shift={(6.059, -3.5454)}] (0.0, 19.05).. controls (0.0315, 19.0421) and (0.0631, 19.0341) .. (0.0956, 19.0259).. controls (0.427, 18.9325) and (0.7337, 18.7695) .. (1.0319, 18.6002).. controls (0.9361, 18.4921) and (0.8099, 18.4563) .. (0.678, 18.4051).. controls (0.651, 18.3946) and (0.6239, 18.384) .. (0.596, 18.3732).. controls (0.3318, 18.2733) and (0.0651, 18.2051) .. (-0.2117, 18.1504).. controls (-0.2428, 18.1439) and (-0.2739, 18.1375) .. (-0.306, 18.1308).. controls (-1.0106, 18.002) and (-1.7454, 18.1701) .. (-2.3994, 18.4332).. controls (-2.4183, 18.4407) and (-2.4372, 18.4483) .. (-2.4566, 18.4561).. controls (-2.5485, 18.4949) and (-2.5891, 18.5152) .. (-2.6458, 18.6002).. controls (-1.8635, 19.1271) and (-0.9074, 19.2801) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=cf9f9f9,shift={(2.9369, -4.3127)}] (0.0, 19.05).. controls (0.1345, 19.0385) and (0.2484, 18.9702) .. (0.3671, 18.9111).. controls (0.5851, 18.8061) and (0.7977, 18.7164) .. (1.0319, 18.6531).. controls (1.0526, 18.6471) and (1.0733, 18.6411) .. (1.0946, 18.6349).. controls (1.8072, 18.4347) and (2.7276, 18.4163) .. (3.4396, 18.6267).. controls (3.4824, 18.6392) and (3.4824, 18.6392) .. (3.5262, 18.6521).. controls (3.8489, 18.7491) and (4.1651, 18.852) .. (4.4581, 19.0204).. controls (4.5244, 19.05) and (4.5244, 19.05) .. (4.5815, 19.0448).. controls (4.6302, 19.0235) and (4.6302, 19.0235) .. (4.7096, 18.9706).. controls (4.593, 18.6708) and (4.0525, 18.4346) .. (3.7727, 18.31).. controls (3.6885, 18.2735) and (3.6038, 18.2383) .. (3.519, 18.2033).. controls (3.4903, 18.19) and (3.4616, 18.1766) .. (3.432, 18.1628).. controls (3.3052, 18.1127) and (3.1774, 18.0836) .. (3.0444, 18.0545).. controls (3.0192, 18.0488) and (2.9941, 18.043) .. (2.9681, 18.0371).. controls (2.3493, 17.899) and (1.7295, 17.9477) .. (1.1377, 18.1769).. controls (1.113, 18.186) and (1.0883, 18.1952) .. (1.0629, 18.2046).. controls (0.6602, 18.3618) and (0.2198, 18.6004) .. (-0.0794, 18.9177).. controls (-0.0298, 19.0202) and (-0.0298, 19.0202) .. (0.0, 19.05) -- cycle;
+
+
+
+  \path[fill=mahogany,shift={(5.5827, -6.5881)}] (0.0, 19.05).. controls (0.1555, 18.9108) and (0.2361, 18.7754) .. (0.248, 18.5655).. controls (0.2431, 18.4029) and (0.1925, 18.2706) .. (0.0837, 18.1491).. controls (-0.0677, 18.009) and (-0.2069, 17.9509) .. (-0.4137, 17.9571).. controls (-0.6097, 17.9824) and (-0.7421, 18.0774) .. (-0.8632, 18.2297).. controls (-0.9584, 18.3684) and (-0.9736, 18.5158) .. (-0.9525, 18.6796).. controls (-0.902, 18.8703) and (-0.796, 18.9924) .. (-0.635, 19.1029).. controls (-0.4243, 19.206) and (-0.1934, 19.1761) .. (0.0, 19.05) -- cycle;
+
+\end{tikzpicture}
+}
+\nbvspace[1]
+\vspace{0.4\baselineskip}\\
+{\small{\textls[80]{\scshape John Dee's Monas was created by Brian Murphy using} \tikzlogo.}}
+
+\vspace{0.6\baselineskip}
+{\color{gray!40}\rule{\linewidth}{0.4pt}}
+\vspace{0.6\baselineskip}
+
+{\small\textls[140]{\scshape Typefaces}}\par
+\vspace{0.25\baselineskip}
+
+% Dot-leader table for tidy alignment
+
+\lineLRdot{Cormorant Garamond}{main text} \\
+\lineLRdot{\sffamily{Libertinus Sans}}{breakout headings} \\
+\lineLRdot{\ttfamily{FiraCode Nerd Font Mono}}{\textsc{URLS}} \\
+\lineLRdot{\accanthis{EB Garamond}}{display / titling} \\
+\lineLRdot{\egothfamily{Cardo}}{scholarly / epigraphs}\\
+\lineLRdot{Martin Vogel's Symbols}{Sigils \& Glyphs}\\
+
+
+\vspace{0.6\baselineskip}
+{\color{gray!40}\rule{\linewidth}{0.4pt}}
+
+\vspace{0.9\baselineskip}
+{\footnotesize
+\textls[80]{\scshape Font notes}\, — Cormorant Garamond, Libertinus, EB Garamond, Cardo, Fira Code, and Martin Vogel's Symbols are released under the \href{https://openfontlicense.org/}{SIL Open Font License\,1.1}; the Nerd Font patch for Fira Code adds icon glyphs.
+}
+
+
+
+
+{\small
+Typeset with \hologo{LuaLaTeX} using \texttt{fontspec} and \hologo{biber}.
+}
+
+\vspace{0.75\baselineskip}
+\nbvspace[1]
+\begin{center}
+\shadowoffset{1pt}
+\shadowtext{%	
+{\color{Mahogany}\fontsize{40}{64}\Pisces}}\\
+\end{center}
+
+
+
+\end{minipage}
+\end{center}
+
+\nbvspace[1]
+% --- /Colophon ---------------------------------------------------------------
+
+
+
+%\afterpage{\blankpage}
+
+\includepdf{back.pdf}
+
+\end{document}
