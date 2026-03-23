@@ -1,5 +1,0 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'font-demo.blg'
-[55] biber:342> INFO - === Mon Nov 17, 2025, 09:22:45
-[102] Utils.pm:479> ERROR - Cannot find 'font-demo.bcf'!
-[102] Biber.pm:137> INFO - ERRORS: 1
