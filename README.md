@@ -21,5 +21,5 @@ txs:///compile | txs:///bibliography | txs:///index | txs:///compile | txs:///co
 
 
 ## License
-Aegypt's Library  © 2024 by Brian Murphy is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+Aegypt's Library  © 2026 by Brian Murphy is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
