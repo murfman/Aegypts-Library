@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'endless.blg'
-[51] biber:342> INFO - === Mon Mar 23, 2026, 15:20:53
-[64] Biber.pm:421> INFO - Reading 'endless.bcf'
-[178] Biber.pm:1002> INFO - Found 83 citekeys in bib section 0
-[190] Biber.pm:4487> INFO - Processing section 0
-[196] Biber.pm:4678> INFO - Looking for bibtex file 'endless.bib' for section 0
-[198] bibtex.pm:1713> INFO - LaTeX decoding ...
-[251] bibtex.pm:1519> INFO - Found BibTeX data source 'endless.bib'
-[662] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[662] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[662] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[662] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[705] bbl.pm:676> INFO - Writing 'endless.bbl' with encoding 'UTF-8'
-[724] bbl.pm:779> INFO - Output to endless.bbl
+[51] biber:342> INFO - === Tue Mar 24, 2026, 08:32:05
+[65] Biber.pm:421> INFO - Reading 'endless.bcf'
+[176] Biber.pm:1002> INFO - Found 83 citekeys in bib section 0
+[189] Biber.pm:4487> INFO - Processing section 0
+[195] Biber.pm:4678> INFO - Looking for bibtex file 'endless.bib' for section 0
+[196] bibtex.pm:1713> INFO - LaTeX decoding ...
+[250] bibtex.pm:1519> INFO - Found BibTeX data source 'endless.bib'
+[641] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[641] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[641] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[641] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[686] bbl.pm:676> INFO - Writing 'endless.bbl' with encoding 'UTF-8'
+[705] bbl.pm:779> INFO - Output to endless.bbl

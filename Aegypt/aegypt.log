@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.11)  20 MAR 2026 16:02
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.11)  24 MAR 2026 08:14
  restricted system commands enabled.
 **aegypt.tex
 (./aegypt.tex
@@ -1817,25 +1817,25 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 148.
+ine 145.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 149.
+ine 146.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 150.
+ine 147.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 151.
+ine 148.
 
 (/usr/share/texmf-dist/tex/latex/initials/GoudyIn.fd
 File: GoudyIn.fd 2003/04/02 Font definition file for U/GoudyIn
@@ -2012,7 +2012,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip305
 )
-Package hyperref Info: Option `frenchlinks' set `true' on input line 326.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 293.
 
 (/usr/share/texmf-dist/tex/latex/titlepic/titlepic.sty
 Package: titlepic 2017/03/14 1.2 Package to display a picture on the title page
@@ -2243,26 +2243,26 @@ LaTeX Warning: Unused global option(s):
 (./aegypt.aux (./titlepage.aux))
 \openout1 = aegypt.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for U/LinearAII/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 497.
-LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for U/LinearAII/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 462.
+LaTeX Font Info:    ... okay on input line 462.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -2270,68 +2270,68 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 497.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 497.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 497.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 497.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 497.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 497.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 497.
-LaTeX Font Info:    Redeclaring math accent \check on input line 497.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 497.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 497.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 497.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 497.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 497.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 462.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 462.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 462.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 462.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 462.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 462.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 462.
+LaTeX Font Info:    Redeclaring math accent \check on input line 462.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 462.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 462.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 462.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 462.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 497.
+(Font)              `operators' in the math version `normal' on input line 462.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/CormorantGaramond(0)/m/n on input li
-ne 497.
+ne 462.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 497.
+(Font)              `operators' in the math version `bold' on input line 462.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/CormorantGaramond(0)/m/n on input l
-ine 497.
+ine 462.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/CormorantGaramond(0)/m/n --> TU/CormorantGaramond(0)
-/m/n on input line 497.
+/m/n on input line 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/CormorantGaramond(0)/m/it on input 
-line 497.
+line 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/CormorantGaramond(0)/b/n on input l
-ine 497.
+ine 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/LibertinusSans(0)/m/n on input line
- 497.
+ 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/FiraCodeNerdFontMono(0)/m/n on inpu
-t line 497.
+t line 462.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/CormorantGaramond(0)/m/n --> TU/CormorantGaramond(0)
-/b/n on input line 497.
+/b/n on input line 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/CormorantGaramond(0)/b/it on input
- line 497.
+ line 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LibertinusSans(0)/b/n on input lin
-e 497.
+e 462.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/FiraCodeNerdFontMono(0)/b/n on inpu
-t line 497.
+t line 462.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2358,22 +2358,22 @@ e
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/CormorantGaramond(0)/m/n --> TS1/CormorantGaramond(
-0)/b/n on input line 497.
-Package gensymb Info: Math companion symbols declared on input line 497.
-LaTeX Info: Redefining \degree on input line 497.
-LaTeX Info: Redefining \celsius on input line 497.
+0)/b/n on input line 462.
+Package gensymb Info: Math companion symbols declared on input line 462.
+LaTeX Info: Redefining \degree on input line 462.
+LaTeX Info: Redefining \celsius on input line 462.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 497.
-LaTeX Info: Redefining \ohm on input line 497.
-Package gensymb Info: Using \textohm for \ohm on input line 497.
-Package gensymb Info: Using \textmu for \micro on input line 497.
-LaTeX Info: Redefining \microtypecontext on input line 497.
-Package microtype Info: Applying patch `item' on input line 497.
-Package microtype Info: Applying patch `toc' on input line 497.
-Package microtype Info: Applying patch `eqnum' on input line 497.
-Package microtype Info: Applying patch `footnote' on input line 497.
-Package microtype Info: Applying patch `verbatim' on input line 497.
-LaTeX Info: Redefining \microtypesetup on input line 497.
+erthousand on input line 462.
+LaTeX Info: Redefining \ohm on input line 462.
+Package gensymb Info: Using \textohm for \ohm on input line 462.
+Package gensymb Info: Using \textmu for \micro on input line 462.
+LaTeX Info: Redefining \microtypecontext on input line 462.
+Package microtype Info: Applying patch `item' on input line 462.
+Package microtype Info: Applying patch `toc' on input line 462.
+Package microtype Info: Applying patch `eqnum' on input line 462.
+Package microtype Info: Applying patch `footnote' on input line 462.
+Package microtype Info: Applying patch `verbatim' on input line 462.
+LaTeX Info: Redefining \microtypesetup on input line 462.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2432,8 +2432,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 497.
-Package biblatex Info: Reference segment=0 on input line 497.
+Package biblatex Info: Reference section=0 on input line 462.
+Package biblatex Info: Reference segment=0 on input line 462.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2469,7 +2469,7 @@ Package biblatex Info: Reference segment=0 on input line 497.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: French linking ON on input line 497.
+Package hyperref Info: French linking ON on input line 462.
 (./aegypt.out) (./aegypt.out)
 \@outlinefile=\write8
 
@@ -2491,28 +2491,28 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <cover.pdf, id=178, 614.295pt x 794.97pt>
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf>
-Package luatex.def Info: cover.pdf  used on input line 498.
+Package luatex.def Info: cover.pdf  used on input line 463.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 <cover.pdf, id=180, page=1, 614.295pt x 794.97pt>
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 1>
-Package luatex.def Info: cover.pdf , page1 used on input line 498.
+Package luatex.def Info: cover.pdf , page1 used on input line 463.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 1>
-Package luatex.def Info: cover.pdf , page1 used on input line 498.
+Package luatex.def Info: cover.pdf , page1 used on input line 463.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 1>
-Package luatex.def Info: cover.pdf , page1 used on input line 498.
+Package luatex.def Info: cover.pdf , page1 used on input line 463.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 1>
-Package luatex.def Info: cover.pdf , page1 used on input line 498.
+Package luatex.def Info: cover.pdf , page1 used on input line 463.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: cover.pdf Graphic file (type pdf)
 <use cover.pdf, page 1>
-Package luatex.def Info: cover.pdf , page1 used on input line 498.
+Package luatex.def Info: cover.pdf , page1 used on input line 463.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1
 
@@ -2644,9 +2644,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./cartouche-top.png><./carto
 uche-bottom.png>])
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/n' will be
-(Font)              scaled to size 23.1578pt on input line 507.
+(Font)              scaled to size 23.1578pt on input line 471.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/n' will be
-(Font)              scaled to size 23.1578pt on input line 507.
+(Font)              scaled to size 23.1578pt on input line 471.
  (./aegypt.toc
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/n' will be
 (Font)              scaled to size 11.16577pt on input line 2.
@@ -2659,7 +2659,7 @@ LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/n' will be
 
 \openout9 = aegypt.toc
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
-(Font)              scaled to size 11.16577pt on input line 515.
+(Font)              scaled to size 11.16577pt on input line 475.
  [2
 \def\@LN@column{1}
 
@@ -2668,60 +2668,60 @@ LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
 
 ]
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/n' will be
-(Font)              scaled to size 27.78044pt on input line 515.
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 515
+(Font)              scaled to size 27.78044pt on input line 475.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 475
 .
  (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd)
 (/usr/share/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 
-Package xcolor Warning: Incompatible color definition on input line 515.
+Package xcolor Warning: Incompatible color definition on input line 475.
 
 Package lettrine.sty Info: Targeted height = 41.22559pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.22559pt (T);
-(lettrine.sty)             reported on input line 516.
+(lettrine.sty)             reported on input line 476.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/sc' will be
-(Font)              scaled to size 7.81604pt on input line 518.
+(Font)              scaled to size 7.81604pt on input line 478.
 
-Package xcolor Warning: Incompatible color definition on input line 534.
+Package xcolor Warning: Incompatible color definition on input line 494.
 
 [3
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 540.
+Package xcolor Warning: Incompatible color definition on input line 499.
 
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/n' will be
-(Font)              scaled to size 16.07869pt on input line 541.
+(Font)              scaled to size 16.07869pt on input line 500.
 [4
 
 ]
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/sc' will be
-(Font)              scaled to size 10.0492pt on input line 582.
+(Font)              scaled to size 10.0492pt on input line 541.
 
 
-Package xcolor Warning: Incompatible color definition on input line 606.
+Package xcolor Warning: Incompatible color definition on input line 565.
 
 [5]
 
-Package xcolor Warning: Incompatible color definition on input line 612.
+Package xcolor Warning: Incompatible color definition on input line 571.
 
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
-(Font)              scaled to size 8.93262pt on input line 640.
+(Font)              scaled to size 8.93262pt on input line 586.
 
 LaTeX Font Warning: Font shape `TU/CormorantGaramond(0)/m/scit' undefined
 (Font)              using `TU/CormorantGaramond(0)/m/it' instead on input line 
-644.
+590.
 
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
-(Font)              scaled to size 10.0492pt on input line 644.
+(Font)              scaled to size 10.0492pt on input line 590.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/it' will be
-(Font)              scaled to size 11.16577pt on input line 663.
+(Font)              scaled to size 11.16577pt on input line 609.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 675.
+(hyperref)                be the same. Added a new anchor on input line 621.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans' (encoding: TU).
@@ -2730,18 +2730,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 <gongora.jpg, id=309, 1027.84pt x 1276.77pt>
 File: gongora.jpg Graphic file (type jpg)
 <use gongora.jpg>
-Package luatex.def Info: gongora.jpg  used on input line 678.
+Package luatex.def Info: gongora.jpg  used on input line 624.
 (luatex.def)             Requested size: 112.70781pt x 139.99704pt.
 Package lettrine.sty Info: Targeted height = 41.22559pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.22559pt (T);
-(lettrine.sty)             reported on input line 683.
+(lettrine.sty)             reported on input line 629.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
-(Font)              scaled to size 7.81604pt on input line 715.
+(Font)              scaled to size 7.81604pt on input line 661.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/it' will be
-(Font)              scaled to size 6.69946pt on input line 715.
+(Font)              scaled to size 6.69946pt on input line 661.
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/sc' will be
-(Font)              scaled to size 6.69946pt on input line 722.
+(Font)              scaled to size 6.69946pt on input line 668.
 
 Package polyglossia Info: totalhyphenmin:'5'
 
@@ -2766,51 +2766,51 @@ column1.5'
 
 LaTeX Font Warning: Font shape `TU/CormorantGaramond(0)/m/scit' undefined
 (Font)              using `TU/CormorantGaramond(0)/m/it' instead on input line 
-805.
+751.
 
 [9]
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/sc' will be
-(Font)              scaled to size 8.93262pt on input line 851.
+(Font)              scaled to size 8.93262pt on input line 797.
 
 
 LaTeX Font Warning: Font shape `TU/CormorantGaramond(0)/m/scit' undefined
 (Font)              using `TU/CormorantGaramond(0)/m/it' instead on input line 
-887.
+833.
 
 [10]
 
-Package xcolor Warning: Incompatible color definition on input line 897.
+Package xcolor Warning: Incompatible color definition on input line 843.
 
 [11]
 
-Package xcolor Warning: Incompatible color definition on input line 903.
+Package xcolor Warning: Incompatible color definition on input line 847.
 
 [12
 
 ] [13]
 
-Package xcolor Warning: Incompatible color definition on input line 1102.
+Package xcolor Warning: Incompatible color definition on input line 1035.
 
 [14]
 
-Package xcolor Warning: Incompatible color definition on input line 1108.
+Package xcolor Warning: Incompatible color definition on input line 1041.
 
 
-LaTeX Warning: Citation 'Nozfinger1976' on page 15 undefined on input line 1117
+LaTeX Warning: Citation 'Nozfinger1976' on page 15 undefined on input line 1050
 .
 
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/b/n' will be
-(Font)              scaled to size 8.93262pt on input line 1117.
+(Font)              scaled to size 8.93262pt on input line 1050.
 
 LaTeX Font Warning: Font shape `TU/CormorantGaramond(0)/m/scit' undefined
 (Font)              using `TU/CormorantGaramond(0)/m/sc' instead on input line 
-1147.
+1080.
 
 [15
 
 ] [16] [17]
 
-Package xcolor Warning: Incompatible color definition on input line 1367.
+Package xcolor Warning: Incompatible color definition on input line 1300.
 
 [18] [19
 
@@ -2818,20 +2818,20 @@ Package xcolor Warning: Incompatible color definition on input line 1367.
 
 LaTeX Font Warning: Font shape `TU/FiraCodeNerdFontMono(1)/m/sc' undefined
 (Font)              using `TU/FiraCodeNerdFontMono(1)/m/n' instead on input lin
-e 1375.
+e 1308.
 
 LaTeX Font Info:    Font shape `TU/FiraCodeNerdFontMono(1)/m/n' will be
-(Font)              scaled to size 7.98141pt on input line 1375.
+(Font)              scaled to size 7.98141pt on input line 1308.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraCodeNerdFontMono' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/FiraCodeNerdFontMono(1)/m/sc' will be
-(Font)              scaled to size 7.98141pt on input line 1375.
+(Font)              scaled to size 7.98141pt on input line 1308.
 [20
 
 ]
-Overfull \hbox (27.72914pt too wide) in paragraph at lines 1375--1375
+Overfull \hbox (27.72914pt too wide) in paragraph at lines 1308--1308
 []\TU/CormorantGaramond(0)/m/n/10 Scott, Wal-ter. \TU/CormorantGaramond(0)/m/it
 /10 Her-met-ica\TU/CormorantGaramond(0)/m/n/10 . Vol. 1. 1924. Vis-ited on 05/23
 /2025. []$\TU/FiraCodeNerdFontMono(1)/m/sc/10/50ls #http : / / archive . org / 
@@ -2840,7 +2840,7 @@ details / ScottHermeticaVolOne#$[]\TU/CormorantGaramond(0)/m/n/10 .
 
 [21]
 
-Package xcolor Warning: Incompatible color definition on input line 1383.
+Package xcolor Warning: Incompatible color definition on input line 1316.
 
 [22] (./aegypt.ind
 
@@ -2865,59 +2865,59 @@ lus-tra󰃴a a Wolf-
 
 [25])
 
-Package xcolor Warning: Incompatible color definition on input line 1399.
+Package xcolor Warning: Incompatible color definition on input line 1332.
 
 [26
 
 ]
 LaTeX Font Info:    Font shape `TU/CormorantGaramond(0)/m/sc' will be
-(Font)              scaled to size 16.07869pt on input line 1416.
+(Font)              scaled to size 16.07869pt on input line 1349.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1416.
+Package xcolor Warning: Incompatible color definition on input line 1349.
 
 LaTeX Font Info:    Font shape `TU/FiraCodeNerdFontMono(0)/m/n' will be
-(Font)              scaled to size 6.00006pt on input line 1479.
+(Font)              scaled to size 6.00006pt on input line 1412.
 
 LaTeX Font Warning: Font shape `TU/FiraCodeNerdFontMono(0)/m/sc' undefined
 (Font)              using `TU/FiraCodeNerdFontMono(0)/m/n' instead on input lin
-e 1479.
+e 1412.
 
 LaTeX Font Info:    Font shape `TU/Cardo(0)/m/n' will be
-(Font)              scaled to size 9.80759pt on input line 1481.
+(Font)              scaled to size 9.80759pt on input line 1414.
 LaTeX Font Info:    Font shape `TU/FiraCodeNerdFontMono(0)/m/n' will be
-(Font)              scaled to size 5.40005pt on input line 1497.
+(Font)              scaled to size 5.40005pt on input line 1430.
 
-Package xcolor Warning: Incompatible color definition on input line 1505.
+Package xcolor Warning: Incompatible color definition on input line 1438.
 
 <back.pdf, id=926, 614.295pt x 794.97pt>
 File: back.pdf Graphic file (type pdf)
 <use back.pdf>
-Package luatex.def Info: back.pdf  used on input line 1520.
+Package luatex.def Info: back.pdf  used on input line 1453.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 <back.pdf, id=928, page=1, 614.295pt x 794.97pt>
 File: back.pdf Graphic file (type pdf)
 <use back.pdf, page 1>
-Package luatex.def Info: back.pdf , page1 used on input line 1520.
+Package luatex.def Info: back.pdf , page1 used on input line 1453.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: back.pdf Graphic file (type pdf)
 <use back.pdf, page 1>
-Package luatex.def Info: back.pdf , page1 used on input line 1520.
+Package luatex.def Info: back.pdf , page1 used on input line 1453.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 [27
 
 ]
 File: back.pdf Graphic file (type pdf)
 <use back.pdf, page 1>
-Package luatex.def Info: back.pdf , page1 used on input line 1520.
+Package luatex.def Info: back.pdf , page1 used on input line 1453.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: back.pdf Graphic file (type pdf)
 <use back.pdf, page 1>
-Package luatex.def Info: back.pdf , page1 used on input line 1520.
+Package luatex.def Info: back.pdf , page1 used on input line 1453.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: back.pdf Graphic file (type pdf)
 <use back.pdf, page 1>
-Package luatex.def Info: back.pdf , page1 used on input line 1520.
+Package luatex.def Info: back.pdf , page1 used on input line 1453.
 (luatex.def)             Requested size: 614.58406pt x 795.3441pt.
  [28
 
@@ -2938,7 +2938,7 @@ Package logreq Info: Writing requests to 'aegypt.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56031 strings out of 476076
+ 56025 strings out of 476076
  125011,2848258 words of node,token memory allocated
  4903 words of node memory still in use:
    32 hlist, 3 vlist, 14 rule, 1 local_par, 232 glue, 4 kern, 1 penalty, 4 glyph
@@ -2946,7 +2946,7 @@ Here is how much of LuaTeX's memory you used:
 df_action, 26 pdf_colorstack nodes
    avail lists: 1:7,2:1827,3:768,4:273,5:1794,6:275,7:11903,8:107,9:957,10:33,11
 :660,12:1
- 76988 multiletter control sequences out of 65536+600000
+ 76982 multiletter control sequences out of 65536+600000
  179 fonts using 91317431 bytes
  124i,17n,164p,10977b,2990s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2974,7 +2974,7 @@ e/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf></usr/share
 /texmf-dist/fonts/type1/public/initials/GoudyIn.pfb></usr/share/texmf-dist/fonts
 /type1/public/ccicons/ccicons.pfb></usr/share/texmf-dist/fonts/type1/public/marv
 osym/marvosym.pfb>
-Output written on aegypt.pdf (29 pages, 5779150 bytes).
+Output written on aegypt.pdf (29 pages, 5779166 bytes).
 
 PDF statistics: 1046 PDF objects out of 1200 (max. 8388607)
  920 compressed objects within 10 object streams

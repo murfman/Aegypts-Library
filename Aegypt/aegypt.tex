@@ -37,8 +37,6 @@ Scale=MatchLowercase,
 \newfontfamily\accanthis{EB Garamond}[
   Ligatures=TeX,
   Scale=MatchLowercase
-  % Letters=SmallCaps,      % <- uncomment if you want small caps
-  % LetterSpace=2           % <- gentle tracking for display
 ]
 
 \newfontfamily\egothfamily{Cardo}[
@@ -64,7 +62,7 @@ Scale=MatchLowercase,
 }
 
 
-% Delete any of the following that are not needed
+% Generic Packages
 \usepackage{makeidx,tabularx}
 \usepackage{amsmath}
 %\usepackage{boisik}
@@ -74,7 +72,7 @@ Scale=MatchLowercase,
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{gensymb} % Just for the degree symbol
-\usepackage{ccicons} % Creative Commons icons; now we can delete an image
+\usepackage{ccicons} % Creative Commons icons;
 \usepackage{lettrine} % Drop caps
 \usepackage{wrapfig} % Let's wrap some images
 \usepackage{hanging} % For hanging indents in a script
@@ -83,7 +81,6 @@ Scale=MatchLowercase,
 \usepackage{enumitem} % Control spacing in lists
 \usepackage{setspace} % Better control over line-spacing
 \usepackage{nicefrac} % Use nice fractions
-%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
 \usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
 \usepackage[tracking=true]{microtype} % Make things neater. 
 \usepackage{tabularray} % Easy tables
@@ -188,36 +185,6 @@ Scale=MatchLowercase,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Make a nice border and box for the tops of our examples
-\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
-
-% Add an \hrule with space above and below
-\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
-
-% Make hrefs easier (must load package hyperref}
-\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
-
-% Rotate text in tables easier
-% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
-\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
-
-% Make diversions easier (and uniform!)
-\newcommand\kdivb[2]{
-	\medskip
-	\hrule
-	\medskip
-	\noindent{}\textbf{#1}
-	\vspace{#2mm}
-	\begin{multicols}{2}
-}
-
-\newcommand\kdive[1]{
-	\end{multicols} 
-	\vspace{#1mm}
-	\hrule
-	\medskip
-}
-
 % dropcaps because why the fuck not...
 \input GoudyIn.fd
 \newcommand*\initfamily{\usefont{U}{GoudyIn}{xl}{n}}
@@ -228,7 +195,6 @@ Scale=MatchLowercase,
 
 % latex logos
 \usepackage{hologo}
-
 
 
 % fleurons
@@ -261,6 +227,7 @@ Scale=MatchLowercase,
 \renewcommand{\footnotemargin}{1em}
 
 %\setlist[itemize,1]{label=$\triangleright$} %change the top item level icon to a triangle
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
@@ -411,7 +378,6 @@ Scale=MatchLowercase,
 
 % inline helpers that ALSO add index entries
 % \Author[Sort Key]{Printed Name}
-% \Author[SortKey]{Printed Name}
 \newcommand{\Author}[2][]{%
 	\item #2\index{%
 		\if\relax\detokenize{#1}\relax #2\else #1\fi
@@ -442,7 +408,6 @@ Scale=MatchLowercase,
 		\if\relax\detokenize{#1}\relax #2\else #1\fi
 	}%
 }
-
 
 
 
@@ -502,15 +467,10 @@ Scale=MatchLowercase,
 
 %\afterpage{\blankpage}
 \include{titlepage.tex}
-%\setmainfont{Caslon}[Ligatures=TeX,Scale=MatchLowercase]
 \setcounter{tocdepth}{2}
 \tableofcontents
 \pagestyle{fancy}
 
-%\rmfamily
-%\accanthis
-
-\pagestyle{fancy}
 %\chapter{\color{Mahogany}Introduction}
 \chapterzodiac{12}{Introduction}
 \dropcap{T}{he} goal I set for this project is to list all of the books and authors mentioned throughout \textit{Ægypt}, or \textit{The Solitudes}, by chapter. Full bibliographies for both real and fictional works are at the end of the document. If a chapter is missing below, then it did not have any books or authors mentioned within it. Books or authors listed in bold are fictional works created by Crowley. The Authors Mentioned subsections list authors that were mentioned within a chapter but did not mention a particular book, well I tried to keep it that way, but I wasn't always sucessful.
@@ -533,7 +493,6 @@ Special thanks goes to the guys within the \#Books channel on \href{https://www.
 \shadowtext{%	
 {\color{Mahogany}\fontsize{64}{64}\Venus}}\\
 \nbvspace[1]
-%\fleuronbar
 \end{center}
 
 %\chapter{\color{Mahogany}Preface Works}
@@ -610,19 +569,6 @@ Special thanks goes to the guys within the \#Books channel on \href{https://www.
 
 
 \chapterzodiac{1}{Vita}
-
-
-%\chapter{\color{Mahogany}Vita}
-
-%
-%\begin{center}
-%\vfill
-%\shadowoffset{1pt}
-%\shadowtext{%	
-%{\color{Mahogany}\fontsize{64}{64}\Zodiac{1}}}\\
-%\nbvspace[1]
-%%\fleuronbar
-%\end{center}
 
 \section{Chapter 1}
 
@@ -896,24 +842,11 @@ I'm by no means an authority on Góngora or the Spanish Baroque period of litera
 \shadowtext{%	
 {\color{Mahogany}\fontsize{64}{64}\Zodiac{1}}}\\
 \nbvspace[1]
-%\fleuronbar
 \end{center}
 
-%\chapter{\color{Mahogany}Lucrum}
 \chapterzodiac{2}{Lucrum}
 
 \section{Chapter 1}
-
-%\begin{center}
-%\vfill
-%\shadowoffset{1pt}
-%\shadowtext{%	
-%{\color{Mahogany}\fontsize{64}{64}\Zodiac{2}}}\\
-%\nbvspace[1]
-%%\fleuronbar
-%\end{center}
-
-
 
 
 \begin{paracol}{2}

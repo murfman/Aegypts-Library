@@ -701,7 +701,7 @@
       \verb{url}
       \verb http://archive.org/details/bub_gb_buTQ-hAMvw0C
       \endverb
-      \keyw{bub\_upload}
+      \keyw{bub\_upload,real}
     \endentry
     \entry{Fludd1617}{book}{}{}
       \name{author}{1}{}{%
@@ -1567,7 +1567,7 @@
       \verb{url}
       \verb http://archive.org/details/SteganographiaBSB1608
       \endverb
-      \keyw{occult,demonology,steganography,cryptography}
+      \keyw{occult,demonology,steganography,cryptography,real}
     \endentry
     \entry{UnknownPre1967}{book}{}{}
       \name{author}{1}{}{%

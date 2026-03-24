@@ -64,10 +64,9 @@ Scale=MatchLowercase,
 }
 
 
-% Delete any of the following that are not needed
+% Generic Packages
 \usepackage{makeidx,tabularx}
 \usepackage{amsmath}
-%\usepackage{boisik}
 \usepackage{paracol}
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -83,7 +82,6 @@ Scale=MatchLowercase,
 \usepackage{enumitem} % Control spacing in lists
 \usepackage{setspace} % Better control over line-spacing
 \usepackage{nicefrac} % Use nice fractions
-%\usepackage[bottom]{footmisc} % Keep the footnotes at the bottom of the page
 \usepackage{tabto} % Use tab stops when we need to (especially in footnotes)
 \usepackage[tracking=true]{microtype} % Make things neater. 
 \usepackage{tabularray} % Easy tables
@@ -92,7 +90,6 @@ Scale=MatchLowercase,
 \usepackage{fancybox,lipsum}
 \usepackage{verse}
 \usepackage{relsize}
-%\usepackage[style=numeric,sorting=nty]{biblatex}
 \usepackage[backend=biber,style=chicago-authordate,autolang=none]{biblatex}
 \DeclareLanguageMapping{american}{american-chicago}
 %\addbibresource{aegypt.bib}
@@ -148,7 +145,7 @@ Scale=MatchLowercase,
 \pagestyle{fancy}
 \fancyhf{}% clear all
 \fancyhead[LE,RO]{\textit{Ægypt's Library}}
-\fancyhead[RE,LO]{\textit{Ægypt Tetralogy}}
+\fancyhead[RE,LO]{\textit{Endless Things}}
 \fancyfoot[LO,LE]{\small \docversion}% bottom left, all pages
 \fancyfoot[RO,RE]{\thepage}% bottom right, page number
 \renewcommand{\footrulewidth}{0.5pt}
@@ -190,36 +187,6 @@ Scale=MatchLowercase,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Custom Macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Make a nice border and box for the tops of our examples
-\newcommand\klab[3]{\vspace{#1}\noindent{}\hrulefill\fbox{\texttt{~#2~}}\hrulefill\vspace{#3}}
-
-% Add an \hrule with space above and below
-\newcommand\krule[2]{\vspace{#1}\hrule\vspace{#2}}
-
-% Make hrefs easier (must load package hyperref}
-\newcommand\kref[2]{\href{#1}{{\texttt{#2}}}}
-
-% Rotate text in tables easier
-% https://tex.stackexchange.com/questions/89115/how-to-rotate-text-in-multirow-table
-\newcommand\krot[3]{\parbox[t]{#1}{\multirow{#2}{*}{\rotatebox[origin=c]{90}{#3}}}}
-
-% Make diversions easier (and uniform!)
-\newcommand\kdivb[2]{
-	\medskip
-	\hrule
-	\medskip
-	\noindent{}\textbf{#1}
-	\vspace{#2mm}
-	\begin{multicols}{2}
-}
-
-\newcommand\kdive[1]{
-	\end{multicols} 
-	\vspace{#1mm}
-	\hrule
-	\medskip
-}
-
 % dropcaps because why the fuck not...
 \input GoudyIn.fd
 \newcommand*\initfamily{\usefont{U}{GoudyIn}{xl}{n}}
@@ -230,8 +197,6 @@ Scale=MatchLowercase,
 
 % latex logos
 \usepackage{hologo}
-
-
 
 % fleurons
 \usepackage{staves}
@@ -248,7 +213,6 @@ Scale=MatchLowercase,
 \newcommand\fleuronbar{%
 	{\huge\LinearACCCXIII}\xrfill[1.3ex]{1pt}\doublefleuron\xrfill[1.3ex]{1pt}\reflectbox{\huge\LinearACCCXIII}}
 
-
 \usepackage{afterpage}
 \newcommand\blankpage{%
     \null
@@ -262,7 +226,6 @@ Scale=MatchLowercase,
 \setlength{\footnotesep}{0.9em}
 \renewcommand{\footnotemargin}{1em}
 
-%\setlist[itemize,1]{label=$\triangleright$} %change the top item level icon to a triangle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Tikz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
@@ -313,7 +276,6 @@ Scale=MatchLowercase,
 \newfontfamily\urlfont{FiraCode Nerd Font Mono}[Scale=MatchLowercase,Ligatures=TeX]
 \renewcommand{\UrlFont}{\urlfont}
 
-%\addbibresource{aegypt.bib}
 \makeindex
 
 % this is an attempt to auto bold face bib entries with keyword 'Fictional'
@@ -453,10 +415,7 @@ Scale=MatchLowercase,
 
 \setcounter{tocdepth}{1}
 \tableofcontents
-\pagestyle{fancy}
 
-%\rmfamily
-%\accanthis
 \pagestyle{fancy}
 \chapter{\color{Mahogany}Introduction}
 \dropcap{T}{he} goal I set for this project is to list all of the books and authors mentioned throughout \textit{Ægypt}, or \textit{The Solitudes}, by chapter. A full bibliography for all items found is at the end of the document. If a chapter is missing below, then it did not have any books or authors mentioned within it. Books listed in bold are fictional works created by Crowley. The Authors Mentioned subsections list authors that were mentioned within a chapter but did not mention a particular book.
@@ -481,7 +440,6 @@ Special thanks goes to the guys within the \#Books channel on \href{https://www.
 \nbvspace[1]
 %\fleuronbar
 \end{center}
-
 
 
 \pagebreak
@@ -751,12 +709,6 @@ Special thanks goes to the guys within the \#Books channel on \href{https://www.
 \end{itemize}
 \end{paracol}
 
-%\begin{figure}
-%\centering
-%\includegraphics[width=\linewidth - 10em]{Elefant.hypnero}
-%\caption{\footnotesize{\href{https://commons.wikimedia.org/w/index.php?curid=12326889}{By Aldus Manutius - HAB Wolfenbüttel}, \textsc{Public Domain}}}
-%\label{fig:obelisk}
-%\end{figure}
 
 \section{Chapter 10}
 
@@ -817,11 +769,6 @@ Special thanks goes to the guys within the \#Books channel on \href{https://www.
 \end{itemize}
 \end{paracol}
 
-%\begin{tcolorbox}[breakout, title={Dr. Pons' Cosmology}]
-%Dr. Pons' cosmogony seems to be an alteration of Gnostic creation, particularly an alteration of the \textit{Pistis Sophia}. The primary difference seeming to be how the world was created. In Dr. Pons' version, the world was created when Sophia wept tears within the Darkness that she created, thus creating the world we all live in.
-%
-%\textit{Later in Benefacta-8? Dr. Pons' further discussed and needs adding to here.}
-%\end{tcolorbox}
 
 \section{Chapter 2}
 
@@ -1032,12 +979,6 @@ The wind shall blow my topknot off.}\footnote{Surprisingly, this seems to have b
 	\end{itemize}
 \end{paracol}
 
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=15em]{chemical}
-%	\caption{\footnotesize{Title page of The Chemical Wedding, 1616 | \textsc{Public Domain}}}
-%	\label{fig:chem}
-%\end{figure}
 
 \nbvspace[1]
 \begin{center}
@@ -1046,7 +987,6 @@ The wind shall blow my topknot off.}\footnote{Surprisingly, this seems to have b
 	\shadowtext{%	
 		{\color{Mahogany}\fontsize{64}{64}\Zodiac{11}}}\\
 	\nbvspace[1]
-	%\fleuronbar
 \end{center}
 
 \chapterzodiac{12}{Part 12 -- Carcer}
@@ -1334,7 +1274,6 @@ The wind shall blow my topknot off.}\footnote{Surprisingly, this seems to have b
 \shadowtext{%	
 {\color{Mahogany}\fontsize{64}{64}\Zodiac{12}}}\\
 \nbvspace[1]
-%\fleuronbar
 \end{center}
 
 \chapter{\color{Mahogany}End Works}
@@ -1365,7 +1304,6 @@ The wind shall blow my topknot off.}\footnote{Surprisingly, this seems to have b
 \shadowtext{%	
 {\color{Mahogany}\fontsize{64}{64}\Zodiac{3}}}\\
 \nbvspace[1]
-%\fleuronbar
 \end{center}
 
 {\microtypesetup{expansion=false}%
@@ -1381,8 +1319,6 @@ The wind shall blow my topknot off.}\footnote{Surprisingly, this seems to have b
 	heading=bibintoc
 ]
 }
-
-
 
 
 \begin{center}
