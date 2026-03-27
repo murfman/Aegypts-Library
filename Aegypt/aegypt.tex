@@ -281,9 +281,15 @@ Scale=MatchLowercase,
 %% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Be sure to load this package last
 % [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+% package xurl and the setcounter below are all to help wrap the urls within the bibliographies.
+\usepackage{xurl}
 \usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
-%\usepackage[normalem]{ulem}
-%\usepackage[colorlinks=false]{hyperref} 
+
+\setcounter{biburllcpenalty}{100} % lower-case letters
+\setcounter{biburlucpenalty}{100} % upper-case letters
+\setcounter{biburlnumpenalty}{100} % numbers
+ 
+ 
 \hypersetup{
 	frenchlinks=true,
 	pdftitle={Ægypt's Library - Vol. 1},

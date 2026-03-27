@@ -26,7 +26,7 @@
       \field{journaltitle}{Dictionary of National Biography}
       \field{year}{1961}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Agrippa}{book}{}{}
       \name{author}{1}{}{%
@@ -49,7 +49,7 @@
       \field{labelnamesource}{author}
       \field{booktitle}{De Occulta Philosophia}
       \field{year}{1533}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Apuleius1998}{book}{}{}
       \name{author}{1}{}{%
@@ -75,7 +75,7 @@
       \field{title}{The Golden Ass}
       \field{year}{1998}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Barra}{book}{}{}
       \name{author}{1}{}{%
@@ -99,7 +99,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mythos and Tyrannos}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Barr}{book}{}{}
       \name{author}{1}{}{%
@@ -123,7 +123,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Time's Body}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Barrb}{book}{}{}
       \name{author}{1}{}{%
@@ -147,7 +147,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Unnamed Collection of Histories}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Bates1872}{inbook}{}{}
       \name{author}{1}{}{%
@@ -172,7 +172,7 @@
       \field{title}{Stories of the Flowers}
       \field{year}{1872}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Beeson1925}{article}{}{}
       \name{author}{1}{}{%
@@ -209,7 +209,7 @@
       \verb{doi}
       \verb 10.1086/360664
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Benians1907}{article}{}{}
       \name{author}{1}{}{%
@@ -248,7 +248,7 @@
       \verb{doi}
       \verb 10.1017/s1474691300001062
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Briggs1940}{book}{}{}
       \name{author}{1}{}{%
@@ -273,7 +273,7 @@
       \field{title}{Flash Gordon}
       \field{year}{1940}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Bruno1961}{book}{}{}
       \name{author}{1}{}{%
@@ -299,7 +299,7 @@
       \field{title}{De monade, numero et figura}
       \field{year}{1961}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Brunoa}{book}{}{}
       \name{author}{1}{}{%
@@ -324,7 +324,7 @@
       \field{labeltitlesource}{title}
       \field{title}{De Umbris Idearum et Ars Memoriae}
       \field{year}{1582}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Bruno1962}{book}{}{}
       \name{author}{1}{}{%
@@ -350,7 +350,7 @@
       \field{title}{Jordani Bruni Opera Latine Conscripta}
       \field{year}{1962}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Bruno1854}{book}{}{}
       \name{author}{1}{}{%
@@ -376,7 +376,7 @@
       \field{title}{Opera Omnia}
       \field{year}{1854}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Burgess2012}{book}{}{}
       \name{author}{1}{}{%
@@ -404,7 +404,7 @@
       \field{title}{Old Mother West Wind}
       \field{year}{2012}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Burnett1975}{book}{}{}
       \name{author}{1}{}{%
@@ -432,7 +432,7 @@
       \field{title}{The Secret Garden}
       \field{year}{1975}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Cecco1250}{book}{}{}
       \name{author}{1}{}{%
@@ -455,7 +455,7 @@
       \field{title}{Commentary on the Sphere}
       \field{year}{1250}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Copernicus1543}{book}{}{}
       \name{author}{2}{}{%
@@ -489,7 +489,7 @@
       \verb{doi}
       \verb 10.5479/sil.305973.39088000648568
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Dante1950}{book}{}{}
       \name{author}{1}{}{%
@@ -524,7 +524,7 @@
       \field{title}{Divine Comedy}
       \field{year}{1950}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Davidson1967}{book}{}{}
       \name{author}{1}{}{%
@@ -556,7 +556,7 @@
       \verb{doi}
       \verb 10.2307/4609485
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{DeGongoraYArgote1968}{book}{}{}
       \name{author}{1}{}{%
@@ -600,7 +600,7 @@
       \verb{url}
       \verb https://archive.org/details/solitudesofluisd0000unse
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{De}{book}{}{}
       \name{author}{1}{}{%
@@ -624,7 +624,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Tractatus de Sphæra}
       \field{year}{1467}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Dee}{book}{}{}
       \name{author}{1}{}{%
@@ -653,7 +653,7 @@
       \field{title}{Monas hieroglyphica}
       \field{pages}{1564}
       \range{pages}{1}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Dee1568}{book}{}{}
       \name{author}{1}{}{%
@@ -687,14 +687,14 @@
       \verb{url}
       \verb https://archive.org/details/bim_early-english-books-1475-1640_propdeumata-aphoristic_dee-john_1558/mode/2up
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{faraway}{misc}{}{}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labeltitlesource}{title}
       \field{title}{Faraway Crier}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Ficcino1543}{book}{}{}
       \name{author}{1}{}{%
@@ -720,7 +720,7 @@
       \field{title}{Pimander}
       \field{year}{1543}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Ficcino}{book}{}{}
       \name{author}{1}{}{%
@@ -744,7 +744,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{De vita coelitis comparanda}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Frazer1932}{book}{}{}
       \name{author}{2}{}{%
@@ -778,7 +778,7 @@
       \verb{doi}
       \verb 10.1093/owc/9780199538829.001.0001
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Herbermann1908}{book}{}{}
       \name{author}{1}{}{%
@@ -803,7 +803,7 @@
       \field{title}{The Catholic Encyclopedia: An International Work of Reference on the Constitution, Doctrine, Discipline, and History of the Catholic Church}
       \field{year}{1908}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Holinshed1923}{book}{}{}
       \name{author}{1}{}{%
@@ -828,7 +828,7 @@
       \field{title}{Holinshed’s Chronicals: Richard II, 1398-1400, Henry IV and Henry V}
       \field{year}{1923}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Horapollo}{book}{}{}
       \name{author}{1}{}{%
@@ -849,7 +849,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hieroglyphica}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Huizinga2016}{book}{}{}
       \name{author}{1}{}{%
@@ -877,7 +877,7 @@
       \field{title}{The Waning of the Middle Ages: A Study of the Forms of Life, Thought and Art in France and The Netherlands in the XIVth and XVth Centuries*}
       \field{year}{2016}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Hunnis1600}{book}{}{}
       \name{author}{1}{}{%
@@ -911,7 +911,7 @@
       \verb{url}
       \verb http://archive.org/details/bim_early-english-books-1475-1640_seven-sobs-of-a-sorrowfu_hunnis-wm_1600
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Hyginus}{book}{}{}
       \name{author}{1}{}{%
@@ -932,7 +932,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Poeticon Astronomicon}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Iambilichus}{book}{}{}
       \name{author}{1}{}{%
@@ -953,7 +953,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On the Mysteries of the Egyptians}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Kerr1907}{book}{}{}
       \name{author}{1}{}{%
@@ -981,7 +981,7 @@
       \field{title}{The Eighteenth Brumaire of Louis Bonaparte}
       \field{year}{1907}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Kraftd}{book}{}{}
       \name{author}{1}{}{%
@@ -1005,7 +1005,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Passage at Arms}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Kraftb}{book}{}{}
       \name{author}{1}{}{%
@@ -1029,7 +1029,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Bitten Apples}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Kraft1931}{book}{}{}
       \name{author}{1}{}{%
@@ -1054,7 +1054,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Bruno's Journey}
       \field{year}{1931}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Kraft}{book}{}{}
       \name{author}{1}{}{%
@@ -1078,7 +1078,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Darkling Plain}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Krafte}{book}{}{}
       \name{author}{1}{}{%
@@ -1102,7 +1102,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Sit Down, Sorrow}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Kraftf}{book}{}{}
       \name{author}{1}{}{%
@@ -1126,7 +1126,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Book of a Hundred Chapters}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Kraftc}{book}{}{}
       \name{author}{1}{}{%
@@ -1150,7 +1150,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Court of Silk and Blood}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Krafta}{book}{}{}
       \name{author}{1}{}{%
@@ -1174,7 +1174,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Under Saturn, A Novel of Wallenstein}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Lanier1937}{book}{}{}
       \name{author}{2}{}{%
@@ -1207,7 +1207,7 @@
       \field{title}{The Boy's King Arthur. Scribner's Illustrated Classics. Sir Thomas Malory's History of King Arthur and His Knights of the Round Table}
       \field{year}{1937}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Lewis1966}{book}{}{}
       \name{author}{1}{}{%
@@ -1232,7 +1232,7 @@
       \field{title}{Lewis and Short Latin Dictionary}
       \field{year}{1966}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Lull1501}{book}{}{}
       \name{author}{1}{}{%
@@ -1257,7 +1257,7 @@
       \field{title}{Ars Magna}
       \field{year}{1501}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Longfellow}{inbook}{}{}
       \name{author}{1}{}{%
@@ -1280,7 +1280,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Golden Legend}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Magus}{book}{}{}
       \name{author}{1}{}{%
@@ -1303,7 +1303,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Commentaries on The “Summa Theologica"}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Malory1998}{book}{}{}
       \name{author}{1}{}{%
@@ -1332,7 +1332,7 @@
       \field{title}{Le Morte D'arthur}
       \field{year}{1998}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Mead1906}{book}{}{}
       \name{author}{1}{}{%
@@ -1360,7 +1360,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Thrice-greatest Hermes}
       \field{year}{1906}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{MechonMamre}{inbook}{}{}
       \name{editor}{1}{}{%
@@ -1382,7 +1382,7 @@
       \field{labeltitlesource}{title}
       \field{chapter}{Psalms 87}
       \field{title}{Hebrew - English Bible}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Monardes1970}{book}{}{}
       \name{author}{1}{}{%
@@ -1410,7 +1410,7 @@
       \field{title}{Joyfull Newes Out of the Newe Founde Worlde}
       \field{year}{1970}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Murphy1914}{book}{}{}
       \name{editor}{2}{}{%
@@ -1447,7 +1447,7 @@
       \verb{doi}
       \verb 10.1017/s0034412518000471
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Niblick}{book}{}{}
       \name{author}{1}{}{%
@@ -1470,7 +1470,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Way's Far Turning}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Norton}{book}{}{}
       \name{author}{1}{}{%
@@ -1493,7 +1493,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Borrowers Abroad}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Perlesvaus1898}{book}{}{}
       \name{author}{1}{}{%
@@ -1531,7 +1531,7 @@
       \field{title}{The High History of the Holy Graal}
       \field{year}{1898}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Sidney1598}{book}{}{}
       \name{author}{1}{}{%
@@ -1557,7 +1557,7 @@
       \field{title}{The Lady of May}
       \field{year}{1598}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Picatrix1962}{misc}{}{}
       \name{author}{1}{}{%
@@ -1586,7 +1586,7 @@
       \field{title}{Das Ziel des Weisen von Pseudo-Magriti*, aus dem Arabischen ins Deutsche übersetzt von Hellmut Ritter und Martin Plessner [*Picatrix: The Goal of the Wise Man by Pseudo-Magriti*, translated from Arabic into German by Ritter and Plessner}
       \field{year}{1962}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Plutarch1894}{book}{}{}
       \name{author}{2}{}{%
@@ -1617,7 +1617,7 @@
       \field{title}{Lives. Englished}
       \field{year}{1894}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Rose}{book}{}{}
       \name{author}{1}{}{%
@@ -1640,7 +1640,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Steganography}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Rose1970}{book}{}{}
       \name{author}{2}{}{%
@@ -1679,7 +1679,7 @@
       \verb{url}
       \verb #https://archive.org/details/shatteredringsci0000ro#
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Sacrobosco}{book}{}{}
       \name{author}{1}{}{%
@@ -1702,7 +1702,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Unnamed Astronomy Textbook}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Scott1924}{book}{}{}
       \name{author}{1}{}{%
@@ -1738,7 +1738,7 @@
       \verb{url}
       \verb #http://archive.org/details/ScottHermeticaVolOne#
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Seneschal1905}{inbook}{}{}
       \name{author}{2}{}{%
@@ -1769,7 +1769,7 @@
       \field{year}{1905}
       \field{pages}{221}
       \range{pages}{1}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Shakespeare2006}{book}{}{}
       \name{author}{1}{}{%
@@ -1804,7 +1804,7 @@
       \verb{doi}
       \verb 10.5040/9781408160237.00000030
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Shakespeare1912}{book}{}{}
       \name{author}{1}{}{%
@@ -1830,7 +1830,7 @@
       \field{title}{Shakespeare's King Henry VIII}
       \field{year}{1912}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Spenser1920}{book}{}{}
       \name{author}{1}{}{%
@@ -1855,7 +1855,7 @@
       \field{title}{The Faerie Queen}
       \field{year}{1920}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Sprat1667}{inbook}{}{}
       \name{author}{1}{}{%
@@ -1889,7 +1889,7 @@
       \verb{doi}
       \verb 10.4324/9781003548249-1
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Stedman1956}{book}{}{}
       \name{author}{1}{}{%
@@ -1927,7 +1927,7 @@
       \verb{url}
       \verb https://www.abebooks.com/Sunday-Missal-Using-New-Translation-Testament/31653638474/bd
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Thomas1917}{inbook}{}{}
       \name{author}{1}{}{%
@@ -1952,7 +1952,7 @@
       \field{title}{Summa Theologica of St. Thomas Aquinas}
       \field{year}{1917}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Trithemius}{inbook}{}{}
       \name{author}{1}{}{%
@@ -1977,7 +1977,7 @@
       \field{booktitle}{Illustrata a Wolfgango Ernesto Heidel*. 1676}
       \field{title}{Steganographia}
       \field{year}{1676}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{druids}{book}{}{}
       \name{author}{1}{}{%
@@ -1999,7 +1999,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Dawn of the Druids}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Orphic}{online}{}{}
       \name{author}{1}{}{%
@@ -2027,7 +2027,7 @@
       \verb{url}
       \verb https://www.theoi.com/Text/OrphicHymns1.html
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{phaeton}{book}{}{}
       \name{author}{1}{}{%
@@ -2049,7 +2049,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Phaeton's Car}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Unknown1969}{book}{}{}
       \name{author}{1}{}{%
@@ -2087,7 +2087,7 @@
       \field{title}{The Nibelungenlied}
       \field{year}{1969}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{worldsin}{book}{}{}
       \name{author}{1}{}{%
@@ -2109,7 +2109,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Worlds in Division}
-      \keyw{Fictional}
+      \keyw{Fictional,Solitudes}
     \endentry
     \entry{Brit1939}{book}{}{}
       \field{sortinit}{U}
@@ -2118,7 +2118,7 @@
       \field{title}{Unknown Volumes of Encyclopedia Britannica}
       \field{year}{1939}
       \field{dateera}{ce}
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
     \entry{Virgil2011}{book}{}{}
       \name{author}{1}{}{%
@@ -2147,7 +2147,7 @@
       \verb{doi}
       \verb 10.1093/actrade/9780198827764.book.1
       \endverb
-      \keyw{real}
+      \keyw{real,Solitudes}
     \endentry
   \enddatalist
   \missing{Nozfinger1976}

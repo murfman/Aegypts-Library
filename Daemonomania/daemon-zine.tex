@@ -264,7 +264,13 @@ Scale=MatchLowercase,
 %% Include URLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Be sure to load this package last
 % [hidelinks option to hide big red box. Thanks /u/0b0101011001001011
+% package xurl and the setcounter below are all to help wrap the urls within the bibliographies.
+\usepackage{xurl}
 \usepackage[hidelinks]{hyperref} % Inlcude URLs, but load this package last
+
+\setcounter{biburllcpenalty}{100} % lower-case letters
+\setcounter{biburlucpenalty}{100} % upper-case letters
+\setcounter{biburlnumpenalty}{100} % numbers
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -443,7 +449,8 @@ Scale=MatchLowercase,
 \pagestyle{fancy}
 \chapterzodiac{12}{Introduction}
 \lettrine[lines=4,findent=3pt]{T}{his} is a continuation of my attempt to list out the various authors and books mentioned within the Ægypt Tetralogy, specifically \textit{Daemonomania}, by John Crowley. Fictitious authors and books have been placed in bold typeface for easy identification. 
-
+% end of first paragraph
+\par\vspace{0.3\baselineskip}
 For those that care, this project was originally done in RStudio to make use of their excellent Rmarkdown code and integration abilities, especially those concerned with \hologo{BibTeX} files. Once I finished it there a friend mentioned it would be cool to have as a zine instead of a flat PDF, so I went way down that rabbit-hole before coming back to sanity. Well sort of\dots I'm using \hologo{LuaLaTeX} because \LaTeX{} wasn't quite robust enough and I'm familiar enough with it. So, after much trial and tribulation what started out as a text file migrated into Markdown, then Rmarkdown and on to \LaTeX{} before finally settling on \hologo{LuaLaTeX}, and from letter size to half-letter zine, and now back to letter, which I'm sure highlights my own inability to commit more than anything else.
 
 \vspace*{1cm}
