@@ -4,6 +4,9 @@ Aegypt/old/
 
 *.aux
 *.bbl
+*.aux.bbl
+*.aux.blg
+*.aux.bcf
 *.bcf
 *.blg
 *.idx
