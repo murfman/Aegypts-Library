@@ -1,9 +1,0 @@
-This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
-Scanning input file endless.idx....
-!! Input index error (file = endless.idx, line = 223):
-   -- Illegal null field.
-done (255 entries accepted, 1 rejected).
-Sorting entries.....done (2118 comparisons).
-Generating output file endless.ind....done (297 lines written, 0 warnings).
-Output written in endless.ind.
-Transcript written in endless.ilg.
