@@ -3,6 +3,8 @@
 This is the public repository for Aegypt's Library, a project I created to list all of the 
 authors and books, both real and fictional, mentioned within John Crowley's amazing Aegypt tetralogy.
 
+I am currently posting updates to this project to my substack, [Ægypt Bibliography](https://aegyptbibliography.substack.com/).
+
 <img src="title_page.png" alt="Title page from Aegypt Bibliography - The Solitudes" width="300">
 
 # Build
