@@ -124,7 +124,7 @@ Scale=MatchLowercase,
 \pagestyle{fancy}
  \fancyhf{}
  \fancyhead[LE,RO]{\textit{Ægypt's Library}}
- \fancyhead[RE,LO]{Love \& Sleep}
+ \fancyhead[RE,LO]{Combined Bibliography}
  \fancyfoot[RO,LE]{\thepage}
  \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -326,7 +326,7 @@ For that slim minority that cares, I'm doing this in \LaTeX{}, well really it is
 
 \begin{multicols}{3}
 \begin{itemize}
-  \item Æneas\index{Æneas}
+  \item Æneas\index{Aeneas}
   \item Aquinas, St.~Thomas\index{Aquinas, St. Thomas}
   \item Ambrose, St.\index{Ambrose, St.}
   \item Aristotle\index{Aristotle}
@@ -993,19 +993,19 @@ For that slim minority that cares, I'm doing this in \LaTeX{}, well really it is
 % \printbibliography[keyword=Fictional, title=Bibliography of Fictional Books, heading=bibintoc]
 % \printbibliography[keyword=real, title=Bibliography of Real Books, heading=bibintoc]
 \defbibfilter{fictional-and-aegypt}{
-  keyword={Fictional} and keyword={aegypt}
+  keyword={Fictional} and keyword={Solitudes}
 }
 
 \defbibfilter{real-and-aegypt}{
-  keyword={real} and keyword={aegypt}
+  keyword={real} and keyword={Solitudes}
 }
 
 \defbibfilter{real-and-las}{
-  keyword={real} and keyword={las}
+  keyword={real} and keyword={LAS}
 }
 
 \defbibfilter{fictional-and-las}{
-  keyword={Fictional} and keyword={las}
+  keyword={Fictional} and keyword={LAS}
 }
 
 \defbibfilter{fictional-and-daemon}{
@@ -1014,6 +1014,14 @@ For that slim minority that cares, I'm doing this in \LaTeX{}, well really it is
 
 \defbibfilter{real-and-daemon}{
   keyword={real} and keyword={daemon}
+}
+
+\defbibfilter{fictional-and-endless}{
+	keyword={Fictional} and keyword={Endless}
+}
+
+\defbibfilter{real-and-endless}{
+	keyword={real} and keyword={Endless}
 }
 
 \defbibfilter{real}{
@@ -1060,6 +1068,17 @@ For that slim minority that cares, I'm doing this in \LaTeX{}, well really it is
   heading=bibintoc
 ]
 
+\printbibliography[
+filter=fictional-and-endless,
+title={Bibliography of Fictional Books in Endless Things},
+heading=bibintoc
+]
+
+\printbibliography[
+filter=real-and-endless,
+title={Bibliography of Real Books in Endless Things},
+heading=bibintoc
+]
 
 \printbibliography[
 	filter=fictional,
